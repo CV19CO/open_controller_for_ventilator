@@ -297,6 +297,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/afc/freedom/open_controller_for_ventilator/kicad-modules/shapes3d/raspberryPi3BSimplified_STEP.STEP
+      (offset (xyz 10 -24.5 -22))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SMD:TLP240D_TP1 (layer F.Cu) (tedit 5E8DCD55) (tstamp 5E8E5A1A)
@@ -2886,6 +2891,7 @@
   (via (at 131.7265 69.259) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2) (tstamp 5E8E292A))
   (via (at 118.3915 22.142) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2) (tstamp 5E8E2927))
   (via (at 158.0155 19.221) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2) (tstamp 5E8E2924))
+  (via (at 147.157 55.9875) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2) (tstamp 5E8E24DA))
   (segment (start 136.616 34.08) (end 136.616 34.842) (width 0.5) (layer F.Cu) (net 3) (tstamp 5E8E2921) (status 20))
   (segment (start 134.33 31.794) (end 136.616 34.08) (width 0.5) (layer F.Cu) (net 3) (tstamp 5E8E291E))
   (segment (start 136.616 35.642) (end 137.651 36.677) (width 0.5) (layer F.Cu) (net 3) (tstamp 5E8E26F3))
@@ -3087,7 +3093,6 @@
   (via (at 127.726 55.3525) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 23) (tstamp 5E8E24E3))
   (via (at 126.1385 53.765) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 23) (tstamp 5E8E24E0))
   (via (at 124.8685 55.67) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 23) (tstamp 5E8E24DD))
-  (via (at 147.157 55.9875) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2) (tstamp 5E8E24DA))
   (via (at 146.141 52.6855) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 23) (tstamp 5E8E24D7))
   (via (at 150.205 52.368) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 23) (tstamp 5E8E24D4))
   (via (at 147.792 50.844) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 23) (tstamp 5E8E24D1))
