@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name wifistepper-rescue)(type Legacy)(uri ${KIPRJMOD}/wifistepper-rescue.lib)(options "")(descr ""))
+  (lib (name keep_breathing_ctrl-rescue)(type Legacy)(uri ${KIPRJMOD}/keep_breathing_ctrl-rescue.lib)(options "")(descr ""))
+)
