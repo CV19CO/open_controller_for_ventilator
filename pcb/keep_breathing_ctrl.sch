@@ -26,7 +26,7 @@ U 1 1 5E9821B0
 P 1950 2850
 F 0 "P1" H 1675 4015 50  0000 C CNN
 F 1 "CONN_RASPBERRY" H 1675 3924 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 1675 3931 60  0001 C CNN
+F 2 "TH:RPI_MATRIX_40" H 1675 3931 60  0001 C CNN
 F 3 "" H 1150 1900 60  0000 C CNN
 	1    1950 2850
 	1    0    0    -1  
@@ -43,4 +43,48 @@ U 5E99077D
 F0 "ElectroValves" 50
 F1 "ElectroValves.sch" 50
 $EndSheet
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E9C23FB
+P 1700 5700
+F 0 "H1" H 1800 5700 50  0000 L CNN
+F 1 "MountingHole" H 1800 5655 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 1700 5700 50  0001 C CNN
+F 3 "~" H 1700 5700 50  0001 C CNN
+	1    1700 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5E9C36D2
+P 1700 5900
+F 0 "H?" H 1800 5900 50  0000 L CNN
+F 1 "MountingHole" H 1800 5855 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 1700 5900 50  0001 C CNN
+F 3 "~" H 1700 5900 50  0001 C CNN
+	1    1700 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5E9C5DAB
+P 1700 6100
+F 0 "H?" H 1800 6100 50  0000 L CNN
+F 1 "MountingHole" H 1800 6055 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 1700 6100 50  0001 C CNN
+F 3 "~" H 1700 6100 50  0001 C CNN
+	1    1700 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5E9C5DB5
+P 1700 6300
+F 0 "H?" H 1800 6300 50  0000 L CNN
+F 1 "MountingHole" H 1800 6255 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 1700 6300 50  0001 C CNN
+F 3 "~" H 1700 6300 50  0001 C CNN
+	1    1700 6300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
