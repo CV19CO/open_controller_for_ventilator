@@ -1,4 +1,11 @@
 (sym_lib_table
   (lib (name wifistepper-rescue)(type Legacy)(uri ${KIPRJMOD}/wifistepper-rescue.lib)(options "")(descr ""))
   (lib (name keep_breathing_ctrl-rescue)(type Legacy)(uri ${KIPRJMOD}/keep_breathing_ctrl-rescue.lib)(options "")(descr ""))
+  (lib (name powerstep01)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/powerstep01.lib)(options "")(descr ""))
+  (lib (name SparkFun-PowerSymbols)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/SparkFun-PowerSymbols.lib)(options "")(descr ""))
+  (lib (name ventilator-PowerSymbols)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ventilator-PowerSymbols.lib)(options "")(descr ""))
+  (lib (name conn_raspberry_2x40)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/conn_raspberry_2x40.lib)(options "")(descr ""))
+  (lib (name ESP32)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ESP32.lib)(options "")(descr ""))
+  (lib (name TLP240D)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/TLP240D.lib)(options "")(descr ""))
+  (lib (name SolidStateRelay)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/SolidStateRelay.lib)(options "")(descr ""))
 )

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -36,5 +36,11 @@ S 6250 800  1700 1400
 U 5E9877D5
 F0 "ESP32" 50
 F1 "ESP32.sch" 50
+$EndSheet
+$Sheet
+S 8250 5000 1250 850 
+U 5E99077D
+F0 "ElectroValves" 50
+F1 "ElectroValves.sch" 50
 $EndSheet
 $EndSCHEMATC
