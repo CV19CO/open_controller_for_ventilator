@@ -1,6 +1,4 @@
 (sym_lib_table
-  (lib (name wifistepper-rescue)(type Legacy)(uri ${KIPRJMOD}/wifistepper-rescue.lib)(options "")(descr ""))
-  (lib (name keep_breathing_ctrl-rescue)(type Legacy)(uri ${KIPRJMOD}/keep_breathing_ctrl-rescue.lib)(options "")(descr ""))
   (lib (name powerstep01)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/powerstep01.lib)(options "")(descr ""))
   (lib (name SparkFun-PowerSymbols)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/SparkFun-PowerSymbols.lib)(options "")(descr ""))
   (lib (name ventilator-PowerSymbols)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ventilator-PowerSymbols.lib)(options "")(descr ""))
@@ -11,4 +9,5 @@
   (lib (name BarrelConnector)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/BarrelConnector.lib)(options "")(descr ""))
   (lib (name ZLDO1117G33TA)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ZLDO1117G33TA.lib)(options "")(descr ""))
   (lib (name pcf8523tk)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/pcf8523tk.lib)(options "")(descr ""))
+  (lib (name AQH3213AX)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/AQH3213AX.lib)(options "")(descr ""))
 )
