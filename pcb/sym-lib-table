@@ -8,6 +8,6 @@
   (lib (name ESP32)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ESP32.lib)(options "")(descr ""))
   (lib (name TLP240D)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/TLP240D.lib)(options "")(descr ""))
   (lib (name SolidStateRelay)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/SolidStateRelay.lib)(options "")(descr ""))
-  (lib (name BarrelConnector)(type Legacy)(uri /home/jaiber/proyectos/respirador/repositorio/open_controller_for_ventilator/kicad-modules/libs/BarrelConnector.lib)(options "")(descr ""))
-  (lib (name ZLDO1117G33TA)(type Legacy)(uri /home/jaiber/proyectos/respirador/repositorio/open_controller_for_ventilator/kicad-modules/libs/ZLDO1117G33TA.lib)(options "")(descr ""))
+  (lib (name BarrelConnector)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/BarrelConnector.lib)(options "")(descr ""))
+  (lib (name ZLDO1117G33TA)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ZLDO1117G33TA.lib)(options "")(descr ""))
 )

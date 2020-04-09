@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:keep_breathing_ctrl-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -18,6 +18,8 @@ $Comp
 L BarrelConnector:Barrel_Jack_Switch J?
 U 1 1 5E909FE7
 P 1700 1950
+AR Path="/5E909FE7" Ref="J?"  Part="1" 
+AR Path="/5E8E60A3/5E909FE7" Ref="J?"  Part="1" 
 F 0 "J?" H 1755 2267 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 1755 2176 50  0000 C CNN
 F 2 "" H 1750 1910 50  0001 C CNN
