@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector:Barrel_Jack_Switch
+# BarrelConnector:Barrel_Jack_Switch
 #
-DEF Connector:Barrel_Jack_Switch J 0 20 Y N 1 F N
+DEF BarrelConnector:Barrel_Jack_Switch J 0 20 Y N 1 F N
 F0 "J" 0 210 50 H V C CNN
-F1 "Connector:Barrel_Jack_Switch" 0 -200 50 H V C CNN
+F1 "BarrelConnector:Barrel_Jack_Switch" 0 -200 50 H V C CNN
 F2 "" 50 -40 50 H I C CNN
 F3 "" 50 -40 50 H I C CNN
 $FPLIST
@@ -357,6 +357,22 @@ X ~ 1 -300 100 100 R 50 50 1 1 P
 X ~ 2 -300 -100 100 R 50 50 1 1 P
 X ~ 3 300 -100 100 L 50 50 1 1 P
 X ~ 4 300 100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ZLDO1117G33TA:ZLDO1117G33TA
+#
+DEF ZLDO1117G33TA:ZLDO1117G33TA U 0 40 Y Y 1 F N
+F0 "U" 0 550 60 H V C CNN
+F1 "ZLDO1117G33TA:ZLDO1117G33TA" 100 400 60 H V C CNN
+F2 "" 150 50 60 H V C CNN
+F3 "" 150 50 60 H V C CNN
+DRAW
+S -500 300 500 -300 0 1 0 N
+X GND 1 0 -500 200 U 50 50 1 1 I
+X VOUT 2 700 150 200 L 50 50 1 1 I
+X VIN 3 -700 0 200 R 50 50 1 1 I
+X TAG_VOUT 4 700 -150 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
