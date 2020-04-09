@@ -10,4 +10,5 @@
   (lib (name SolidStateRelay)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/SolidStateRelay.lib)(options "")(descr ""))
   (lib (name BarrelConnector)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/BarrelConnector.lib)(options "")(descr ""))
   (lib (name ZLDO1117G33TA)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ZLDO1117G33TA.lib)(options "")(descr ""))
+  (lib (name pcf8523tk)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/pcf8523tk.lib)(options "")(descr ""))
 )

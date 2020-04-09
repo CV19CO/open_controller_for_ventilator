@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -92,5 +92,11 @@ S 4050 800  1250 1450
 U 5E8E60A3
 F0 "supply" 50
 F1 "supply.sch" 50
+$EndSheet
+$Sheet
+S 8550 3150 1000 650 
+U 5E8F4152
+F0 "I2C" 50
+F1 "I2C.sch" 50
 $EndSheet
 $EndSCHEMATC
