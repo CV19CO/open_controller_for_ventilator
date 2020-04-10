@@ -9,5 +9,5 @@
   (lib (name ZLDO1117G33TA)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ZLDO1117G33TA.lib)(options "")(descr ""))
   (lib (name pcf8523tk)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/pcf8523tk.lib)(options "")(descr ""))
   (lib (name AQH3213AX)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/AQH3213AX.lib)(options "")(descr ""))
-  (lib (name PCAL6416AHF)(type Legacy)(uri /home/afc/freedom/open_controller_for_ventilator/kicad-modules/libs/PCAL6416AHF.lib)(options "")(descr ""))
+  (lib (name PCAL6416AHF)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/PCAL6416AHF.lib)(options "")(descr ""))
 )

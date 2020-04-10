@@ -1247,12 +1247,12 @@
     (pad 38 thru_hole circle (at 21.59 -1.27) (size 1.4 1.4) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 39 thru_hole circle (at 24.13 1.27) (size 1.4 1.4) (drill 1) (layers *.Cu *.Mask F.SilkS))
     (pad 40 thru_hole circle (at 24.13 -1.27) (size 1.4 1.4) (drill 1) (layers *.Cu *.Mask F.SilkS))
-    (model /home/afc/freedom/open_controller_for_ventilator/kicad-modules/shapes3d/RPI_40pin.wrl
+    (model ${KIPRJMOD}/../kicad-modules/shapes3d/RPI_40pin.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/afc/freedom/open_controller_for_ventilator/kicad-modules/shapes3d/raspberryPi3BSimplified_STEP.STEP
+    (model ${KIPRJMOD}/../kicad-modules/shapes3d/raspberryPi3BSimplified_STEP.STEP
       (offset (xyz 10 -24.5 -22))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
