@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:keep_breathing_ctrl-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -78,17 +78,15 @@ Text GLabel 3300 2500 0    50   Input ~ 0
 $Comp
 L Device:R R2
 U 1 1 5E8F5CB8
-P 2850 2600
-F 0 "R2" V 2750 2600 50  0000 C CNN
-F 1 "10k" V 2850 2600 50  0000 C CNN
-F 2 "" V 2780 2600 50  0001 C CNN
-F 3 "~" H 2850 2600 50  0001 C CNN
-	1    2850 2600
+P 2550 2600
+F 0 "R2" V 2450 2600 50  0000 C CNN
+F 1 "10k" V 2550 2600 50  0000 C CNN
+F 2 "" V 2480 2600 50  0001 C CNN
+F 3 "~" H 2550 2600 50  0001 C CNN
+	1    2550 2600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3000 2600 3300 2600
-Text GLabel 2700 2600 0    50   Input ~ 0
+Text GLabel 2400 2600 0    50   Input ~ 0
 3v3_ESP
 Text HLabel 5150 2550 2    50   Output ~ 0
 TXD0
@@ -161,4 +159,8 @@ Text Label 4700 4400 1    50   ~ 0
 GPIO2
 Wire Wire Line
 	4700 4400 4700 4150
+Wire Wire Line
+	2700 2600 3300 2600
+Text Label 2700 2600 0    50   ~ 0
+Enable
 $EndSCHEMATC
