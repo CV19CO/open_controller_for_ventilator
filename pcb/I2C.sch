@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:keep_breathing_ctrl-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -131,10 +131,10 @@ Connection ~ 4550 2475
 Wire Wire Line
 	4550 2475 4550 2550
 $Comp
-L ventilator-PowerSymbols:VCC_SYS #PWR?
+L ventilator-PowerSymbols:VCC_SYS #PWR0159
 U 1 1 5B776E96
 P 4550 2100
-F 0 "#PWR?" H 4550 2060 30  0001 C CNN
+F 0 "#PWR0159" H 4550 2060 30  0001 C CNN
 F 1 "VCC_SYS" H 4559 2238 30  0000 C CNN
 F 2 "" H 4550 2100 60  0000 C CNN
 F 3 "" H 4550 2100 60  0000 C CNN
