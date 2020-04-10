@@ -42,6 +42,8 @@ S 8250 5000 1250 850
 U 5E99077D
 F0 "ElectroValves" 50
 F1 "ElectroValves.sch" 50
+F2 "SCL" I L 8250 5250 50 
+F3 "SDA" B L 8250 5350 50 
 $EndSheet
 $Comp
 L Mechanical:MountingHole H1
