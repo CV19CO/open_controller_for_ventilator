@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name SMD)(type KiCad)(uri ${KIPRJMOD}/../kicad-modules/modules/SMD.pretty/)(options "")(descr ""))
+  (lib (name TH)(type KiCad)(uri ${KIPRJMOD}/../kicad-modules/modules/TH.pretty/)(options "")(descr ""))
+)
