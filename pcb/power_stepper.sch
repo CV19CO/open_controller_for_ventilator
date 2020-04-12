@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:keep_breathing_ctrl-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -857,12 +857,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0126
 U 1 1 5BF8A45D
-P 5500 3400
-F 0 "#PWR0126" H 5500 3150 50  0001 C CNN
-F 1 "GND" H 5505 3227 50  0000 C CNN
-F 2 "" H 5500 3400 50  0001 C CNN
-F 3 "" H 5500 3400 50  0001 C CNN
-	1    5500 3400
+P 5100 3450
+F 0 "#PWR0126" H 5100 3200 50  0001 C CNN
+F 1 "GND" H 5105 3277 50  0000 C CNN
+F 2 "" H 5100 3450 50  0001 C CNN
+F 3 "" H 5100 3450 50  0001 C CNN
+	1    5100 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
