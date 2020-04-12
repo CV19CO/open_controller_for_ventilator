@@ -225,8 +225,6 @@ Wire Wire Line
 	9200 1650 9200 1350
 Wire Wire Line
 	9200 1350 9050 1350
-Text GLabel 9850 1350 2    50   Input ~ 0
-3V3_ESP
 Wire Wire Line
 	9850 1350 9750 1350
 Connection ~ 9200 1350
@@ -321,4 +319,15 @@ Wire Notes Line
 	7150 2550 7150 900 
 Text Notes 9300 1050 0    50   ~ 0
 ESP32 regulator\n
+$Comp
+L ventilator-PowerSymbols:3V3_ESP #PWR0165
+U 1 1 5E9883BE
+P 9850 1350
+F 0 "#PWR0165" H 9850 1310 30  0001 C CNN
+F 1 "3V3_ESP" H 9859 1488 30  0000 C CNN
+F 2 "" H 9850 1350 60  0000 C CNN
+F 3 "" H 9850 1350 60  0000 C CNN
+	1    9850 1350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
