@@ -566,12 +566,6 @@ Wire Wire Line
 	1500 1400 1500 1850
 Connection ~ 1500 3250
 NoConn ~ 2300 6950
-Text GLabel 3700 6200 2    50   Input ~ 0
-SM_SO
-Text GLabel 3700 6300 2    50   Input ~ 0
-SM_SI
-Text GLabel 3700 6500 2    50   Input ~ 0
-SM_CS
 Wire Wire Line
 	3750 7000 3750 6950
 Wire Wire Line
@@ -617,8 +611,6 @@ Text GLabel 3700 5950 2    50   Input ~ 0
 SM_SW
 Text GLabel 3700 6050 2    50   Input ~ 0
 SM_STCLK
-Text GLabel 4500 5500 2    50   Input ~ 0
-SM_RST
 $Comp
 L Device:C C14
 U 1 1 5B8E4778
@@ -994,8 +986,6 @@ $EndComp
 Connection ~ 3900 4150
 Wire Wire Line
 	3900 4150 4200 4150
-Text GLabel 3700 6400 2    50   Input ~ 0
-SM_CLK
 Wire Wire Line
 	4200 4250 4200 4150
 Wire Wire Line
@@ -1215,8 +1205,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 5550 4450 5500
 Connection ~ 4450 5500
-Wire Wire Line
-	4450 5500 4500 5500
 Wire Wire Line
 	4450 5900 4450 5850
 Wire Wire Line
@@ -1465,4 +1453,86 @@ F 3 "" H 4450 5800 60  0001 C CNN
 	1    4450 5900
 	1    0    0    -1  
 $EndComp
+$Comp
+L ISO7762:ISO7762 U?
+U 1 1 5EAB5353
+P 9550 5450
+F 0 "U?" H 9550 6315 50  0000 C CNN
+F 1 "ISO7762" H 9550 6224 50  0000 C CNN
+F 2 "" H 9050 6200 50  0001 C CNN
+F 3 "" H 9050 6200 50  0001 C CNN
+	1    9550 5450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EB88476
+P 10250 6200
+F 0 "#PWR?" H 10250 5950 50  0001 C CNN
+F 1 "GND" H 10255 6027 50  0000 C CNN
+F 2 "" H 10250 6200 50  0001 C CNN
+F 3 "" H 10250 6200 50  0001 C CNN
+	1    10250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ventilator-PowerSymbols:GND_MOTOR #GND?
+U 1 1 5EB8913C
+P 8850 6150
+F 0 "#GND?" H 8900 6100 45  0001 L BNN
+F 1 "GND_MOTOR" H 8850 5920 45  0000 C CNN
+F 2 "XXX-00000" H 8850 5825 60  0001 C CNN
+F 3 "" H 8850 6050 60  0001 C CNN
+	1    8850 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 6200 10250 6100
+Wire Wire Line
+	10250 6100 10150 6100
+Wire Wire Line
+	8950 6100 8850 6100
+Wire Wire Line
+	8850 6100 8850 6150
+Wire Wire Line
+	8950 5200 8550 5200
+Text Label 8550 5200 0    50   ~ 0
+SM_RST
+Wire Wire Line
+	8950 5350 8550 5350
+Text Label 8550 5350 0    50   ~ 0
+SM_CLK
+Wire Wire Line
+	8950 5500 8550 5500
+Text Label 8550 5500 0    50   ~ 0
+SM_SI
+Wire Wire Line
+	8950 5050 8550 5050
+Text Label 8550 5050 0    50   ~ 0
+SM_CS
+Wire Wire Line
+	8950 5700 8550 5700
+Text Label 8550 5700 0    50   ~ 0
+SM_SO
+NoConn ~ 8950 5850
+Text Label 4850 5500 2    50   ~ 0
+SM_RST
+Wire Wire Line
+	3700 6400 4100 6400
+Wire Wire Line
+	3700 6300 4100 6300
+Text Label 4100 6300 2    50   ~ 0
+SM_SI
+Wire Wire Line
+	3700 6500 4100 6500
+Text Label 4100 6500 2    50   ~ 0
+SM_CS
+Wire Wire Line
+	3700 6200 4100 6200
+Text Label 4100 6200 2    50   ~ 0
+SM_SO
+Text Label 4100 6400 2    50   ~ 0
+SM_CLK
+Wire Wire Line
+	4450 5500 4850 5500
 $EndSCHEMATC
