@@ -11,4 +11,5 @@
   (lib (name AQH3213AX)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/AQH3213AX.lib)(options "")(descr ""))
   (lib (name PCAL6416AHF)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/PCAL6416AHF.lib)(options "")(descr ""))
   (lib (name ISO7762)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ISO7762.lib)(options "")(descr ""))
+  (lib (name UCC12040)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/UCC12040.lib)(options "")(descr ""))
 )
