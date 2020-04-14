@@ -12,4 +12,5 @@
   (lib (name PCAL6416AHF)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/PCAL6416AHF.lib)(options "")(descr ""))
   (lib (name ISO7762)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ISO7762.lib)(options "")(descr ""))
   (lib (name UCC12040)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/UCC12040.lib)(options "")(descr ""))
+  (lib (name keep_breathing_ctrl-rescue)(type Legacy)(uri ${KIPRJMOD}/keep_breathing_ctrl-rescue.lib)(options "")(descr ""))
 )
