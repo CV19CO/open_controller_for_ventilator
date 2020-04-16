@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -156,6 +157,6 @@ $Sheet
 S 7800 5050 1250 1100
 U 5E989259
 F0 "STM32F4" 50
-F1 "SAM3N.sch" 50
+F1 "STM32.sch" 50
 $EndSheet
 $EndSCHEMATC
