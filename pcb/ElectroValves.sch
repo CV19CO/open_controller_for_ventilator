@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -737,4 +737,58 @@ F 3 "" H 7650 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7950 2800 7650 2800
+Wire Wire Line
+	1600 1900 1900 1900
+Text Label 1900 1900 2    50   ~ 0
+R0
+Wire Wire Line
+	1600 2000 1900 2000
+Text Label 1900 2000 2    50   ~ 0
+R1
+Wire Wire Line
+	1600 2100 1900 2100
+Text Label 1900 2100 2    50   ~ 0
+R2
+Wire Wire Line
+	1600 2200 1900 2200
+Text Label 1900 2200 2    50   ~ 0
+R3
+Wire Wire Line
+	1600 2300 1900 2300
+Text Label 1900 2300 2    50   ~ 0
+R4
+Wire Wire Line
+	1600 2400 1900 2400
+Text Label 1900 2400 2    50   ~ 0
+R5
+Wire Wire Line
+	1600 2500 1900 2500
+Text Label 1900 2500 2    50   ~ 0
+R6
+Wire Wire Line
+	1600 2600 1900 2600
+Text Label 1900 2600 2    50   ~ 0
+R7
+Entry Wire Line
+	1500 1900 1600 2000
+Entry Wire Line
+	1500 1800 1600 1900
+Entry Wire Line
+	1500 2100 1600 2200
+Entry Wire Line
+	1500 2000 1600 2100
+Entry Wire Line
+	1500 2300 1600 2400
+Entry Wire Line
+	1500 2200 1600 2300
+Entry Wire Line
+	1500 2500 1600 2600
+Entry Wire Line
+	1500 2400 1600 2500
+Wire Bus Line
+	1400 1750 1500 1750
+Wire Bus Line
+	1500 1750 1500 2500
+Text HLabel 1400 1750 0    50   Input ~ 0
+R[0..7]
 $EndSCHEMATC

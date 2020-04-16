@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 12000 10000
 encoding utf-8
-Sheet 8 8
+Sheet 7 7
 Title ""
 Date "9 may 2013"
 Rev ""
@@ -214,14 +214,6 @@ F 3 "" H 1100 8650 60  0001 C CNN
 	1    1100 8650
 	1    0    0    -1  
 $EndComp
-Text Label 5650 2650 0    60   ~ 0
-DIR_M0
-Text Label 5650 2450 0    60   ~ 0
-DIR_M1
-Text Label 5650 2550 0    60   ~ 0
-SP_M0
-Text Label 5650 2250 0    60   ~ 0
-SP_M1
 $Comp
 L media_board:C-RESCUE-stamp_mini_4_layers CHB1
 U 1 1 53459780
@@ -283,9 +275,9 @@ F 3 "" H 4050 6800 60  0001 C CNN
 	1    4050 6800
 	1    0    0    -1  
 $EndComp
-Text HLabel 2250 4100 0    60   BiDi ~ 0
+Text HLabel 2250 4100 0    50   Output ~ 0
 STM_UART_TX
-Text HLabel 2250 4200 0    60   BiDi ~ 0
+Text HLabel 2250 4200 0    50   Input ~ 0
 STM_UART_RX
 $Comp
 L media_board:ABM8G XST1
@@ -320,15 +312,15 @@ F 3 "" H 4750 6650 60  0001 C CNN
 	1    4750 6650
 	0    1    1    0   
 $EndComp
-Text HLabel 2250 3900 0    60   BiDi ~ 0
+Text HLabel 2250 3900 0    50   BiDi ~ 0
 JNRST
-Text HLabel 2250 3100 0    60   BiDi ~ 0
+Text HLabel 2250 3100 0    50   BiDi ~ 0
 JTMS
-Text HLabel 2250 3200 0    60   BiDi ~ 0
+Text HLabel 2250 3200 0    50   BiDi ~ 0
 JTCK
-Text HLabel 2250 3800 0    60   BiDi ~ 0
+Text HLabel 2250 3800 0    50   BiDi ~ 0
 JTDO
-Text HLabel 2250 3300 0    60   BiDi ~ 0
+Text HLabel 2250 3300 0    50   BiDi ~ 0
 JTDI
 $Comp
 L media_board:3V3 #PWR0148
@@ -524,18 +516,18 @@ F 3 "" H 1200 6600 60  0001 C CNN
 	1    1200 6600
 	-1   0    0    1   
 $EndComp
-Text Label 1600 6250 2    60   ~ 0
+Text Label 1500 6250 2    60   ~ 0
 BOOT1
 $Comp
 L media_board:R-RESCUE-stamp_mini_4_layers RST2
 U 1 1 54557AC8
-P 1600 6600
-F 0 "RST2" V 1680 6600 50  0000 C CNN
-F 1 "10k" V 1600 6600 50  0000 C CNN
-F 2 "opendous:SM0603_Opendous" H 1600 6600 60  0001 C CNN
-F 3 "" H 1600 6600 60  0001 C CNN
-	1    1600 6600
-	-1   0    0    1   
+P 1500 5900
+F 0 "RST2" V 1580 5900 50  0000 C CNN
+F 1 "10k" V 1500 5900 50  0000 C CNN
+F 2 "opendous:SM0603_Opendous" H 1500 5900 60  0001 C CNN
+F 3 "" H 1500 5900 60  0001 C CNN
+	1    1500 5900
+	-1   0    0    -1  
 $EndComp
 Text Label 1200 6250 2    60   ~ 0
 BOOT0
@@ -689,44 +681,20 @@ $EndComp
 $Comp
 L media_board:3V3 #PWR0166
 U 1 1 5456BBE6
-P 1600 6950
-F 0 "#PWR0166" H 1600 7050 30  0001 C CNN
-F 1 "3V3" H 1600 7060 30  0000 C CNN
-F 2 "" H 1600 6950 60  0001 C CNN
-F 3 "" H 1600 6950 60  0001 C CNN
-	1    1600 6950
-	-1   0    0    1   
+P 1500 5550
+F 0 "#PWR0166" H 1500 5650 30  0001 C CNN
+F 1 "3V3" H 1500 5660 30  0000 C CNN
+F 2 "" H 1500 5550 60  0001 C CNN
+F 3 "" H 1500 5550 60  0001 C CNN
+	1    1500 5550
+	-1   0    0    -1  
 $EndComp
-Text Label 5700 3450 0    60   ~ 0
-IO2
-Text Label 5700 3350 0    60   ~ 0
-IO3
-Text Label 5700 3250 0    60   ~ 0
-IO4
-Text Label 5700 3150 0    60   ~ 0
-IO5
-Text Label 5700 3050 0    60   ~ 0
-IO6
 Text Label 2200 6000 0    60   ~ 0
 SDIO_D0
-Text Label 5650 5900 0    60   ~ 0
-SDIO_CK
 Text Label 5650 5200 0    60   ~ 0
 SDIO_CMD
-Text Label 5650 6000 0    60   ~ 0
-SDIO_D3
-Text Label 5650 6100 0    60   ~ 0
-SDIO_D2
 Text Label 2200 6100 0    60   ~ 0
 SDIO_D1
-Text Label 5700 3650 0    60   ~ 0
-IO0
-Text Label 5700 3550 0    60   ~ 0
-IO1
-Text Label 2300 4400 0    60   ~ 0
-IO7
-Text Label 2300 4300 0    60   ~ 0
-IO8
 Text Label 2300 4000 0    60   ~ 0
 IO9
 Text Label 5700 4700 0    60   ~ 0
@@ -899,45 +867,6 @@ F 3 "" H 850 3150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L media_board:CONN_02X02 I2C1
-U 1 1 55F4FEAB
-P 4550 8000
-F 0 "I2C1" H 4550 8150 50  0000 C CNN
-F 1 "I2C_1" H 4550 7850 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x02" H 4550 7700 60  0001 C CNN
-F 3 "" H 4550 6800 60  0000 C CNN
-	1    4550 8000
-	1    0    0    -1  
-$EndComp
-Text Label 3800 7950 0    60   ~ 0
-I2C1_SCL
-Text Label 4200 8050 2    60   ~ 0
-I2C1_SDA
-$Comp
-L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0169
-U 1 1 55F50284
-P 4950 8150
-F 0 "#PWR0169" H 4950 8150 30  0001 C CNN
-F 1 "GND" H 4950 8080 30  0001 C CNN
-F 2 "" H 4950 8150 60  0001 C CNN
-F 3 "" H 4950 8150 60  0001 C CNN
-	1    4950 8150
-	1    0    0    -1  
-$EndComp
-$Comp
-L media_board:+3.3VP #PWR0170
-U 1 1 55F502C7
-P 4950 7800
-F 0 "#PWR0170" H 5000 7830 20  0001 C CNN
-F 1 "+3.3VP" H 4950 7890 30  0000 C CNN
-F 2 "" H 4950 7800 60  0001 C CNN
-F 3 "" H 4950 7800 60  0001 C CNN
-	1    4950 7800
-	1    0    0    -1  
-$EndComp
-Text HLabel 2200 5400 0    60   Input ~ 0
-RST_ESP
-$Comp
 L media_board:JUMPER PGM1
 U 1 1 5679E80A
 P 800 5950
@@ -969,61 +898,8 @@ Text Label 2200 3500 0    60   ~ 0
 CM1A
 Text Notes 9350 7475 0    60   ~ 0
 C13
-Text Notes 3200 8050 0    60   ~ 0
-PB8 - SCL\nPB9 - SDA
-Text Label 5650 2950 0    60   ~ 0
-CM2D
-Text Label 5650 2850 0    60   ~ 0
-CM2B
-Text Label 5650 2750 0    60   ~ 0
-CM2A
-Text Label 5650 2150 0    60   ~ 0
-CM2C
-$Comp
-L media_board:CONN_01X04 US1
-U 1 1 56C5E937
-P 6900 6850
-F 0 "US1" H 6900 7100 50  0000 C CNN
-F 1 "CONN_01X04" V 7000 6850 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 6900 6850 60  0001 C CNN
-F 3 "" H 6900 6850 60  0000 C CNN
-	1    6900 6850
-	1    0    0    -1  
-$EndComp
-Text Label 6550 6700 0    60   ~ 0
-VM
-$Comp
-L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0172
-U 1 1 56C5F511
-P 6550 7100
-F 0 "#PWR0172" H 6550 7100 30  0001 C CNN
-F 1 "GND" H 6550 7030 30  0001 C CNN
-F 2 "" H 6550 7100 60  0001 C CNN
-F 3 "" H 6550 7100 60  0001 C CNN
-	1    6550 7100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RUS1
-U 1 1 56C62164
-P 6300 6900
-F 0 "RUS1" V 6380 6900 50  0000 C CNN
-F 1 "1k" V 6300 6900 50  0000 C CNN
-F 2 "opendous:SM0603_Opendous" H 6300 6900 60  0001 C CNN
-F 3 "" H 6300 6900 60  0001 C CNN
-	1    6300 6900
-	0    -1   -1   0   
-$EndComp
-Text Label 6450 6800 0    60   ~ 0
-TRIGG
 Text Label 2200 4700 0    60   ~ 0
 TRIGG_3V3
-Text Label 5650 2350 0    60   ~ 0
-ECHO
-Text Label 5700 6900 0    60   ~ 0
-ECHO
-Text Notes 5300 7050 0    60   ~ 0
-PE13 TIM1-CH3
 Connection ~ 2650 9250
 Wire Wire Line
 	2650 9250 2650 9350
@@ -1068,14 +944,6 @@ Wire Wire Line
 	800  9200 800  9300
 Wire Wire Line
 	800  8800 800  8650
-Wire Wire Line
-	5600 2650 6000 2650
-Wire Wire Line
-	5600 2550 6000 2550
-Wire Wire Line
-	5600 2450 6000 2450
-Wire Wire Line
-	5600 2250 6000 2250
 Wire Wire Line
 	5600 5600 6150 5600
 Wire Wire Line
@@ -1190,9 +1058,9 @@ Wire Wire Line
 Wire Wire Line
 	4650 8600 4650 8700
 Wire Wire Line
-	1600 6350 1600 6250
+	1500 6150 1500 6250
 Wire Wire Line
-	1600 6250 1300 6250
+	1500 6250 1200 6250
 Wire Wire Line
 	1200 6950 1200 6850
 Wire Wire Line
@@ -1253,35 +1121,15 @@ Connection ~ 6900 3550
 Wire Wire Line
 	7200 2300 7200 2400
 Wire Wire Line
-	1600 6850 1600 6950
-Wire Wire Line
-	6000 3450 5600 3450
-Wire Wire Line
-	6000 3250 5600 3250
-Wire Wire Line
-	6000 3350 5600 3350
-Wire Wire Line
-	6000 3150 5600 3150
+	1500 5650 1500 5550
 Wire Wire Line
 	6000 5200 5600 5200
 Wire Wire Line
-	6000 6000 5600 6000
-Wire Wire Line
-	6000 6100 5600 6100
-Wire Wire Line
 	6000 5800 5600 5800
-Wire Wire Line
-	6000 5900 5600 5900
-Wire Wire Line
-	6000 3050 5600 3050
 Wire Wire Line
 	2600 6000 2200 6000
 Wire Wire Line
 	2600 6100 2200 6100
-Wire Wire Line
-	6000 3650 5600 3650
-Wire Wire Line
-	6000 3550 5600 3550
 Wire Wire Line
 	2600 4300 2200 4300
 Wire Wire Line
@@ -1361,18 +1209,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 7900 7550 7900
 Wire Wire Line
-	3800 7950 4300 7950
-Wire Wire Line
-	4300 8050 3800 8050
-Wire Wire Line
-	4800 8050 4950 8050
-Wire Wire Line
-	4950 8050 4950 8150
-Wire Wire Line
-	4950 7800 4950 7950
-Wire Wire Line
-	4950 7950 4800 7950
-Wire Wire Line
 	2200 5400 2600 5400
 Wire Wire Line
 	800  5600 800  5650
@@ -1385,27 +1221,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 3600 2600 3600
 Wire Wire Line
-	5600 2750 6000 2750
-Wire Wire Line
-	6000 2850 5600 2850
-Wire Wire Line
-	6000 2950 5600 2950
-Wire Wire Line
-	6000 2150 5600 2150
-Wire Wire Line
-	6550 6700 6700 6700
-Wire Wire Line
-	6550 7000 6700 7000
-Wire Wire Line
-	6550 7000 6550 7100
-Wire Wire Line
-	6450 6800 6700 6800
-Wire Wire Line
 	2200 4700 2600 4700
-Wire Wire Line
-	5600 2350 6000 2350
-Wire Wire Line
-	5600 6900 6050 6900
 $Comp
 L media_board:3V3 #PWR0173
 U 1 1 57B3EBAC
@@ -1417,8 +1233,6 @@ F 3 "" H 5900 1400 60  0001 C CNN
 	1    5900 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6550 6900 6700 6900
 Wire Wire Line
 	4050 6700 4050 6800
 Wire Wire Line
@@ -1479,4 +1293,77 @@ Wire Wire Line
 	850  3050 1900 3050
 Wire Wire Line
 	7400 1350 7400 1950
+Text HLabel 2200 4300 0    50   Input ~ 0
+STM_I2C1_SCL
+Text HLabel 2200 4400 0    50   BiDi ~ 0
+STM_I2C1_SDA
+Connection ~ 1200 6250
+Text HLabel 2200 5400 0    50   Input ~ 0
+RST_ESP
+Text HLabel 5700 5900 2    50   Output ~ 0
+SPI3_MOSI
+Text HLabel 5700 6000 2    50   Input ~ 0
+SPI3_MISO
+Text HLabel 5700 6100 2    50   Output ~ 0
+SPI_SCK
+Wire Wire Line
+	5600 5900 5700 5900
+Wire Wire Line
+	5700 6000 5600 6000
+Wire Wire Line
+	5700 6100 5600 6100
+Wire Wire Line
+	5600 3650 5850 3650
+Entry Wire Line
+	5850 3650 5950 3550
+Wire Wire Line
+	5600 3550 5850 3550
+Entry Wire Line
+	5850 3550 5950 3450
+Text Label 5850 3650 2    50   ~ 0
+PE0
+Text Label 5850 3550 2    50   ~ 0
+PE1
+Wire Wire Line
+	5600 3450 5850 3450
+Entry Wire Line
+	5850 3450 5950 3350
+Wire Wire Line
+	5600 3350 5850 3350
+Entry Wire Line
+	5850 3350 5950 3250
+Text Label 5850 3450 2    50   ~ 0
+PE2
+Text Label 5850 3350 2    50   ~ 0
+PE3
+Wire Wire Line
+	5600 3250 5850 3250
+Entry Wire Line
+	5850 3250 5950 3150
+Wire Wire Line
+	5600 3150 5850 3150
+Entry Wire Line
+	5850 3150 5950 3050
+Text Label 5850 3250 2    50   ~ 0
+PE4
+Text Label 5850 3150 2    50   ~ 0
+PE5
+Wire Wire Line
+	5600 3050 5850 3050
+Entry Wire Line
+	5850 3050 5950 2950
+Wire Wire Line
+	5600 2950 5850 2950
+Entry Wire Line
+	5850 2950 5950 2850
+Text Label 5850 3050 2    50   ~ 0
+PE6
+Text Label 5850 2950 2    50   ~ 0
+PE7
+Wire Bus Line
+	5950 2850 6050 2850
+Text HLabel 6050 2850 2    50   BiDi ~ 0
+PE[0..7]
+Wire Bus Line
+	5950 2850 5950 3550
 $EndSCHEMATC
