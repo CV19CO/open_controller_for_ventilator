@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -154,9 +153,9 @@ Wire Wire Line
 Wire Wire Line
 	4200 2450 4500 2450
 $Sheet
-S 6300 4850 900  1300
-U 5E980258
-F0 "STM32" 50
-F1 "STM32.sch" 50
+S 7800 5050 1250 1100
+U 5E989259
+F0 "STM32F4" 50
+F1 "SAM3N.sch" 50
 $EndSheet
 $EndSCHEMATC

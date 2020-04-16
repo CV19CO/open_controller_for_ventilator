@@ -1,61 +1,9 @@
-EESchema Schematic File Version 2
-LIBS:chip_media-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:chip_pro
-LIBS:stm32f100vxx
-LIBS:ABM8G
-LIBS:drv8835
-LIBS:lt1117cst
-LIBS:stm32f0
-LIBS:Carlolib-dev
-LIBS:opendous
-LIBS:mem_mic
-LIBS:usba-plug
-LIBS:imx233stamp-cache
-LIBS:srf2012
-LIBS:rclamp0502b
-LIBS:usbconn
-LIBS:usb_a
-LIBS:onion2_new
-LIBS:onion2
-LIBS:JQC_3FF
-LIBS:tcs3404
-LIBS:sp481
-LIBS:vof_6b_s5
-LIBS:chip_media-cache
-EELAYER 26 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr User 12992 11811
 encoding utf-8
-Sheet 2 5
+Sheet 8 9
 Title ""
 Date "9 may 2013"
 Rev ""
@@ -70,7 +18,7 @@ SAM_RX
 Text HLabel 7225 4525 2    60   Output ~ 0
 SAM_TX
 $Comp
-L C C410
+L chip_media-rescue:C C410
 U 1 1 516D62F9
 P 5075 8775
 F 0 "C410" H 5125 8875 50  0000 L CNN
@@ -81,7 +29,7 @@ F 3 "" H 5075 8775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C411
+L chip_media-rescue:C C411
 U 1 1 516D62F8
 P 5425 8775
 F 0 "C411" H 5475 8875 50  0000 L CNN
@@ -92,7 +40,7 @@ F 3 "" H 5425 8775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L chip_media-rescue:GND #PWR015
 U 1 1 516D62F6
 P 5275 9075
 F 0 "#PWR015" H 5275 9075 30  0001 C CNN
@@ -103,9 +51,12 @@ F 3 "" H 5275 9075 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VP #PWR016
+L chip_media-rescue:+3.3VP #PWR016
 U 1 1 516D62A0
 P 10525 1600
+AR Path="/516D62A0" Ref="#PWR016"  Part="1" 
+AR Path="/5844D827/516D62A0" Ref="#PWR016"  Part="1" 
+AR Path="/5E980258/516D62A0" Ref="#PWR016"  Part="1" 
 F 0 "#PWR016" H 10575 1630 20  0001 C CNN
 F 1 "+3.3VP" H 10525 1690 30  0000 C CNN
 F 2 "" H 10525 1600 60  0001 C CNN
@@ -114,9 +65,12 @@ F 3 "" H 10525 1600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VP #PWR017
+L chip_media-rescue:+3.3VP #PWR017
 U 1 1 516D629C
 P 11125 1700
+AR Path="/516D629C" Ref="#PWR017"  Part="1" 
+AR Path="/5844D827/516D629C" Ref="#PWR017"  Part="1" 
+AR Path="/5E980258/516D629C" Ref="#PWR017"  Part="1" 
 F 0 "#PWR017" H 11175 1730 20  0001 C CNN
 F 1 "+3.3VP" H 11125 1790 30  0000 C CNN
 F 2 "" H 11125 1700 60  0001 C CNN
@@ -125,9 +79,12 @@ F 3 "" H 11125 1700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VP #PWR018
+L chip_media-rescue:+3.3VP #PWR018
 U 1 1 516D625C
 P 3175 8425
+AR Path="/516D625C" Ref="#PWR018"  Part="1" 
+AR Path="/5844D827/516D625C" Ref="#PWR018"  Part="1" 
+AR Path="/5E980258/516D625C" Ref="#PWR018"  Part="1" 
 F 0 "#PWR018" H 3225 8455 20  0001 C CNN
 F 1 "+3.3VP" H 3175 8515 30  0000 C CNN
 F 2 "" H 3175 8425 60  0001 C CNN
@@ -136,7 +93,7 @@ F 3 "" H 3175 8425 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C401
+L chip_media-rescue:C C401
 U 1 1 516D60B5
 P 2275 8775
 F 0 "C401" H 2325 8875 50  0000 L CNN
@@ -147,7 +104,7 @@ F 3 "" H 2275 8775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L chip_media-rescue:GND #PWR019
 U 1 1 516D6095
 P 3175 9075
 F 0 "#PWR019" H 3175 9075 30  0001 C CNN
@@ -158,7 +115,7 @@ F 3 "" H 3175 9075 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C407
+L chip_media-rescue:C C407
 U 1 1 516D6094
 P 3675 8775
 F 0 "C407" H 3725 8875 50  0000 L CNN
@@ -169,7 +126,7 @@ F 3 "" H 3675 8775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C406
+L chip_media-rescue:C C406
 U 1 1 516D6093
 P 3325 8775
 F 0 "C406" H 3375 8875 50  0000 L CNN
@@ -180,7 +137,7 @@ F 3 "" H 3325 8775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C405
+L chip_media-rescue:C C405
 U 1 1 516D6092
 P 2975 8775
 F 0 "C405" H 3025 8875 50  0000 L CNN
@@ -191,7 +148,7 @@ F 3 "" H 2975 8775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C404
+L chip_media-rescue:C C404
 U 1 1 516D6091
 P 2625 8775
 F 0 "C404" H 2675 8875 50  0000 L CNN
@@ -202,7 +159,7 @@ F 3 "" H 2625 8775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L chip_media-rescue:GND #PWR020
 U 1 1 516D5EBB
 P 875 3275
 F 0 "#PWR020" H 875 3275 30  0001 C CNN
@@ -213,7 +170,7 @@ F 3 "" H 875 3275 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR021
+L chip_media-rescue:GND #PWR021
 U 1 1 4E7B4E84
 P 10525 2350
 F 0 "#PWR021" H 10525 2350 30  0001 C CNN
@@ -224,7 +181,7 @@ F 3 "" H 10525 2350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C76
+L chip_media-rescue:C C76
 U 1 1 4E7B4A85
 P 10525 2050
 F 0 "C76" H 10575 2150 50  0000 L CNN
@@ -235,7 +192,7 @@ F 3 "" H 10525 2050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C74
+L chip_media-rescue:C C74
 U 1 1 4E7B4A81
 P 8875 2050
 F 0 "C74" H 8925 2150 50  0000 L CNN
@@ -246,7 +203,7 @@ F 3 "" H 8875 2050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR022
+L chip_media-rescue:GND #PWR022
 U 1 1 4E7B44BE
 P 9925 2350
 F 0 "#PWR022" H 9925 2350 30  0001 C CNN
@@ -257,7 +214,7 @@ F 3 "" H 9925 2350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR023
+L chip_media-rescue:GND #PWR023
 U 1 1 4E7B44A2
 P 9075 1950
 F 0 "#PWR023" H 9075 1950 30  0001 C CNN
@@ -268,7 +225,7 @@ F 3 "" H 9075 1950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LT1117CST U11
+L chip_media-rescue:LT1117CST U11
 U 1 1 4E7B41E9
 P 9525 1950
 F 0 "U11" H 9375 2250 60  0000 C CNN
@@ -279,7 +236,7 @@ F 3 "" H 9525 1950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C75
+L chip_media-rescue:C C75
 U 1 1 4E7B41E8
 P 9925 2050
 F 0 "C75" H 9975 2150 50  0000 L CNN
@@ -290,7 +247,7 @@ F 3 "" H 9925 2050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R33
+L chip_media-rescue:R R33
 U 1 1 4E188E50
 P 2050 3725
 F 0 "R33" V 2130 3725 50  0000 C CNN
@@ -301,7 +258,7 @@ F 3 "" H 2050 3725 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D9
+L chip_media-rescue:LED D9
 U 1 1 4E188E4F
 P 2400 3725
 F 0 "D9" H 2250 3775 50  0000 C CNN
@@ -312,7 +269,7 @@ F 3 "" H 2400 3725 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR024
+L chip_media-rescue:GND #PWR024
 U 1 1 4E188E4E
 P 1825 3725
 F 0 "#PWR024" H 1825 3725 30  0001 C CNN
@@ -323,7 +280,7 @@ F 3 "" H 1825 3725 60  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L GND #PWR025
+L chip_media-rescue:GND #PWR025
 U 1 1 4E186DEB
 P 11625 2200
 F 0 "#PWR025" H 11625 2200 30  0001 C CNN
@@ -334,7 +291,7 @@ F 3 "" H 11625 2200 60  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L LED D8
+L chip_media-rescue:LED D8
 U 1 1 4DCDB178
 P 11225 1900
 F 0 "D8" H 11225 2000 50  0000 C CNN
@@ -345,7 +302,7 @@ F 3 "" H 11225 1900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L chip_media-rescue:R R5
 U 1 1 4DCDB177
 P 11225 2200
 F 0 "R5" V 11305 2200 50  0000 C CNN
@@ -356,7 +313,7 @@ F 3 "" H 11225 2200 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C CHB1
+L chip_media-rescue:C CHB1
 U 1 1 5344E995
 P 1625 8725
 F 0 "CHB1" H 1675 8825 50  0000 L CNN
@@ -367,7 +324,7 @@ F 3 "" H 1625 8725 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR026
+L chip_media-rescue:GND #PWR026
 U 1 1 5344E9A6
 P 1625 9025
 F 0 "#PWR026" H 1625 9025 30  0001 C CNN
@@ -378,9 +335,12 @@ F 3 "" H 1625 9025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VP #PWR027
+L chip_media-rescue:+3.3VP #PWR027
 U 1 1 5344E9B7
 P 1625 8375
+AR Path="/5344E9B7" Ref="#PWR027"  Part="1" 
+AR Path="/5844D827/5344E9B7" Ref="#PWR027"  Part="1" 
+AR Path="/5E980258/5344E9B7" Ref="#PWR027"  Part="1" 
 F 0 "#PWR027" H 1675 8405 20  0001 C CNN
 F 1 "+3.3VP" H 1625 8465 30  0000 C CNN
 F 2 "" H 1625 8375 60  0001 C CNN
@@ -389,7 +349,7 @@ F 3 "" H 1625 8375 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C403
+L chip_media-rescue:C C403
 U 1 1 541B3A98
 P 1325 3025
 F 0 "C403" H 1375 3125 50  0000 L CNN
@@ -400,7 +360,7 @@ F 3 "" H 1325 3025 60  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L C C402
+L chip_media-rescue:C C402
 U 1 1 541B3BCF
 P 1325 3625
 F 0 "C402" V 1275 3725 50  0000 L CNN
@@ -411,7 +371,7 @@ F 3 "" H 1325 3625 60  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L ABM8G X401
+L chip_media-rescue:ABM8G X401
 U 1 1 516D5EBA
 P 1575 3325
 F 0 "X401" H 1575 3475 60  0000 C CNN
@@ -422,7 +382,7 @@ F 3 "" H 1575 3325 60  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L C CS2
+L chip_media-rescue:C CS2
 U 1 1 541FDB17
 P 1975 8775
 F 0 "CS2" H 2025 8875 50  0000 L CNN
@@ -433,7 +393,7 @@ F 3 "" H 1975 8775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R RST2
+L chip_media-rescue:R RST2
 U 1 1 55340B77
 P 2425 7525
 F 0 "RST2" V 2505 7525 50  0000 C CNN
@@ -444,7 +404,7 @@ F 3 "" H 2425 7525 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R RST5
+L chip_media-rescue:R RST5
 U 1 1 55340B7E
 P 2275 7525
 F 0 "RST5" V 2355 7525 50  0000 C CNN
@@ -459,7 +419,7 @@ I2C1_SDA
 Text Label 1775 7925 0    60   ~ 0
 I2C1_SCL
 $Comp
-L GND #PWR028
+L chip_media-rescue:GND #PWR028
 U 1 1 55340BA0
 P 5600 6100
 F 0 "#PWR028" H 5600 6100 30  0001 C CNN
@@ -480,7 +440,7 @@ JTDO
 Text HLabel 7225 3725 2    60   BiDi ~ 0
 JTDI
 $Comp
-L GND #PWR029
+L chip_media-rescue:GND #PWR029
 U 1 1 55340BF8
 P 4675 6200
 F 0 "#PWR029" H 4675 6200 30  0001 C CNN
@@ -501,9 +461,12 @@ I2C1_SDA
 Text Label 7600 4725 2    47   ~ 0
 I2C1_SCL
 $Comp
-L +3.3VP #PWR030
+L chip_media-rescue:+3.3VP #PWR030
 U 1 1 55348E6E
 P 4775 1525
+AR Path="/55348E6E" Ref="#PWR030"  Part="1" 
+AR Path="/5844D827/55348E6E" Ref="#PWR030"  Part="1" 
+AR Path="/5E980258/55348E6E" Ref="#PWR030"  Part="1" 
 F 0 "#PWR030" H 4825 1555 20  0001 C CNN
 F 1 "+3.3VP" H 4775 1615 30  0000 C CNN
 F 2 "" H 4775 1525 60  0001 C CNN
@@ -514,9 +477,12 @@ $EndComp
 Text Label 4725 8575 0    60   ~ 0
 VDDAST
 $Comp
-L +3.3VP #PWR031
+L chip_media-rescue:+3.3VP #PWR031
 U 1 1 5534F04B
 P 4125 8425
+AR Path="/5534F04B" Ref="#PWR031"  Part="1" 
+AR Path="/5844D827/5534F04B" Ref="#PWR031"  Part="1" 
+AR Path="/5E980258/5534F04B" Ref="#PWR031"  Part="1" 
 F 0 "#PWR031" H 4175 8455 20  0001 C CNN
 F 1 "+3.3VP" H 4125 8515 30  0000 C CNN
 F 2 "" H 4125 8425 60  0001 C CNN
@@ -525,9 +491,12 @@ F 3 "" H 4125 8425 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VP #PWR032
+L chip_media-rescue:+3.3VP #PWR032
 U 1 1 55350905
 P 2425 7175
+AR Path="/55350905" Ref="#PWR032"  Part="1" 
+AR Path="/5844D827/55350905" Ref="#PWR032"  Part="1" 
+AR Path="/5E980258/55350905" Ref="#PWR032"  Part="1" 
 F 0 "#PWR032" H 2475 7205 20  0001 C CNN
 F 1 "+3.3VP" H 2425 7265 30  0000 C CNN
 F 2 "" H 2425 7175 60  0001 C CNN
@@ -536,7 +505,7 @@ F 3 "" H 2425 7175 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R RST3
+L chip_media-rescue:R RST3
 U 1 1 55363A5E
 P 6325 8725
 F 0 "RST3" V 6405 8725 50  0000 C CNN
@@ -549,7 +518,7 @@ $EndComp
 Text Label 6325 8500 2    60   ~ 0
 BOOT0
 $Comp
-L GND #PWR033
+L chip_media-rescue:GND #PWR033
 U 1 1 55363A74
 P 6325 8925
 F 0 "#PWR033" H 6325 8925 30  0001 C CNN
@@ -562,7 +531,7 @@ $EndComp
 Text HLabel 7225 4325 2    60   BiDi ~ 0
 JTRST
 $Comp
-L GND #PWR034
+L chip_media-rescue:GND #PWR034
 U 1 1 55370C19
 P 8875 2350
 F 0 "#PWR034" H 8875 2350 30  0001 C CNN
@@ -573,7 +542,7 @@ F 3 "" H 8875 2350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L L L2
+L chip_media-rescue:L L2
 U 1 1 5846A387
 P 5375 6100
 F 0 "L2" V 5565 6100 50  0000 C CNN
@@ -584,7 +553,7 @@ F 3 "" H 5375 6100 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L L L1
+L chip_media-rescue:L L1
 U 1 1 5846AC8F
 P 4500 8575
 F 0 "L1" V 4690 8575 50  0000 C CNN
@@ -595,7 +564,7 @@ F 3 "" H 4500 8575 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +5V #PWR035
+L chip_media-rescue:+5V #PWR035
 U 1 1 5846FFCE
 P 8875 1700
 F 0 "#PWR035" H 8875 1550 50  0001 C CNN
@@ -608,7 +577,7 @@ $EndComp
 Text HLabel 6050 8500 0    60   BiDi ~ 0
 BOOT0
 $Comp
-L STM32F100RBTx U401
+L chip_media-rescue:STM32F100RBTx U401
 U 1 1 584946CF
 P 4875 3825
 F 0 "U401" H 3600 5425 50  0000 C CNN
@@ -619,7 +588,7 @@ F 3 "" H 4875 3825 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R RST4
+L chip_media-rescue:R RST4
 U 1 1 584AACB4
 P 6825 8725
 F 0 "RST4" V 6905 8725 50  0000 C CNN
@@ -632,9 +601,12 @@ $EndComp
 Text Label 6825 8500 2    60   ~ 0
 BOOT1
 $Comp
-L +3.3VP #PWR036
+L chip_media-rescue:+3.3VP #PWR036
 U 1 1 584AB784
 P 6825 8925
+AR Path="/584AB784" Ref="#PWR036"  Part="1" 
+AR Path="/5844D827/584AB784" Ref="#PWR036"  Part="1" 
+AR Path="/5E980258/584AB784" Ref="#PWR036"  Part="1" 
 F 0 "#PWR036" H 6875 8955 20  0001 C CNN
 F 1 "+3.3VP" H 6825 9015 30  0000 C CNN
 F 2 "" H 6825 8925 60  0001 C CNN
@@ -654,30 +626,6 @@ Text HLabel 1725 7925 0    60   Input ~ 0
 SCL
 Text Notes 10075 1400 0    60   ~ 0
 Mount LSEL2 or LSEL3 not both
-$Sheet
-S 8900 4150 1075 900 
-U 599EEB2A
-F0 "Aquarium_IOs" 60
-F1 "aquarium.sch" 60
-F2 "SSR1" I L 8900 4325 60 
-F3 "SSR2" I L 8900 4425 60 
-F4 "REL1" I L 8900 4775 60 
-F5 "REL2" I L 8900 4875 60 
-F6 "SSR3" I L 8900 4525 60 
-F7 "SSR4" I L 8900 4625 60 
-F8 "REL3" I L 8900 4975 60 
-$EndSheet
-$Sheet
-S 8900 2675 1275 1150
-U 59A02AFB
-F0 "Sensors" 60
-F1 "sensorsch.sch" 60
-F2 "EC_PROBE" I R 10175 3125 60 
-F3 "EC_VOUT" O L 8900 3125 60 
-F4 "PH_PROBE" I R 10175 3450 60 
-F5 "PH_VOUT" O L 8900 3400 60 
-F6 "TC1" I L 8900 3650 60 
-$EndSheet
 Text Label 8800 3125 2    60   ~ 0
 EC_S
 Text Label 8825 3400 2    60   ~ 0
@@ -699,7 +647,7 @@ SSR4
 Text Label 7125 3225 0    60   ~ 0
 SSR3
 $Comp
-L TCS3404 CS1
+L chip_media-rescue:TCS3404 CS1
 U 1 1 59A6E238
 P 9225 6550
 F 0 "CS1" H 9275 7047 60  0000 C CNN
@@ -714,9 +662,12 @@ I2C1_SDA
 Text Label 8325 6400 0    60   ~ 0
 I2C1_SCL
 $Comp
-L +3.3VP #PWR037
+L chip_media-rescue:+3.3VP #PWR037
 U 1 1 59A6F937
 P 8500 6200
+AR Path="/59A6F937" Ref="#PWR037"  Part="1" 
+AR Path="/5844D827/59A6F937" Ref="#PWR037"  Part="1" 
+AR Path="/5E980258/59A6F937" Ref="#PWR037"  Part="1" 
 F 0 "#PWR037" H 8550 6230 20  0001 C CNN
 F 1 "+3.3VP" H 8500 6290 30  0000 C CNN
 F 2 "" H 8500 6200 60  0001 C CNN
@@ -725,7 +676,7 @@ F 3 "" H 8500 6200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR038
+L chip_media-rescue:GND #PWR038
 U 1 1 59A6FD37
 P 8725 6550
 F 0 "#PWR038" H 8725 6550 30  0001 C CNN
@@ -738,7 +689,7 @@ $EndComp
 Text Label 9775 6400 0    60   ~ 0
 INTCS
 $Comp
-L C CCS1
+L chip_media-rescue:C CCS1
 U 1 1 59A6E0D3
 P 7950 6500
 F 0 "CCS1" H 8000 6600 50  0000 L CNN
@@ -749,7 +700,7 @@ F 3 "" H 7950 6500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR039
+L chip_media-rescue:GND #PWR039
 U 1 1 59A6E77D
 P 7950 6700
 F 0 "#PWR039" H 7950 6700 30  0001 C CNN
@@ -762,7 +713,7 @@ $EndComp
 Text Label 8825 3650 2    60   ~ 0
 TC1
 $Comp
-L BNC PEC1
+L chip_media-rescue:BNC PEC1
 U 1 1 59A8B49B
 P 10425 3125
 F 0 "PEC1" H 10526 3101 50  0000 L CNN
@@ -773,7 +724,7 @@ F 3 "" H 10425 3125 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BNC PPH1
+L chip_media-rescue:BNC PPH1
 U 1 1 59A8B71E
 P 10675 3450
 F 0 "PPH1" H 10776 3426 50  0000 L CNN
@@ -784,7 +735,7 @@ F 3 "" H 10675 3450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR040
+L chip_media-rescue:GND #PWR040
 U 1 1 59A8BDF2
 P 10675 3675
 F 0 "#PWR040" H 10675 3675 30  0001 C CNN
@@ -795,7 +746,7 @@ F 3 "" H 10675 3675 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR041
+L chip_media-rescue:GND #PWR041
 U 1 1 59A8C3E8
 P 10425 3325
 F 0 "#PWR041" H 10425 3325 30  0001 C CNN
@@ -806,7 +757,7 @@ F 3 "" H 10425 3325 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SP481 U485
+L chip_media-rescue:SP481 U485
 U 1 1 59AD552D
 P 10150 8525
 F 0 "U485" H 9725 8088 60  0000 C CNN
@@ -817,7 +768,7 @@ F 3 "" H 10150 8525 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L R RMB1
+L chip_media-rescue:R RMB1
 U 1 1 59AD6BCD
 P 8900 8875
 F 0 "RMB1" V 8980 8875 50  0000 C CNN
@@ -834,7 +785,7 @@ Text Label 8375 8875 0    60   ~ 0
 Text Label 8375 8475 0    60   ~ 0
 485_EN
 $Comp
-L CONN_3X1F MB1
+L chip_media-rescue:CONN_3X1F MB1
 U 1 1 59AD7C12
 P 10950 8575
 F 0 "MB1" H 11053 8575 40  0000 L CNN
@@ -845,7 +796,7 @@ F 3 "" H 10950 8575 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR042
+L chip_media-rescue:+5V #PWR042
 U 1 1 59AD80F4
 P 10525 8925
 F 0 "#PWR042" H 10525 8775 50  0001 C CNN
@@ -856,7 +807,7 @@ F 3 "" H 10525 8925 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C CMB1
+L chip_media-rescue:C CMB1
 U 1 1 59AD8F97
 P 10450 9200
 F 0 "CMB1" H 10500 9300 50  0000 L CNN
@@ -867,7 +818,7 @@ F 3 "" H 10450 9200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR043
+L chip_media-rescue:GND #PWR043
 U 1 1 59ADA36A
 P 10450 9400
 F 0 "#PWR043" H 10450 9400 30  0001 C CNN
@@ -884,7 +835,7 @@ Text Label 7175 2525 0    60   ~ 0
 Text Label 7175 2625 0    60   ~ 0
 485_EN
 $Comp
-L GND #PWR044
+L chip_media-rescue:GND #PWR044
 U 1 1 59AD98F8
 P 10825 8100
 F 0 "#PWR044" H 10825 8100 30  0001 C CNN
@@ -897,7 +848,7 @@ $EndComp
 Text Label 2525 4225 2    60   ~ 0
 TC1
 $Comp
-L CONN_8X2M90 EXT1
+L chip_media-rescue:CONN_8X2M90 EXT1
 U 1 1 59AED191
 P 11225 5600
 F 0 "EXT1" H 11250 5866 40  0000 C CNN
@@ -960,9 +911,12 @@ ADC3
 Text Label 11475 5650 0    60   ~ 0
 ADC0
 $Comp
-L +3.3VP #PWR045
+L chip_media-rescue:+3.3VP #PWR045
 U 1 1 59AF6EA6
 P 10800 5750
+AR Path="/59AF6EA6" Ref="#PWR045"  Part="1" 
+AR Path="/5844D827/59AF6EA6" Ref="#PWR045"  Part="1" 
+AR Path="/5E980258/59AF6EA6" Ref="#PWR045"  Part="1" 
 F 0 "#PWR045" H 10850 5780 20  0001 C CNN
 F 1 "+3.3VP" H 10800 5840 30  0000 C CNN
 F 2 "" H 10800 5750 60  0001 C CNN
@@ -971,7 +925,7 @@ F 3 "" H 10800 5750 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR046
+L chip_media-rescue:GND #PWR046
 U 1 1 59AF73F7
 P 11575 5750
 F 0 "#PWR046" H 11575 5750 30  0001 C CNN
@@ -982,7 +936,7 @@ F 3 "" H 11575 5750 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Crystal Y2
+L chip_media-rescue:Crystal Y2
 U 1 1 59B24019
 P 1600 5550
 F 0 "Y2" V 1554 5681 50  0000 L CNN
@@ -993,7 +947,7 @@ F 3 "" H 1600 5550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C CRs2
+L chip_media-rescue:C CRs2
 U 1 1 59B24024
 P 1275 5825
 F 0 "CRs2" H 1325 5925 50  0000 L CNN
@@ -1004,7 +958,7 @@ F 3 "" H 1275 5825 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C CRS1
+L chip_media-rescue:C CRS1
 U 1 1 59B2402B
 P 1275 5250
 F 0 "CRS1" H 1325 5350 50  0000 L CNN
@@ -1015,7 +969,7 @@ F 3 "" H 1275 5250 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR047
+L chip_media-rescue:GND #PWR047
 U 1 1 59B24034
 P 1050 5825
 F 0 "#PWR047" H 1050 5825 30  0001 C CNN
@@ -1026,7 +980,7 @@ F 3 "" H 1050 5825 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR048
+L chip_media-rescue:GND #PWR048
 U 1 1 59B2403A
 P 1050 5250
 F 0 "#PWR048" H 1050 5250 30  0001 C CNN
@@ -1041,7 +995,7 @@ XC1617DKR-ND
 Text HLabel 2500 2625 0    60   Input ~ 0
 VRTC
 $Comp
-L C VCA1
+L chip_media-rescue:C VCA1
 U 1 1 59DCD7BB
 P 7800 5200
 F 0 "VCA1" H 7850 5300 50  0000 L CNN
@@ -1052,7 +1006,7 @@ F 3 "" H 7800 5200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR049
+L chip_media-rescue:GND #PWR049
 U 1 1 59DCE27A
 P 7800 5400
 F 0 "#PWR049" H 7800 5400 30  0001 C CNN
@@ -1110,13 +1064,13 @@ Wire Wire Line
 Wire Wire Line
 	4125 8575 4125 8425
 Wire Wire Line
-	4650 8575 5425 8575
+	4650 8575 5075 8575
 Wire Wire Line
-	4675 5825 4675 6200
+	4675 5825 4675 6100
 Wire Wire Line
-	2425 7175 2425 7375
+	2425 7175 2425 7275
 Wire Wire Line
-	4775 1525 4775 1825
+	4775 1525 4775 1675
 Wire Wire Line
 	7600 4825 7075 4825
 Wire Wire Line
@@ -1140,16 +1094,12 @@ Wire Wire Line
 Wire Wire Line
 	4775 5825 4775 6100
 Wire Wire Line
-	4675 6100 4975 6100
+	4675 6100 4775 6100
 Connection ~ 4675 6100
 Connection ~ 2275 8975
 Connection ~ 2275 8575
 Wire Wire Line
 	1075 3625 1175 3625
-Wire Wire Line
-	1475 3625 2675 3625
-Wire Wire Line
-	1475 3025 1825 3025
 Wire Wire Line
 	1075 3025 1175 3025
 Wire Wire Line
@@ -1158,18 +1108,18 @@ Wire Wire Line
 	1625 8875 1625 9025
 Connection ~ 2625 8575
 Wire Wire Line
-	1975 8575 3675 8575
+	1975 8575 2275 8575
 Wire Wire Line
 	9175 1750 8875 1750
 Connection ~ 10525 1750
 Wire Wire Line
-	9825 1750 10525 1750
+	9825 1750 9925 1750
 Wire Wire Line
 	9925 2200 9925 2350
 Connection ~ 9925 1750
 Connection ~ 9925 1850
 Wire Wire Line
-	10525 1600 10525 1900
+	10525 1600 10525 1750
 Wire Wire Line
 	9925 1850 9825 1850
 Wire Wire Line
@@ -1193,35 +1143,32 @@ Wire Wire Line
 Wire Wire Line
 	9175 1850 9075 1850
 Wire Wire Line
-	9925 1750 9925 1900
+	9925 1750 9925 1850
 Wire Wire Line
 	10525 2200 10525 2350
 Wire Wire Line
 	8875 2200 8875 2350
 Wire Wire Line
-	8875 1700 8875 1900
+	8875 1700 8875 1750
 Connection ~ 8875 1750
 Wire Wire Line
 	875  3325 875  3275
 Wire Wire Line
-	875  3325 1125 3325
+	875  3325 1075 3325
 Wire Wire Line
 	1125 3375 1175 3375
 Wire Wire Line
-	1125 3275 1125 3375
+	1125 3275 1125 3325
 Wire Wire Line
 	1125 3275 1175 3275
-Connection ~ 1575 3625
-Connection ~ 1575 3025
 Wire Wire Line
-	1075 3025 1075 3625
+	1075 3025 1075 3325
 Connection ~ 1125 3325
 Connection ~ 1075 3325
 Wire Wire Line
 	1825 3525 2675 3525
 Wire Wire Line
 	1825 3025 1825 3525
-Connection ~ 1825 3025
 Connection ~ 3175 8575
 Wire Wire Line
 	3175 8575 3175 8425
@@ -1233,16 +1180,13 @@ Wire Wire Line
 	3175 8975 3175 9075
 Connection ~ 3175 8975
 Wire Wire Line
-	1975 8975 3675 8975
+	1975 8975 2275 8975
 Connection ~ 2625 8975
 Wire Wire Line
-	5075 8975 5425 8975
+	5075 8975 5275 8975
 Connection ~ 5275 8975
 Wire Wire Line
 	5275 8975 5275 9075
-Connection ~ 5425 8575
-Connection ~ 5425 8975
-Connection ~ 5075 8975
 Connection ~ 5075 8575
 Wire Wire Line
 	4350 8575 4125 8575
@@ -1267,7 +1211,7 @@ Wire Wire Line
 Wire Wire Line
 	4675 1825 4675 1675
 Wire Wire Line
-	4675 1675 4975 1675
+	4675 1675 4775 1675
 Connection ~ 4775 1675
 Wire Wire Line
 	4875 1675 4875 1825
@@ -1288,7 +1232,6 @@ Wire Wire Line
 	6525 8500 6825 8500
 Wire Wire Line
 	7075 4125 7575 4125
-Connection ~ 6825 8500
 Wire Wire Line
 	7075 2825 7375 2825
 Wire Wire Line
@@ -1318,7 +1261,7 @@ Wire Wire Line
 Wire Wire Line
 	8825 6400 8275 6400
 Wire Wire Line
-	7950 6300 8825 6300
+	7950 6300 8500 6300
 Wire Wire Line
 	8500 6300 8500 6200
 Wire Wire Line
@@ -1341,13 +1284,11 @@ Wire Wire Line
 Wire Wire Line
 	10675 3650 10675 3675
 Wire Wire Line
-	10425 3325 10425 3325
-Wire Wire Line
 	9150 8775 9050 8775
 Wire Wire Line
 	9050 8775 9050 8475
 Wire Wire Line
-	8375 8475 9150 8475
+	8375 8475 9050 8475
 Connection ~ 9050 8475
 Wire Wire Line
 	9150 8375 8375 8375
@@ -1356,7 +1297,7 @@ Wire Wire Line
 Wire Wire Line
 	8375 8875 8750 8875
 Wire Wire Line
-	10300 8925 10525 8925
+	10300 8925 10450 8925
 Wire Wire Line
 	10450 9050 10450 8925
 Connection ~ 10450 8925
@@ -1365,7 +1306,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 8375 10750 8375
 Wire Wire Line
-	10750 8100 10750 8475
+	10750 8100 10750 8375
 Wire Wire Line
 	10750 8475 10800 8475
 Wire Wire Line
@@ -1444,11 +1385,11 @@ Wire Wire Line
 Wire Wire Line
 	11425 5750 11575 5750
 Wire Wire Line
-	1425 5825 1875 5825
+	1425 5825 1600 5825
 Wire Wire Line
 	1600 5825 1600 5700
 Wire Wire Line
-	1425 5250 1875 5250
+	1425 5250 1600 5250
 Wire Wire Line
 	1600 5250 1600 5400
 Connection ~ 1600 5825
@@ -1488,7 +1429,7 @@ REL3
 Wire Wire Line
 	8600 4975 8900 4975
 $Comp
-L GND #PWR050
+L chip_media-rescue:GND #PWR050
 U 1 1 5A4C4D2B
 P 11575 5450
 F 0 "#PWR050" H 11575 5450 30  0001 C CNN
@@ -1501,7 +1442,7 @@ $EndComp
 Wire Wire Line
 	11425 5450 11575 5450
 $Comp
-L +5V #PWR051
+L chip_media-rescue:+5V #PWR051
 U 1 1 5A4C561A
 P 10800 5450
 F 0 "#PWR051" H 10800 5300 50  0001 C CNN
@@ -1519,4 +1460,72 @@ Text Label 10350 5250 0    39   ~ 0
 REL2
 Text Label 10350 5150 0    39   ~ 0
 REL3
+Wire Wire Line
+	2425 7275 2425 7375
+Wire Wire Line
+	4675 6100 4675 6200
+Wire Wire Line
+	2275 8975 2625 8975
+Wire Wire Line
+	2275 8575 2625 8575
+Wire Wire Line
+	2625 8575 2975 8575
+Wire Wire Line
+	10525 1750 10525 1900
+Wire Wire Line
+	9925 1750 10525 1750
+Wire Wire Line
+	9925 1850 9925 1900
+Wire Wire Line
+	8875 1750 8875 1900
+Wire Wire Line
+	1125 3325 1125 3375
+Wire Wire Line
+	1075 3325 1125 3325
+Wire Wire Line
+	1075 3325 1075 3625
+Wire Wire Line
+	3175 8575 3325 8575
+Wire Wire Line
+	2975 8575 3175 8575
+Wire Wire Line
+	2975 8975 3175 8975
+Wire Wire Line
+	3325 8975 3675 8975
+Wire Wire Line
+	3325 8575 3675 8575
+Wire Wire Line
+	3175 8975 3325 8975
+Wire Wire Line
+	2625 8975 2975 8975
+Wire Wire Line
+	5275 8975 5425 8975
+Wire Wire Line
+	5075 8575 5425 8575
+Wire Wire Line
+	4775 1675 4775 1825
+Wire Wire Line
+	4775 1675 4875 1675
+Wire Wire Line
+	4875 1675 4975 1675
+Wire Wire Line
+	4775 6100 4875 6100
+Wire Wire Line
+	4875 6100 4975 6100
+Wire Wire Line
+	8500 6300 8825 6300
+Wire Wire Line
+	9050 8475 9150 8475
+Wire Wire Line
+	10450 8925 10525 8925
+Wire Wire Line
+	10750 8375 10750 8475
+Wire Wire Line
+	1600 5825 1875 5825
+Wire Wire Line
+	1600 5250 1875 5250
+Wire Wire Line
+	1475 3625 2675 3625
+Wire Wire Line
+	1475 3025 1825 3025
 $EndSCHEMATC
