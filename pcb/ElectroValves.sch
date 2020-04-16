@@ -348,18 +348,6 @@ F 3 "~" H 4250 6500 50  0001 C CNN
 	1    4250 6500
 	0    1    1    0   
 $EndComp
-$Comp
-L PCAL6416AHF:PCAL6416A U15
-U 1 1 5E92BB67
-P 2300 4200
-F 0 "U15" H 1900 5350 50  0000 C CNB
-F 1 "PCAL6416A" H 2300 3950 50  0000 C CNB
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 3300 4450 50  0001 C CNN
-F 3 "https://www.nxp.com/docs/en/data-sheet/PCAL6416A.pdf" H 3300 4450 50  0001 C CNN
-F 4 "568-9946-1-ND" H 2300 4200 50  0001 C CNN "DigiKey"
-	1    2300 4200
-	1    0    0    -1  
-$EndComp
 Text Label 4000 1650 0    50   ~ 0
 R0
 Wire Wire Line
@@ -372,38 +360,6 @@ Text Label 4000 3550 0    50   ~ 0
 R2
 Wire Wire Line
 	4000 3550 4100 3550
-Text Label 3150 3400 2    50   ~ 0
-R0
-Wire Wire Line
-	3150 3400 2950 3400
-Text Label 3150 3500 2    50   ~ 0
-R1
-Wire Wire Line
-	3150 3500 2950 3500
-Text Label 3150 3600 2    50   ~ 0
-R2
-Wire Wire Line
-	3150 3600 2950 3600
-Text Label 3150 3700 2    50   ~ 0
-R3
-Wire Wire Line
-	3150 3700 2950 3700
-Text Label 3150 3800 2    50   ~ 0
-R4
-Wire Wire Line
-	3150 3800 2950 3800
-Text Label 3150 3900 2    50   ~ 0
-R5
-Wire Wire Line
-	3150 3900 2950 3900
-Text HLabel 950  3850 0    50   Input ~ 0
-SCL
-Text HLabel 950  3950 0    50   BiDi ~ 0
-SDA
-Wire Wire Line
-	950  3850 1200 3850
-Wire Wire Line
-	950  3950 1350 3950
 Wire Wire Line
 	4000 6500 4100 6500
 Text Label 4000 6500 0    50   ~ 0
@@ -416,83 +372,10 @@ Wire Wire Line
 	4000 4550 4100 4550
 Text Label 4000 4550 0    50   ~ 0
 R3
-Text Label 3150 4000 2    50   ~ 0
-R6
-Wire Wire Line
-	3150 4000 2950 4000
-Text Label 3150 4100 2    50   ~ 0
-R7
-Wire Wire Line
-	3150 4100 2950 4100
-Wire Wire Line
-	3150 4300 2950 4300
-Wire Wire Line
-	3150 4400 2950 4400
-Wire Wire Line
-	3150 4500 2950 4500
-Wire Wire Line
-	3150 4600 2950 4600
-Wire Wire Line
-	3150 4700 2950 4700
-Wire Wire Line
-	3150 4800 2950 4800
-Wire Wire Line
-	3150 4900 2950 4900
-Wire Wire Line
-	3150 5000 2950 5000
-$Comp
-L power:GND #PWR07
-U 1 1 5E953705
-P 2300 5300
-F 0 "#PWR07" H 2300 5050 50  0001 C CNN
-F 1 "GND" H 2305 5127 50  0000 C CNN
-F 2 "" H 2300 5300 50  0001 C CNN
-F 3 "" H 2300 5300 50  0001 C CNN
-	1    2300 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L ventilator-PowerSymbols:3V3_ESP #PWR08
-U 1 1 5E95424A
-P 2450 2850
-F 0 "#PWR08" H 2450 2810 30  0001 C CNN
-F 1 "3V3_ESP" H 2459 2988 30  0000 C CNN
-F 2 "" H 2450 2850 60  0000 C CNN
-F 3 "" H 2450 2850 60  0000 C CNN
-	1    2450 2850
-	1    0    0    -1  
-$EndComp
-Text Label 3150 4300 2    50   ~ 0
-P1_0
-Text Label 3150 4400 2    50   ~ 0
-P1_1
-Text Label 3150 4500 2    50   ~ 0
-P1_2
-Text Label 3150 4600 2    50   ~ 0
-P1_3
-Text Label 3150 4700 2    50   ~ 0
-P1_4
-Text Label 3150 4800 2    50   ~ 0
-P1_5
-Text Label 3150 4900 2    50   ~ 0
-P1_6
-Text Label 3150 5000 2    50   ~ 0
-P1_7
-$Comp
-L power:+5V #PWR06
-U 1 1 5E95579E
-P 2200 2850
-F 0 "#PWR06" H 2200 2700 50  0001 C CNN
-F 1 "+5V" H 2215 3023 50  0000 C CNN
-F 2 "" H 2200 2850 50  0001 C CNN
-F 3 "" H 2200 2850 50  0001 C CNN
-	1    2200 2850
-	1    0    0    -1  
-$EndComp
 Text Label 6800 1650 0    50   ~ 0
-P1_0
+R6
 Text Label 6800 3000 0    50   ~ 0
-P1_1
+R7
 $Comp
 L power:+5V #PWR09
 U 1 1 5E993DD9
@@ -570,106 +453,8 @@ F 3 "" H 7600 1100 50  0001 C CNN
 	1    7600 1100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5E9C02A4
-P 1600 3650
-F 0 "#PWR05" H 1600 3400 50  0001 C CNN
-F 1 "GND" H 1605 3477 50  0000 C CNN
-F 2 "" H 1600 3650 50  0001 C CNN
-F 3 "" H 1600 3650 50  0001 C CNN
-	1    1600 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 3600 1600 3600
-Wire Wire Line
-	1600 3600 1600 3650
-Text HLabel 950  3500 0    50   Input ~ 0
-RST_PCA
-Wire Wire Line
-	950  3500 1050 3500
 NoConn ~ 9750 3000
 NoConn ~ 9750 1650
-$Comp
-L Device:R R32
-U 1 1 5E9D8B5A
-P 1200 2950
-F 0 "R32" V 1250 3050 50  0000 L CNN
-F 1 "10k" V 1250 2700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1130 2950 50  0001 C CNN
-F 3 "~" H 1200 2950 50  0001 C CNN
-	1    1200 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R31
-U 1 1 5E9DC847
-P 1050 2950
-F 0 "R31" V 1100 3050 50  0000 L CNN
-F 1 "10k" V 1100 2700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 980 2950 50  0001 C CNN
-F 3 "~" H 1050 2950 50  0001 C CNN
-	1    1050 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L ventilator-PowerSymbols:3V3_ESP #PWR01
-U 1 1 5E9DC84D
-P 1050 2550
-F 0 "#PWR01" H 1050 2510 30  0001 C CNN
-F 1 "3V3_ESP" H 1059 2688 30  0000 C CNN
-F 2 "" H 1050 2550 60  0000 C CNN
-F 3 "" H 1050 2550 60  0000 C CNN
-	1    1050 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R34
-U 1 1 5E9E3B39
-P 1500 2950
-F 0 "R34" V 1550 3050 50  0000 L CNN
-F 1 "10k" V 1550 2700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1430 2950 50  0001 C CNN
-F 3 "~" H 1500 2950 50  0001 C CNN
-	1    1500 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R33
-U 1 1 5E9E3B45
-P 1350 2950
-F 0 "R33" V 1400 3050 50  0000 L CNN
-F 1 "10k" V 1400 2700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1280 2950 50  0001 C CNN
-F 3 "~" H 1350 2950 50  0001 C CNN
-	1    1350 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 3100 1050 3500
-Connection ~ 1050 3500
-Wire Wire Line
-	1050 3500 1750 3500
-Wire Wire Line
-	1200 3100 1200 3850
-Connection ~ 1200 3850
-Wire Wire Line
-	1200 3850 1750 3850
-Wire Wire Line
-	1350 3100 1350 3950
-Connection ~ 1350 3950
-Wire Wire Line
-	1350 3950 1750 3950
-Text HLabel 950  4200 0    50   Output ~ 0
-INT_PCA
-Wire Wire Line
-	950  4200 1500 4200
-Wire Wire Line
-	1500 3100 1500 4200
-Connection ~ 1500 4200
-Wire Wire Line
-	1500 4200 1750 4200
 $Comp
 L BarrelConnector:Conn_01x04_Female J7
 U 1 1 5EA0FC96
@@ -839,29 +624,6 @@ F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 7550 1650 50  0001 L CNN
 	1    7550 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1500 2650 1500 2800
-Wire Wire Line
-	1350 2650 1350 2800
-Wire Wire Line
-	1200 2800 1200 2650
-Wire Wire Line
-	1050 2650 1050 2800
-Wire Wire Line
-	2200 2850 2200 3000
-Wire Wire Line
-	2450 2850 2450 3000
-Wire Wire Line
-	1500 2650 1350 2650
-Connection ~ 1200 2650
-Wire Wire Line
-	1200 2650 1050 2650
-Connection ~ 1350 2650
-Wire Wire Line
-	1350 2650 1200 2650
-Wire Wire Line
-	1050 2550 1050 2650
-Connection ~ 1050 2650
 Wire Wire Line
 	7050 1650 6800 1650
 $Comp
