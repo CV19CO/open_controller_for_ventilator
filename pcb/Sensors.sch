@@ -1,0 +1,205 @@
+EESchema Schematic File Version 4
+LIBS:keep_breathing_ctrl-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title "Open  Controller V1.0"
+Date "2020-04-16"
+Rev "V2"
+Comp "UN"
+Comment1 ""
+Comment2 ""
+Comment3 "  ."
+Comment4 " "
+$EndDescr
+$Comp
+L hts221:HTS221 U13
+U 1 1 56521888
+P 9350 4000
+F 0 "U13" H 9000 3650 60  0000 C CNB
+F 1 "HTS221" H 9100 4350 60  0000 C CNB
+F 2 "SMD:HLGA-6L" H 9350 4000 60  0001 C CNN
+F 3 "" H 9350 4000 60  0000 C CNN
+	1    9350 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3950 8500 3950
+Wire Wire Line
+	8500 4050 8750 4050
+Wire Wire Line
+	8150 1600 7750 1600
+Wire Wire Line
+	7750 1700 8150 1700
+$Comp
+L power:GND #PWR0101
+U 1 1 56527F2E
+P 10050 4350
+F 0 "#PWR0101" H 10050 4100 50  0001 C CNN
+F 1 "GND" H 10050 4200 50  0000 C CNN
+F 2 "" H 10050 4350 60  0000 C CNN
+F 3 "" H 10050 4350 60  0000 C CNN
+	1    10050 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 4200 10050 4200
+Wire Wire Line
+	10050 4100 10050 4200
+Connection ~ 10050 4200
+Wire Wire Line
+	10050 3700 10050 3800
+Wire Wire Line
+	9950 3800 10050 3800
+Connection ~ 10050 3800
+$Comp
+L power:GND #PWR0102
+U 1 1 565284A8
+P 9300 2150
+F 0 "#PWR0102" H 9300 1900 50  0001 C CNN
+F 1 "GND" H 9300 2000 50  0000 C CNN
+F 2 "" H 9300 2150 60  0000 C CNN
+F 3 "" H 9300 2150 60  0000 C CNN
+	1    9300 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1500 9300 1600
+Wire Wire Line
+	9300 1700 9100 1700
+Wire Wire Line
+	9100 1600 9300 1600
+Connection ~ 9300 1600
+NoConn ~ 8150 1800
+Wire Wire Line
+	8750 3800 8700 3800
+Wire Wire Line
+	8700 3800 8700 3700
+NoConn ~ 8750 4200
+$Comp
+L Device:C_Small C32
+U 1 1 56528F52
+P 10100 1700
+F 0 "C32" H 10110 1770 50  0000 L CNN
+F 1 "100nF" H 10110 1620 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10100 1700 60  0001 C CNN
+F 3 "" H 10100 1700 60  0000 C CNN
+	1    10100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C41
+U 1 1 56528F99
+P 10350 1700
+F 0 "C41" H 10360 1770 50  0000 L CNN
+F 1 "10uF" H 10360 1620 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10350 1700 60  0001 C CNN
+F 3 "" H 10350 1700 60  0000 C CNN
+	1    10350 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1350 10350 1450
+Wire Wire Line
+	10350 1800 10350 1950
+$Comp
+L power:GND #PWR0103
+U 1 1 565291BD
+P 10350 2050
+F 0 "#PWR0103" H 10350 1800 50  0001 C CNN
+F 1 "GND" H 10350 1900 50  0000 C CNN
+F 2 "" H 10350 2050 60  0000 C CNN
+F 3 "" H 10350 2050 60  0000 C CNN
+	1    10350 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 10350 1450
+Connection ~ 10350 1950
+$Comp
+L Device:C_Small C15
+U 1 1 5653571E
+P 9300 1950
+F 0 "C15" H 9310 2020 50  0000 L CNN
+F 1 "100nF" H 9310 1870 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9300 1950 60  0001 C CNN
+F 3 "" H 9300 1950 60  0000 C CNN
+	1    9300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C31
+U 1 1 5653586D
+P 10050 4000
+F 0 "C31" H 10060 4070 50  0000 L CNN
+F 1 "100nF" H 10060 3920 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10050 4000 60  0001 C CNN
+F 3 "" H 10050 4000 60  0000 C CNN
+	1    10050 4000
+	1    0    0    -1  
+$EndComp
+Text HLabel 7750 1600 0    60   Input ~ 0
+SCL
+Text HLabel 8500 3950 0    60   Input ~ 0
+SCL
+Text HLabel 7750 1700 0    60   BiDi ~ 0
+SDA
+Text HLabel 8500 4050 0    60   BiDi ~ 0
+SDA
+$Comp
+L mpl3115a2:MPL3115A2 U1
+U 1 1 56701317
+P 8650 1750
+F 0 "U1" H 8500 2050 60  0000 C CNB
+F 1 "MPL3115A2" H 8650 1450 60  0000 C CNN
+F 2 "SMD:8LGA" H 8650 1750 60  0001 C CNN
+F 3 "" H 8650 1750 60  0000 C CNN
+	1    8650 1750
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 8150 1900
+Wire Wire Line
+	9100 1800 9300 1800
+Wire Wire Line
+	9300 1800 9300 1850
+Wire Wire Line
+	9100 1900 9100 2100
+Wire Wire Line
+	9100 2100 9300 2100
+Wire Wire Line
+	9300 2050 9300 2100
+Connection ~ 9300 2100
+Wire Wire Line
+	10350 1950 10100 1950
+Wire Wire Line
+	10100 1950 10100 1800
+Wire Wire Line
+	10100 1600 10100 1450
+Wire Wire Line
+	10100 1450 10350 1450
+Wire Notes Line
+	6625 475  6625 5400
+Wire Notes Line
+	475  5400 11225 5400
+Wire Notes Line
+	6625 2900 11225 2900
+Wire Notes Line
+	475  3850 6625 3850
+Text Notes 7325 3375 0    60   ~ 0
+Humidity Sensor
+Text Notes 6850 800  0    60   ~ 0
+Pressure Sensor with Altimetry
+Wire Wire Line
+	10050 4200 10050 4350
+Wire Wire Line
+	10050 3800 10050 3900
+Wire Wire Line
+	9300 1600 9300 1700
+Wire Wire Line
+	10350 1450 10350 1600
+Wire Wire Line
+	10350 1950 10350 2050
+Wire Wire Line
+	9300 2100 9300 2150
+$EndSCHEMATC

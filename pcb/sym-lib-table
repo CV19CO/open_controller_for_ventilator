@@ -15,4 +15,6 @@
   (lib (name keep_breathing_ctrl-rescue)(type Legacy)(uri ${KIPRJMOD}/keep_breathing_ctrl-rescue.lib)(options "")(descr ""))
   (lib (name MCU_ST_STM32F4)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/MCU_ST_STM32F4.lib)(options "")(descr ""))
   (lib (name media_board)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/media_board.lib)(options "")(descr ""))
+  (lib (name mpl3115a2)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/mpl3115a2.lib)(options "")(descr ""))
+  (lib (name hts221)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/hts221.lib)(options "")(descr ""))
 )
