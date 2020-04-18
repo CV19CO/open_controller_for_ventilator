@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 18
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -150,11 +150,5 @@ F0 "Sensors" 50
 F1 "Sensors.sch" 50
 F2 "SCL" I L 7850 4400 50 
 F3 "SDA" B L 7850 4500 50 
-$EndSheet
-$Sheet
-S 6400 5800 1000 400 
-U 5E9B245C
-F0 "FPGA_ICE40UP5K" 50
-F1 "FPGA_ICE40UP5K.sch" 50
 $EndSheet
 $EndSCHEMATC
