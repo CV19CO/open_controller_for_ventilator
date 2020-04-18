@@ -17,4 +17,5 @@
   (lib (name media_board)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/media_board.lib)(options "")(descr ""))
   (lib (name mpl3115a2)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/mpl3115a2.lib)(options "")(descr ""))
   (lib (name hts221)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/hts221.lib)(options "")(descr ""))
+  (lib (name UPduino_v3.0)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/UPduino_v3.0.lib)(options "")(descr ""))
 )

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 18
 Title ""
 Date ""
 Rev ""
@@ -115,7 +115,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 2450 4500 2450
 $Sheet
-S 6250 2150 1150 3150
+S 6250 2150 1150 2500
 U 5E989259
 F0 "STM32F4" 50
 F1 "STM32.sch" 50
@@ -150,5 +150,11 @@ F0 "Sensors" 50
 F1 "Sensors.sch" 50
 F2 "SCL" I L 7850 4400 50 
 F3 "SDA" B L 7850 4500 50 
+$EndSheet
+$Sheet
+S 6400 5800 1000 400 
+U 5E9B245C
+F0 "FPGA_ICE40UP5K" 50
+F1 "FPGA_ICE40UP5K.sch" 50
 $EndSheet
 $EndSCHEMATC
