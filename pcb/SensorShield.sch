@@ -692,7 +692,7 @@ AR Path="/5E9B245C/5E9D8B28" Ref="R?"  Part="1"
 AR Path="/5E98CC69/5E9ECB99/5E9D8B28" Ref="R30"  Part="1" 
 F 0 "R30" H 2780 2104 50  0000 R CNN
 F 1 "10K" H 2780 2195 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 2150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2780 2150 50  0001 C CNN
 F 3 "~" H 2850 2150 50  0001 C CNN
 	1    2850 2150
 	-1   0    0    1   
@@ -920,67 +920,35 @@ Wire Wire Line
 Wire Wire Line
 	1700 1850 1700 1950
 Connection ~ 1700 1950
-Wire Wire Line
-	2250 1850 2250 1950
 $Comp
 L UPduino_v3.0:power_+3.3V #PWR?
 U 1 1 5E9D8BBB
-P 1700 1550
+P 1700 1850
 AR Path="/5E9B245C/5E9D8BBB" Ref="#PWR?"  Part="1" 
 AR Path="/5E98CC69/5E9ECB99/5E9D8BBB" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 1700 1400 50  0001 C CNN
-F 1 "+3.3V" H 1715 1723 50  0000 C CNN
-F 2 "" H 1700 1550 50  0001 C CNN
-F 3 "" H 1700 1550 50  0001 C CNN
-	1    1700 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L UPduino_v3.0:Device_R R?
-U 1 1 5E9D8BC1
-P 6200 1700
-AR Path="/5E9B245C/5E9D8BC1" Ref="R?"  Part="1" 
-AR Path="/5E98CC69/5E9ECB99/5E9D8BC1" Ref="R40"  Part="1" 
-F 0 "R40" H 6350 1800 50  0000 C CNN
-F 1 "JUMPER" H 6400 1700 50  0000 C CNN
-F 2 "vs:ShortedJumper-2_P1.3mm_Bridged_Pad1.0x1.0mm" V 6130 1700 50  0001 C CNN
-F 3 "~" H 6200 1700 50  0001 C CNN
-	1    6200 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L UPduino_v3.0:Device_R R?
-U 1 1 5E9D8BC7
-P 6700 1700
-AR Path="/5E9B245C/5E9D8BC7" Ref="R?"  Part="1" 
-AR Path="/5E98CC69/5E9ECB99/5E9D8BC7" Ref="R41"  Part="1" 
-F 0 "R41" H 6850 1800 50  0000 C CNN
-F 1 "JUMPER" H 6900 1700 50  0000 C CNN
-F 2 "vs:SolderJumper-2_0603_Open_TrianglePad1.0x1.5mm" V 6630 1700 50  0001 C CNN
-F 3 "~" H 6700 1700 50  0001 C CNN
-	1    6700 1700
+F 0 "#PWR04" H 1700 1700 50  0001 C CNN
+F 1 "+3.3V" H 1715 2023 50  0000 C CNN
+F 2 "" H 1700 1850 50  0001 C CNN
+F 3 "" H 1700 1850 50  0001 C CNN
+	1    1700 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6200 1850 6200 1950
-Wire Wire Line
-	6700 1850 6700 1950
 $Comp
 L UPduino_v3.0:power_+3.3V #PWR?
 U 1 1 5E9D8BCF
-P 6200 1550
+P 6200 1850
 AR Path="/5E9B245C/5E9D8BCF" Ref="#PWR?"  Part="1" 
 AR Path="/5E98CC69/5E9ECB99/5E9D8BCF" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 6200 1400 50  0001 C CNN
-F 1 "+3.3V" H 6215 1723 50  0000 C CNN
-F 2 "" H 6200 1550 50  0001 C CNN
-F 3 "" H 6200 1550 50  0001 C CNN
-	1    6200 1550
+F 0 "#PWR029" H 6200 1700 50  0001 C CNN
+F 1 "+3.3V" H 6215 2023 50  0000 C CNN
+F 2 "" H 6200 1850 50  0001 C CNN
+F 3 "" H 6200 1850 50  0001 C CNN
+	1    6200 1850
 	1    0    0    -1  
 $EndComp
 Connection ~ 6700 1950
-Text Notes 3750 1850 0    50   ~ 0
-Bank 1 is 3.3V IO!
 Text Notes 5050 9000 0    50   ~ 0
 Install 0 Ohms for qSPI
 Wire Wire Line
@@ -1013,45 +981,7 @@ F 3 "" H 2800 6300 50  0001 C CNN
 $EndComp
 Text Notes 800  6550 0    50   ~ 0
 Core current \nmeasurement
-$Comp
-L UPduino_v3.0:Device_R R?
-U 1 1 5E9D8BE6
-P 2250 1700
-AR Path="/5E9B245C/5E9D8BE6" Ref="R?"  Part="1" 
-AR Path="/5E98CC69/5E9ECB99/5E9D8BE6" Ref="R28"  Part="1" 
-F 0 "R28" H 2400 1800 50  0000 C CNN
-F 1 "JUMPER" H 2450 1700 50  0000 C CNN
-F 2 "vs:SolderJumper-2_0603_Open_TrianglePad1.0x1.5mm" V 2180 1700 50  0001 C CNN
-F 3 "~" H 2250 1700 50  0001 C CNN
-	1    2250 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L UPduino_v3.0:Device_R R?
-U 1 1 5E9D8BEC
-P 1700 1700
-AR Path="/5E9B245C/5E9D8BEC" Ref="R?"  Part="1" 
-AR Path="/5E98CC69/5E9ECB99/5E9D8BEC" Ref="R5"  Part="1" 
-F 0 "R5" H 1850 1800 50  0000 C CNN
-F 1 "JUMPER" H 1900 1700 50  0000 C CNN
-F 2 "vs:ShortedJumper-2_P1.3mm_Bridged_Pad1.0x1.0mm" V 1630 1700 50  0001 C CNN
-F 3 "~" H 1700 1700 50  0001 C CNN
-	1    1700 1700
-	1    0    0    -1  
-$EndComp
 Connection ~ 6200 1950
-Wire Wire Line
-	2250 1550 2250 1500
-Wire Wire Line
-	2250 1500 2500 1500
-Wire Wire Line
-	6700 1550 6700 1500
-Wire Wire Line
-	6700 1500 7000 1500
-Text Label 2250 1500 0    50   ~ 0
-VIO_BANK_0_2
-Text Label 6750 1500 0    50   ~ 0
-VIO_BANK_0_2
 $Comp
 L UPduino_v3.0:ICE40UP5K-SG48ITR-FPGA_Lattice U?
 U 2 1 5E9D8BF9
@@ -1073,7 +1003,7 @@ AR Path="/5E9B245C/5E9D8BFF" Ref="C?"  Part="1"
 AR Path="/5E98CC69/5E9ECB99/5E9D8BFF" Ref="C51"  Part="1" 
 F 0 "C51" H 4615 2096 50  0000 L CNN
 F 1 "4.7u" H 4615 2005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4538 1900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4538 1900 50  0001 C CNN
 F 3 "~" H 4500 2050 50  0001 C CNN
 	1    4500 2050
 	1    0    0    -1  
@@ -1086,7 +1016,7 @@ AR Path="/5E9B245C/5E9D8C05" Ref="C?"  Part="1"
 AR Path="/5E98CC69/5E9ECB99/5E9D8C05" Ref="C46"  Part="1" 
 F 0 "C46" H 2615 2146 50  0000 L CNN
 F 1 "4.7u" H 2615 2055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2538 1950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2538 1950 50  0001 C CNN
 F 3 "~" H 2500 2100 50  0001 C CNN
 	1    2500 2100
 	1    0    0    -1  
@@ -1099,7 +1029,7 @@ AR Path="/5E9B245C/5E9D8C0B" Ref="C?"  Part="1"
 AR Path="/5E98CC69/5E9ECB99/5E9D8C0B" Ref="C53"  Part="1" 
 F 0 "C53" H 7215 2146 50  0000 L CNN
 F 1 "4.7u" H 7215 2055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 7138 1950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7138 1950 50  0001 C CNN
 F 3 "~" H 7100 2100 50  0001 C CNN
 	1    7100 2100
 	1    0    0    -1  
@@ -1108,9 +1038,6 @@ Wire Wire Line
 	6700 2250 7100 2250
 Wire Wire Line
 	7100 1950 6700 1950
-Wire Wire Line
-	2250 1950 2500 1950
-Connection ~ 2250 1950
 Wire Wire Line
 	4100 2200 4500 2200
 Wire Wire Line
@@ -1132,8 +1059,6 @@ Wire Wire Line
 Text Notes 3350 7575 0    100  ~ 20
 qSPI/DTR Flash
 Connection ~ 2100 1950
-Wire Wire Line
-	2100 1950 2250 1950
 Connection ~ 2100 6300
 Wire Wire Line
 	2100 6300 2300 6300
@@ -3612,4 +3537,98 @@ Text Label 2500 3350 0    50   ~ 0
 I2C_SDA_2
 Text Label 2500 3150 0    50   ~ 0
 I2C_CLK_2
+Wire Wire Line
+	2100 1950 2500 1950
+Text HLabel 2800 2750 0    50   Input ~ 0
+SS_SPI_CS
+Text HLabel 2800 2850 0    50   Input ~ 0
+SS_SPI_CLK
+Text HLabel 2800 2950 0    50   Output ~ 0
+SS_SPI_MISO
+Text HLabel 2800 3050 0    50   Input ~ 0
+SS_SPI_MOSI
+Wire Wire Line
+	2800 2750 3050 2750
+Wire Wire Line
+	2800 2850 3050 2850
+Wire Wire Line
+	2800 2950 3050 2950
+Wire Wire Line
+	2800 3050 3050 3050
+Wire Notes Line
+	8200 7150 8200 1150
+Wire Notes Line
+	8200 1150 16000 1150
+Wire Notes Line
+	16000 1150 16000 7150
+Wire Notes Line
+	8200 7150 16000 7150
+Wire Notes Line
+	16000 5150 8200 5150
+Wire Notes Line
+	16000 3150 8200 3150
+Wire Notes Line
+	11100 1400 11100 7150
+Wire Notes Line
+	13700 7150 13700 1150
+Text Label 8300 9000 0    50   ~ 0
+ANALOG_7
+Wire Wire Line
+	8300 9000 8700 9000
+Text Label 8300 8900 0    50   ~ 0
+ANALOG_6
+Wire Wire Line
+	8300 8900 8700 8900
+Text Label 8300 8800 0    50   ~ 0
+ANALOG_5
+Wire Wire Line
+	8300 8800 8700 8800
+Text Label 8300 8700 0    50   ~ 0
+ANALOG_4
+Wire Wire Line
+	8300 8700 8700 8700
+Text Label 8300 8600 0    50   ~ 0
+ANALOG_3
+Wire Wire Line
+	8300 8600 8700 8600
+Text Label 8300 8500 0    50   ~ 0
+ANALOG_2
+Wire Wire Line
+	8300 8500 8700 8500
+Text Label 8300 8400 0    50   ~ 0
+ANALOG_1
+Wire Wire Line
+	8300 8400 8700 8400
+Text Label 8300 8300 0    50   ~ 0
+ANALOG_0
+Wire Wire Line
+	8300 8300 8700 8300
+Text Label 8300 9100 0    50   ~ 0
+ANALOG_8
+Wire Wire Line
+	8300 9100 8700 9100
+Entry Wire Line
+	8700 8300 8800 8200
+Entry Wire Line
+	8700 8400 8800 8300
+Entry Wire Line
+	8700 8500 8800 8400
+Entry Wire Line
+	8700 8600 8800 8500
+Entry Wire Line
+	8700 8700 8800 8600
+Entry Wire Line
+	8700 8800 8800 8700
+Entry Wire Line
+	8700 8900 8800 8800
+Entry Wire Line
+	8700 9000 8800 8900
+Entry Wire Line
+	8700 9100 8800 9000
+Wire Bus Line
+	8800 8150 8900 8150
+Wire Bus Line
+	8800 8150 8800 9000
+Text HLabel 8900 8150 2    50   Output ~ 0
+ANALOG_[0..8]
 $EndSCHEMATC
