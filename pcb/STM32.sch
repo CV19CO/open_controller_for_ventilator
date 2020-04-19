@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 12000 10000
 encoding utf-8
-Sheet 7 9
+Sheet 6 9
 Title ""
 Date "9 may 2013"
 Rev ""
@@ -335,20 +335,18 @@ F 3 "" H 4050 800 60  0001 C CNN
 $EndComp
 Text HLabel 2300 1600 0    60   BiDi ~ 0
 NRESET
-Text Label 800  2500 0    60   ~ 0
-SEN8
-Text Label 800  2400 0    60   ~ 0
-SEN7
-Text Label 800  2300 0    60   ~ 0
+Text Label 800  2400 0    50   ~ 0
 SEN6
-Text Label 800  2200 0    60   ~ 0
+Text Label 800  2300 0    50   ~ 0
 SEN5
-Text Label 800  2100 0    60   ~ 0
+Text Label 800  2200 0    50   ~ 0
 SEN4
-Text Label 800  2000 0    60   ~ 0
+Text Label 800  2100 0    50   ~ 0
 SEN3
-Text Label 800  1900 0    60   ~ 0
+Text Label 800  2000 0    50   ~ 0
 SEN2
+Text Label 800  1900 0    50   ~ 0
+SEN1
 Text Label 2504 3900 2    60   ~ 0
 JTRST
 Text Label 2418 3800 2    60   ~ 0
@@ -365,8 +363,8 @@ Text Label 2300 1400 0    60   ~ 0
 BOOT0
 Text Label 2200 3700 0    60   ~ 0
 BOOT1
-Text Label 800  1800 0    60   ~ 0
-SEN1
+Text Label 800  1800 0    50   ~ 0
+SEN0
 $Comp
 L media_board:C-RESCUE-stamp_mini_4_layers CXST2
 U 1 1 545549FE
@@ -892,10 +890,6 @@ Text Label 2200 5600 0    60   ~ 0
 CM1D
 Text Label 2200 5700 0    60   ~ 0
 CM1B
-Text Label 2200 3600 0    60   ~ 0
-CM1C
-Text Label 2200 3500 0    60   ~ 0
-CM1A
 Text Notes 9350 7475 0    60   ~ 0
 C13
 Text Label 2200 4700 0    60   ~ 0
@@ -1217,10 +1211,6 @@ Wire Wire Line
 Wire Wire Line
 	2200 5700 2600 5700
 Wire Wire Line
-	2600 3500 2200 3500
-Wire Wire Line
-	2200 3600 2600 3600
-Wire Wire Line
 	2200 4700 2600 4700
 $Comp
 L media_board:3V3 #PWR0173
@@ -1290,8 +1280,6 @@ Wire Wire Line
 Wire Wire Line
 	1450 8850 2650 8850
 Wire Wire Line
-	850  3050 1900 3050
-Wire Wire Line
 	7400 1350 7400 1950
 Text HLabel 2200 4300 0    50   Input ~ 0
 STM_I2C1_SCL
@@ -1305,7 +1293,7 @@ SPI3_MOSI
 Text HLabel 5700 6000 2    50   Input ~ 0
 SPI3_MISO
 Text HLabel 5700 6100 2    50   Output ~ 0
-SPI_SCK
+SPI3_SCK
 Wire Wire Line
 	5600 5900 5700 5900
 Wire Wire Line
@@ -1364,6 +1352,122 @@ Wire Bus Line
 	5950 2850 6050 2850
 Text HLabel 6050 2850 2    50   BiDi ~ 0
 PE[0..7]
+Text Label 800  3500 0    50   ~ 0
+SEN8
+Wire Wire Line
+	750  3500 850  3500
+Wire Wire Line
+	850  3550 850  3500
+Connection ~ 850  3500
+Wire Wire Line
+	850  3500 2600 3500
+$Comp
+L media_board:R-RESCUE-stamp_mini_4_layers RA9
+U 1 1 5EA6155C
+P 850 3800
+F 0 "RA9" V 930 3800 50  0000 C CNN
+F 1 "100k" V 850 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 850 3800 60  0001 C CNN
+F 3 "" H 850 3800 60  0001 C CNN
+	1    850  3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0220
+U 1 1 5EA6E32C
+P 850 4150
+F 0 "#PWR0220" H 850 4150 30  0001 C CNN
+F 1 "GND" H 850 4080 30  0001 C CNN
+F 2 "" H 850 4150 60  0001 C CNN
+F 3 "" H 850 4150 60  0001 C CNN
+	1    850  4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  4050 850  4150
+Text Label 800  2500 0    50   ~ 0
+SEN7
+Text Label 8600 2000 0    50   ~ 0
+SEN6
+Text Label 8600 1900 0    50   ~ 0
+SEN5
+Text Label 8600 1800 0    50   ~ 0
+SEN4
+Text Label 8600 1700 0    50   ~ 0
+SEN3
+Text Label 8600 1600 0    50   ~ 0
+SEN2
+Text Label 8600 1500 0    50   ~ 0
+SEN1
+Text Label 8600 1400 0    50   ~ 0
+SEN0
+Text Label 8600 2100 0    50   ~ 0
+SEN7
+Text Label 8600 2200 0    50   ~ 0
+SEN8
+Wire Wire Line
+	8600 1400 8850 1400
+Wire Wire Line
+	8600 1500 8850 1500
+Wire Wire Line
+	8600 1600 8850 1600
+Wire Wire Line
+	8600 1700 8850 1700
+Wire Wire Line
+	8600 1800 8850 1800
+Wire Wire Line
+	8600 1900 8850 1900
+Wire Wire Line
+	8600 2000 8850 2000
+Wire Wire Line
+	8600 2100 8850 2100
+Wire Wire Line
+	8600 2200 8850 2200
+Entry Wire Line
+	8850 1400 8950 1300
+Entry Wire Line
+	8850 1500 8950 1400
+Entry Wire Line
+	8850 1600 8950 1500
+Entry Wire Line
+	8850 1700 8950 1600
+Entry Wire Line
+	8850 1800 8950 1700
+Entry Wire Line
+	8850 1900 8950 1800
+Entry Wire Line
+	8850 2000 8950 1900
+Entry Wire Line
+	8850 2100 8950 2000
+Entry Wire Line
+	8850 2200 8950 2100
+Wire Bus Line
+	8950 1300 9050 1300
+Text HLabel 9050 1300 2    50   Input ~ 0
+SEN[0..8]
+Wire Wire Line
+	1900 3050 1750 3050
+Connection ~ 850  3050
+Connection ~ 1000 3050
+Wire Wire Line
+	1000 3050 850  3050
+Connection ~ 1150 3050
+Wire Wire Line
+	1150 3050 1000 3050
+Connection ~ 1300 3050
+Wire Wire Line
+	1300 3050 1150 3050
+Connection ~ 1450 3050
+Wire Wire Line
+	1450 3050 1300 3050
+Connection ~ 1600 3050
+Wire Wire Line
+	1600 3050 1450 3050
+Wire Wire Line
+	1600 3050 1750 3050
 Wire Bus Line
 	5950 2850 5950 3550
+Wire Bus Line
+	8950 1300 8950 2100
+Connection ~ 1750 3050
 $EndSCHEMATC

@@ -363,13 +363,13 @@ Wire Wire Line
 Wire Wire Line
 	1700 1950 1700 2050
 Wire Wire Line
-	3050 3850 2400 3850
+	3050 3850 2500 3850
 Wire Wire Line
-	3050 3950 2400 3950
+	3050 3950 2500 3950
 Wire Wire Line
-	3050 4050 2400 4050
+	3050 4050 2500 4050
 Wire Wire Line
-	3050 3750 2400 3750
+	3050 3750 2500 3750
 $Comp
 L UPduino_v3.0:Device_C C?
 U 1 1 5E9D8A8B
@@ -714,13 +714,13 @@ F 3 "" H 1400 6600 50  0001 C CNN
 	1    1400 6600
 	1    0    0    -1  
 $EndComp
-Text Label 2400 4050 0    50   ~ 0
+Text Label 2500 4050 0    50   ~ 0
 FT_SSn
-Text Label 2400 3950 0    50   ~ 0
+Text Label 2500 3950 0    50   ~ 0
 FT_SCK
-Text Label 2400 3850 0    50   ~ 0
+Text Label 2500 3850 0    50   ~ 0
 FPGA_SI
-Text Label 2400 3750 0    50   ~ 0
+Text Label 2500 3750 0    50   ~ 0
 FPGA_SO
 $Comp
 L UPduino_v3.0:Device_R R?
