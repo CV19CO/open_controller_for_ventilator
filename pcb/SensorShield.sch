@@ -347,65 +347,13 @@ Wire Wire Line
 Wire Wire Line
 	1700 1950 1700 2050
 Wire Wire Line
-	1300 3050 650  3050
-Wire Wire Line
-	1300 3150 650  3150
-Wire Wire Line
-	1300 3250 650  3250
-Wire Wire Line
-	1300 2750 650  2750
-Wire Wire Line
-	1300 2850 650  2850
-Wire Wire Line
-	1300 2950 650  2950
-Wire Wire Line
-	1300 2550 650  2550
-Wire Wire Line
-	1300 2650 650  2650
-Wire Wire Line
 	3050 3850 2400 3850
 Wire Wire Line
 	3050 3950 2400 3950
 Wire Wire Line
 	3050 4050 2400 4050
 Wire Wire Line
-	3050 3550 2400 3550
-Wire Wire Line
-	3050 3650 2400 3650
-Wire Wire Line
 	3050 3750 2400 3750
-Wire Wire Line
-	3050 3250 2400 3250
-Wire Wire Line
-	3050 3350 2400 3350
-Wire Wire Line
-	3050 3450 2400 3450
-Wire Wire Line
-	3050 2950 2400 2950
-Wire Wire Line
-	3050 3050 2400 3050
-Wire Wire Line
-	3050 3150 2400 3150
-Wire Wire Line
-	3050 2750 2400 2750
-Wire Wire Line
-	3050 2850 2400 2850
-Wire Wire Line
-	5800 2550 5150 2550
-Wire Wire Line
-	5800 2650 5150 2650
-Wire Wire Line
-	5800 2750 5150 2750
-Wire Wire Line
-	5800 2850 5150 2850
-Wire Wire Line
-	5800 2950 5150 2950
-Wire Wire Line
-	5800 3050 5150 3050
-Wire Wire Line
-	5800 3150 5150 3150
-Wire Wire Line
-	5800 3250 5150 3250
 $Comp
 L UPduino_v3.0:Device_C C?
 U 1 1 5E9D8A8B
@@ -846,58 +794,6 @@ F 3 "" H 4950 7900 50  0001 C CNN
 	1    4950 7900
 	1    0    0    -1  
 $EndComp
-Text Label 650  2550 0    50   ~ 0
-IOT_36B
-Text Label 650  2650 0    50   ~ 0
-IOT_37A
-Text Label 650  2750 0    50   ~ 0
-IOT_38B
-Text Label 650  2850 0    50   ~ 0
-IOT_39A
-Text Label 650  2950 0    50   ~ 0
-IOT_41A
-Text Label 650  3050 0    50   ~ 0
-IOT_42B
-Text Label 650  3150 0    50   ~ 0
-IOT_43A
-Text Label 650  3250 0    50   ~ 0
-IOT_44B
-Text Label 2400 2750 0    50   ~ 0
-IOB_13B
-Text Label 2400 2850 0    50   ~ 0
-IOB_16A
-Text Label 2400 2950 0    50   ~ 0
-IOB_18A
-Text Label 2400 3050 0    50   ~ 0
-IOB_20A
-Text Label 2400 3150 0    50   ~ 0
-IOB_22A
-Text Label 2400 3250 0    50   ~ 0
-IOB_23B
-Text Label 2400 3350 0    50   ~ 0
-IOB_24A
-Text Label 2400 3450 0    50   ~ 0
-IOB_25B_G3
-Text Label 2400 3550 0    50   ~ 0
-IOB_29B
-Text Label 2400 3650 0    50   ~ 0
-IOB_31B
-Text Label 5150 2550 0    50   ~ 0
-IOB_0A
-Text Label 5150 2650 0    50   ~ 0
-IOB_2A
-Text Label 5150 2750 0    50   ~ 0
-IOB_3B_G6
-Text Label 5150 2850 0    50   ~ 0
-IOB_4A
-Text Label 5150 2950 0    50   ~ 0
-IOB_5B
-Text Label 5150 3050 0    50   ~ 0
-IOB_6A
-Text Label 5150 3150 0    50   ~ 0
-IOB_8A
-Text Label 5150 3250 0    50   ~ 0
-IOB_9B
 Text Notes 3100 1600 0    100  ~ 20
 FPGA Banks
 $Comp
@@ -3609,35 +3505,111 @@ SPI_CLK
 Wire Wire Line
 	9600 2150 10050 2150
 Wire Wire Line
-	750  4150 1300 4150
-Wire Wire Line
-	750  4050 1300 4050
-Text Label 750  4150 0    50   ~ 0
-I2C_CLK_0
-Text Label 750  4050 0    50   ~ 0
-I2C_SDA_0
-Wire Wire Line
-	750  3550 1300 3550
-Wire Wire Line
-	750  3450 1300 3450
-Text Label 750  3450 0    50   ~ 0
-I2C_CLK_6
-Text Label 750  3550 0    50   ~ 0
-I2C_SDA_6
-Wire Wire Line
-	750  3350 1300 3350
-Text Label 750  3350 0    50   ~ 0
-I2C_SDA_3
-Wire Wire Line
-	750  3750 1300 3750
-Text Label 750  3750 0    50   ~ 0
-I2C_CLK_3
-Wire Wire Line
 	750  3650 1300 3650
 Wire Wire Line
 	750  3850 1300 3850
 Text Label 750  3850 0    50   ~ 0
-I2C_SDA_4
+I2C_CLK_0
 Text Label 750  3650 0    50   ~ 0
+I2C_SDA_0
+Wire Wire Line
+	750  3250 1300 3250
+Wire Wire Line
+	750  3150 1300 3150
+Text Label 750  3250 0    50   ~ 0
+I2C_CLK_6
+Text Label 750  3150 0    50   ~ 0
+I2C_SDA_6
+Wire Wire Line
+	750  3550 1300 3550
+Text Label 750  3550 0    50   ~ 0
+I2C_SDA_3
+Wire Wire Line
+	750  3350 1300 3350
+Text Label 750  3350 0    50   ~ 0
+I2C_CLK_3
+Wire Wire Line
+	750  4050 1300 4050
+Wire Wire Line
+	750  3950 1300 3950
+Text Label 750  3950 0    50   ~ 0
+I2C_SDA_4
+Text Label 750  4050 0    50   ~ 0
 I2C_CLK_4
+Wire Wire Line
+	750  2950 1300 2950
+Text Label 750  2950 0    50   ~ 0
+I2C_CLK_7
+Wire Wire Line
+	750  2750 1300 2750
+Text Label 750  2750 0    50   ~ 0
+I2C_SDA_7
+Wire Wire Line
+	750  2850 1300 2850
+Text Label 750  2850 0    50   ~ 0
+I2C_CLK_8
+Wire Wire Line
+	750  2550 1300 2550
+Text Label 750  2550 0    50   ~ 0
+I2C_SDA_8
+Text Label 5250 2550 0    50   ~ 0
+I2C_CLK_1
+Wire Wire Line
+	5250 2550 5800 2550
+Text Label 5250 2950 0    50   ~ 0
+I2C_SDA_1
+Wire Wire Line
+	5250 2950 5800 2950
+Wire Wire Line
+	5800 2750 5250 2750
+Text Label 5250 2750 0    50   ~ 0
+SPI_CS_0
+Wire Wire Line
+	1300 4150 750  4150
+Text Label 750  4150 0    50   ~ 0
+SPI_CS_4
+Wire Wire Line
+	5800 2650 5250 2650
+Text Label 5250 2650 0    50   ~ 0
+SPI_CS_1
+Wire Wire Line
+	1300 3750 750  3750
+Text Label 750  3750 0    50   ~ 0
+SPI_CS_3
+Wire Wire Line
+	1300 3450 750  3450
+Text Label 750  3450 0    50   ~ 0
+SPI_CS_6
+Wire Wire Line
+	1300 3050 750  3050
+Text Label 750  3050 0    50   ~ 0
+SPI_CS_7
+Wire Wire Line
+	1300 2650 750  2650
+Text Label 750  2650 0    50   ~ 0
+SPI_CS_8
+Wire Wire Line
+	2500 3550 3050 3550
+Wire Wire Line
+	2500 3450 3050 3450
+Text Label 2500 3450 0    50   ~ 0
+I2C_SDA_5
+Text Label 2500 3550 0    50   ~ 0
+I2C_CLK_5
+Wire Wire Line
+	3050 3250 2500 3250
+Text Label 2500 3250 0    50   ~ 0
+SPI_CS_5
+Wire Wire Line
+	3050 3650 2500 3650
+Text Label 2500 3650 0    50   ~ 0
+SPI_CS_2
+Wire Wire Line
+	2500 3350 3050 3350
+Wire Wire Line
+	2500 3150 3050 3150
+Text Label 2500 3350 0    50   ~ 0
+I2C_SDA_2
+Text Label 2500 3150 0    50   ~ 0
+I2C_CLK_2
 $EndSCHEMATC
