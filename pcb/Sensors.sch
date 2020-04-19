@@ -194,10 +194,4 @@ Wire Wire Line
 	3450 1300 3450 1400
 Wire Wire Line
 	2400 1450 2400 1500
-$Sheet
-S 4400 750  950  1050
-U 5E9ECB99
-F0 "SensorShields" 50
-F1 "SensorShield.sch" 50
-$EndSheet
 $EndSCHEMATC
