@@ -256,7 +256,7 @@ Connection ~ 9650 2550
 NoConn ~ 9100 2250
 NoConn ~ 9100 2350
 $Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise S0
+L Connector_Generic:Conn_02x08_Odd_Even S0
 U 1 1 5EA1EA25
 P 9300 2150
 AR Path="/5E98CC69/5E9ECB99/5EA1EA25" Ref="S0"  Part="1" 
@@ -346,18 +346,6 @@ Wire Wire Line
 	2350 5600 2350 5650
 Wire Wire Line
 	1700 1950 1700 2050
-Wire Wire Line
-	1300 3650 650  3650
-Wire Wire Line
-	1300 3750 650  3750
-Wire Wire Line
-	1300 3850 650  3850
-Wire Wire Line
-	1300 3350 650  3350
-Wire Wire Line
-	1300 3450 650  3450
-Wire Wire Line
-	1300 3550 650  3550
 Wire Wire Line
 	1300 3050 650  3050
 Wire Wire Line
@@ -874,18 +862,6 @@ Text Label 650  3150 0    50   ~ 0
 IOT_43A
 Text Label 650  3250 0    50   ~ 0
 IOT_44B
-Text Label 650  3350 0    50   ~ 0
-IOT_45A_G1
-Text Label 650  3450 0    50   ~ 0
-IOT_46B_G0
-Text Label 650  3550 0    50   ~ 0
-IOT_48B
-Text Label 650  3650 0    50   ~ 0
-IOT_49A
-Text Label 650  3750 0    50   ~ 0
-IOT_50B
-Text Label 650  3850 0    50   ~ 0
-IOT_51A
 Text Label 2400 2750 0    50   ~ 0
 IOB_13B
 Text Label 2400 2850 0    50   ~ 0
@@ -1546,7 +1522,7 @@ Connection ~ 12300 2600
 NoConn ~ 11750 2300
 NoConn ~ 11750 2400
 $Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise S1
+L Connector_Generic:Conn_02x08_Odd_Even S1
 U 1 1 5EA97268
 P 11950 2200
 AR Path="/5E98CC69/5E9ECB99/5EA97268" Ref="S1"  Part="1" 
@@ -1819,7 +1795,7 @@ Connection ~ 14850 2550
 NoConn ~ 14300 2250
 NoConn ~ 14300 2350
 $Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise S2
+L Connector_Generic:Conn_02x08_Odd_Even S2
 U 1 1 5EAA1D56
 P 14500 2150
 AR Path="/5E98CC69/5E9ECB99/5EAA1D56" Ref="S2"  Part="1" 
@@ -2092,7 +2068,7 @@ Connection ~ 9600 4450
 NoConn ~ 9050 4150
 NoConn ~ 9050 4250
 $Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise S3
+L Connector_Generic:Conn_02x08_Odd_Even S3
 U 1 1 5EADFD34
 P 9250 4050
 AR Path="/5E98CC69/5E9ECB99/5EADFD34" Ref="S3"  Part="1" 
@@ -2365,7 +2341,7 @@ Connection ~ 12250 4500
 NoConn ~ 11700 4200
 NoConn ~ 11700 4300
 $Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise S5
+L Connector_Generic:Conn_02x08_Odd_Even S5
 U 1 1 5EADFDC7
 P 14450 4050
 AR Path="/5E98CC69/5E9ECB99/5EADFDC7" Ref="S5"  Part="1" 
@@ -2638,7 +2614,7 @@ Connection ~ 14800 4450
 NoConn ~ 14250 4150
 NoConn ~ 14250 4250
 $Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise S7
+L Connector_Generic:Conn_02x08_Odd_Even S7
 U 1 1 5EADFE5A
 P 11900 6250
 AR Path="/5E98CC69/5E9ECB99/5EADFE5A" Ref="S7"  Part="1" 
@@ -2911,7 +2887,7 @@ Connection ~ 9600 6600
 NoConn ~ 9050 6300
 NoConn ~ 9050 6400
 $Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise S4
+L Connector_Generic:Conn_02x08_Odd_Even S4
 U 1 1 5EB06DCE
 P 11900 4100
 AR Path="/5E98CC69/5E9ECB99/5EB06DCE" Ref="S4"  Part="1" 
@@ -3178,7 +3154,7 @@ Connection ~ 12250 6650
 NoConn ~ 11700 6350
 NoConn ~ 11700 6450
 $Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise S6
+L Connector_Generic:Conn_02x08_Odd_Even S6
 U 1 1 5EB06E35
 P 9250 6200
 AR Path="/5E98CC69/5E9ECB99/5EB06E35" Ref="S6"  Part="1" 
@@ -3449,7 +3425,7 @@ Connection ~ 14800 6600
 NoConn ~ 14250 6300
 NoConn ~ 14250 6400
 $Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise S8
+L Connector_Generic:Conn_02x08_Odd_Even S8
 U 1 1 5EB06E9C
 P 14450 6200
 AR Path="/5E98CC69/5E9ECB99/5EB06E9C" Ref="S8"  Part="1" 
@@ -3633,11 +3609,35 @@ SPI_CLK
 Wire Wire Line
 	9600 2150 10050 2150
 Wire Wire Line
-	900  4050 1300 4050
+	750  4150 1300 4150
 Wire Wire Line
-	900  4150 1300 4150
-Text Label 900  4050 0    50   ~ 0
+	750  4050 1300 4050
+Text Label 750  4150 0    50   ~ 0
 I2C_CLK_0
-Text Label 900  4150 0    50   ~ 0
+Text Label 750  4050 0    50   ~ 0
 I2C_SDA_0
+Wire Wire Line
+	750  3550 1300 3550
+Wire Wire Line
+	750  3450 1300 3450
+Text Label 750  3450 0    50   ~ 0
+I2C_CLK_6
+Text Label 750  3550 0    50   ~ 0
+I2C_SDA_6
+Wire Wire Line
+	750  3350 1300 3350
+Text Label 750  3350 0    50   ~ 0
+I2C_SDA_3
+Wire Wire Line
+	750  3750 1300 3750
+Text Label 750  3750 0    50   ~ 0
+I2C_CLK_3
+Wire Wire Line
+	750  3650 1300 3650
+Wire Wire Line
+	750  3850 1300 3850
+Text Label 750  3850 0    50   ~ 0
+I2C_SDA_4
+Text Label 750  3650 0    50   ~ 0
+I2C_CLK_4
 $EndSCHEMATC
