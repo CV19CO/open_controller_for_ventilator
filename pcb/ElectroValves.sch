@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -787,8 +786,8 @@ Entry Wire Line
 	1500 2400 1600 2500
 Wire Bus Line
 	1400 1750 1500 1750
-Wire Bus Line
-	1500 1750 1500 2500
 Text HLabel 1400 1750 0    50   Input ~ 0
 R[0..7]
+Wire Bus Line
+	1500 1750 1500 2500
 $EndSCHEMATC

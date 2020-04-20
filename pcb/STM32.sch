@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr User 12000 10000
@@ -1257,10 +1256,6 @@ Wire Bus Line
 	8950 1300 9050 1300
 Text HLabel 9050 1300 2    50   Input ~ 0
 SEN[0..8]
-Wire Bus Line
-	5950 2850 5950 3550
-Wire Bus Line
-	8950 1300 8950 2100
 Wire Wire Line
 	750  3500 2600 3500
 Wire Wire Line
@@ -1279,4 +1274,8 @@ Wire Wire Line
 	750  2400 2600 2400
 Wire Wire Line
 	750  2500 2600 2500
+Wire Bus Line
+	5950 2850 5950 3550
+Wire Bus Line
+	8950 1300 8950 2100
 $EndSCHEMATC

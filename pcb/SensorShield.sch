@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -297,6 +296,7 @@ F 0 "U14" H 1400 1950 50  0000 L CNN
 F 1 "ICE40UP5K-SG48ITR" H 1400 1800 50  0000 L CNN
 F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 1700 1800 50  0001 C CNN
 F 3 "" H 1300 4150 50  0001 C CNN
+F 4 "220-2212-1-ND" H 1700 3150 50  0001 C CNN "DigiKey"
 	1    1700 3150
 	1    0    0    -1  
 $EndComp
@@ -310,7 +310,8 @@ AR Path="/5E9C016D/5E9D8A48" Ref="U14"  Part="3"
 F 0 "U14" H 5900 2100 50  0000 L CNN
 F 1 "ICE40UP5K-SG48ITR" H 5900 2000 50  0000 L CNN
 F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 6200 1400 50  0001 C CNN
-F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 5800 3750 50  0001 C CNN
+F 3 "" H 5800 3750 50  0001 C CNN
+F 4 "220-2212-1-ND" H 6200 2750 50  0001 C CNN "DIgiKey"
 	3    6200 2750
 	1    0    0    -1  
 $EndComp
@@ -325,6 +326,7 @@ F 0 "U14" V 2267 5600 50  0000 C CNN
 F 1 "ICE40UP5K-SG48ITR" V 2176 5600 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 1900 4250 50  0001 C CNN
 F 3 "" H 1500 6600 50  0001 C CNN
+F 4 "220-2212-1-ND" V 1900 5600 50  0001 C CNN "DIgiKey"
 	4    1900 5600
 	0    -1   -1   0   
 $EndComp
@@ -471,31 +473,17 @@ CDONE
 Text Label 2400 2450 0    50   ~ 0
 CRESET_N
 $Comp
-L UPduino_v3.0:W25Q32JVSS-Memory_Flash U?
-U 1 1 5E9D8AB7
-P 3550 8450
-AR Path="/5E9B245C/5E9D8AB7" Ref="U?"  Part="1" 
-AR Path="/5E98CC69/5E9ECB99/5E9D8AB7" Ref="U15"  Part="1" 
-AR Path="/5E9C016D/5E9D8AB7" Ref="U15"  Part="1" 
-F 0 "U15" H 3700 8950 50  0000 C CNN
-F 1 "W25Q32JVSSIM" H 3900 8850 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 3550 8450 50  0001 C CNN
-F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 3550 8450 50  0001 C CNN
-	1    3550 8450
-	1    0    0    -1  
-$EndComp
-$Comp
 L UPduino_v3.0:power_GND #PWR?
 U 1 1 5E9D8ABD
-P 3550 8900
+P 3450 8850
 AR Path="/5E9B245C/5E9D8ABD" Ref="#PWR?"  Part="1" 
 AR Path="/5E98CC69/5E9ECB99/5E9D8ABD" Ref="#PWR024"  Part="1" 
 AR Path="/5E9C016D/5E9D8ABD" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 3550 8650 50  0001 C CNN
-F 1 "GND" H 3555 8727 50  0000 C CNN
-F 2 "" H 3550 8900 50  0001 C CNN
-F 3 "" H 3550 8900 50  0001 C CNN
-	1    3550 8900
+F 0 "#PWR024" H 3450 8600 50  0001 C CNN
+F 1 "GND" H 3455 8677 50  0000 C CNN
+F 2 "" H 3450 8850 50  0001 C CNN
+F 3 "" H 3450 8850 50  0001 C CNN
+	1    3450 8850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -514,8 +502,6 @@ F 3 "" H 3550 7950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3550 7950 3550 8050
-Wire Wire Line
-	3550 8850 3550 8900
 $Comp
 L UPduino_v3.0:Device_C C?
 U 1 1 5E9D8ACB
@@ -747,10 +733,6 @@ Wire Wire Line
 	2850 1900 3550 1900
 Text Label 4550 8350 2    50   ~ 0
 FLASH_MISO
-Text Label 5750 8550 0    50   ~ 0
-IOB_18A
-Text Label 5750 8650 0    50   ~ 0
-IOB_25B_G3
 Text Label 4550 8250 2    50   ~ 0
 FLASH_MOSI
 $Comp
@@ -840,44 +822,6 @@ F 3 "" H 4950 7900 50  0001 C CNN
 $EndComp
 Text Notes 3100 1600 0    100  ~ 20
 FPGA Banks
-$Comp
-L UPduino_v3.0:Device_R R?
-U 1 1 5E9D8B7E
-P 5400 8550
-AR Path="/5E9B245C/5E9D8B7E" Ref="R?"  Part="1" 
-AR Path="/5E98CC69/5E9ECB99/5E9D8B7E" Ref="R37"  Part="1" 
-AR Path="/5E9C016D/5E9D8B7E" Ref="R37"  Part="1" 
-F 0 "R37" V 5607 8550 50  0000 C CNN
-F 1 "JUMPER" V 5516 8550 50  0000 C CNN
-F 2 "vs:SolderJumper-2_0603_Open_TrianglePad1.0x1.5mm" V 5330 8550 50  0001 C CNN
-F 3 "~" H 5400 8550 50  0001 C CNN
-	1    5400 8550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L UPduino_v3.0:Device_R R?
-U 1 1 5E9D8B84
-P 5400 8650
-AR Path="/5E9B245C/5E9D8B84" Ref="R?"  Part="1" 
-AR Path="/5E98CC69/5E9ECB99/5E9D8B84" Ref="R38"  Part="1" 
-AR Path="/5E9C016D/5E9D8B84" Ref="R38"  Part="1" 
-F 0 "R38" V 5200 8650 50  0000 C CNN
-F 1 "JUMPER" V 5300 8650 50  0000 C CNN
-F 2 "vs:SolderJumper-2_0603_Open_TrianglePad1.0x1.5mm" V 5330 8650 50  0001 C CNN
-F 3 "~" H 5400 8650 50  0001 C CNN
-	1    5400 8650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4800 8550 5250 8550
-Connection ~ 4800 8550
-Wire Wire Line
-	5100 8650 5250 8650
-Connection ~ 5100 8650
-Wire Wire Line
-	5550 8650 5750 8650
-Wire Wire Line
-	5550 8550 5750 8550
 Text Notes 1250 2050 0    50   ~ 10
 Bank 0
 Text Notes 3150 2050 0    50   ~ 10
@@ -984,8 +928,6 @@ F 3 "" H 6200 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6700 1950
-Text Notes 5050 9000 0    50   ~ 0
-Install 0 Ohms for qSPI
 Wire Wire Line
 	1200 5700 1500 5700
 $Comp
@@ -1028,6 +970,7 @@ F 0 "U14" H 3550 2075 50  0000 C CNN
 F 1 "ICE40UP5K-SG48ITR" H 3550 1984 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 3550 1800 50  0001 C CNN
 F 3 "" H 3150 4150 50  0001 C CNN
+F 4 "220-2212-1-ND" H 3550 3150 50  0001 C CNN "DigiKey"
 	2    3550 3150
 	1    0    0    -1  
 $EndComp
@@ -3758,6 +3701,18 @@ Text HLabel 8900 8150 2    50   Output ~ 0
 ANALOG_[0..8]
 Wire Wire Line
 	1150 6300 1400 6300
+$Comp
+L UPduino_v3.0:GD25Q32CTIGR-Memory_Flash U?
+U 1 1 5EA7BA0C
+P 3550 8450
+F 0 "U?" H 3200 8100 50  0000 C CNN
+F 1 "GD25Q32CTIGR-Memory_Flash" H 3750 8850 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3550 8450 50  0001 C CNN
+F 3 "http://www.gigadevice.com/datasheet/gd25q32c/" H 3550 8450 50  0001 C CNN
+F 4 "1970-1012-1-ND" H 3550 8450 50  0001 C CNN "DIgiKey"
+	1    3550 8450
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	8800 8150 8800 9000
 $EndSCHEMATC
