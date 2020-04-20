@@ -103,4 +103,135 @@ Wire Wire Line
 	6000 3300 6250 3300
 Text Label 6250 3300 2    50   ~ 0
 GND_PI
+Text HLabel 2150 4100 0    50   BiDi ~ 0
+SPI_PI[0..4]
+Wire Bus Line
+	2150 4100 2350 4100
+Entry Wire Line
+	2350 4150 2450 4250
+Entry Wire Line
+	2350 4250 2450 4350
+Entry Wire Line
+	2350 4350 2450 4450
+Entry Wire Line
+	2350 4450 2450 4550
+Entry Wire Line
+	2350 4550 2450 4650
+Text Label 2800 4250 2    50   ~ 0
+SPI_PI0
+Text Label 2800 4350 2    50   ~ 0
+SPI_PI1
+Text Label 2800 4450 2    50   ~ 0
+SPI_PI2
+Text Label 2800 4550 2    50   ~ 0
+SPI_PI3
+Text Label 2800 4650 2    50   ~ 0
+SPI_PI4
+Text Label 2600 2350 0    50   ~ 0
+SPI_MOSI
+Text Label 2600 2450 0    50   ~ 0
+SPI_MISO
+Text Label 2600 2550 0    50   ~ 0
+SPI_CLK
+Text Label 4950 2550 2    50   ~ 0
+SPI_CS
+Wire Wire Line
+	2600 2350 3050 2350
+Wire Wire Line
+	2600 2450 3050 2450
+Wire Wire Line
+	2600 2550 3050 2550
+Wire Wire Line
+	4950 2550 4600 2550
+Text Label 3600 4250 2    50   ~ 0
+SPI_MISO
+Text Label 3600 4350 2    50   ~ 0
+SPI_MOSI
+Text Label 3600 4450 2    50   ~ 0
+SPI_CLK
+Text Label 3600 4550 2    50   ~ 0
+SPI_CS
+Text Label 2600 2850 0    50   ~ 0
+RST_ICE
+Wire Wire Line
+	2600 2850 3050 2850
+Text Label 3600 4650 2    50   ~ 0
+RST_ICE
+Wire Wire Line
+	2450 4250 2900 4250
+Wire Wire Line
+	2450 4350 2900 4350
+Wire Wire Line
+	2450 4450 2900 4450
+Wire Wire Line
+	2450 4550 2900 4550
+Wire Wire Line
+	2450 4650 2900 4650
+$Comp
+L Device:R R?
+U 1 1 5E9EA326
+P 3050 4250
+F 0 "R?" V 3000 4100 50  0000 C CNN
+F 1 "100" V 3050 4250 50  0000 C CNN
+F 2 "" V 2980 4250 50  0001 C CNN
+F 3 "~" H 3050 4250 50  0001 C CNN
+	1    3050 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA15CD3
+P 3050 4350
+F 0 "R?" V 3000 4200 50  0000 C CNN
+F 1 "100" V 3050 4350 50  0000 C CNN
+F 2 "" V 2980 4350 50  0001 C CNN
+F 3 "~" H 3050 4350 50  0001 C CNN
+	1    3050 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA17179
+P 3050 4450
+F 0 "R?" V 3000 4300 50  0000 C CNN
+F 1 "100" V 3050 4450 50  0000 C CNN
+F 2 "" V 2980 4450 50  0001 C CNN
+F 3 "~" H 3050 4450 50  0001 C CNN
+	1    3050 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA17183
+P 3050 4550
+F 0 "R?" V 3000 4400 50  0000 C CNN
+F 1 "100" V 3050 4550 50  0000 C CNN
+F 2 "" V 2980 4550 50  0001 C CNN
+F 3 "~" H 3050 4550 50  0001 C CNN
+	1    3050 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EA17F2D
+P 3050 4650
+F 0 "R?" V 3000 4500 50  0000 C CNN
+F 1 "100" V 3050 4650 50  0000 C CNN
+F 2 "" V 2980 4650 50  0001 C CNN
+F 3 "~" H 3050 4650 50  0001 C CNN
+	1    3050 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 4250 3200 4250
+Wire Wire Line
+	3600 4350 3200 4350
+Wire Wire Line
+	3600 4450 3200 4450
+Wire Wire Line
+	3600 4550 3200 4550
+Wire Wire Line
+	3600 4650 3200 4650
+Wire Bus Line
+	2350 4100 2350 4550
 $EndSCHEMATC
