@@ -317,13 +317,13 @@ F 3 "" H 9750 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 9300 1050 0    50   ~ 0
-ESP32 regulator\n
+STM regulator
 $Comp
-L ventilator-PowerSymbols:3V3_ESP #PWR0165
+L ventilator-PowerSymbols:3V3_STM #PWR0165
 U 1 1 5E9883BE
 P 9850 1350
 F 0 "#PWR0165" H 9850 1310 30  0001 C CNN
-F 1 "3V3_ESP" H 9859 1488 30  0000 C CNN
+F 1 "3V3_STM" H 9859 1488 30  0000 C CNN
 F 2 "" H 9850 1350 60  0000 C CNN
 F 3 "" H 9850 1350 60  0000 C CNN
 	1    9850 1350
