@@ -766,105 +766,6 @@ $EndComp
 Text Label 5700 4200 0    60   ~ 0
 IO32
 $Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RA1
-U 1 1 55660488
-P 850 2800
-F 0 "RA1" V 930 2800 50  0000 C CNN
-F 1 "100k" V 850 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 850 2800 60  0001 C CNN
-F 3 "" H 850 2800 60  0001 C CNN
-	1    850  2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RA2
-U 1 1 55660A61
-P 1000 2800
-F 0 "RA2" V 1080 2800 50  0000 C CNN
-F 1 "100k" V 1000 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 1000 2800 60  0001 C CNN
-F 3 "" H 1000 2800 60  0001 C CNN
-	1    1000 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RA3
-U 1 1 55660AB1
-P 1150 2800
-F 0 "RA3" V 1230 2800 50  0000 C CNN
-F 1 "100k" V 1150 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 1150 2800 60  0001 C CNN
-F 3 "" H 1150 2800 60  0001 C CNN
-	1    1150 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RA4
-U 1 1 55660AFE
-P 1300 2800
-F 0 "RA4" V 1380 2800 50  0000 C CNN
-F 1 "100k" V 1300 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 1300 2800 60  0001 C CNN
-F 3 "" H 1300 2800 60  0001 C CNN
-	1    1300 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RA5
-U 1 1 55660B50
-P 1450 2800
-F 0 "RA5" V 1530 2800 50  0000 C CNN
-F 1 "100k" V 1450 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 1450 2800 60  0001 C CNN
-F 3 "" H 1450 2800 60  0001 C CNN
-	1    1450 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RA6
-U 1 1 55660BA7
-P 1600 2800
-F 0 "RA6" V 1680 2800 50  0000 C CNN
-F 1 "100k" V 1600 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 1600 2800 60  0001 C CNN
-F 3 "" H 1600 2800 60  0001 C CNN
-	1    1600 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RA7
-U 1 1 55660C05
-P 1750 2800
-F 0 "RA7" V 1830 2800 50  0000 C CNN
-F 1 "100k" V 1750 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 1750 2800 60  0001 C CNN
-F 3 "" H 1750 2800 60  0001 C CNN
-	1    1750 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RA8
-U 1 1 55660C68
-P 1900 2800
-F 0 "RA8" V 1980 2800 50  0000 C CNN
-F 1 "100k" V 1900 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 1900 2800 60  0001 C CNN
-F 3 "" H 1900 2800 60  0001 C CNN
-	1    1900 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0168
-U 1 1 556636B2
-P 850 3150
-F 0 "#PWR0168" H 850 3150 30  0001 C CNN
-F 1 "GND" H 850 3080 30  0001 C CNN
-F 2 "" H 850 3150 60  0001 C CNN
-F 3 "" H 850 3150 60  0001 C CNN
-	1    850  3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L media_board:JUMPER PGM1
 U 1 1 5679E80A
 P 800 5950
@@ -981,21 +882,11 @@ Wire Wire Line
 Wire Wire Line
 	5050 6650 5050 6750
 Wire Wire Line
-	750  1800 1900 1800
-Wire Wire Line
 	2250 3900 2600 3900
 Wire Wire Line
 	2250 3100 2600 3100
 Wire Wire Line
 	2600 3300 2250 3300
-Wire Wire Line
-	750  2500 850  2500
-Wire Wire Line
-	750  2300 1150 2300
-Wire Wire Line
-	750  2100 1450 2100
-Wire Wire Line
-	750  1900 1750 1900
 Wire Wire Line
 	4250 6550 4250 6650
 Wire Wire Line
@@ -1007,17 +898,11 @@ Wire Wire Line
 Wire Wire Line
 	2300 1400 2600 1400
 Wire Wire Line
-	750  2000 1600 2000
-Wire Wire Line
 	4500 800  4500 950 
 Wire Wire Line
 	2250 3200 2600 3200
 Wire Wire Line
 	2250 3800 2600 3800
-Wire Wire Line
-	750  2200 1300 2200
-Wire Wire Line
-	750  2400 1000 2400
 Wire Wire Line
 	4250 6650 4450 6650
 Wire Wire Line
@@ -1175,32 +1060,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 4200 5600 4200
 Wire Wire Line
-	850  2550 850  2500
-Connection ~ 850  2500
-Wire Wire Line
-	1000 2550 1000 2400
-Connection ~ 1000 2400
-Wire Wire Line
-	1150 2550 1150 2300
-Connection ~ 1150 2300
-Wire Wire Line
-	1300 2550 1300 2200
-Connection ~ 1300 2200
-Wire Wire Line
-	1450 2550 1450 2100
-Connection ~ 1450 2100
-Wire Wire Line
-	1600 2550 1600 2000
-Connection ~ 1600 2000
-Wire Wire Line
-	1750 2550 1750 1900
-Connection ~ 1750 1900
-Wire Wire Line
-	1900 2550 1900 1800
-Connection ~ 1900 1800
-Wire Wire Line
-	850  3050 850  3150
-Wire Wire Line
 	7400 7900 7550 7900
 Wire Wire Line
 	2200 5400 2600 5400
@@ -1245,22 +1104,6 @@ Wire Wire Line
 	7150 5550 7150 5900
 Wire Wire Line
 	6900 3550 7200 3550
-Wire Wire Line
-	850  2500 2600 2500
-Wire Wire Line
-	1000 2400 2600 2400
-Wire Wire Line
-	1150 2300 2600 2300
-Wire Wire Line
-	1300 2200 2600 2200
-Wire Wire Line
-	1450 2100 2600 2100
-Wire Wire Line
-	1600 2000 2600 2000
-Wire Wire Line
-	1750 1900 2600 1900
-Wire Wire Line
-	1900 1800 2600 1800
 Wire Wire Line
 	5600 1950 6900 1950
 Wire Wire Line
@@ -1354,37 +1197,6 @@ Text HLabel 6050 2850 2    50   BiDi ~ 0
 PE[0..7]
 Text Label 800  3500 0    50   ~ 0
 SEN8
-Wire Wire Line
-	750  3500 850  3500
-Wire Wire Line
-	850  3550 850  3500
-Connection ~ 850  3500
-Wire Wire Line
-	850  3500 2600 3500
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RA9
-U 1 1 5EA6155C
-P 850 3800
-F 0 "RA9" V 930 3800 50  0000 C CNN
-F 1 "100k" V 850 3800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 850 3800 60  0001 C CNN
-F 3 "" H 850 3800 60  0001 C CNN
-	1    850  3800
-	-1   0    0    1   
-$EndComp
-$Comp
-L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0220
-U 1 1 5EA6E32C
-P 850 4150
-F 0 "#PWR0220" H 850 4150 30  0001 C CNN
-F 1 "GND" H 850 4080 30  0001 C CNN
-F 2 "" H 850 4150 60  0001 C CNN
-F 3 "" H 850 4150 60  0001 C CNN
-	1    850  4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	850  4050 850  4150
 Text Label 800  2500 0    50   ~ 0
 SEN7
 Text Label 8600 2000 0    50   ~ 0
@@ -1445,29 +1257,26 @@ Wire Bus Line
 	8950 1300 9050 1300
 Text HLabel 9050 1300 2    50   Input ~ 0
 SEN[0..8]
-Wire Wire Line
-	1900 3050 1750 3050
-Connection ~ 850  3050
-Connection ~ 1000 3050
-Wire Wire Line
-	1000 3050 850  3050
-Connection ~ 1150 3050
-Wire Wire Line
-	1150 3050 1000 3050
-Connection ~ 1300 3050
-Wire Wire Line
-	1300 3050 1150 3050
-Connection ~ 1450 3050
-Wire Wire Line
-	1450 3050 1300 3050
-Connection ~ 1600 3050
-Wire Wire Line
-	1600 3050 1450 3050
-Wire Wire Line
-	1600 3050 1750 3050
 Wire Bus Line
 	5950 2850 5950 3550
 Wire Bus Line
 	8950 1300 8950 2100
-Connection ~ 1750 3050
+Wire Wire Line
+	750  3500 2600 3500
+Wire Wire Line
+	750  1800 2600 1800
+Wire Wire Line
+	750  1900 2600 1900
+Wire Wire Line
+	750  2000 2600 2000
+Wire Wire Line
+	750  2100 2600 2100
+Wire Wire Line
+	750  2200 2600 2200
+Wire Wire Line
+	750  2300 2600 2300
+Wire Wire Line
+	750  2400 2600 2400
+Wire Wire Line
+	750  2500 2600 2500
 $EndSCHEMATC

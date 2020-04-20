@@ -745,13 +745,13 @@ Wire Wire Line
 	2850 2000 2850 1900
 Wire Wire Line
 	2850 1900 3550 1900
-Text Label 4100 8350 0    50   ~ 0
+Text Label 4550 8350 2    50   ~ 0
 FLASH_MISO
 Text Label 5750 8550 0    50   ~ 0
 IOB_18A
 Text Label 5750 8650 0    50   ~ 0
 IOB_25B_G3
-Text Label 4100 8250 0    50   ~ 0
+Text Label 4550 8250 2    50   ~ 0
 FLASH_MOSI
 $Comp
 L UPduino_v3.0:Device_R R?
@@ -937,37 +937,19 @@ F 3 "" H 2700 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L UPduino_v3.0:Device_R R?
-U 1 1 5E9D8BAA
-P 1100 6300
-AR Path="/5E9B245C/5E9D8BAA" Ref="R?"  Part="1" 
-AR Path="/5E98CC69/5E9ECB99/5E9D8BAA" Ref="R2"  Part="1" 
-AR Path="/5E9C016D/5E9D8BAA" Ref="R2"  Part="1" 
-F 0 "R2" V 893 6300 50  0000 C CNN
-F 1 "JUMPER" V 984 6300 50  0000 C CNN
-F 2 "vs:ShortedJumper-2_P1.3mm_Bridged_Pad1.0x1.0mm" V 1030 6300 50  0001 C CNN
-F 3 "~" H 1100 6300 50  0001 C CNN
-	1    1100 6300
-	0    1    1    0   
-$EndComp
-$Comp
 L UPduino_v3.0:power_+1V2 #PWR?
 U 1 1 5E9D8BB0
-P 850 6300
+P 1150 6300
 AR Path="/5E9B245C/5E9D8BB0" Ref="#PWR?"  Part="1" 
 AR Path="/5E98CC69/5E9ECB99/5E9D8BB0" Ref="#PWR01"  Part="1" 
 AR Path="/5E9C016D/5E9D8BB0" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 850 6150 50  0001 C CNN
-F 1 "+1V2" H 865 6473 50  0000 C CNN
-F 2 "" H 850 6300 50  0001 C CNN
-F 3 "" H 850 6300 50  0001 C CNN
-	1    850  6300
+F 0 "#PWR01" H 1150 6150 50  0001 C CNN
+F 1 "+1V2" H 1165 6473 50  0000 C CNN
+F 2 "" H 1150 6300 50  0001 C CNN
+F 3 "" H 1150 6300 50  0001 C CNN
+	1    1150 6300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	850  6300 950  6300
-Wire Wire Line
-	1250 6300 1400 6300
 Wire Wire Line
 	1700 1850 1700 1950
 Connection ~ 1700 1950
@@ -1034,8 +1016,6 @@ F 3 "" H 2800 6300 50  0001 C CNN
 	1    2800 6300
 	1    0    0    -1  
 $EndComp
-Text Notes 800  6550 0    50   ~ 0
-Core current \nmeasurement
 Connection ~ 6200 1950
 $Comp
 L UPduino_v3.0:ICE40UP5K-SG48ITR-FPGA_Lattice U?
@@ -3776,6 +3756,8 @@ Wire Bus Line
 	8800 8150 8900 8150
 Text HLabel 8900 8150 2    50   Output ~ 0
 ANALOG_[0..8]
+Wire Wire Line
+	1150 6300 1400 6300
 Wire Bus Line
 	8800 8150 8800 9000
 $EndSCHEMATC
