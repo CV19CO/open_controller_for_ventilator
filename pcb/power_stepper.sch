@@ -1309,20 +1309,14 @@ Wire Wire Line
 Wire Wire Line
 	2800 3950 2800 4000
 Wire Wire Line
-	2700 3050 3100 3050
-Text Label 3100 3050 2    50   ~ 0
+	2700 2900 3100 2900
+Text Label 3100 2900 2    50   ~ 0
 SM_RST
-Wire Wire Line
-	2700 3200 3100 3200
 Text Label 3100 3200 2    50   ~ 0
 SM_CLK
 Wire Wire Line
 	2700 3350 3100 3350
 Text Label 3100 3350 2    50   ~ 0
-SM_SI
-Wire Wire Line
-	2700 2900 3100 2900
-Text Label 3100 2900 2    50   ~ 0
 SM_CS
 Wire Wire Line
 	2700 3550 3100 3550
@@ -1617,26 +1611,26 @@ Wire Wire Line
 Wire Wire Line
 	2800 3700 2800 3950
 Connection ~ 2800 3950
-Text HLabel 1300 2900 0    50   Input ~ 0
+Text HLabel 1300 3350 0    50   Input ~ 0
 M_CS
-Text HLabel 1300 3050 0    50   Input ~ 0
+Text HLabel 1300 2900 0    50   Input ~ 0
 M_RST
 Text HLabel 1300 3200 0    50   Input ~ 0
 M_CLK
-Text HLabel 1300 3350 0    50   Input ~ 0
+Text HLabel 1300 3050 0    50   Input ~ 0
 M_MOSI
 Text HLabel 1300 3550 0    50   Output ~ 0
 M_MISO
 Wire Wire Line
 	6450 5750 7250 5750
 Wire Wire Line
-	1300 2900 1500 2900
+	1300 3350 1500 3350
 Wire Wire Line
-	1300 3050 1500 3050
+	1300 2900 1500 2900
 Wire Wire Line
 	1300 3200 1500 3200
 Wire Wire Line
-	1300 3350 1500 3350
+	1300 3050 1500 3050
 Wire Wire Line
 	1300 3550 1500 3550
 Wire Notes Line
@@ -1807,4 +1801,10 @@ F 3 "" H 6500 6850 60  0001 C CNN
 	1    6500 6950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2700 3200 3100 3200
+Wire Wire Line
+	2700 3050 3100 3050
+Text Label 3100 3050 2    50   ~ 0
+SM_SI
 $EndSCHEMATC

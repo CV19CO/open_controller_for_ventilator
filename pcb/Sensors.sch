@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 5 9
 Title "Open  Controller V1.0"
 Date "2020-04-16"
 Rev "V2"
@@ -83,8 +83,8 @@ L Device:C_Small C32
 U 1 1 56528F52
 P 3200 1050
 F 0 "C32" H 3210 1120 50  0000 L CNN
-F 1 "100nF" H 3210 970 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3200 1050 60  0001 C CNN
+F 1 "10uF" H 3210 970 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3200 1050 60  0001 C CNN
 F 3 "" H 3200 1050 60  0000 C CNN
 	1    3200 1050
 	1    0    0    -1  
