@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,40 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L BarrelConnector:Barrel_Jack_Switch J?
-U 1 1 5E909FE7
-P 1700 1950
-AR Path="/5E909FE7" Ref="J?"  Part="1" 
-AR Path="/5E8E60A3/5E909FE7" Ref="J1"  Part="1" 
-F 0 "J1" H 1755 2267 50  0000 C CNN
-F 1 "Barrel_Jack_Switch" H 1755 2176 50  0000 C CNN
-F 2 "TH:BARREL_JACK" H 1750 1910 50  0001 C CNN
-F 3 "~" H 1750 1910 50  0001 C CNN
-F 4 "CP-002A-ND" H 1700 1950 50  0001 C CNN "DigiKey"
-	1    1700 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 1950 2200 1950
-Wire Wire Line
-	2200 1950 2200 2050
-Wire Wire Line
-	2200 2050 2000 2050
-$Comp
-L power:GND #PWR0106
-U 1 1 5E90A075
-P 2200 2150
-F 0 "#PWR0106" H 2200 1900 50  0001 C CNN
-F 1 "GND" H 2205 1977 50  0000 C CNN
-F 2 "" H 2200 2150 50  0001 C CNN
-F 3 "" H 2200 2150 50  0001 C CNN
-	1    2200 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 2150 2200 2050
-Connection ~ 2200 2050
 $Comp
 L Device:C C17
 U 1 1 5E90A0C5
@@ -86,15 +53,12 @@ $EndComp
 Wire Wire Line
 	3250 1900 3250 1850
 Wire Wire Line
-	2000 1850 2450 1850
-Wire Wire Line
 	2850 1900 2850 1850
 Connection ~ 2850 1850
 Wire Wire Line
 	2850 1850 3250 1850
 Wire Wire Line
 	2450 1900 2450 1850
-Connection ~ 2450 1850
 Wire Wire Line
 	2450 1850 2850 1850
 $Comp

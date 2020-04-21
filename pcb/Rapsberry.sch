@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 9 9
 Title ""
 Date ""
 Rev ""
@@ -66,10 +67,6 @@ Text HLabel 4750 1850 2    50   Input ~ 0
 RX_PI
 Wire Wire Line
 	4600 1850 4750 1850
-Text HLabel 4800 2150 2    50   Output ~ 0
-ESP_PROG_EN
-Text HLabel 4800 2250 2    50   Output ~ 0
-ESP_EN
 Wire Wire Line
 	4600 2150 4800 2150
 Wire Wire Line
@@ -103,29 +100,29 @@ Wire Wire Line
 	6000 3300 6250 3300
 Text Label 6250 3300 2    50   ~ 0
 GND_PI
-Text HLabel 2150 4100 0    50   BiDi ~ 0
+Text HLabel 2050 4100 0    50   BiDi ~ 0
 SPI_PI[0..4]
 Wire Bus Line
-	2150 4100 2350 4100
+	2050 4100 2250 4100
 Entry Wire Line
-	2350 4150 2450 4250
+	2250 4150 2350 4250
 Entry Wire Line
-	2350 4250 2450 4350
+	2250 4250 2350 4350
 Entry Wire Line
-	2350 4350 2450 4450
+	2250 4350 2350 4450
 Entry Wire Line
-	2350 4450 2450 4550
+	2250 4450 2350 4550
 Entry Wire Line
-	2350 4550 2450 4650
-Text Label 2800 4250 2    50   ~ 0
+	2250 4550 2350 4650
+Text Label 2700 4250 2    50   ~ 0
 SPI_PI0
-Text Label 2800 4350 2    50   ~ 0
+Text Label 2700 4350 2    50   ~ 0
 SPI_PI1
-Text Label 2800 4450 2    50   ~ 0
+Text Label 2700 4450 2    50   ~ 0
 SPI_PI2
-Text Label 2800 4550 2    50   ~ 0
+Text Label 2700 4550 2    50   ~ 0
 SPI_PI3
-Text Label 2800 4650 2    50   ~ 0
+Text Label 2700 4650 2    50   ~ 0
 SPI_PI4
 Text Label 2600 2350 0    50   ~ 0
 SPI_MOSI
@@ -158,66 +155,66 @@ Wire Wire Line
 Text Label 3600 4650 2    50   ~ 0
 RST_ICE
 Wire Wire Line
-	2450 4250 2900 4250
+	2350 4250 2900 4250
 Wire Wire Line
-	2450 4350 2900 4350
+	2350 4350 2900 4350
 Wire Wire Line
-	2450 4450 2900 4450
+	2350 4450 2900 4450
 Wire Wire Line
-	2450 4550 2900 4550
+	2350 4550 2900 4550
 Wire Wire Line
-	2450 4650 2900 4650
+	2350 4650 2900 4650
 $Comp
-L Device:R R?
+L Device:R R28
 U 1 1 5E9EA326
 P 3050 4250
-F 0 "R?" V 3000 4100 50  0000 C CNN
+F 0 "R28" V 3000 4050 50  0000 C CNN
 F 1 "100" V 3050 4250 50  0000 C CNN
-F 2 "" V 2980 4250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4250 50  0001 C CNN
 F 3 "~" H 3050 4250 50  0001 C CNN
 	1    3050 4250
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R37
 U 1 1 5EA15CD3
 P 3050 4350
-F 0 "R?" V 3000 4200 50  0000 C CNN
+F 0 "R37" V 3000 4150 50  0000 C CNN
 F 1 "100" V 3050 4350 50  0000 C CNN
-F 2 "" V 2980 4350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4350 50  0001 C CNN
 F 3 "~" H 3050 4350 50  0001 C CNN
 	1    3050 4350
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R38
 U 1 1 5EA17179
 P 3050 4450
-F 0 "R?" V 3000 4300 50  0000 C CNN
+F 0 "R38" V 3000 4250 50  0000 C CNN
 F 1 "100" V 3050 4450 50  0000 C CNN
-F 2 "" V 2980 4450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4450 50  0001 C CNN
 F 3 "~" H 3050 4450 50  0001 C CNN
 	1    3050 4450
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R40
 U 1 1 5EA17183
 P 3050 4550
-F 0 "R?" V 3000 4400 50  0000 C CNN
+F 0 "R40" V 3000 4350 50  0000 C CNN
 F 1 "100" V 3050 4550 50  0000 C CNN
-F 2 "" V 2980 4550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4550 50  0001 C CNN
 F 3 "~" H 3050 4550 50  0001 C CNN
 	1    3050 4550
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R41
 U 1 1 5EA17F2D
 P 3050 4650
-F 0 "R?" V 3000 4500 50  0000 C CNN
+F 0 "R41" V 3000 4450 50  0000 C CNN
 F 1 "100" V 3050 4650 50  0000 C CNN
-F 2 "" V 2980 4650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4650 50  0001 C CNN
 F 3 "~" H 3050 4650 50  0001 C CNN
 	1    3050 4650
 	0    1    1    0   
@@ -232,6 +229,22 @@ Wire Wire Line
 	3600 4550 3200 4550
 Wire Wire Line
 	3600 4650 3200 4650
+Text HLabel 4800 2650 2    50   Output ~ 0
+JTMS
+Text HLabel 4800 2450 2    50   Output ~ 0
+JTCK
+Text HLabel 4800 2250 2    50   Input ~ 0
+JTDI
+Text HLabel 4800 2150 2    50   Output ~ 0
+JTDO
+Wire Wire Line
+	4800 2450 4600 2450
+Wire Wire Line
+	4800 2650 4600 2650
+Wire Wire Line
+	4800 1950 4600 1950
+Text HLabel 4800 1950 2    50   Output ~ 0
+JNRST
 Wire Bus Line
-	2350 4100 2350 4550
+	2250 4100 2250 4550
 $EndSCHEMATC
