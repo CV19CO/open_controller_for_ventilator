@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -122,8 +121,6 @@ F7 "SPI_ICE[0..4]" B R 5800 4200 50
 $EndSheet
 Wire Bus Line
 	5800 4450 6250 4450
-Wire Wire Line
-	5800 4700 5800 4800
 Wire Wire Line
 	5800 4800 6250 4800
 Wire Wire Line

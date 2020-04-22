@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -3580,10 +3579,6 @@ SS_SPI_MISO
 Text HLabel 2800 3050 0    50   Input ~ 0
 SS_SPI_MOSI
 Wire Wire Line
-	2800 2750 3050 2750
-Wire Wire Line
-	2800 2850 3050 2850
-Wire Wire Line
 	2800 2950 3050 2950
 Wire Wire Line
 	2800 3050 3050 3050
@@ -4162,6 +4157,10 @@ Connection ~ 15600 6300
 Wire Wire Line
 	15600 6400 15600 6450
 Connection ~ 15600 6400
+Wire Wire Line
+	2800 2750 3050 2750
+Wire Wire Line
+	2800 2850 3050 2850
 Wire Bus Line
 	2250 9700 2250 10200
 Wire Bus Line
