@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -42,17 +41,6 @@ F 1 "GND" H 6080 2602 50  0000 C CNN
 F 2 "" H 6075 2775 50  0001 C CNN
 F 3 "" H 6075 2775 50  0001 C CNN
 	1    6075 2775
-	1    0    0    -1  
-$EndComp
-$Comp
-L ventilator-PowerSymbols:VCC_IO #PWR0133
-U 1 1 5B76DDB5
-P 6600 2250
-F 0 "#PWR0133" H 6600 2210 30  0001 C CNN
-F 1 "VCC_IO" H 6609 2388 30  0000 C CNN
-F 2 "" H 6600 2250 60  0000 C CNN
-F 3 "" H 6600 2250 60  0000 C CNN
-	1    6600 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -337,4 +325,15 @@ Wire Wire Line
 Connection ~ 6900 2975
 Wire Wire Line
 	6900 2975 7050 2975
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EA9F31F
+P 6600 2250
+F 0 "#PWR?" H 6600 2100 50  0001 C CNN
+F 1 "+3V3" H 6615 2423 50  0000 C CNN
+F 2 "" H 6600 2250 50  0001 C CNN
+F 3 "" H 6600 2250 50  0001 C CNN
+	1    6600 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
