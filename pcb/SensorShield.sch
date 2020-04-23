@@ -3339,12 +3339,8 @@ Text Label 750  2750 0    50   ~ 0
 I2C_SDA_7
 Wire Wire Line
 	750  2850 1300 2850
-Text Label 750  2850 0    50   ~ 0
-I2C_CLK_8
 Wire Wire Line
 	750  2550 1300 2550
-Text Label 750  2550 0    50   ~ 0
-I2C_SDA_8
 Text Label 5250 2550 0    50   ~ 0
 I2C_CLK_1
 Wire Wire Line
@@ -4506,4 +4502,8 @@ Wire Bus Line
 	2250 9700 2250 10200
 Wire Bus Line
 	9700 7600 9700 8450
+Text Label 750  2550 0    50   ~ 0
+I2C_SDA_8
+Text Label 750  2850 0    50   ~ 0
+I2C_CLK_8
 $EndSCHEMATC

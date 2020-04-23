@@ -18,4 +18,5 @@
   (lib (name mpl3115a2)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/mpl3115a2.lib)(options "")(descr ""))
   (lib (name hts221)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/hts221.lib)(options "")(descr ""))
   (lib (name UPduino_v3.0)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/UPduino_v3.0.lib)(options "")(descr ""))
+  (lib (name ncp177)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ncp177.lib)(options "")(descr ""))
 )
