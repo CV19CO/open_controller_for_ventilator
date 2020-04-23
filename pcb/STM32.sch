@@ -334,17 +334,17 @@ F 3 "" H 4050 800 60  0001 C CNN
 $EndComp
 Text HLabel 2300 1600 0    60   BiDi ~ 0
 NRESET
-Text Label 800  2400 0    50   ~ 0
+Text Label 1475 2000 0    50   ~ 0
 SEN6
-Text Label 800  2300 0    50   ~ 0
+Text Label 1475 2500 0    50   ~ 0
 SEN5
-Text Label 800  2200 0    50   ~ 0
+Text Label 1475 2200 0    50   ~ 0
 SEN4
-Text Label 800  2100 0    50   ~ 0
+Text Label 1475 1900 0    50   ~ 0
 SEN3
-Text Label 800  2000 0    50   ~ 0
+Text Label 1475 3500 0    50   ~ 0
 SEN2
-Text Label 800  1900 0    50   ~ 0
+Text Label 1475 2100 0    50   ~ 0
 SEN1
 Text Label 2504 3900 2    60   ~ 0
 JTRST
@@ -362,7 +362,7 @@ Text Label 2300 1400 0    60   ~ 0
 BOOT0
 Text Label 2200 3700 0    60   ~ 0
 BOOT1
-Text Label 800  1800 0    50   ~ 0
+Text Label 1475 1800 0    50   ~ 0
 SEN0
 $Comp
 L media_board:C-RESCUE-stamp_mini_4_layers CXST2
@@ -1195,9 +1195,9 @@ Wire Bus Line
 	5950 2850 6050 2850
 Text HLabel 6050 2850 2    50   BiDi ~ 0
 PE[0..7]
-Text Label 800  3500 0    50   ~ 0
+Text Label 1475 2400 0    50   ~ 0
 SEN8
-Text Label 800  2500 0    50   ~ 0
+Text Label 1475 2300 0    50   ~ 0
 SEN7
 Text Label 8600 2000 0    50   ~ 0
 SEN6
@@ -1258,23 +1258,23 @@ Wire Bus Line
 Text HLabel 9050 1300 2    50   Input ~ 0
 SEN[0..8]
 Wire Wire Line
-	750  3500 2600 3500
+	1475 3500 2600 3500
 Wire Wire Line
-	750  1800 2600 1800
+	1475 1800 2600 1800
 Wire Wire Line
-	750  1900 2600 1900
+	1475 1900 2600 1900
 Wire Wire Line
-	750  2000 2600 2000
+	1475 2000 2600 2000
 Wire Wire Line
-	750  2100 2600 2100
+	1475 2100 2600 2100
 Wire Wire Line
-	750  2200 2600 2200
+	1475 2200 2600 2200
 Wire Wire Line
-	750  2300 2600 2300
+	1475 2300 2600 2300
 Wire Wire Line
-	750  2400 2600 2400
+	1475 2400 2600 2400
 Wire Wire Line
-	750  2500 2600 2500
+	1475 2500 2600 2500
 Wire Bus Line
 	5950 2850 5950 3550
 Wire Bus Line
