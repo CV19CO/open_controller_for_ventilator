@@ -147,10 +147,10 @@ Text Label 3600 4450 2    50   ~ 0
 SPI_CLK
 Text Label 3600 4550 2    50   ~ 0
 SPI_CS
-Text Label 2600 2850 0    50   ~ 0
+Text Label 2600 1950 0    50   ~ 0
 RST_ICE
 Wire Wire Line
-	2600 2850 3050 2850
+	2600 1950 3050 1950
 Text Label 3600 4650 2    50   ~ 0
 RST_ICE
 Wire Wire Line
