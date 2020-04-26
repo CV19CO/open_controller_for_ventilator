@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -75,12 +76,6 @@ F 3 "~" H 2800 4400 50  0001 C CNN
 	1    2800 4400
 	0    -1   -1   0   
 $EndComp
-$Sheet
-S 2500 3050 750  550 
-U 5E8E60A3
-F0 "supply" 50
-F1 "supply.sch" 50
-$EndSheet
 Wire Wire Line
 	5800 2550 6250 2550
 Wire Wire Line
@@ -201,4 +196,10 @@ Wire Wire Line
 	7850 2250 7400 2250
 Wire Wire Line
 	7850 2350 7400 2350
+$Sheet
+S 2300 3050 1450 800 
+U 5EA61A2E
+F0 "PSU" 50
+F1 "PSU.sch" 50
+$EndSheet
 $EndSCHEMATC

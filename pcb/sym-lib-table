@@ -20,4 +20,7 @@
   (lib (name UPduino_v3.0)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/UPduino_v3.0.lib)(options "")(descr ""))
   (lib (name ncp177)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ncp177.lib)(options "")(descr ""))
   (lib (name TCR8BM12)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/TCR8BM12.lib)(options "")(descr ""))
+  (lib (name bcm_t)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/bcm_t.lib)(options "")(descr ""))
+  (lib (name q_pmos_gsd)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/q_pmos_gsd.lib)(options "")(descr ""))
+  (lib (name ap7361c)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ap7361c.lib)(options "")(descr ""))
 )
