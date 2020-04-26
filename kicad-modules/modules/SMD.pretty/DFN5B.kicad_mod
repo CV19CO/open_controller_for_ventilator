@@ -1,0 +1,47 @@
+(module DFN5B (layer F.Cu) (tedit 5EA5FB64)
+  (fp_text reference REF** (at 0.1 1.48) (layer F.SilkS)
+    (effects (font (size 0.6 0.6) (thickness 0.15)))
+  )
+  (fp_text value XDFN4 (at 0.38 -2.78) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_circle (center -0.69 -0.87) (end -0.59 -0.87) (layer F.SilkS) (width 0.1))
+  (pad 1 smd custom (at -0.4 -0.525 180) (size 0.1 0.1) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy -0.15 0.225) (xy 0.15 0.225) (xy 0.15 -0.225) (xy -0.022721 -0.225) (xy -0.15 -0.097721)
+) (width 0))
+    ))
+  (pad 5 smd rect (at 0 0 45) (size 0.63 0.63) (layers F.Cu F.Paste F.Mask))
+  (pad 2 smd custom (at -0.4 0.525) (size 0.1 0.1) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy -0.15 0.225) (xy -0.15 -0.225) (xy 0.022721 -0.225) (xy 0.15 -0.097721) (xy 0.15 0.225)
+) (width 0))
+    ))
+  (pad 3 smd custom (at 0.4 0.525) (size 0.1 0.1) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy -0.15 0.225) (xy 0.15 0.225) (xy 0.15 -0.225) (xy -0.022721 -0.225) (xy -0.15 -0.097721)
+) (width 0))
+    ))
+  (pad 4 smd custom (at 0.4 -0.525 180) (size 0.1 0.1) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy -0.15 0.225) (xy -0.15 -0.225) (xy 0.022721 -0.225) (xy 0.15 -0.097721) (xy 0.15 0.225)
+) (width 0))
+    ))
+  (pad 5 smd custom (at 0.275 0) (size 0.55 0.2) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ))
+)
