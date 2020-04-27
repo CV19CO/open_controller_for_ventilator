@@ -202,4 +202,70 @@ U 5EA61A2E
 F0 "PSU" 50
 F1 "PSU.sch" 50
 $EndSheet
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5EA83E11
+P 2200 4800
+F 0 "H5" H 2300 4800 50  0000 L CNN
+F 1 "MountingHole" H 2300 4755 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2200 4800 50  0001 C CNN
+F 3 "~" H 2200 4800 50  0001 C CNN
+	1    2200 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5EA83E1B
+P 2400 4800
+F 0 "H6" H 2500 4800 50  0000 L CNN
+F 1 "MountingHole" H 2500 4755 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2400 4800 50  0001 C CNN
+F 3 "~" H 2400 4800 50  0001 C CNN
+	1    2400 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 5EA83E25
+P 2600 4800
+F 0 "H7" H 2700 4800 50  0000 L CNN
+F 1 "MountingHole" H 2700 4755 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2600 4800 50  0001 C CNN
+F 3 "~" H 2600 4800 50  0001 C CNN
+	1    2600 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 5EA83E2F
+P 2800 4800
+F 0 "H8" H 2900 4800 50  0000 L CNN
+F 1 "MountingHole" H 2900 4755 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2800 4800 50  0001 C CNN
+F 3 "~" H 2800 4800 50  0001 C CNN
+	1    2800 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 5EA88269
+P 2200 5150
+F 0 "H9" H 2300 5150 50  0000 L CNN
+F 1 "MountingHole" H 2300 5105 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2200 5150 50  0001 C CNN
+F 3 "~" H 2200 5150 50  0001 C CNN
+	1    2200 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 5EA88273
+P 2400 5150
+F 0 "H10" H 2500 5150 50  0000 L CNN
+F 1 "MountingHole" H 2500 5105 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2400 5150 50  0001 C CNN
+F 3 "~" H 2400 5150 50  0001 C CNN
+	1    2400 5150
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
