@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr User 12000 10000
 encoding utf-8
-Sheet 8 9
+Sheet 7 9
 Title ""
 Date "9 may 2013"
 Rev ""
@@ -1293,6 +1292,52 @@ Text HLabel 5700 3250 2    50   Output ~ 0
 SPI4_NSS
 Wire Wire Line
 	5700 3250 5600 3250
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EA97701
+P 10625 2475
+AR Path="/5E9B245C/5EA97701" Ref="#PWR?"  Part="1" 
+AR Path="/5E98CC69/5E9ECB99/5EA97701" Ref="#PWR?"  Part="1" 
+AR Path="/5E9C016D/5EA97701" Ref="#PWR?"  Part="1" 
+AR Path="/5E98CC69/5EA97701" Ref="#PWR?"  Part="1" 
+AR Path="/5E989259/5EA97701" Ref="#PWR0222"  Part="1" 
+F 0 "#PWR0222" H 10625 2325 50  0001 C CNN
+F 1 "+3V3" H 10640 2648 50  0000 C CNN
+F 2 "" H 10625 2475 50  0001 C CNN
+F 3 "" H 10625 2475 50  0001 C CNN
+	1    10625 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L ventilator-PowerSymbols:3V3_STM #PWR0223
+U 1 1 5EAA3C46
+P 10075 2450
+F 0 "#PWR0223" H 10075 2550 30  0001 C CNN
+F 1 "3V3_STM" H 10075 2560 30  0000 C CNN
+F 2 "" H 10075 2450 60  0001 C CNN
+F 3 "" H 10075 2450 60  0001 C CNN
+	1    10075 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5EAAF753
+P 10350 2525
+F 0 "FB1" V 10205 2525 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 10204 2525 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10280 2525 50  0001 C CNN
+F 3 "~" H 10350 2525 50  0001 C CNN
+	1    10350 2525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10075 2450 10075 2525
+Wire Wire Line
+	10075 2525 10250 2525
+Wire Wire Line
+	10450 2525 10625 2525
+Wire Wire Line
+	10625 2525 10625 2475
 Wire Bus Line
 	5950 2050 5950 2750
 Wire Bus Line

@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 4 9
 Title "Open  Controller V1.0"
 Date "2020-04-16"
 Rev "V2"
