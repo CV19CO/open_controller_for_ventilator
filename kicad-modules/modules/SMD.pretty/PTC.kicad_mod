@@ -1,0 +1,11 @@
+(module ptc:PTC (layer F.Cu) (tedit 590C346E)
+  (attr smd)
+  (fp_text reference F1 (at 3.19 -2.68) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value MF-MSMF250/X (at 2.41 3.09) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 2 smd rect (at 4.8 0) (size 1.7 3) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at 0 0) (size 1.7 3) (layers F.Cu F.Paste F.Mask))
+)
