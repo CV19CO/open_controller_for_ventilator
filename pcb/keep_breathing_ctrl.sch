@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -266,6 +265,17 @@ F 1 "MountingHole" H 2500 5105 50  0001 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2400 5150 50  0001 C CNN
 F 3 "~" H 2400 5150 50  0001 C CNN
 	1    2400 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 5EA7A600
+P 2600 5150
+F 0 "H11" H 2700 5150 50  0000 L CNN
+F 1 "MountingHole" H 2700 5105 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2600 5150 50  0001 C CNN
+F 3 "~" H 2600 5150 50  0001 C CNN
+	1    2600 5150
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

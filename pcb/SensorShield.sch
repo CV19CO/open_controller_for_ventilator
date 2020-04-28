@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 9
+Sheet 5 9
 Title ""
 Date ""
 Rev ""
@@ -3623,17 +3622,6 @@ Wire Wire Line
 Wire Wire Line
 	2350 9900 3400 9900
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even G0
-U 1 1 5EB515E5
-P 10050 2150
-F 0 "G0" H 10000 2450 50  0000 L CNN
-F 1 "Conn_01x03" H 10130 2101 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 10050 2150 50  0001 C CNN
-F 3 "~" H 10050 2150 50  0001 C CNN
-	1    10050 2150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5EB515EB
 P 9850 2400
@@ -3654,19 +3642,13 @@ F 3 "" H 9850 2400 50  0001 C CNN
 	1    9850 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9850 2050 9850 2150
-Wire Wire Line
-	9850 2150 9850 2250
-Connection ~ 9850 2150
-Connection ~ 9850 2250
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even G1
+L Connector_Generic:Conn_02x04_Odd_Even G1
 U 1 1 5F0FEB1C
 P 12750 2200
 F 0 "G1" H 12700 2500 50  0000 L CNN
 F 1 "Conn_01x03" H 12830 2151 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 12750 2200 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical_SMD" H 12750 2200 50  0001 C CNN
 F 3 "~" H 12750 2200 50  0001 C CNN
 	1    12750 2200
 	1    0    0    -1  
@@ -3699,12 +3681,12 @@ Wire Wire Line
 Connection ~ 12550 2200
 Connection ~ 12550 2300
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even G2
+L Connector_Generic:Conn_02x04_Odd_Even G2
 U 1 1 5F11F8D1
 P 15600 2150
 F 0 "G2" H 15600 2450 50  0000 L CNN
 F 1 "Conn_01x03" H 15680 2101 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 15600 2150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical_SMD" H 15600 2150 50  0001 C CNN
 F 3 "~" H 15600 2150 50  0001 C CNN
 	1    15600 2150
 	1    0    0    -1  
@@ -3737,12 +3719,12 @@ Wire Wire Line
 Connection ~ 15400 2150
 Connection ~ 15400 2250
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even G3
+L Connector_Generic:Conn_02x04_Odd_Even G3
 U 1 1 5F146A7F
 P 10050 4050
 F 0 "G3" H 10000 4350 50  0000 L CNN
 F 1 "Conn_01x03" H 10130 4001 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 10050 4050 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical_SMD" H 10050 4050 50  0001 C CNN
 F 3 "~" H 10050 4050 50  0001 C CNN
 	1    10050 4050
 	1    0    0    -1  
@@ -3775,12 +3757,12 @@ Wire Wire Line
 Connection ~ 9850 4050
 Connection ~ 9850 4150
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even G4
+L Connector_Generic:Conn_02x04_Odd_Even G4
 U 1 1 5F1683B6
 P 12750 4100
 F 0 "G4" H 12700 4400 50  0000 L CNN
 F 1 "Conn_01x03" H 12830 4051 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 12750 4100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical_SMD" H 12750 4100 50  0001 C CNN
 F 3 "~" H 12750 4100 50  0001 C CNN
 	1    12750 4100
 	1    0    0    -1  
@@ -3813,12 +3795,12 @@ Wire Wire Line
 Connection ~ 12550 4100
 Connection ~ 12550 4200
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even G5
+L Connector_Generic:Conn_02x04_Odd_Even G5
 U 1 1 5F18C319
 P 15600 4050
 F 0 "G5" H 15550 4350 50  0000 L CNN
 F 1 "Conn_01x03" H 15680 4001 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 15600 4050 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical_SMD" H 15600 4050 50  0001 C CNN
 F 3 "~" H 15600 4050 50  0001 C CNN
 	1    15600 4050
 	1    0    0    -1  
@@ -3851,12 +3833,12 @@ Wire Wire Line
 Connection ~ 15400 4050
 Connection ~ 15400 4150
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even G6
+L Connector_Generic:Conn_02x04_Odd_Even G6
 U 1 1 5F1B26C5
 P 10050 6200
 F 0 "G6" H 10000 6500 50  0000 L CNN
 F 1 "Conn_01x03" H 10130 6151 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 10050 6200 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical_SMD" H 10050 6200 50  0001 C CNN
 F 3 "~" H 10050 6200 50  0001 C CNN
 	1    10050 6200
 	1    0    0    -1  
@@ -3889,17 +3871,6 @@ Wire Wire Line
 Connection ~ 9850 6200
 Connection ~ 9850 6300
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even G7
-U 1 1 5F1D52E2
-P 12750 6250
-F 0 "G7" H 12700 6550 50  0000 L CNN
-F 1 "Conn_01x03" H 12830 6201 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 12750 6250 50  0001 C CNN
-F 3 "~" H 12750 6250 50  0001 C CNN
-	1    12750 6250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5F1D52E8
 P 12550 6500
@@ -3920,19 +3891,13 @@ F 3 "" H 12550 6500 50  0001 C CNN
 	1    12550 6500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12550 6150 12550 6250
-Wire Wire Line
-	12550 6250 12550 6350
-Connection ~ 12550 6250
-Connection ~ 12550 6350
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even G8
+L Connector_Generic:Conn_02x04_Odd_Even G8
 U 1 1 5F1F975E
 P 15600 6200
 F 0 "G8" H 15550 6500 50  0000 L CNN
 F 1 "Conn_01x03" H 15680 6151 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical_SMD" H 15600 6200 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical_SMD" H 15600 6200 50  0001 C CNN
 F 3 "~" H 15600 6200 50  0001 C CNN
 	1    15600 6200
 	1    0    0    -1  
@@ -3968,9 +3933,6 @@ Wire Wire Line
 	2800 2750 3050 2750
 Wire Wire Line
 	2800 2850 3050 2850
-Wire Wire Line
-	9850 6000 9850 6100
-Connection ~ 9850 6100
 Wire Wire Line
 	9850 6300 9850 6400
 Wire Wire Line
@@ -4065,9 +4027,6 @@ F 3 "" H 10350 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10350 6000 10350 6100
-Connection ~ 10350 6100
-Wire Wire Line
 	10350 6100 10350 6200
 Connection ~ 10350 6200
 Wire Wire Line
@@ -4085,9 +4044,6 @@ Wire Wire Line
 Connection ~ 8050 4350
 Wire Wire Line
 	8050 4350 8050 4450
-Wire Wire Line
-	9850 3850 9850 3950
-Connection ~ 9850 3950
 Wire Wire Line
 	9850 4150 9850 4250
 Connection ~ 9850 4250
@@ -4116,9 +4072,6 @@ F 3 "" H 10350 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10350 4300 10350 4250
-Connection ~ 10350 3950
-Wire Wire Line
-	10350 3950 10350 3850
 Connection ~ 10350 4050
 Wire Wire Line
 	10350 4050 10350 3950
@@ -4133,28 +4086,6 @@ Wire Wire Line
 Wire Wire Line
 	8100 2350 8100 2450
 Connection ~ 8100 2450
-Wire Wire Line
-	9850 1950 9850 2050
-Connection ~ 9850 2050
-Wire Wire Line
-	9850 2250 9850 2350
-Connection ~ 9850 2350
-Wire Wire Line
-	9850 2350 9850 2400
-Wire Wire Line
-	10350 2400 10350 2350
-Connection ~ 10350 2050
-Wire Wire Line
-	10350 2050 10350 1950
-Connection ~ 10350 2150
-Wire Wire Line
-	10350 2150 10350 2050
-Connection ~ 10350 2250
-Wire Wire Line
-	10350 2250 10350 2150
-Connection ~ 10350 2350
-Wire Wire Line
-	10350 2350 10350 2250
 $Comp
 L power:GND #PWR?
 U 1 1 5F1D7856
@@ -4181,9 +4112,6 @@ Wire Wire Line
 Connection ~ 12550 2400
 Wire Wire Line
 	12550 2400 12550 2450
-Wire Wire Line
-	12550 2100 12550 2000
-Connection ~ 12550 2100
 $Comp
 L power:GND #PWR?
 U 1 1 5F389C64
@@ -4207,9 +4135,6 @@ F 3 "" H 13050 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13050 2450 13050 2400
-Connection ~ 13050 2100
-Wire Wire Line
-	13050 2100 13050 2000
 Connection ~ 13050 2200
 Wire Wire Line
 	13050 2200 13050 2100
@@ -4219,9 +4144,6 @@ Wire Wire Line
 Connection ~ 13050 2400
 Wire Wire Line
 	13050 2400 13050 2300
-Wire Wire Line
-	12550 3900 12550 4000
-Connection ~ 12550 4000
 Wire Wire Line
 	12550 4200 12550 4300
 Connection ~ 12550 4300
@@ -4249,9 +4171,6 @@ F 3 "" H 13050 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13050 3900 13050 4000
-Connection ~ 13050 4000
-Wire Wire Line
 	13050 4000 13050 4100
 Connection ~ 13050 4100
 Wire Wire Line
@@ -4273,43 +4192,15 @@ F 3 "" H 13050 6500 50  0001 C CNN
 	1    13050 6500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13050 6050 13050 6150
-Connection ~ 13050 6150
-Wire Wire Line
-	13050 6150 13050 6250
-Connection ~ 13050 6250
-Wire Wire Line
-	13050 6250 13050 6350
-Connection ~ 13050 6350
-Wire Wire Line
-	13050 6350 13050 6450
-Connection ~ 13050 6450
-Wire Wire Line
-	13050 6450 13050 6500
-Wire Wire Line
-	12550 6350 12550 6450
-Connection ~ 12550 6450
-Wire Wire Line
-	12550 6450 12550 6500
-Wire Wire Line
-	12550 6150 12550 6050
-Connection ~ 12550 6150
 Wire Notes Line
 	7550 7150 16000 7150
 Wire Notes Line
 	7550 1150 16000 1150
 Wire Wire Line
-	15400 6000 15400 6100
-Connection ~ 15400 6100
-Wire Wire Line
 	15400 6300 15400 6400
 Connection ~ 15400 6400
 Wire Wire Line
 	15400 6400 15400 6450
-Wire Wire Line
-	15900 6000 15900 6100
-Connection ~ 15900 6100
 Wire Wire Line
 	15900 6100 15900 6200
 Connection ~ 15900 6200
@@ -4327,9 +4218,6 @@ Wire Notes Line
 	7600 3150 16000 3150
 Wire Notes Line
 	16000 1150 16000 7150
-Connection ~ 15400 3950
-Wire Wire Line
-	15400 3850 15400 3950
 Wire Wire Line
 	15400 4150 15400 4250
 Connection ~ 15400 4250
@@ -4337,9 +4225,6 @@ Wire Wire Line
 	15400 4250 15400 4300
 Wire Wire Line
 	15900 4300 15900 4250
-Connection ~ 15900 3950
-Wire Wire Line
-	15900 3950 15900 3850
 Connection ~ 15900 4050
 Wire Wire Line
 	15900 4050 15900 3950
@@ -4414,9 +4299,6 @@ F 3 "" H 15900 6450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	15900 2400 15900 2350
-Connection ~ 15900 2050
-Wire Wire Line
-	15900 2050 15900 1950
 Connection ~ 15900 2150
 Wire Wire Line
 	15900 2150 15900 2050
@@ -4426,9 +4308,6 @@ Wire Wire Line
 Connection ~ 15900 2350
 Wire Wire Line
 	15900 2350 15900 2250
-Wire Wire Line
-	15400 1950 15400 2050
-Connection ~ 15400 2050
 Wire Wire Line
 	15400 2250 15400 2350
 Connection ~ 15400 2350
@@ -4526,8 +4405,74 @@ Text Label 5250 3050 0    50   ~ 0
 SPI_MISO
 Wire Wire Line
 	5800 3050 5250 3050
+Wire Wire Line
+	10350 2400 10350 2350
+Connection ~ 10350 2350
+Wire Wire Line
+	9850 2350 9850 2400
+Connection ~ 9850 2350
+Wire Wire Line
+	10350 2350 10350 2250
+Connection ~ 10350 2250
+Wire Wire Line
+	9850 2250 9850 2350
+Connection ~ 9850 2250
+Wire Wire Line
+	10350 2250 10350 2150
+Connection ~ 10350 2150
+Wire Wire Line
+	9850 2150 9850 2250
+Connection ~ 9850 2150
+Wire Wire Line
+	10350 2150 10350 2050
+Wire Wire Line
+	9850 2050 9850 2150
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even G0
+U 1 1 5EB515E5
+P 10050 2150
+F 0 "G0" H 10000 2450 50  0000 L CNN
+F 1 "Conn_01x03" H 10130 2101 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical_SMD" H 10050 2150 50  0001 C CNN
+F 3 "~" H 10050 2150 50  0001 C CNN
+	1    10050 2150
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	2250 9700 2250 10200
 Wire Bus Line
 	9700 7600 9700 8450
+Wire Wire Line
+	13050 6450 13050 6500
+Connection ~ 13050 6450
+Wire Wire Line
+	12550 6450 12550 6500
+Connection ~ 12550 6450
+Wire Wire Line
+	13050 6350 13050 6450
+Connection ~ 13050 6350
+Wire Wire Line
+	12550 6350 12550 6450
+Connection ~ 12550 6350
+Wire Wire Line
+	13050 6250 13050 6350
+Wire Wire Line
+	13050 6150 13050 6250
+Connection ~ 13050 6250
+Wire Wire Line
+	12550 6250 12550 6350
+Connection ~ 12550 6250
+Wire Wire Line
+	12550 6150 12550 6250
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even G7
+U 1 1 5F1D52E2
+P 12750 6250
+F 0 "G7" H 12700 6550 50  0000 L CNN
+F 1 "Conn_01x03" H 12830 6201 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical_SMD" H 12750 6250 50  0001 C CNN
+F 3 "~" H 12750 6250 50  0001 C CNN
+	1    12750 6250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
