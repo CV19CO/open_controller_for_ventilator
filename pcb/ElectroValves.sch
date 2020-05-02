@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -98,21 +97,8 @@ F 4 "255-6001-1-ND" H 7950 750 50  0001 C CNN "Digikey"
 	1    7950 750 
 	1    0    0    -1  
 $EndComp
-$Comp
-L BarrelConnector:Conn_01x02_Female J3
-U 1 1 5E8FC35B
-P 10450 800
-F 0 "J3" V 10400 950 50  0000 R CNN
-F 1 "Conn_Load" V 10500 950 50  0000 R CNN
-F 2 "" H 10450 800 50  0001 C CNN
-F 3 "~" H 10450 800 50  0001 C CNN
-	1    10450 800 
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9750 1050 10150 1050
-Wire Wire Line
-	10450 1050 10450 1000
 $Comp
 L Device:R R26
 U 1 1 5E8FC523
@@ -147,42 +133,6 @@ Wire Wire Line
 	9900 1550 9750 1550
 Wire Wire Line
 	10150 1100 10150 1050
-Connection ~ 10150 1050
-Wire Wire Line
-	10150 1050 10450 1050
-$Comp
-L power:NEUT #PWR0141
-U 1 1 5E8FC862
-P 10800 1650
-F 0 "#PWR0141" H 10800 1500 50  0001 C CNN
-F 1 "NEUT" H 10817 1823 50  0000 C CNN
-F 2 "" H 10800 1650 50  0001 C CNN
-F 3 "" H 10800 1650 50  0001 C CNN
-	1    10800 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:LINE #PWR0142
-U 1 1 5E8FC8F6
-P 10800 1000
-F 0 "#PWR0142" H 10800 850 50  0001 C CNN
-F 1 "LINE" H 10817 1173 50  0000 C CNN
-F 2 "" H 10800 1000 50  0001 C CNN
-F 3 "" H 10800 1000 50  0001 C CNN
-	1    10800 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10800 1000 10800 1050
-Wire Wire Line
-	10800 1050 10550 1050
-Wire Wire Line
-	10550 1050 10550 1000
-Wire Wire Line
-	10800 1650 10800 1750
-Wire Wire Line
-	10800 1750 10150 1750
-Connection ~ 10150 1750
 $Comp
 L AQH3213AX:AQH3213AX U12
 U 1 1 5E8FEE86
@@ -195,21 +145,8 @@ F 4 "255-6001-1-ND" H 7950 2100 50  0001 C CNN "Digikey"
 	1    7950 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L BarrelConnector:Conn_01x02_Female J4
-U 1 1 5E8FEE8D
-P 10450 2150
-F 0 "J4" V 10400 2300 50  0000 R CNN
-F 1 "Conn_Load" V 10500 2300 50  0000 R CNN
-F 2 "" H 10450 2150 50  0001 C CNN
-F 3 "~" H 10450 2150 50  0001 C CNN
-	1    10450 2150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9750 2400 10150 2400
-Wire Wire Line
-	10450 2400 10450 2350
 $Comp
 L Device:R R27
 U 1 1 5E8FEE97
@@ -245,43 +182,7 @@ Wire Wire Line
 Wire Wire Line
 	10150 2450 10150 2400
 Connection ~ 10150 2400
-Wire Wire Line
-	10150 2400 10450 2400
-$Comp
-L power:NEUT #PWR0144
-U 1 1 5E8FEEAC
-P 10800 3000
-F 0 "#PWR0144" H 10800 2850 50  0001 C CNN
-F 1 "NEUT" H 10817 3173 50  0000 C CNN
-F 2 "" H 10800 3000 50  0001 C CNN
-F 3 "" H 10800 3000 50  0001 C CNN
-	1    10800 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:LINE #PWR0145
-U 1 1 5E8FEEB2
-P 10800 2350
-F 0 "#PWR0145" H 10800 2200 50  0001 C CNN
-F 1 "LINE" H 10817 2523 50  0000 C CNN
-F 2 "" H 10800 2350 50  0001 C CNN
-F 3 "" H 10800 2350 50  0001 C CNN
-	1    10800 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10800 2350 10800 2400
-Wire Wire Line
-	10800 2400 10550 2400
-Wire Wire Line
-	10550 2400 10550 2350
-Wire Wire Line
-	10800 3000 10800 3100
-Wire Wire Line
-	10800 3100 10150 3100
 Connection ~ 10150 3100
-Wire Wire Line
-	7050 3000 6800 3000
 $Comp
 L Device:R R16
 U 1 1 5E903E97
@@ -348,100 +249,30 @@ F 3 "~" H 4250 6500 50  0001 C CNN
 	1    4250 6500
 	0    1    1    0   
 $EndComp
-Text Label 4000 1650 0    50   ~ 0
+Text Label 6950 1650 0    50   ~ 0
 R0
 Wire Wire Line
-	4000 1650 4100 1650
-Text Label 4000 2650 0    50   ~ 0
+	6950 1650 7050 1650
+Text Label 6950 3000 0    50   ~ 0
 R1
 Wire Wire Line
-	4000 2650 4100 2650
-Text Label 4000 3550 0    50   ~ 0
+	6950 3000 7050 3000
+Text Label 4000 1650 0    50   ~ 0
 R2
 Wire Wire Line
-	4000 3550 4100 3550
-Wire Wire Line
-	4000 6500 4100 6500
-Text Label 4000 6500 0    50   ~ 0
-R5
-Wire Wire Line
-	4000 5500 4100 5500
-Text Label 4000 5500 0    50   ~ 0
-R4
+	4000 1650 4100 1650
 Wire Wire Line
 	4000 4550 4100 4550
 Text Label 4000 4550 0    50   ~ 0
+R5
+Wire Wire Line
+	4000 3550 4100 3550
+Text Label 4000 3550 0    50   ~ 0
+R4
+Wire Wire Line
+	4000 2650 4100 2650
+Text Label 4000 2650 0    50   ~ 0
 R3
-Text Label 6800 1650 0    50   ~ 0
-R6
-Text Label 6800 3000 0    50   ~ 0
-R7
-$Comp
-L power:+5V #PWR09
-U 1 1 5E993DD9
-P 4400 1450
-F 0 "#PWR09" H 4400 1300 50  0001 C CNN
-F 1 "+5V" H 4415 1623 50  0000 C CNN
-F 2 "" H 4400 1450 50  0001 C CNN
-F 3 "" H 4400 1450 50  0001 C CNN
-	1    4400 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR010
-U 1 1 5E99402C
-P 4400 2450
-F 0 "#PWR010" H 4400 2300 50  0001 C CNN
-F 1 "+5V" H 4415 2623 50  0000 C CNN
-F 2 "" H 4400 2450 50  0001 C CNN
-F 3 "" H 4400 2450 50  0001 C CNN
-	1    4400 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR011
-U 1 1 5E994080
-P 4400 3350
-F 0 "#PWR011" H 4400 3200 50  0001 C CNN
-F 1 "+5V" H 4415 3523 50  0000 C CNN
-F 2 "" H 4400 3350 50  0001 C CNN
-F 3 "" H 4400 3350 50  0001 C CNN
-	1    4400 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR012
-U 1 1 5E9941DA
-P 4400 4350
-F 0 "#PWR012" H 4400 4200 50  0001 C CNN
-F 1 "+5V" H 4415 4523 50  0000 C CNN
-F 2 "" H 4400 4350 50  0001 C CNN
-F 3 "" H 4400 4350 50  0001 C CNN
-	1    4400 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR013
-U 1 1 5E9942B0
-P 4400 5300
-F 0 "#PWR013" H 4400 5150 50  0001 C CNN
-F 1 "+5V" H 4415 5473 50  0000 C CNN
-F 2 "" H 4400 5300 50  0001 C CNN
-F 3 "" H 4400 5300 50  0001 C CNN
-	1    4400 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR014
-U 1 1 5E99469E
-P 4400 6300
-F 0 "#PWR014" H 4400 6150 50  0001 C CNN
-F 1 "+5V" H 4415 6473 50  0000 C CNN
-F 2 "" H 4400 6300 50  0001 C CNN
-F 3 "" H 4400 6300 50  0001 C CNN
-	1    4400 6300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR015
 U 1 1 5E995159
@@ -456,22 +287,16 @@ $EndComp
 NoConn ~ 9750 3000
 NoConn ~ 9750 1650
 $Comp
-L BarrelConnector:Conn_01x04_Female J7
+L BarrelConnector:Conn_01x02_Female RL1
 U 1 1 5EA0FC96
-P 5600 1450
-F 0 "J7" H 5450 1150 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 5150 1700 50  0000 L CNN
-F 2 "" H 5600 1450 50  0001 C CNN
-F 3 "~" H 5600 1450 50  0001 C CNN
-	1    5600 1450
-	1    0    0    -1  
+P 5600 1650
+F 0 "RL1" H 5425 1725 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5150 1900 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 5600 1650 50  0001 C CNN
+F 3 "~" H 5600 1650 50  0001 C CNN
+	1    5600 1650
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	5400 1350 5350 1350
-Wire Wire Line
-	5350 1350 5350 1450
-Wire Wire Line
-	5350 1450 5400 1450
 Wire Wire Line
 	5400 1550 5250 1550
 Wire Wire Line
@@ -480,23 +305,6 @@ Wire Wire Line
 	5250 1450 5000 1450
 Wire Wire Line
 	5000 1650 5400 1650
-$Comp
-L BarrelConnector:Conn_01x04_Female J8
-U 1 1 5EA2C1E3
-P 5600 2450
-F 0 "J8" H 5627 2426 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 5150 2700 50  0000 L CNN
-F 2 "" H 5600 2450 50  0001 C CNN
-F 3 "~" H 5600 2450 50  0001 C CNN
-	1    5600 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 2350 5350 2350
-Wire Wire Line
-	5350 2350 5350 2450
-Wire Wire Line
-	5350 2450 5400 2450
 Wire Wire Line
 	5400 2550 5250 2550
 Wire Wire Line
@@ -505,23 +313,6 @@ Wire Wire Line
 	5250 2450 5000 2450
 Wire Wire Line
 	5000 2650 5400 2650
-$Comp
-L BarrelConnector:Conn_01x04_Female J9
-U 1 1 5EA31A22
-P 5600 3350
-F 0 "J9" H 5627 3326 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 5150 3600 50  0000 L CNN
-F 2 "" H 5600 3350 50  0001 C CNN
-F 3 "~" H 5600 3350 50  0001 C CNN
-	1    5600 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 3250 5350 3250
-Wire Wire Line
-	5350 3250 5350 3350
-Wire Wire Line
-	5350 3350 5400 3350
 Wire Wire Line
 	5400 3450 5250 3450
 Wire Wire Line
@@ -530,23 +321,6 @@ Wire Wire Line
 	5250 3350 5000 3350
 Wire Wire Line
 	5000 3550 5400 3550
-$Comp
-L BarrelConnector:Conn_01x04_Female J10
-U 1 1 5EA37B94
-P 5600 4350
-F 0 "J10" H 5627 4326 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 5150 4600 50  0000 L CNN
-F 2 "" H 5600 4350 50  0001 C CNN
-F 3 "~" H 5600 4350 50  0001 C CNN
-	1    5600 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 4250 5350 4250
-Wire Wire Line
-	5350 4250 5350 4350
-Wire Wire Line
-	5350 4350 5400 4350
 Wire Wire Line
 	5400 4450 5250 4450
 Wire Wire Line
@@ -555,23 +329,6 @@ Wire Wire Line
 	5250 4350 5000 4350
 Wire Wire Line
 	5000 4550 5400 4550
-$Comp
-L BarrelConnector:Conn_01x04_Female J11
-U 1 1 5EA3E73A
-P 5600 5300
-F 0 "J11" H 5627 5276 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 5150 5550 50  0000 L CNN
-F 2 "" H 5600 5300 50  0001 C CNN
-F 3 "~" H 5600 5300 50  0001 C CNN
-	1    5600 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 5200 5350 5200
-Wire Wire Line
-	5350 5200 5350 5300
-Wire Wire Line
-	5350 5300 5400 5300
 Wire Wire Line
 	5400 5400 5250 5400
 Wire Wire Line
@@ -580,23 +337,6 @@ Wire Wire Line
 	5250 5300 5000 5300
 Wire Wire Line
 	5000 5500 5400 5500
-$Comp
-L BarrelConnector:Conn_01x04_Female J12
-U 1 1 5EA45CB4
-P 5600 6300
-F 0 "J12" H 5627 6276 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 5150 6550 50  0000 L CNN
-F 2 "" H 5600 6300 50  0001 C CNN
-F 3 "~" H 5600 6300 50  0001 C CNN
-	1    5600 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 6200 5350 6200
-Wire Wire Line
-	5350 6200 5350 6300
-Wire Wire Line
-	5350 6300 5400 6300
 Wire Wire Line
 	5400 6400 5250 6400
 Wire Wire Line
@@ -605,14 +345,6 @@ Wire Wire Line
 	5250 6300 5000 6300
 Wire Wire Line
 	5000 6500 5400 6500
-Text Notes 5650 1400 0    50   ~ 0
-VCC_L
-Text Notes 5650 1500 0    50   ~ 0
-LOAD+
-Text Notes 5650 1600 0    50   ~ 0
-LOAD-
-Text Notes 5650 1700 0    50   ~ 0
-GND_L
 $Comp
 L Transistor_BJT:PN2222A Q1
 U 1 1 5E947697
@@ -624,8 +356,6 @@ F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 7550 1650 50  0001 L CNN
 	1    7550 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7050 1650 6800 1650
 $Comp
 L Device:R R22
 U 1 1 5E8FD06D
@@ -789,6 +519,175 @@ Wire Bus Line
 	1400 1750 1500 1750
 Text HLabel 1400 1750 0    50   Input ~ 0
 R[0..7]
+$Comp
+L BarrelConnector:Conn_01x02_Female RL2
+U 1 1 5EB7C9DF
+P 5600 2650
+F 0 "RL2" H 5425 2725 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5150 2900 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 5600 2650 50  0001 C CNN
+F 3 "~" H 5600 2650 50  0001 C CNN
+	1    5600 2650
+	1    0    0    1   
+$EndComp
+$Comp
+L BarrelConnector:Conn_01x02_Female RL4
+U 1 1 5EB8EF4E
+P 5600 4550
+F 0 "RL4" H 5425 4625 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5150 4800 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 5600 4550 50  0001 C CNN
+F 3 "~" H 5600 4550 50  0001 C CNN
+	1    5600 4550
+	1    0    0    1   
+$EndComp
+$Comp
+L BarrelConnector:Conn_01x02_Female RL5
+U 1 1 5EB8EF58
+P 5600 5500
+F 0 "RL5" H 5425 5575 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5150 5750 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 5600 5500 50  0001 C CNN
+F 3 "~" H 5600 5500 50  0001 C CNN
+	1    5600 5500
+	1    0    0    1   
+$EndComp
+$Comp
+L BarrelConnector:Conn_01x02_Female RL6
+U 1 1 5EBC6112
+P 5600 6500
+F 0 "RL6" H 5425 6575 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5150 6750 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 5600 6500 50  0001 C CNN
+F 3 "~" H 5600 6500 50  0001 C CNN
+	1    5600 6500
+	1    0    0    1   
+$EndComp
+$Comp
+L BarrelConnector:Conn_01x02_Female RL8
+U 1 1 5EC4395D
+P 10975 2850
+F 0 "RL8" H 10800 2925 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 10525 3100 50  0001 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 10975 2850 50  0001 C CNN
+F 3 "~" H 10975 2850 50  0001 C CNN
+	1    10975 2850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10775 2850 10775 3100
+Wire Wire Line
+	10150 3100 10775 3100
+Wire Wire Line
+	10775 2750 10775 2400
+Wire Wire Line
+	10150 2400 10775 2400
+$Comp
+L BarrelConnector:Conn_01x02_Female RL7
+U 1 1 5EC68810
+P 10975 1500
+F 0 "RL7" H 10800 1575 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 10525 1750 50  0001 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 10975 1500 50  0001 C CNN
+F 3 "~" H 10975 1500 50  0001 C CNN
+	1    10975 1500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10775 1500 10775 1750
+Wire Wire Line
+	10150 1750 10775 1750
+Wire Wire Line
+	10775 1400 10775 1050
+Wire Wire Line
+	10150 1050 10775 1050
+Connection ~ 10150 1050
+Connection ~ 10150 1750
+Text Label 4000 5500 0    50   ~ 0
+R6
+Wire Wire Line
+	4000 5500 4100 5500
+Wire Wire Line
+	4000 6500 4100 6500
+Text Label 4000 6500 0    50   ~ 0
+R7
+$Comp
+L BarrelConnector:Conn_01x02_Female RL3
+U 1 1 5EB83B8A
+P 5600 3550
+F 0 "RL3" H 5425 3625 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5150 3800 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 5600 3550 50  0001 C CNN
+F 3 "~" H 5600 3550 50  0001 C CNN
+	1    5600 3550
+	1    0    0    1   
+$EndComp
 Wire Bus Line
 	1500 1750 1500 2500
+$Comp
+L power:+5V #PWR014
+U 1 1 5E99469E
+P 4400 6300
+F 0 "#PWR014" H 4400 6150 50  0001 C CNN
+F 1 "+5V" H 4415 6473 50  0000 C CNN
+F 2 "" H 4400 6300 50  0001 C CNN
+F 3 "" H 4400 6300 50  0001 C CNN
+	1    4400 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5E9942B0
+P 4400 5300
+F 0 "#PWR013" H 4400 5150 50  0001 C CNN
+F 1 "+5V" H 4415 5473 50  0000 C CNN
+F 2 "" H 4400 5300 50  0001 C CNN
+F 3 "" H 4400 5300 50  0001 C CNN
+	1    4400 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 5E9941DA
+P 4400 4350
+F 0 "#PWR012" H 4400 4200 50  0001 C CNN
+F 1 "+5V" H 4415 4523 50  0000 C CNN
+F 2 "" H 4400 4350 50  0001 C CNN
+F 3 "" H 4400 4350 50  0001 C CNN
+	1    4400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 5E994080
+P 4400 3350
+F 0 "#PWR011" H 4400 3200 50  0001 C CNN
+F 1 "+5V" H 4415 3523 50  0000 C CNN
+F 2 "" H 4400 3350 50  0001 C CNN
+F 3 "" H 4400 3350 50  0001 C CNN
+	1    4400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 5E99402C
+P 4400 2450
+F 0 "#PWR010" H 4400 2300 50  0001 C CNN
+F 1 "+5V" H 4415 2623 50  0000 C CNN
+F 2 "" H 4400 2450 50  0001 C CNN
+F 3 "" H 4400 2450 50  0001 C CNN
+	1    4400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 5E993DD9
+P 4400 1450
+F 0 "#PWR09" H 4400 1300 50  0001 C CNN
+F 1 "+5V" H 4415 1623 50  0000 C CNN
+F 2 "" H 4400 1450 50  0001 C CNN
+F 3 "" H 4400 1450 50  0001 C CNN
+	1    4400 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

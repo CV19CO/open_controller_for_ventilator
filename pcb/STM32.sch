@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr User 12000 10000
@@ -335,7 +334,7 @@ F 3 "" H 4050 800 60  0001 C CNN
 $EndComp
 Text HLabel 2300 1600 0    60   BiDi ~ 0
 NRESET
-Text Label 1475 2000 0    50   ~ 0
+Text Label 1475 1800 0    50   ~ 0
 SEN6
 Text Label 1475 2500 0    50   ~ 0
 SEN5
@@ -363,7 +362,7 @@ Text Label 2300 1400 0    60   ~ 0
 BOOT0
 Text Label 2200 3700 0    60   ~ 0
 BOOT1
-Text Label 1475 1800 0    50   ~ 0
+Text Label 1475 2000 0    50   ~ 0
 SEN0
 $Comp
 L media_board:C-RESCUE-stamp_mini_4_layers CXST2
