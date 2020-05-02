@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -781,13 +782,14 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x06 J2
 U 1 1 5C39C166
-P 10500 1400
-F 0 "J2" H 10579 1392 50  0000 L CNN
-F 1 "Screw_Terminal" H 10579 1301 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-6-5.0-H_1x06_P5.00mm_Horizontal" H 10500 1400 50  0001 C CNN
-F 3 "~" H 10500 1400 50  0001 C CNN
-	1    10500 1400
-	1    0    0    -1  
+P 10500 1500
+F 0 "J2" H 10579 1492 50  0000 L CNN
+F 1 "1757284" H 10579 1401 50  0001 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_6-G-5,08_1x06_P5.08mm_Horizontal" H 10500 1500 50  0001 C CNN
+F 3 "~" H 10500 1500 50  0001 C CNN
+F 4 "1757284" H 10500 1500 50  0001 C CNN "DigiKey"
+	1    10500 1500
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:C C2

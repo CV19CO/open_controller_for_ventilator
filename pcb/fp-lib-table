@@ -24,4 +24,8 @@
   (lib (name Diode_SMD)(type KiCad)(uri ${KISYSMOD}/Diode_SMD.pretty)(options "")(descr ""))
   (lib (name Resistor_SMD)(type KiCad)(uri ${KISYSMOD}/Resistor_SMD.pretty)(options "")(descr ""))
   (lib (name MountingHole)(type KiCad)(uri ${KISYSMOD}/MountingHole.pretty)(options "")(descr ""))
+  (lib (name Connector_Phoenix_GMSTB)(type KiCad)(uri ${KISYSMOD}/Connector_Phoenix_GMSTB.pretty)(options "")(descr ""))
+  (lib (name Connector_Phoenix_MC)(type KiCad)(uri ${KISYSMOD}/Connector_Phoenix_MC.pretty)(options "")(descr ""))
+  (lib (name Connector_Phoenix_MC_HighVoltage)(type KiCad)(uri ${KISYSMOD}/Connector_Phoenix_MC_HighVoltage.pretty)(options "")(descr ""))
+  (lib (name Connector_Phoenix_MSTB)(type KiCad)(uri ${KISYSMOD}/Connector_Phoenix_MSTB.pretty)(options "")(descr ""))
 )
