@@ -38,21 +38,21 @@ $EndComp
 $Comp
 L ventilator-PowerSymbols:3V3_STM #PWR0123
 U 1 1 516D625C
-P 2650 8700
-F 0 "#PWR0123" H 2700 8730 20  0001 C CNN
-F 1 "3V3_STM" H 2650 8790 30  0000 C CNN
-F 2 "" H 2650 8700 60  0001 C CNN
-F 3 "" H 2650 8700 60  0001 C CNN
-	1    2650 8700
+P 2650 8750
+F 0 "#PWR0123" H 2700 8780 20  0001 C CNN
+F 1 "3V3_STM" H 2650 8840 30  0000 C CNN
+F 2 "" H 2650 8750 60  0001 C CNN
+F 3 "" H 2650 8750 60  0001 C CNN
+	1    2650 8750
 	1    0    0    -1  
 $EndComp
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers C29
+L Device:C C29
 U 1 1 516D60B5
 P 1750 9050
 F 0 "C29" H 1800 9150 50  0000 L CNN
 F 1 "0.1uF" H 1800 8950 50  0000 L CNN
-F 2 "SM0603" H 1750 9050 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1750 9050 60  0001 C CNN
 F 3 "" H 1750 9050 60  0001 C CNN
 	1    1750 9050
 	1    0    0    -1  
@@ -60,16 +60,16 @@ $EndComp
 $Comp
 L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0124
 U 1 1 516D6095
-P 2650 9350
-F 0 "#PWR0124" H 2650 9350 30  0001 C CNN
-F 1 "GND" H 2650 9280 30  0001 C CNN
-F 2 "" H 2650 9350 60  0001 C CNN
-F 3 "" H 2650 9350 60  0001 C CNN
-	1    2650 9350
+P 2650 9300
+F 0 "#PWR0124" H 2650 9300 30  0001 C CNN
+F 1 "GND" H 2650 9230 30  0001 C CNN
+F 2 "" H 2650 9300 60  0001 C CNN
+F 3 "" H 2650 9300 60  0001 C CNN
+	1    2650 9300
 	1    0    0    -1  
 $EndComp
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers C40
+L Device:C C40
 U 1 1 516D6094
 P 3150 9050
 F 0 "C40" H 3200 9150 50  0000 L CNN
@@ -80,7 +80,7 @@ F 3 "" H 3150 9050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers C39
+L Device:C C39
 U 1 1 516D6093
 P 2800 9050
 F 0 "C39" H 2850 9150 50  0000 L CNN
@@ -91,23 +91,23 @@ F 3 "" H 2800 9050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers C38
+L Device:C C38
 U 1 1 516D6092
 P 2450 9050
 F 0 "C38" H 2500 9150 50  0000 L CNN
 F 1 "0.1uF" H 2500 8950 50  0000 L CNN
-F 2 "SM0603" H 2450 9050 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2450 9050 60  0001 C CNN
 F 3 "" H 2450 9050 60  0001 C CNN
 	1    2450 9050
 	1    0    0    -1  
 $EndComp
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers C30
+L Device:C C30
 U 1 1 516D6091
 P 2100 9050
 F 0 "C30" H 2150 9150 50  0000 L CNN
 F 1 "0.1uF" H 2150 8950 50  0000 L CNN
-F 2 "SM0603" H 2100 9050 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2100 9050 60  0001 C CNN
 F 3 "" H 2100 9050 60  0001 C CNN
 	1    2100 9050
 	1    0    0    -1  
@@ -181,69 +181,23 @@ F 3 "" H 8500 8000 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CHB2
+L Device:C CS3
 U 1 1 5344E995
-P 1100 9000
-F 0 "CHB2" H 1150 9100 50  0000 L CNN
-F 1 "0.1uF" H 1150 8900 50  0000 L CNN
-F 2 "SM0603" H 1100 9000 60  0001 C CNN
-F 3 "" H 1100 9000 60  0001 C CNN
-	1    1100 9000
+P 1100 9050
+F 0 "CS3" H 1150 9150 50  0000 L CNN
+F 1 "0.1uF" H 1150 8950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1100 9050 60  0001 C CNN
+F 3 "" H 1100 9050 60  0001 C CNN
+	1    1100 9050
 	1    0    0    -1  
 $EndComp
 $Comp
-L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0127
-U 1 1 5344E9A6
-P 1100 9300
-F 0 "#PWR0127" H 1100 9300 30  0001 C CNN
-F 1 "GND" H 1100 9230 30  0001 C CNN
-F 2 "" H 1100 9300 60  0001 C CNN
-F 3 "" H 1100 9300 60  0001 C CNN
-	1    1100 9300
-	1    0    0    -1  
-$EndComp
-$Comp
-L ventilator-PowerSymbols:3V3_STM #PWR0128
-U 1 1 5344E9B7
-P 1100 8650
-F 0 "#PWR0128" H 1150 8680 20  0001 C CNN
-F 1 "3V3_STM" H 1100 8740 30  0000 C CNN
-F 2 "" H 1100 8650 60  0001 C CNN
-F 3 "" H 1100 8650 60  0001 C CNN
-	1    1100 8650
-	1    0    0    -1  
-$EndComp
-$Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CHB1
-U 1 1 53459780
-P 800 9000
-F 0 "CHB1" H 850 9100 50  0000 L CNN
-F 1 "0.1uF" H 850 8900 50  0000 L CNN
-F 2 "SM0603" H 800 9000 60  0001 C CNN
-F 3 "" H 800 9000 60  0001 C CNN
-	1    800  9000
-	1    0    0    -1  
-$EndComp
-$Comp
-L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0129
-U 1 1 53459787
-P 800 9300
-F 0 "#PWR0129" H 800 9300 30  0001 C CNN
-F 1 "GND" H 800 9230 30  0001 C CNN
-F 2 "" H 800 9300 60  0001 C CNN
-F 3 "" H 800 9300 60  0001 C CNN
-	1    800  9300
-	1    0    0    -1  
-$EndComp
-Text Label 800  8800 1    60   ~ 0
-VM
-$Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CS1
+L Device:C CS1
 U 1 1 541FDB17
 P 1450 9050
 F 0 "CS1" H 1500 9150 50  0000 L CNN
 F 1 "0.1uF" H 1500 8950 50  0000 L CNN
-F 2 "opendous:SM0603_Opendous" H 1450 9050 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1450 9050 60  0001 C CNN
 F 3 "" H 1450 9050 60  0001 C CNN
 	1    1450 9050
 	1    0    0    -1  
@@ -252,17 +206,6 @@ Text Label 5650 1400 0    60   ~ 0
 VREF
 Text Label 4500 800  0    60   ~ 0
 VDDAST
-$Comp
-L media_board:3V3 #PWR0130
-U 1 1 5455498E
-P 6300 1700
-F 0 "#PWR0130" H 6300 1800 30  0001 C CNN
-F 1 "3V3" H 6300 1810 30  0000 C CNN
-F 2 "" H 6300 1700 60  0001 C CNN
-F 3 "" H 6300 1700 60  0001 C CNN
-	1    6300 1700
-	1    0    0    -1  
-$EndComp
 $Comp
 L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0136
 U 1 1 54554994
@@ -274,9 +217,9 @@ F 3 "" H 4050 6800 60  0001 C CNN
 	1    4050 6800
 	1    0    0    -1  
 $EndComp
-Text HLabel 2250 4100 0    50   Output ~ 0
+Text HLabel 2050 4100 0    50   Output ~ 0
 STM_UART_TX
-Text HLabel 2250 4200 0    50   Input ~ 0
+Text HLabel 2050 4200 0    50   Input ~ 0
 STM_UART_RX
 $Comp
 L media_board:ABM8G XST1
@@ -292,34 +235,23 @@ $EndComp
 $Comp
 L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0147
 U 1 1 545549AB
-P 5050 6750
-F 0 "#PWR0147" H 5050 6750 30  0001 C CNN
-F 1 "GND" H 5050 6680 30  0001 C CNN
-F 2 "" H 5050 6750 60  0001 C CNN
-F 3 "" H 5050 6750 60  0001 C CNN
-	1    5050 6750
+P 4750 6750
+F 0 "#PWR0147" H 4750 6750 30  0001 C CNN
+F 1 "GND" H 4750 6680 30  0001 C CNN
+F 2 "" H 4750 6750 60  0001 C CNN
+F 3 "" H 4750 6750 60  0001 C CNN
+	1    4750 6750
 	1    0    0    -1  
 $EndComp
-$Comp
-L media_board:INDUCTOR LST2
-U 1 1 545549B1
-P 4750 6650
-F 0 "LST2" V 4700 6650 40  0000 C CNN
-F 1 "2A 120 ohm" V 4850 6650 40  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4750 6650 60  0001 C CNN
-F 3 "" H 4750 6650 60  0001 C CNN
-	1    4750 6650
-	0    1    1    0   
-$EndComp
-Text HLabel 2250 3900 0    50   BiDi ~ 0
+Text HLabel 2050 3900 0    50   BiDi ~ 0
 JNRST
-Text HLabel 2250 3100 0    50   BiDi ~ 0
+Text HLabel 2075 3100 0    50   BiDi ~ 0
 JTMS
-Text HLabel 2250 3200 0    50   BiDi ~ 0
+Text HLabel 2075 3200 0    50   BiDi ~ 0
 JTCK
-Text HLabel 2250 3800 0    50   BiDi ~ 0
+Text HLabel 2050 3800 0    50   BiDi ~ 0
 JTDO
-Text HLabel 2250 3300 0    50   BiDi ~ 0
+Text HLabel 2075 3300 0    50   BiDi ~ 0
 JTDI
 $Comp
 L ventilator-PowerSymbols:3V3_STM #PWR0148
@@ -332,56 +264,56 @@ F 3 "" H 4050 800 60  0001 C CNN
 	1    4050 800 
 	1    0    0    -1  
 $EndComp
-Text HLabel 2300 1600 0    60   BiDi ~ 0
+Text HLabel 2100 1600 0    60   BiDi ~ 0
 NRESET
-Text Label 1475 1800 0    50   ~ 0
+Text Label 1975 1800 0    50   ~ 0
 SEN6
-Text Label 1475 2500 0    50   ~ 0
+Text Label 1975 2500 0    50   ~ 0
 SEN5
-Text Label 1475 2200 0    50   ~ 0
+Text Label 1975 2200 0    50   ~ 0
 SEN4
-Text Label 1475 1900 0    50   ~ 0
+Text Label 1975 1900 0    50   ~ 0
 SEN3
-Text Label 1475 3500 0    50   ~ 0
+Text Label 2000 3500 0    50   ~ 0
 SEN2
-Text Label 1475 2100 0    50   ~ 0
+Text Label 1975 2100 0    50   ~ 0
 SEN1
-Text Label 2504 3900 2    60   ~ 0
+Text Label 2304 3900 2    47   ~ 0
 JTRST
-Text Label 2418 3800 2    60   ~ 0
+Text Label 2218 3800 2    47   ~ 0
 TDO
-Text Label 2468 3100 2    60   ~ 0
+Text Label 2293 3100 2    47   ~ 0
 JTMS
-Text Label 2462 3200 2    60   ~ 0
+Text Label 2287 3200 2    47   ~ 0
 JTCK
-Text Label 2450 3300 2    60   ~ 0
+Text Label 2275 3300 2    47   ~ 0
 JTDI
-Text Label 2300 1600 0    60   ~ 0
+Text Label 2100 1600 0    47   ~ 0
 NRST
-Text Label 2300 1400 0    60   ~ 0
+Text Label 2000 1400 0    47   ~ 9
 BOOT0
-Text Label 2200 3700 0    60   ~ 0
+Text Label 2000 3700 0    47   ~ 9
 BOOT1
-Text Label 1475 2000 0    50   ~ 0
+Text Label 1975 2000 0    50   ~ 0
 SEN0
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CXST2
+L Device:C_Small CXST2
 U 1 1 545549FE
 P 7100 1950
-F 0 "CXST2" H 7150 2050 50  0000 L CNN
+F 0 "CXST2" H 7150 2050 39  0000 L CNN
 F 1 "22pF" H 7150 1850 50  0000 L CNN
-F 2 "opendous:SM0603_Opendous" H 7100 1950 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7100 1950 60  0001 C CNN
 F 3 "" H 7100 1950 60  0001 C CNN
 	1    7100 1950
 	0    -1   -1   0   
 $EndComp
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CXST1
+L Device:C_Small CXST1
 U 1 1 54554A05
 P 7100 1350
-F 0 "CXST1" H 7150 1450 50  0000 L CNN
+F 0 "CXST1" H 7150 1450 39  0000 L CNN
 F 1 "22pF" H 7150 1250 50  0000 L CNN
-F 2 "opendous:SM0603_Opendous" H 7100 1350 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7100 1350 60  0001 C CNN
 F 3 "" H 7100 1350 60  0001 C CNN
 	1    7100 1350
 	0    -1   -1   0   
@@ -390,8 +322,8 @@ $Comp
 L media_board:STM32F4_LQFP100 UST1
 U 1 1 54554A0C
 P 4200 3600
-F 0 "UST1" H 2950 6000 70  0000 C CNB
-F 1 " STM32F427VIT6 " H 5000 800 70  0000 C CNN
+F 0 "UST1" H 3025 6000 70  0000 C CNB
+F 1 " STM32F427VIT6 " H 4925 900 70  0000 C CNB
 F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 4200 3600 60  0001 C CNN
 F 3 "" H 4200 3600 60  0001 C CNN
 F 4 " 497-14049-ND " H 4200 3600 50  0001 C CNN "DigiKey"
@@ -401,130 +333,93 @@ $EndComp
 $Comp
 L ventilator-PowerSymbols:3V3_STM #PWR0149
 U 1 1 54556556
-P 600 650
-F 0 "#PWR0149" H 600 750 30  0001 C CNN
-F 1 "3V3_STM" H 600 760 30  0000 C CNN
-F 2 "" H 600 650 60  0001 C CNN
-F 3 "" H 600 650 60  0001 C CNN
-	1    600  650 
+P 900 650
+F 0 "#PWR0149" H 900 750 30  0001 C CNN
+F 1 "3V3_STM" H 900 760 30  0000 C CNN
+F 2 "" H 900 650 60  0001 C CNN
+F 3 "" H 900 650 60  0001 C CNN
+	1    900  650 
 	1    0    0    -1  
 $EndComp
 $Comp
-L media_board:INDUCTOR LST1
+L Device:Ferrite_Bead LST1
 U 1 1 5455655C
-P 900 850
-F 0 "LST1" V 850 850 40  0000 C CNN
-F 1 "2A 120 ohm" V 1000 850 40  0000 C CNN
-F 2 "SM0805" H 900 850 60  0001 C CNN
-F 3 "" H 900 850 60  0001 C CNN
-	1    900  850 
+P 1050 850
+F 0 "LST1" V 900 850 40  0000 C CNN
+F 1 "2A 120 ohm" V 1200 750 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1050 850 60  0001 C CNN
+F 3 "" H 1050 850 60  0001 C CNN
+	1    1050 850 
 	0    -1   -1   0   
 $EndComp
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CST1
+L Device:C_Small CST1
 U 1 1 54556563
-P 1350 1050
-F 0 "CST1" H 1400 1150 50  0000 L CNN
-F 1 "0.1uF" H 1400 950 50  0000 L CNN
-F 2 "opendous:SM0603_Opendous" H 1350 1050 60  0001 C CNN
-F 3 "" H 1350 1050 60  0001 C CNN
-	1    1350 1050
+P 1350 950
+F 0 "CST1" H 1425 950 47  0000 L CNN
+F 1 "0.1uF" H 1400 850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1350 950 60  0001 C CNN
+F 3 "" H 1350 950 60  0001 C CNN
+	1    1350 950 
 	1    0    0    -1  
 $EndComp
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CST2
+L Device:C_Small CST2
 U 1 1 5455656A
-P 1750 1050
-F 0 "CST2" H 1800 1150 50  0000 L CNN
-F 1 "1uF" H 1800 950 50  0000 L CNN
-F 2 "SM0805" H 1750 1050 60  0001 C CNN
-F 3 "" H 1750 1050 60  0001 C CNN
-	1    1750 1050
+P 1750 950
+F 0 "CST2" H 1825 950 47  0000 L CNN
+F 1 "1uF" H 1800 850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1750 950 60  0001 C CNN
+F 3 "" H 1750 950 60  0001 C CNN
+	1    1750 950 
 	1    0    0    -1  
 $EndComp
 $Comp
 L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0150
 U 1 1 54556571
-P 1550 1350
-F 0 "#PWR0150" H 1550 1350 30  0001 C CNN
-F 1 "GND" H 1550 1280 30  0001 C CNN
-F 2 "" H 1550 1350 60  0001 C CNN
-F 3 "" H 1550 1350 60  0001 C CNN
-	1    1550 1350
+P 1550 1200
+F 0 "#PWR0150" H 1550 1200 30  0001 C CNN
+F 1 "GND" H 1550 1130 30  0001 C CNN
+F 2 "" H 1550 1200 60  0001 C CNN
+F 3 "" H 1550 1200 60  0001 C CNN
+	1    1550 1200
 	1    0    0    -1  
 $EndComp
 Text Label 1700 850  2    60   ~ 0
 VDDAST
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CST4
+L Device:C_Small CST4
 U 1 1 5455687A
 P 6200 1100
-F 0 "CST4" H 6250 1200 50  0000 L CNN
-F 1 "2.2uF" H 6250 1000 50  0000 L CNN
-F 2 "SMD_Packages:SMD-0603" H 6200 1100 60  0001 C CNN
+F 0 "CST4" H 6200 1175 50  0000 L CNN
+F 1 "2.2uF" H 6225 1025 47  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6200 1100 60  0001 C CNN
 F 3 "" H 6200 1100 60  0001 C CNN
 	1    6200 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RST4
-U 1 1 54557AA2
-P 4650 8950
-F 0 "RST4" V 4730 8950 50  0000 C CNN
-F 1 "4.7k" V 4650 8950 50  0000 C CNN
-F 2 "opendous:SM0603_Opendous" H 4650 8950 60  0001 C CNN
-F 3 "" H 4650 8950 60  0001 C CNN
-	1    4650 8950
-	-1   0    0    1   
-$EndComp
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RST3
-U 1 1 54557AA9
-P 4500 8950
-F 0 "RST3" V 4580 8950 50  0000 C CNN
-F 1 "4.7k" V 4500 8950 50  0000 C CNN
-F 2 "opendous:SM0603_Opendous" H 4500 8950 60  0001 C CNN
-F 3 "" H 4500 8950 60  0001 C CNN
-	1    4500 8950
-	-1   0    0    1   
-$EndComp
-$Comp
-L ventilator-PowerSymbols:3V3_STM #PWR0151
-U 1 1 54557AB0
-P 4650 8600
-F 0 "#PWR0151" H 4650 8700 30  0001 C CNN
-F 1 "3V3_STM" H 4650 8710 30  0000 C CNN
-F 2 "" H 4650 8600 60  0001 C CNN
-F 3 "" H 4650 8600 60  0001 C CNN
-	1    4650 8600
-	1    0    0    -1  
-$EndComp
-Text Label 4000 9200 0    60   ~ 0
-I2C1_SDA
-Text Label 4000 9350 0    60   ~ 0
-I2C1_SCL
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RST1
+L Device:R RST1
 U 1 1 54557ABA
-P 1200 6600
-F 0 "RST1" V 1280 6600 50  0000 C CNN
-F 1 "10k" V 1200 6600 50  0000 C CNN
-F 2 "opendous:SM0603_Opendous" H 1200 6600 60  0001 C CNN
-F 3 "" H 1200 6600 60  0001 C CNN
-	1    1200 6600
+P 1200 6500
+F 0 "RST1" V 1280 6500 50  0000 C CNN
+F 1 "10k" V 1200 6500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1200 6500 60  0001 C CNN
+F 3 "" H 1200 6500 60  0001 C CNN
+	1    1200 6500
 	-1   0    0    1   
 $EndComp
 Text Label 1500 6250 2    60   ~ 0
 BOOT1
 $Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RST2
+L Device:R RST2
 U 1 1 54557AC8
-P 1500 5900
-F 0 "RST2" V 1580 5900 50  0000 C CNN
-F 1 "10k" V 1500 5900 50  0000 C CNN
-F 2 "opendous:SM0603_Opendous" H 1500 5900 60  0001 C CNN
-F 3 "" H 1500 5900 60  0001 C CNN
-	1    1500 5900
+P 1500 6000
+F 0 "RST2" V 1580 6000 50  0000 C CNN
+F 1 "10k" V 1500 6000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1500 6000 60  0001 C CNN
+F 3 "" H 1500 6000 60  0001 C CNN
+	1    1500 6000
 	-1   0    0    -1  
 $EndComp
 Text Label 1200 6250 2    60   ~ 0
@@ -532,12 +427,12 @@ BOOT0
 $Comp
 L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0152
 U 1 1 54557AD0
-P 1200 6950
-F 0 "#PWR0152" H 1200 6950 30  0001 C CNN
-F 1 "GND" H 1200 6880 30  0001 C CNN
-F 2 "" H 1200 6950 60  0001 C CNN
-F 3 "" H 1200 6950 60  0001 C CNN
-	1    1200 6950
+P 1200 6750
+F 0 "#PWR0152" H 1200 6750 30  0001 C CNN
+F 1 "GND" H 1200 6680 30  0001 C CNN
+F 2 "" H 1200 6750 60  0001 C CNN
+F 3 "" H 1200 6750 60  0001 C CNN
+	1    1200 6750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -552,12 +447,12 @@ F 3 "" H 7400 7750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CST3
+L Device:C_Small CST3
 U 1 1 5456EF09
 P 6000 1100
-F 0 "CST3" H 5750 1000 50  0000 L CNN
-F 1 "2.2uF" H 5750 1200 50  0000 L CNN
-F 2 "SMD_Packages:SMD-0603" H 6000 1100 60  0001 C CNN
+F 0 "CST3" H 6000 1175 50  0000 L CNN
+F 1 "2.2uF" H 6000 1025 47  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6000 1100 60  0001 C CNN
 F 3 "" H 6000 1100 60  0001 C CNN
 	1    6000 1100
 	1    0    0    -1  
@@ -565,12 +460,12 @@ $EndComp
 $Comp
 L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0155
 U 1 1 5456F442
-P 6450 900
-F 0 "#PWR0155" H 6450 900 30  0001 C CNN
-F 1 "GND" H 6450 830 30  0001 C CNN
-F 2 "" H 6450 900 60  0001 C CNN
-F 3 "" H 6450 900 60  0001 C CNN
-	1    6450 900 
+P 6450 1000
+F 0 "#PWR0155" H 6450 1000 30  0001 C CNN
+F 1 "GND" H 6450 930 30  0001 C CNN
+F 2 "" H 6450 1000 60  0001 C CNN
+F 3 "" H 6450 1000 60  0001 C CNN
+	1    6450 1000
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -620,138 +515,35 @@ $EndComp
 Text Notes 6350 5100 0    60   ~ 0
 887-1504-1-ND
 $Comp
-L media_board:SW_PUSH SW_RST1
-U 1 1 5457743F
-P 7875 3925
-F 0 "SW_RST1" H 7875 4075 50  0000 C CNN
-F 1 "SW_PUSH" H 7875 3845 50  0000 C CNN
-F 2 "Buttons_Switches_ThroughHole:SW_Tactile_SPST_Angled" H 7875 3925 60  0001 C CNN
-F 3 "" H 7875 3925 60  0000 C CNN
-	1    7875 3925
-	0    1    1    0   
-$EndComp
-Text Notes 7725 4275 1    60   ~ 0
-P10880S-ND
-$Comp
-L media_board:R-RESCUE-stamp_mini_4_layers RST5
-U 1 1 54563471
-P 8475 3375
-F 0 "RST5" V 8555 3375 50  0000 C CNN
-F 1 "10k" V 8475 3375 50  0000 C CNN
-F 2 "opendous:SM0603_Opendous" H 8475 3375 60  0001 C CNN
-F 3 "" H 8475 3375 60  0001 C CNN
-	1    8475 3375
-	-1   0    0    1   
-$EndComp
-$Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CST5
-U 1 1 54563864
-P 8475 3925
-F 0 "CST5" H 8525 4025 50  0000 L CNN
-F 1 "0.1uF" H 8525 3825 50  0000 L CNN
-F 2 "opendous:SM0603_Opendous" H 8475 3925 60  0001 C CNN
-F 3 "" H 8475 3925 60  0001 C CNN
-	1    8475 3925
-	1    0    0    -1  
-$EndComp
-$Comp
-L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0157
-U 1 1 545650B0
-P 8175 4375
-F 0 "#PWR0157" H 8175 4375 30  0001 C CNN
-F 1 "GND" H 8175 4305 30  0001 C CNN
-F 2 "" H 8175 4375 60  0001 C CNN
-F 3 "" H 8175 4375 60  0001 C CNN
-	1    8175 4375
-	1    0    0    -1  
-$EndComp
-$Comp
-L ventilator-PowerSymbols:3V3_STM #PWR0158
-U 1 1 545655B0
-P 8475 3025
-F 0 "#PWR0158" H 8475 3125 30  0001 C CNN
-F 1 "3V3_STM" H 8475 3135 30  0000 C CNN
-F 2 "" H 8475 3025 60  0001 C CNN
-F 3 "" H 8475 3025 60  0001 C CNN
-	1    8475 3025
-	1    0    0    -1  
-$EndComp
-$Comp
 L ventilator-PowerSymbols:3V3_STM #PWR0166
 U 1 1 5456BBE6
-P 1500 5550
-F 0 "#PWR0166" H 1500 5650 30  0001 C CNN
-F 1 "3V3_STM" H 1500 5660 30  0000 C CNN
-F 2 "" H 1500 5550 60  0001 C CNN
-F 3 "" H 1500 5550 60  0001 C CNN
-	1    1500 5550
+P 1500 5750
+F 0 "#PWR0166" H 1500 5850 30  0001 C CNN
+F 1 "3V3_STM" H 1500 5860 30  0000 C CNN
+F 2 "" H 1500 5750 60  0001 C CNN
+F 3 "" H 1500 5750 60  0001 C CNN
+	1    1500 5750
 	-1   0    0    -1  
 $EndComp
 Text Label 2200 6000 0    60   ~ 0
 SDIO_D0
-Text Label 5650 5200 0    60   ~ 0
-SDIO_CMD
 Text Label 2200 6100 0    60   ~ 0
 SDIO_D1
-Text Label 2300 4000 0    60   ~ 0
-IO9
-Text Label 5700 4700 0    60   ~ 0
-IO10
-Text Label 5700 4800 0    60   ~ 0
-IO11
-Text Label 5700 4900 0    60   ~ 0
-IO12
-Text Label 5700 5000 0    60   ~ 0
-IO13
-Text Label 5700 5100 0    60   ~ 0
-IO14
-Text Label 5700 5300 0    60   ~ 0
-IO15
-Text Label 5700 5400 0    60   ~ 0
-IO16
-Text Label 2300 3000 0    60   ~ 0
-IO17
-Text Label 2300 2900 0    60   ~ 0
-IO18
-Text Label 2300 2800 0    60   ~ 0
-IO19
-Text Label 2300 2700 0    60   ~ 0
-IO20
-Text Label 2300 2600 0    60   ~ 0
-IO21
 Text Label 2300 5900 0    60   ~ 0
 IO22
 Text Label 2300 5800 0    60   ~ 0
 IO23
-Text Label 2300 5000 0    60   ~ 0
-IO24
-Text Label 2300 4900 0    60   ~ 0
-IO25
-Text Label 2300 4800 0    60   ~ 0
-IO26
-Text Label 2300 4600 0    60   ~ 0
-IO27
-Text Label 5700 3900 0    60   ~ 0
-IO28
-Text Label 5700 4000 0    60   ~ 0
-IO29
-Text Label 5700 4100 0    60   ~ 0
-IO31
-Text Label 5650 5800 0    60   ~ 0
-LED
 $Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CS2
+L Device:C CS2
 U 1 1 54575129
 P 3500 9050
 F 0 "CS2" H 3550 9150 50  0000 L CNN
 F 1 "0.1uF" H 3550 8950 50  0000 L CNN
-F 2 "opendous:SM0603_Opendous" H 3500 9050 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3500 9050 60  0001 C CNN
 F 3 "" H 3500 9050 60  0001 C CNN
 	1    3500 9050
 	1    0    0    -1  
 $EndComp
-Text Label 8025 3625 0    60   ~ 0
-NRST
 $Comp
 L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0167
 U 1 1 5529E404
@@ -763,8 +555,6 @@ F 3 "" H 1900 1500 60  0001 C CNN
 	1    1900 1500
 	0    1    1    0   
 $EndComp
-Text Label 5700 4200 0    60   ~ 0
-IO32
 $Comp
 L media_board:JUMPER PGM1
 U 1 1 5679E80A
@@ -793,14 +583,12 @@ Text Label 2200 5700 0    60   ~ 0
 CM1B
 Text Notes 9350 7475 0    60   ~ 0
 C13
-Text Label 2200 4700 0    60   ~ 0
-TRIGG_3V3
-Connection ~ 2650 9250
+Connection ~ 2650 9200
 Wire Wire Line
-	2650 9250 2650 9350
+	2650 9200 2650 9300
 Wire Wire Line
-	2650 8850 2650 8700
-Connection ~ 2650 8850
+	2650 8900 2650 8750
+Connection ~ 2650 8900
 Wire Wire Line
 	9200 7700 9050 7700
 Wire Wire Line
@@ -832,14 +620,6 @@ Wire Wire Line
 Wire Wire Line
 	7550 7750 7550 7900
 Wire Wire Line
-	1100 9200 1100 9300
-Wire Wire Line
-	1100 8800 1100 8650
-Wire Wire Line
-	800  9200 800  9300
-Wire Wire Line
-	800  8800 800  8650
-Wire Wire Line
 	5600 5600 6150 5600
 Wire Wire Line
 	5600 5700 6150 5700
@@ -847,7 +627,7 @@ Connection ~ 4050 6700
 Wire Wire Line
 	4050 6550 4050 6700
 Wire Wire Line
-	2600 3700 2200 3700
+	2600 3700 2000 3700
 Wire Wire Line
 	6000 1500 5600 1500
 Wire Wire Line
@@ -874,35 +654,35 @@ Wire Wire Line
 Wire Wire Line
 	4300 900  4300 950 
 Wire Wire Line
-	2250 4200 2600 4200
+	2050 4200 2600 4200
 Wire Wire Line
 	7300 1600 7300 1350
 Wire Wire Line
 	7300 1600 7150 1600
 Wire Wire Line
-	5050 6650 5050 6750
+	4750 6650 4750 6750
 Wire Wire Line
-	2250 3900 2600 3900
+	2050 3900 2600 3900
 Wire Wire Line
-	2250 3100 2600 3100
+	2075 3100 2600 3100
 Wire Wire Line
-	2600 3300 2250 3300
+	2600 3300 2075 3300
 Wire Wire Line
 	4250 6550 4250 6650
 Wire Wire Line
-	2300 1600 2600 1600
+	2100 1600 2600 1600
 Wire Wire Line
 	7300 1350 7400 1350
 Wire Wire Line
 	7400 1950 7300 1950
 Wire Wire Line
-	2300 1400 2600 1400
+	2000 1400 2600 1400
 Wire Wire Line
 	4500 800  4500 950 
 Wire Wire Line
-	2250 3200 2600 3200
+	2075 3200 2600 3200
 Wire Wire Line
-	2250 3800 2600 3800
+	2050 3800 2600 3800
 Wire Wire Line
 	4250 6650 4450 6650
 Wire Wire Line
@@ -910,7 +690,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 1700 7300 1950
 Wire Wire Line
-	2250 4100 2600 4100
+	2050 4100 2600 4100
 Wire Wire Line
 	6500 1850 5600 1850
 Wire Wire Line
@@ -928,47 +708,37 @@ Wire Wire Line
 Wire Wire Line
 	1900 1500 2600 1500
 Wire Wire Line
-	600  850  600  650 
-Connection ~ 1550 1250
+	900  850  900  650 
+Connection ~ 1550 1100
 Wire Wire Line
-	1550 1350 1550 1250
+	1550 1200 1550 1100
 Wire Wire Line
-	1350 1250 1550 1250
-Wire Wire Line
-	4650 8600 4650 8700
+	1350 1100 1550 1100
 Wire Wire Line
 	1500 6150 1500 6250
 Wire Wire Line
 	1500 6250 1200 6250
 Wire Wire Line
-	1200 6950 1200 6850
+	1200 6750 1200 6650
 Wire Wire Line
 	800  6250 1200 6250
 Wire Wire Line
 	1200 6250 1200 6350
 Wire Wire Line
-	4500 9200 3950 9200
-Wire Wire Line
-	3950 9350 4650 9350
-Wire Wire Line
-	4650 9350 4650 9200
-Wire Wire Line
-	4650 8700 4500 8700
-Wire Wire Line
 	7400 7750 7400 7900
 Wire Wire Line
-	6200 1600 6200 1300
+	6200 1600 6200 1200
 Wire Wire Line
-	6000 1300 6000 1500
+	6000 1200 6000 1500
 Wire Wire Line
-	6000 800  6200 800 
+	6000 900  6200 900 
 Wire Wire Line
-	6450 800  6450 900 
+	6450 900  6450 1000
 Wire Wire Line
-	6200 900  6200 800 
-Connection ~ 6200 800 
+	6200 1000 6200 900 
+Connection ~ 6200 900 
 Wire Wire Line
-	6000 900  6000 800 
+	6000 1000 6000 900 
 Wire Wire Line
 	6150 5600 6150 5300
 Wire Wire Line
@@ -985,80 +755,19 @@ Wire Wire Line
 	7450 5550 7450 5650
 Connection ~ 7150 5550
 Wire Wire Line
-	8475 3625 8475 3725
-Wire Wire Line
-	7875 3625 8475 3625
-Wire Wire Line
-	8475 4275 8475 4125
-Wire Wire Line
-	7875 4275 8175 4275
-Wire Wire Line
-	7875 4275 7875 4225
-Wire Wire Line
-	8175 4275 8175 4375
-Connection ~ 8175 4275
-Wire Wire Line
-	8475 3025 8475 3125
-Wire Wire Line
-	1500 5650 1500 5550
-Wire Wire Line
-	6000 5200 5600 5200
-Wire Wire Line
-	6000 5800 5600 5800
+	1500 5850 1500 5750
 Wire Wire Line
 	2600 6000 2200 6000
 Wire Wire Line
 	2600 6100 2200 6100
 Wire Wire Line
-	2600 4300 2200 4300
+	2600 4300 2050 4300
 Wire Wire Line
-	2600 4400 2200 4400
-Wire Wire Line
-	2600 4000 2200 4000
-Wire Wire Line
-	6000 4800 5600 4800
-Wire Wire Line
-	6000 4700 5600 4700
-Wire Wire Line
-	6000 4900 5600 4900
-Wire Wire Line
-	6000 5100 5600 5100
-Wire Wire Line
-	6000 5000 5600 5000
-Wire Wire Line
-	6000 5300 5600 5300
-Wire Wire Line
-	2600 3000 2200 3000
-Wire Wire Line
-	6000 5400 5600 5400
-Wire Wire Line
-	2600 2900 2200 2900
-Wire Wire Line
-	2600 2800 2200 2800
-Wire Wire Line
-	2600 2700 2200 2700
-Wire Wire Line
-	2600 2600 2200 2600
+	2600 4400 2050 4400
 Wire Wire Line
 	2600 5900 2200 5900
 Wire Wire Line
 	2600 5800 2200 5800
-Wire Wire Line
-	2600 5000 2200 5000
-Wire Wire Line
-	2600 4900 2200 4900
-Wire Wire Line
-	2600 4800 2200 4800
-Wire Wire Line
-	2600 4600 2200 4600
-Wire Wire Line
-	6000 3900 5600 3900
-Wire Wire Line
-	6000 4000 5600 4000
-Wire Wire Line
-	6000 4100 5600 4100
-Wire Wire Line
-	6000 4200 5600 4200
 Wire Wire Line
 	7400 7900 7550 7900
 Wire Wire Line
@@ -1069,19 +778,6 @@ Wire Wire Line
 	2200 5600 2600 5600
 Wire Wire Line
 	2200 5700 2600 5700
-Wire Wire Line
-	2200 4700 2600 4700
-$Comp
-L media_board:3V3 #PWR0173
-U 1 1 57B3EBAC
-P 5900 1400
-F 0 "#PWR0173" H 5900 1500 30  0001 C CNN
-F 1 "3V3" H 5900 1510 30  0000 C CNN
-F 2 "" H 5900 1400 60  0001 C CNN
-F 3 "" H 5900 1400 60  0001 C CNN
-	1    5900 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4050 6700 4050 6800
 Wire Wire Line
@@ -1097,36 +793,30 @@ Wire Wire Line
 Wire Wire Line
 	3900 900  4000 900 
 Wire Wire Line
-	1550 1250 1750 1250
+	1550 1100 1750 1100
 Wire Wire Line
-	6200 800  6450 800 
+	6200 900  6450 900 
 Wire Wire Line
 	7150 5550 7150 5900
 Wire Wire Line
-	8175 4275 8475 4275
+	1200 850  1350 850 
 Wire Wire Line
-	5600 1950 6900 1950
+	6150 5300 6450 5300
 Wire Wire Line
-	6500 1350 6900 1350
+	6150 5900 6450 5900
 Wire Wire Line
-	1200 850  1750 850 
+	2650 8900 2800 8900
 Wire Wire Line
-	6150 5300 6650 5300
+	2650 9200 2800 9200
 Wire Wire Line
-	6150 5900 6650 5900
+	1450 9200 1750 9200
 Wire Wire Line
-	2650 8850 3500 8850
-Wire Wire Line
-	2650 9250 3500 9250
-Wire Wire Line
-	1450 9250 2650 9250
-Wire Wire Line
-	1450 8850 2650 8850
+	1450 8900 1750 8900
 Wire Wire Line
 	7400 1350 7400 1950
-Text HLabel 2200 4300 0    50   Input ~ 0
+Text HLabel 2050 4300 0    50   Output ~ 0
 STM_I2C1_SCL
-Text HLabel 2200 4400 0    50   BiDi ~ 0
+Text HLabel 2050 4400 0    50   BiDi ~ 0
 STM_I2C1_SDA
 Connection ~ 1200 6250
 Text HLabel 2200 5400 0    50   Input ~ 0
@@ -1191,9 +881,9 @@ Wire Bus Line
 	5950 2050 6050 2050
 Text HLabel 6050 2050 2    50   BiDi ~ 0
 PE[0..7]
-Text Label 1475 2400 0    50   ~ 0
+Text Label 1975 2400 0    50   ~ 0
 SEN8
-Text Label 1475 2300 0    50   ~ 0
+Text Label 1975 2300 0    50   ~ 0
 SEN7
 Text Label 8600 2000 0    50   ~ 0
 SEN6
@@ -1254,23 +944,23 @@ Wire Bus Line
 Text HLabel 9050 1300 2    50   Input ~ 0
 SEN[0..8]
 Wire Wire Line
-	1475 3500 2600 3500
+	2000 3500 2600 3500
 Wire Wire Line
-	1475 1800 2600 1800
+	1975 1800 2600 1800
 Wire Wire Line
-	1475 1900 2600 1900
+	1975 1900 2600 1900
 Wire Wire Line
-	1475 2000 2600 2000
+	1975 2000 2600 2000
 Wire Wire Line
-	1475 2100 2600 2100
+	1975 2100 2600 2100
 Wire Wire Line
-	1475 2200 2600 2200
+	1975 2200 2600 2200
 Wire Wire Line
-	1475 2300 2600 2300
+	1975 2300 2600 2300
 Wire Wire Line
-	1475 2400 2600 2400
+	1975 2400 2600 2400
 Wire Wire Line
-	1475 2500 2600 2500
+	1975 2500 2600 2500
 Text HLabel 5700 6000 2    50   Input ~ 0
 SPI3_MISO
 Text HLabel 5700 5900 2    50   Output ~ 0
@@ -1287,7 +977,6 @@ Text HLabel 5700 3150 2    50   Input ~ 0
 SPI4_MISO
 Text HLabel 5700 3050 2    50   Output ~ 0
 SPI4_MOSI
-Connection ~ 8475 3625
 Text HLabel 5700 3250 2    50   Output ~ 0
 SPI4_NSS
 Wire Wire Line
@@ -1325,7 +1014,7 @@ U 1 1 5EAAF753
 P 10350 2525
 F 0 "FB1" V 10205 2525 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" V 10204 2525 50  0001 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 10280 2525 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10280 2525 50  0001 C CNN
 F 3 "~" H 10350 2525 50  0001 C CNN
 	1    10350 2525
 	0    1    1    0   
@@ -1338,6 +1027,136 @@ Wire Wire Line
 	10450 2525 10625 2525
 Wire Wire Line
 	10625 2525 10625 2475
+Connection ~ 6450 5300
+Wire Wire Line
+	6450 5300 6650 5300
+Connection ~ 6450 5900
+Wire Wire Line
+	6450 5900 6650 5900
+Connection ~ 1350 850 
+Wire Wire Line
+	1350 850  1750 850 
+Text HLabel 2050 4500 0    50   Output ~ 0
+SPI2_SCK
+Wire Wire Line
+	2600 5000 2050 5000
+Wire Wire Line
+	2050 4900 2600 4900
+Wire Wire Line
+	2050 4500 2600 4500
+Text HLabel 2050 4900 0    50   Input ~ 0
+SPI2_MISO
+Text HLabel 2050 5000 0    50   Output ~ 0
+SPI2_MOSI
+Wire Wire Line
+	2050 4800 2600 4800
+Text HLabel 2050 4800 0    50   Output ~ 0
+SPI2_NSS_1
+Text HLabel 5700 5400 2    50   Output ~ 0
+SPI3_NSS
+Wire Wire Line
+	5700 5400 5600 5400
+Wire Wire Line
+	2050 4700 2600 4700
+Text HLabel 2050 4700 0    50   Output ~ 0
+SPI2_NSS_0
+Text HLabel 5700 3350 2    50   Output ~ 0
+SPI4_RST
+Wire Wire Line
+	5700 3350 5600 3350
+Wire Wire Line
+	1350 1050 1350 1100
+Wire Wire Line
+	1750 1050 1750 1100
+$Comp
+L Device:Ferrite_Bead LST2
+U 1 1 5EDADB88
+P 4600 6650
+F 0 "LST2" V 4450 6650 40  0000 C CNN
+F 1 "2A 120 ohm" V 4750 6550 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 6650 60  0001 C CNN
+F 3 "" H 4600 6650 60  0001 C CNN
+	1    4600 6650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1750 9200
+Wire Wire Line
+	1750 9200 2100 9200
+Connection ~ 2100 9200
+Wire Wire Line
+	2100 9200 2450 9200
+Connection ~ 2450 9200
+Wire Wire Line
+	2450 9200 2650 9200
+Connection ~ 2800 9200
+Wire Wire Line
+	2800 9200 3150 9200
+Connection ~ 3150 9200
+Wire Wire Line
+	3150 9200 3500 9200
+Connection ~ 1750 8900
+Wire Wire Line
+	1750 8900 2100 8900
+Connection ~ 2100 8900
+Wire Wire Line
+	2100 8900 2450 8900
+Connection ~ 2450 8900
+Wire Wire Line
+	2450 8900 2650 8900
+Connection ~ 2800 8900
+Wire Wire Line
+	2800 8900 3150 8900
+Connection ~ 3150 8900
+Wire Wire Line
+	3150 8900 3500 8900
+Wire Wire Line
+	1450 8900 1100 8900
+Connection ~ 1450 8900
+Wire Wire Line
+	1100 9200 1450 9200
+Connection ~ 1450 9200
+Wire Wire Line
+	6500 1350 7000 1350
+Wire Wire Line
+	7200 1350 7300 1350
+Connection ~ 7300 1350
+Wire Wire Line
+	7200 1950 7300 1950
+Connection ~ 7300 1950
+Wire Wire Line
+	5600 1950 7000 1950
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EEF3E10
+P 5900 1400
+AR Path="/5E9B245C/5EEF3E10" Ref="#PWR?"  Part="1" 
+AR Path="/5E98CC69/5E9ECB99/5EEF3E10" Ref="#PWR?"  Part="1" 
+AR Path="/5E9C016D/5EEF3E10" Ref="#PWR?"  Part="1" 
+AR Path="/5E98CC69/5EEF3E10" Ref="#PWR?"  Part="1" 
+AR Path="/5E989259/5EEF3E10" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 5900 1250 50  0001 C CNN
+F 1 "+3V3" H 5915 1573 50  0000 C CNN
+F 2 "" H 5900 1400 50  0001 C CNN
+F 3 "" H 5900 1400 50  0001 C CNN
+	1    5900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EEFEA53
+P 6300 1700
+AR Path="/5E9B245C/5EEFEA53" Ref="#PWR?"  Part="1" 
+AR Path="/5E98CC69/5E9ECB99/5EEFEA53" Ref="#PWR?"  Part="1" 
+AR Path="/5E9C016D/5EEFEA53" Ref="#PWR?"  Part="1" 
+AR Path="/5E98CC69/5EEFEA53" Ref="#PWR?"  Part="1" 
+AR Path="/5E989259/5EEFEA53" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 6300 1550 50  0001 C CNN
+F 1 "+3V3" H 6315 1873 50  0000 C CNN
+F 2 "" H 6300 1700 50  0001 C CNN
+F 3 "" H 6300 1700 50  0001 C CNN
+	1    6300 1700
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	5950 2050 5950 2750
 Wire Bus Line
