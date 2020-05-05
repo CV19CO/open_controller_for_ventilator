@@ -202,7 +202,7 @@ F 3 "" H 1450 9050 60  0001 C CNN
 	1    1450 9050
 	1    0    0    -1  
 $EndComp
-Text Label 5650 1400 0    60   ~ 0
+Text Label 5600 1400 0    39   ~ 0
 VREF
 Text Label 4500 800  0    60   ~ 0
 VDDAST
@@ -221,17 +221,6 @@ Text HLabel 2050 4100 0    50   Output ~ 0
 STM_UART_TX
 Text HLabel 2050 4200 0    50   Input ~ 0
 STM_UART_RX
-$Comp
-L media_board:ABM8G XST1
-U 1 1 545549A3
-P 6750 1650
-F 0 "XST1" H 6750 1800 60  0000 C CNN
-F 1 "12MHz" H 6750 1500 60  0000 C CNN
-F 2 "abm8g:ABM8G" H 6750 1650 60  0001 C CNN
-F 3 "" H 6750 1650 60  0001 C CNN
-	1    6750 1650
-	0    -1   -1   0   
-$EndComp
 $Comp
 L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0147
 U 1 1 545549AB
@@ -469,52 +458,6 @@ F 3 "" H 6450 1000 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L media_board:CRYSTAL XRTC1
-U 1 1 54570CDE
-P 6450 5600
-F 0 "XRTC1" H 6450 5750 60  0000 C CNN
-F 1 "CRYSTAL" H 6450 5450 60  0000 C CNN
-F 2 "resonator:txc_32k" H 6450 5600 60  0001 C CNN
-F 3 "" H 6450 5600 60  0000 C CNN
-	1    6450 5600
-	0    1    1    0   
-$EndComp
-$Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CRT2
-U 1 1 54571FAF
-P 6850 5900
-F 0 "CRT2" H 6900 6000 50  0000 L CNN
-F 1 "0.1uF" H 6900 5800 50  0000 L CNN
-F 2 "opendous:SM0603_Opendous" H 6850 5900 60  0001 C CNN
-F 3 "" H 6850 5900 60  0001 C CNN
-	1    6850 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L media_board:C-RESCUE-stamp_mini_4_layers CRT1
-U 1 1 545722BF
-P 6850 5300
-F 0 "CRT1" H 6900 5400 50  0000 L CNN
-F 1 "0.1uF" H 6900 5200 50  0000 L CNN
-F 2 "opendous:SM0603_Opendous" H 6850 5300 60  0001 C CNN
-F 3 "" H 6850 5300 60  0001 C CNN
-	1    6850 5300
-	0    1    1    0   
-$EndComp
-$Comp
-L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0156
-U 1 1 54573CB9
-P 7450 5650
-F 0 "#PWR0156" H 7450 5650 30  0001 C CNN
-F 1 "GND" H 7450 5580 30  0001 C CNN
-F 2 "" H 7450 5650 60  0001 C CNN
-F 3 "" H 7450 5650 60  0001 C CNN
-	1    7450 5650
-	1    0    0    -1  
-$EndComp
-Text Notes 6350 5100 0    60   ~ 0
-887-1504-1-ND
-$Comp
 L ventilator-PowerSymbols:3V3_STM #PWR0166
 U 1 1 5456BBE6
 P 1500 5750
@@ -619,10 +562,6 @@ Wire Wire Line
 	8850 7500 8400 7500
 Wire Wire Line
 	7550 7750 7550 7900
-Wire Wire Line
-	5600 5600 6150 5600
-Wire Wire Line
-	5600 5700 6150 5700
 Connection ~ 4050 6700
 Wire Wire Line
 	4050 6550 4050 6700
@@ -656,10 +595,6 @@ Wire Wire Line
 Wire Wire Line
 	2050 4200 2600 4200
 Wire Wire Line
-	7300 1600 7300 1350
-Wire Wire Line
-	7300 1600 7150 1600
-Wire Wire Line
 	4750 6650 4750 6750
 Wire Wire Line
 	2050 3900 2600 3900
@@ -672,10 +607,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 1600 2600 1600
 Wire Wire Line
-	7300 1350 7400 1350
-Wire Wire Line
-	7400 1950 7300 1950
-Wire Wire Line
 	2000 1400 2600 1400
 Wire Wire Line
 	4500 800  4500 950 
@@ -686,19 +617,13 @@ Wire Wire Line
 Wire Wire Line
 	4250 6650 4450 6650
 Wire Wire Line
-	7150 1700 7300 1700
-Wire Wire Line
-	7300 1700 7300 1950
+	7150 1700 7200 1700
 Wire Wire Line
 	2050 4100 2600 4100
 Wire Wire Line
 	6500 1850 5600 1850
 Wire Wire Line
-	5600 1400 5900 1400
-Wire Wire Line
 	5600 1600 6200 1600
-Wire Wire Line
-	6300 1700 5600 1700
 Wire Wire Line
 	4150 6700 4150 6550
 Wire Wire Line
@@ -739,21 +664,6 @@ Wire Wire Line
 Connection ~ 6200 900 
 Wire Wire Line
 	6000 1000 6000 900 
-Wire Wire Line
-	6150 5600 6150 5300
-Wire Wire Line
-	6150 5700 6150 5900
-Wire Wire Line
-	7050 5300 7150 5300
-Wire Wire Line
-	7150 5300 7150 5550
-Wire Wire Line
-	7150 5900 7050 5900
-Wire Wire Line
-	7150 5550 7450 5550
-Wire Wire Line
-	7450 5550 7450 5650
-Connection ~ 7150 5550
 Wire Wire Line
 	1500 5850 1500 5750
 Wire Wire Line
@@ -797,13 +707,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 900  6450 900 
 Wire Wire Line
-	7150 5550 7150 5900
-Wire Wire Line
 	1200 850  1350 850 
-Wire Wire Line
-	6150 5300 6450 5300
-Wire Wire Line
-	6150 5900 6450 5900
 Wire Wire Line
 	2650 8900 2800 8900
 Wire Wire Line
@@ -812,8 +716,6 @@ Wire Wire Line
 	1450 9200 1750 9200
 Wire Wire Line
 	1450 8900 1750 8900
-Wire Wire Line
-	7400 1350 7400 1950
 Text HLabel 2050 4300 0    50   Output ~ 0
 STM_I2C1_SCL
 Text HLabel 2050 4400 0    50   BiDi ~ 0
@@ -1027,12 +929,6 @@ Wire Wire Line
 	10450 2525 10625 2525
 Wire Wire Line
 	10625 2525 10625 2475
-Connection ~ 6450 5300
-Wire Wire Line
-	6450 5300 6650 5300
-Connection ~ 6450 5900
-Wire Wire Line
-	6450 5900 6650 5900
 Connection ~ 1350 850 
 Wire Wire Line
 	1350 850  1750 850 
@@ -1116,47 +1012,88 @@ Wire Wire Line
 	1100 9200 1450 9200
 Connection ~ 1450 9200
 Wire Wire Line
-	6500 1350 7000 1350
+	6500 1350 6750 1350
 Wire Wire Line
-	7200 1350 7300 1350
-Connection ~ 7300 1350
-Wire Wire Line
-	7200 1950 7300 1950
-Connection ~ 7300 1950
-Wire Wire Line
-	5600 1950 7000 1950
+	5600 1950 6750 1950
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5EEF3E10
-P 5900 1400
-AR Path="/5E9B245C/5EEF3E10" Ref="#PWR?"  Part="1" 
-AR Path="/5E98CC69/5E9ECB99/5EEF3E10" Ref="#PWR?"  Part="1" 
-AR Path="/5E9C016D/5EEF3E10" Ref="#PWR?"  Part="1" 
-AR Path="/5E98CC69/5EEF3E10" Ref="#PWR?"  Part="1" 
-AR Path="/5E989259/5EEF3E10" Ref="#PWR0127"  Part="1" 
-F 0 "#PWR0127" H 5900 1250 50  0001 C CNN
-F 1 "+3V3" H 5915 1573 50  0000 C CNN
-F 2 "" H 5900 1400 50  0001 C CNN
-F 3 "" H 5900 1400 50  0001 C CNN
-	1    5900 1400
+L ABM8G:ABM8G X1
+U 1 1 5EB19A22
+P 6750 1650
+F 0 "X1" V 6803 1783 60  0000 L CNN
+F 1 "ABM8G" V 7100 1500 60  0000 L CNN
+F 2 "SMD:ABM8G" H 6750 1650 50  0001 C CNN
+F 3 "" H 6750 1650 50  0001 C CNN
+	1    6750 1650
+	0    -1   -1   0   
+$EndComp
+Text Notes 6525 1850 0    50   ~ 0
+12MHz\n
+Wire Wire Line
+	7200 1600 7150 1600
+Connection ~ 6750 1950
+Connection ~ 6750 1350
+Wire Wire Line
+	6750 1350 7000 1350
+Wire Wire Line
+	6750 1950 7000 1950
+$Comp
+L power:GND #PWR0129
+U 1 1 5EB550B7
+P 7250 2050
+F 0 "#PWR0129" H 7250 1800 50  0001 C CNN
+F 1 "GND" H 7255 1877 50  0000 C CNN
+F 2 "" H 7250 2050 50  0001 C CNN
+F 3 "" H 7250 2050 50  0001 C CNN
+	1    7250 2050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7200 1350 7250 1350
+Wire Wire Line
+	7250 1350 7250 1650
+Wire Wire Line
+	7200 1950 7250 1950
+Connection ~ 7250 1950
+Wire Wire Line
+	7250 1950 7250 2050
+Wire Wire Line
+	7200 1700 7200 1650
+Wire Wire Line
+	7200 1650 7250 1650
+Connection ~ 7200 1650
+Wire Wire Line
+	7200 1650 7200 1600
+Connection ~ 7250 1650
+Wire Wire Line
+	7250 1650 7250 1950
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5EEFEA53
-P 6300 1700
-AR Path="/5E9B245C/5EEFEA53" Ref="#PWR?"  Part="1" 
-AR Path="/5E98CC69/5E9ECB99/5EEFEA53" Ref="#PWR?"  Part="1" 
-AR Path="/5E9C016D/5EEFEA53" Ref="#PWR?"  Part="1" 
-AR Path="/5E98CC69/5EEFEA53" Ref="#PWR?"  Part="1" 
-AR Path="/5E989259/5EEFEA53" Ref="#PWR0128"  Part="1" 
-F 0 "#PWR0128" H 6300 1550 50  0001 C CNN
-F 1 "+3V3" H 6315 1873 50  0000 C CNN
-F 2 "" H 6300 1700 50  0001 C CNN
-F 3 "" H 6300 1700 50  0001 C CNN
-	1    6300 1700
+L ventilator-PowerSymbols:3V3_STM #PWR?
+U 1 1 5EBE45B5
+P 5775 1300
+F 0 "#PWR?" H 5775 1400 30  0001 C CNN
+F 1 "3V3_STM" H 5775 1410 30  0000 C CNN
+F 2 "" H 5775 1300 60  0001 C CNN
+F 3 "" H 5775 1300 60  0001 C CNN
+	1    5775 1300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5775 1400 5775 1300
+$Comp
+L ventilator-PowerSymbols:3V3_STM #PWR?
+U 1 1 5EBFBCB1
+P 6350 1700
+F 0 "#PWR?" H 6350 1800 30  0001 C CNN
+F 1 "3V3_STM" H 6350 1810 30  0000 C CNN
+F 2 "" H 6350 1700 60  0001 C CNN
+F 3 "" H 6350 1700 60  0001 C CNN
+	1    6350 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1400 5775 1400
+Wire Wire Line
+	5600 1700 6350 1700
 Wire Bus Line
 	5950 2050 5950 2750
 Wire Bus Line
