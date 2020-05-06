@@ -296,11 +296,15 @@ Wire Wire Line
 	3000 1850 3000 2650
 Wire Wire Line
 	3050 2650 3000 2650
+Connection ~ 3000 2650
+Wire Wire Line
+	3000 2650 3000 3650
+Wire Wire Line
+	2750 2850 3050 2850
+Text HLabel 2750 2850 0    50   Output ~ 0
+MCU_NRST
 Wire Bus Line
 	6350 2250 6350 2500
 Wire Bus Line
 	2250 4100 2250 4550
-Connection ~ 3000 2650
-Wire Wire Line
-	3000 2650 3000 3650
 $EndSCHEMATC
