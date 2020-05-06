@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -27,49 +28,21 @@ F 3 "" H 3300 1450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 1850 2700 1850
-Text Label 2700 1850 0    50   ~ 0
-GND_PI
-Wire Wire Line
-	3050 2650 2700 2650
-Text Label 2700 2650 0    50   ~ 0
-GND_PI
-Wire Wire Line
 	3050 3350 2700 3350
 Text Label 2700 3350 0    50   ~ 0
 GND_PI
-Wire Wire Line
-	4600 3050 4950 3050
-Text Label 4950 3050 2    50   ~ 0
-GND_PI
-Wire Wire Line
-	4600 2850 4950 2850
-Text Label 4950 2850 2    50   ~ 0
-GND_PI
-Wire Wire Line
-	4600 2350 4950 2350
-Text Label 4950 2350 2    50   ~ 0
-GND_PI
-Wire Wire Line
-	4600 2050 4950 2050
-Text Label 4950 2050 2    50   ~ 0
-GND_PI
-Wire Wire Line
-	4600 1650 4950 1650
-Text Label 4950 1650 2    50   ~ 0
-GND_PI
-Text HLabel 4750 1750 2    50   Output ~ 0
+Text HLabel 4850 1750 2    50   Output ~ 0
 TX_PI
 Wire Wire Line
-	4600 1750 4750 1750
-Text HLabel 4750 1850 2    50   Input ~ 0
+	4600 1750 4850 1750
+Text HLabel 4850 1850 2    50   Input ~ 0
 RX_PI
 Wire Wire Line
-	4600 1850 4750 1850
+	4600 1850 4850 1850
 Wire Wire Line
-	4600 2150 4800 2150
+	4600 2150 4900 2150
 Wire Wire Line
-	4600 2250 4800 2250
+	4600 2250 4900 2250
 Text HLabel 2900 1550 0    50   BiDi ~ 0
 SDA_PI
 Text HLabel 2900 1650 0    50   Output ~ 0
@@ -85,20 +58,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0118
 U 1 1 5E97A377
-P 6000 3500
-F 0 "#PWR0118" H 6000 3250 50  0001 C CNN
-F 1 "GND" H 6005 3327 50  0000 C CNN
-F 2 "" H 6000 3500 50  0001 C CNN
-F 3 "" H 6000 3500 50  0001 C CNN
-	1    6000 3500
+P 4700 3650
+F 0 "#PWR0118" H 4700 3400 50  0001 C CNN
+F 1 "GND" H 4705 3477 50  0000 C CNN
+F 2 "" H 4700 3650 50  0001 C CNN
+F 3 "" H 4700 3650 50  0001 C CNN
+	1    4700 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 3500 6000 3300
-Wire Wire Line
-	6000 3300 6250 3300
-Text Label 6250 3300 2    50   ~ 0
-GND_PI
 Text HLabel 2050 4100 0    50   BiDi ~ 0
 SPI_PI[0..4]
 Wire Bus Line
@@ -129,7 +96,7 @@ Text Label 2600 2450 0    50   ~ 0
 SPI_MISO
 Text Label 2600 2550 0    50   ~ 0
 SPI_CLK
-Text Label 4950 2550 2    50   ~ 0
+Text Label 5050 2550 2    50   ~ 0
 SPI_CS
 Wire Wire Line
 	2600 2350 3050 2350
@@ -138,7 +105,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 2550 3050 2550
 Wire Wire Line
-	4950 2550 4600 2550
+	5050 2550 4600 2550
 Text Label 3600 4250 2    50   ~ 0
 SPI_MISO
 Text Label 3600 4350 2    50   ~ 0
@@ -228,22 +195,112 @@ Wire Wire Line
 	3600 4550 3200 4550
 Wire Wire Line
 	3600 4650 3200 4650
-Text HLabel 4800 2650 2    50   Output ~ 0
+Text HLabel 4900 2650 2    50   Output ~ 0
 JTMS
-Text HLabel 4800 2450 2    50   Output ~ 0
+Text HLabel 4900 2450 2    50   Output ~ 0
 JTCK
-Text HLabel 4800 2250 2    50   Input ~ 0
+Text HLabel 4900 2250 2    50   Input ~ 0
 JTDI
-Text HLabel 4800 2150 2    50   Output ~ 0
+Text HLabel 4900 2150 2    50   Output ~ 0
 JTDO
 Wire Wire Line
-	4800 2450 4600 2450
+	4900 2450 4600 2450
 Wire Wire Line
-	4800 2650 4600 2650
+	4900 2650 4600 2650
 Wire Wire Line
-	4800 1950 4600 1950
-Text HLabel 4800 1950 2    50   Output ~ 0
+	4900 1950 4600 1950
+Text HLabel 4900 1950 2    50   Output ~ 0
 JNRST
+Text Label 5850 2500 0    47   ~ 0
+BOOT0
+Text Label 5850 2600 0    47   ~ 0
+BOOT1
+Wire Bus Line
+	6350 2250 6450 2250
+Text HLabel 6450 2250 2    50   Output ~ 0
+BOOT[0..1]
+Entry Wire Line
+	6250 2500 6350 2400
+Entry Wire Line
+	6250 2600 6350 2500
+Wire Wire Line
+	5850 2500 6250 2500
+Wire Wire Line
+	5850 2600 6250 2600
+Text Label 2650 2050 0    47   ~ 0
+BOOT0
+Text Label 2650 2150 0    47   ~ 0
+BOOT1
+Wire Wire Line
+	2650 2050 3050 2050
+Wire Wire Line
+	2650 2150 3050 2150
+$Comp
+L power:+5V #PWR0130
+U 1 1 5ECDCFFC
+P 4800 1350
+F 0 "#PWR0130" H 4800 1200 50  0001 C CNN
+F 1 "+5V" H 4815 1523 50  0000 C CNN
+F 2 "" H 4800 1350 50  0001 C CNN
+F 3 "" H 4800 1350 50  0001 C CNN
+	1    4800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1350 4800 1450
+Wire Wire Line
+	4800 1550 4600 1550
+Wire Wire Line
+	4600 1450 4800 1450
+Connection ~ 4800 1450
+Wire Wire Line
+	4800 1450 4800 1550
+Wire Wire Line
+	4600 1650 4700 1650
+Wire Wire Line
+	4700 1650 4700 2050
+Wire Wire Line
+	4600 3050 4700 3050
+Connection ~ 4700 3050
+Wire Wire Line
+	4700 3050 4700 3650
+Wire Wire Line
+	4600 2850 4700 2850
+Connection ~ 4700 2850
+Wire Wire Line
+	4700 2850 4700 3050
+Wire Wire Line
+	4600 2350 4700 2350
+Connection ~ 4700 2350
+Wire Wire Line
+	4700 2350 4700 2850
+Wire Wire Line
+	4600 2050 4700 2050
+Connection ~ 4700 2050
+Wire Wire Line
+	4700 2050 4700 2350
+$Comp
+L power:GND #PWR0151
+U 1 1 5ECF1E11
+P 3000 3650
+F 0 "#PWR0151" H 3000 3400 50  0001 C CNN
+F 1 "GND" H 3005 3477 50  0000 C CNN
+F 2 "" H 3000 3650 50  0001 C CNN
+F 3 "" H 3000 3650 50  0001 C CNN
+	1    3000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1850 3000 1850
+Wire Wire Line
+	3000 1850 3000 2650
+Wire Wire Line
+	3050 2650 3000 2650
+Wire Bus Line
+	6350 2250 6350 2500
 Wire Bus Line
 	2250 4100 2250 4550
+Connection ~ 3000 2650
+Wire Wire Line
+	3000 2650 3000 3650
 $EndSCHEMATC

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr User 12000 10000
@@ -253,7 +254,7 @@ F 3 "" H 4050 800 60  0001 C CNN
 	1    4050 800 
 	1    0    0    -1  
 $EndComp
-Text HLabel 2100 1600 0    60   BiDi ~ 0
+Text HLabel 2100 1600 0    60   Input ~ 0
 NRESET
 Text Label 1975 1800 0    50   ~ 0
 SEN6
@@ -390,38 +391,36 @@ $EndComp
 $Comp
 L Device:R RST1
 U 1 1 54557ABA
-P 1200 6500
-F 0 "RST1" V 1280 6500 50  0000 C CNN
-F 1 "10k" V 1200 6500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1200 6500 60  0001 C CNN
-F 3 "" H 1200 6500 60  0001 C CNN
-	1    1200 6500
+P 1300 7450
+F 0 "RST1" V 1380 7450 50  0000 C CNN
+F 1 "10k" V 1300 7450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1300 7450 60  0001 C CNN
+F 3 "" H 1300 7450 60  0001 C CNN
+	1    1300 7450
 	-1   0    0    1   
 $EndComp
-Text Label 1500 6250 2    60   ~ 0
-BOOT1
 $Comp
 L Device:R RST2
 U 1 1 54557AC8
-P 1500 6000
-F 0 "RST2" V 1580 6000 50  0000 C CNN
-F 1 "10k" V 1500 6000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1500 6000 60  0001 C CNN
-F 3 "" H 1500 6000 60  0001 C CNN
-	1    1500 6000
+P 1300 7050
+F 0 "RST2" V 1380 7050 50  0000 C CNN
+F 1 "10k" V 1300 7050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1300 7050 60  0001 C CNN
+F 3 "" H 1300 7050 60  0001 C CNN
+	1    1300 7050
 	-1   0    0    -1  
 $EndComp
-Text Label 1200 6250 2    60   ~ 0
+Text Label 1400 7200 0    47   ~ 9
 BOOT0
 $Comp
 L media_board:GND-RESCUE-stamp_mini_4_layers #PWR0152
 U 1 1 54557AD0
-P 1200 6750
-F 0 "#PWR0152" H 1200 6750 30  0001 C CNN
-F 1 "GND" H 1200 6680 30  0001 C CNN
-F 2 "" H 1200 6750 60  0001 C CNN
-F 3 "" H 1200 6750 60  0001 C CNN
-	1    1200 6750
+P 1300 7700
+F 0 "#PWR0152" H 1300 7700 30  0001 C CNN
+F 1 "GND" H 1300 7630 30  0001 C CNN
+F 2 "" H 1300 7700 60  0001 C CNN
+F 3 "" H 1300 7700 60  0001 C CNN
+	1    1300 7700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -460,22 +459,14 @@ $EndComp
 $Comp
 L ventilator-PowerSymbols:3V3_STM #PWR0166
 U 1 1 5456BBE6
-P 1500 5750
-F 0 "#PWR0166" H 1500 5850 30  0001 C CNN
-F 1 "3V3_STM" H 1500 5860 30  0000 C CNN
-F 2 "" H 1500 5750 60  0001 C CNN
-F 3 "" H 1500 5750 60  0001 C CNN
-	1    1500 5750
+P 1300 6800
+F 0 "#PWR0166" H 1300 6900 30  0001 C CNN
+F 1 "3V3_STM" H 1300 6910 30  0000 C CNN
+F 2 "" H 1300 6800 60  0001 C CNN
+F 3 "" H 1300 6800 60  0001 C CNN
+	1    1300 6800
 	-1   0    0    -1  
 $EndComp
-Text Label 2200 6000 0    60   ~ 0
-SDIO_D0
-Text Label 2200 6100 0    60   ~ 0
-SDIO_D1
-Text Label 2300 5900 0    60   ~ 0
-IO22
-Text Label 2300 5800 0    60   ~ 0
-IO23
 $Comp
 L Device:C CS2
 U 1 1 54575129
@@ -498,32 +489,6 @@ F 3 "" H 1900 1500 60  0001 C CNN
 	1    1900 1500
 	0    1    1    0   
 $EndComp
-$Comp
-L media_board:JUMPER PGM1
-U 1 1 5679E80A
-P 800 5950
-F 0 "PGM1" H 800 6100 60  0000 C CNN
-F 1 "J" H 1100 6000 40  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 800 5950 60  0001 C CNN
-F 3 "" H 800 5950 60  0001 C CNN
-	1    800  5950
-	0    1    1    0   
-$EndComp
-$Comp
-L ventilator-PowerSymbols:3V3_STM #PWR0171
-U 1 1 5679F680
-P 800 5600
-F 0 "#PWR0171" H 800 5700 30  0001 C CNN
-F 1 "3V3_STM" H 800 5710 30  0000 C CNN
-F 2 "" H 800 5600 60  0001 C CNN
-F 3 "" H 800 5600 60  0001 C CNN
-	1    800  5600
-	1    0    0    -1  
-$EndComp
-Text Label 2200 5600 0    60   ~ 0
-CM1D
-Text Label 2200 5700 0    60   ~ 0
-CM1B
 Text Notes 9350 7475 0    60   ~ 0
 C13
 Connection ~ 2650 9200
@@ -640,15 +605,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 1100 1550 1100
 Wire Wire Line
-	1500 6150 1500 6250
-Wire Wire Line
-	1500 6250 1200 6250
-Wire Wire Line
-	1200 6750 1200 6650
-Wire Wire Line
-	800  6250 1200 6250
-Wire Wire Line
-	1200 6250 1200 6350
+	1300 7700 1300 7600
 Wire Wire Line
 	7400 7750 7400 7900
 Wire Wire Line
@@ -665,29 +622,13 @@ Connection ~ 6200 900
 Wire Wire Line
 	6000 1000 6000 900 
 Wire Wire Line
-	1500 5850 1500 5750
-Wire Wire Line
-	2600 6000 2200 6000
-Wire Wire Line
-	2600 6100 2200 6100
+	1300 6900 1300 6800
 Wire Wire Line
 	2600 4300 2050 4300
 Wire Wire Line
 	2600 4400 2050 4400
 Wire Wire Line
-	2600 5900 2200 5900
-Wire Wire Line
-	2600 5800 2200 5800
-Wire Wire Line
 	7400 7900 7550 7900
-Wire Wire Line
-	2200 5400 2600 5400
-Wire Wire Line
-	800  5600 800  5650
-Wire Wire Line
-	2200 5600 2600 5600
-Wire Wire Line
-	2200 5700 2600 5700
 Wire Wire Line
 	4050 6700 4050 6800
 Wire Wire Line
@@ -720,9 +661,6 @@ Text HLabel 2050 4300 0    50   Output ~ 0
 STM_I2C1_SCL
 Text HLabel 2050 4400 0    50   BiDi ~ 0
 STM_I2C1_SDA
-Connection ~ 1200 6250
-Text HLabel 2200 5400 0    50   Input ~ 0
-RST_ESP
 Text HLabel 5700 6100 2    50   Output ~ 0
 SPI3_SCK
 Wire Wire Line
@@ -1067,10 +1005,10 @@ Connection ~ 7250 1650
 Wire Wire Line
 	7250 1650 7250 1950
 $Comp
-L ventilator-PowerSymbols:3V3_STM #PWR?
+L ventilator-PowerSymbols:3V3_STM #PWR0127
 U 1 1 5EBE45B5
 P 5775 1300
-F 0 "#PWR?" H 5775 1400 30  0001 C CNN
+F 0 "#PWR0127" H 5775 1400 30  0001 C CNN
 F 1 "3V3_STM" H 5775 1410 30  0000 C CNN
 F 2 "" H 5775 1300 60  0001 C CNN
 F 3 "" H 5775 1300 60  0001 C CNN
@@ -1080,10 +1018,10 @@ $EndComp
 Wire Wire Line
 	5775 1400 5775 1300
 $Comp
-L ventilator-PowerSymbols:3V3_STM #PWR?
+L ventilator-PowerSymbols:3V3_STM #PWR0128
 U 1 1 5EBFBCB1
 P 6350 1700
-F 0 "#PWR?" H 6350 1800 30  0001 C CNN
+F 0 "#PWR0128" H 6350 1800 30  0001 C CNN
 F 1 "3V3_STM" H 6350 1810 30  0000 C CNN
 F 2 "" H 6350 1700 60  0001 C CNN
 F 3 "" H 6350 1700 60  0001 C CNN
@@ -1094,6 +1032,33 @@ Wire Wire Line
 	5600 1400 5775 1400
 Wire Wire Line
 	5600 1700 6350 1700
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J1
+U 1 1 5EB3C314
+P 10000 4700
+F 0 "J1" H 10050 5125 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 10050 5126 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x07_P2.54mm_Horizontal" H 10000 4700 50  0001 C CNN
+F 3 "~" H 10000 4700 50  0001 C CNN
+	1    10000 4700
+	1    0    0    -1  
+$EndComp
+Text Label 1400 7300 0    47   ~ 9
+BOOT1
+Wire Bus Line
+	1800 6950 1900 6950
+Text HLabel 1900 6950 2    50   Input ~ 0
+BOOT[0..1]
+Entry Wire Line
+	1700 7200 1800 7100
+Entry Wire Line
+	1700 7300 1800 7200
+Wire Wire Line
+	1300 7200 1700 7200
+Wire Wire Line
+	1300 7300 1700 7300
+Wire Bus Line
+	1800 6950 1800 7200
 Wire Bus Line
 	5950 2050 5950 2750
 Wire Bus Line
