@@ -1225,6 +1225,10 @@ Text Label 1975 6100 0    50   ~ 0
 PC9
 Text Label 9575 4700 0    50   ~ 0
 PC9
+Text HLabel 5700 3550 2    50   Output ~ 0
+SPI4_NSS_1
+Wire Wire Line
+	5700 3550 5600 3550
 Wire Bus Line
 	1800 6950 1800 7200
 Wire Bus Line

@@ -27,10 +27,6 @@ F 3 "" H 3300 1450 60  0000 C CNN
 	1    4100 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3050 3350 2700 3350
-Text Label 2700 3350 0    50   ~ 0
-GND_PI
 Text HLabel 4850 1750 2    50   Output ~ 0
 TX_PI
 Wire Wire Line
@@ -67,7 +63,7 @@ F 3 "" H 4700 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 2050 4100 0    50   BiDi ~ 0
-SPI_PI[0..4]
+SPI_PI[0..5]
 Wire Bus Line
 	2050 4100 2250 4100
 Entry Wire Line
@@ -298,13 +294,45 @@ Wire Wire Line
 	3050 2650 3000 2650
 Connection ~ 3000 2650
 Wire Wire Line
-	3000 2650 3000 3650
+	3000 2650 3000 3350
 Wire Wire Line
 	2750 2850 3050 2850
 Text HLabel 2750 2850 0    50   Output ~ 0
 MCU_NRST
+Entry Wire Line
+	2250 4650 2350 4750
+Text Label 2700 4750 2    50   ~ 0
+SPI_PI5
+Text Label 3600 4750 2    50   ~ 0
+ICE_DONE
+Wire Wire Line
+	2350 4750 2900 4750
+$Comp
+L Device:R R52
+U 1 1 5F0CC2C5
+P 3050 4750
+F 0 "R52" V 3000 4550 50  0000 C CNN
+F 1 "100" V 3050 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4750 50  0001 C CNN
+F 3 "~" H 3050 4750 50  0001 C CNN
+	1    3050 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 4750 3200 4750
+Text Label 2600 2950 0    50   ~ 0
+ICE_DONE
+Wire Wire Line
+	2600 2950 3050 2950
+Wire Wire Line
+	3050 3350 3000 3350
+Connection ~ 3000 3350
+Wire Wire Line
+	3000 3350 3000 3650
+NoConn ~ 3050 1450
+NoConn ~ 3050 2250
 Wire Bus Line
 	6350 2250 6350 2500
 Wire Bus Line
-	2250 4100 2250 4550
+	2250 4100 2250 4650
 $EndSCHEMATC
