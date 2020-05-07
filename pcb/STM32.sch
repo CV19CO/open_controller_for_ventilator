@@ -256,17 +256,17 @@ F 3 "" H 4050 800 60  0001 C CNN
 $EndComp
 Text HLabel 2100 1600 0    60   Input ~ 0
 NRESET
-Text Label 1975 1800 0    50   ~ 0
+Text Label 1975 1800 0    50   Italic 0
 SEN6
-Text Label 1975 2500 0    50   ~ 0
+Text Label 1975 2500 0    50   Italic 0
 SEN5
-Text Label 1975 2200 0    50   ~ 0
+Text Label 1975 2200 0    50   Italic 0
 SEN4
-Text Label 1975 1900 0    50   ~ 0
+Text Label 1975 1900 0    50   Italic 0
 SEN3
-Text Label 2000 3500 0    50   ~ 0
+Text Label 2000 3500 0    50   Italic 0
 SEN2
-Text Label 1975 2100 0    50   ~ 0
+Text Label 1975 2100 0    50   Italic 0
 SEN1
 Text Label 2304 3900 2    47   ~ 0
 JTRST
@@ -284,7 +284,7 @@ Text Label 2000 1400 0    47   ~ 9
 BOOT0
 Text Label 2000 3700 0    47   ~ 9
 BOOT1
-Text Label 1975 2000 0    50   ~ 0
+Text Label 1975 2000 0    50   Italic 0
 SEN0
 $Comp
 L Device:C_Small CXST2
@@ -721,9 +721,9 @@ Wire Bus Line
 	5950 2050 6050 2050
 Text HLabel 6050 2050 2    50   BiDi ~ 0
 PE[0..7]
-Text Label 1975 2400 0    50   ~ 0
+Text Label 1975 2400 0    50   Italic 0
 SEN8
-Text Label 1975 2300 0    50   ~ 0
+Text Label 1975 2300 0    50   Italic 0
 SEN7
 Text Label 8600 2000 0    50   ~ 0
 SEN6
@@ -1057,13 +1057,13 @@ Wire Wire Line
 	1300 7200 1700 7200
 Wire Wire Line
 	1300 7300 1700 7300
-Text HLabel 10750 4600 2    50   Input ~ 0
+Text HLabel 10775 4600 2    50   Input ~ 0
 SPI2_MISO
-Text HLabel 9250 4600 0    50   Output ~ 0
+Text HLabel 9175 4600 0    50   Output ~ 0
 SPI2_MOSI
-Text HLabel 9250 4500 0    50   Output ~ 0
+Text HLabel 9175 4500 0    50   Output ~ 0
 SPI2_NSS_0
-Text HLabel 10750 4500 2    50   Output ~ 0
+Text HLabel 10775 4500 2    50   Output ~ 0
 SPI2_SCK
 $Comp
 L power:+3V3 #PWR0156
@@ -1112,71 +1112,119 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5EDA5903
-P 9550 4600
+P 9475 4600
 AR Path="/5E96F696/5EDA5903" Ref="R?"  Part="1" 
 AR Path="/5E989259/5EDA5903" Ref="R47"  Part="1" 
-F 0 "R47" V 9500 4400 50  0000 C CNN
-F 1 "100" V 9550 4600 43  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9480 4600 50  0001 C CNN
-F 3 "~" H 9550 4600 50  0001 C CNN
-	1    9550 4600
+F 0 "R47" V 9425 4400 50  0000 C CNN
+F 1 "100" V 9475 4600 43  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9405 4600 50  0001 C CNN
+F 3 "~" H 9475 4600 50  0001 C CNN
+	1    9475 4600
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5EDD3281
-P 9550 4500
+P 9475 4500
 AR Path="/5E96F696/5EDD3281" Ref="R?"  Part="1" 
 AR Path="/5E989259/5EDD3281" Ref="R46"  Part="1" 
-F 0 "R46" V 9500 4300 50  0000 C CNN
-F 1 "100" V 9550 4500 43  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9480 4500 50  0001 C CNN
-F 3 "~" H 9550 4500 50  0001 C CNN
-	1    9550 4500
+F 0 "R46" V 9425 4300 50  0000 C CNN
+F 1 "100" V 9475 4500 43  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9405 4500 50  0001 C CNN
+F 3 "~" H 9475 4500 50  0001 C CNN
+	1    9475 4500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9250 4500 9450 4500
+	9175 4500 9375 4500
 Wire Wire Line
-	9250 4600 9450 4600
+	9175 4600 9375 4600
 Wire Wire Line
-	9650 4500 9800 4500
+	9575 4500 9800 4500
 Wire Wire Line
-	9800 4600 9650 4600
+	9800 4600 9575 4600
 $Comp
 L Device:R_Small R?
 U 1 1 5EE12EAD
-P 10600 4600
+P 10625 4600
 AR Path="/5E96F696/5EE12EAD" Ref="R?"  Part="1" 
 AR Path="/5E989259/5EE12EAD" Ref="R49"  Part="1" 
-F 0 "R49" V 10550 4400 50  0000 C CNN
-F 1 "100" V 10600 4600 43  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10530 4600 50  0001 C CNN
-F 3 "~" H 10600 4600 50  0001 C CNN
-	1    10600 4600
+F 0 "R49" V 10575 4400 50  0000 C CNN
+F 1 "100" V 10625 4600 43  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10555 4600 50  0001 C CNN
+F 3 "~" H 10625 4600 50  0001 C CNN
+	1    10625 4600
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5EE12EB7
-P 10600 4500
+P 10625 4500
 AR Path="/5E96F696/5EE12EB7" Ref="R?"  Part="1" 
 AR Path="/5E989259/5EE12EB7" Ref="R48"  Part="1" 
-F 0 "R48" V 10550 4300 50  0000 C CNN
-F 1 "100" V 10600 4500 43  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10530 4500 50  0001 C CNN
-F 3 "~" H 10600 4500 50  0001 C CNN
-	1    10600 4500
+F 0 "R48" V 10575 4300 50  0000 C CNN
+F 1 "100" V 10625 4500 43  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10555 4500 50  0001 C CNN
+F 3 "~" H 10625 4500 50  0001 C CNN
+	1    10625 4500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10300 4500 10500 4500
+	10300 4500 10525 4500
 Wire Wire Line
-	10300 4600 10500 4600
+	10300 4600 10525 4600
 Wire Wire Line
-	10750 4500 10700 4500
+	10775 4500 10725 4500
 Wire Wire Line
-	10750 4600 10700 4600
+	10775 4600 10725 4600
+Text Label 10500 4800 2    50   ~ 0
+PA10
+Text Label 10500 4900 2    50   ~ 0
+PA12
+Text Label 10500 4700 2    50   ~ 0
+PA8
+Wire Wire Line
+	10500 4700 10300 4700
+Wire Wire Line
+	10500 4900 10300 4900
+Wire Wire Line
+	10500 4800 10300 4800
+Wire Wire Line
+	9575 4700 9800 4700
+Wire Wire Line
+	9575 4900 9800 4900
+Wire Wire Line
+	9575 4800 9800 4800
+Text Label 9575 4800 0    50   ~ 0
+PA9
+Text Label 9575 4900 0    50   ~ 0
+PA11
+Wire Wire Line
+	1975 3000 2600 3000
+Text Label 1975 3000 0    50   ~ 0
+PA12
+Wire Wire Line
+	1975 2900 2600 2900
+Wire Wire Line
+	1975 2800 2600 2800
+Wire Wire Line
+	1975 2700 2600 2700
+Wire Wire Line
+	1975 2600 2600 2600
+Text Label 1975 2700 0    50   ~ 0
+PA9
+Text Label 1975 2800 0    50   ~ 0
+PA10
+Text Label 1975 2600 0    50   ~ 0
+PA8
+Text Label 1975 2900 0    50   ~ 0
+PA11
+Wire Wire Line
+	1975 6100 2600 6100
+Text Label 1975 6100 0    50   ~ 0
+PC9
+Text Label 9575 4700 0    50   ~ 0
+PC9
 Wire Bus Line
 	1800 6950 1800 7200
 Wire Bus Line
