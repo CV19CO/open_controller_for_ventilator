@@ -124,7 +124,7 @@ F 3 "" H 3100 6075 35  0000 C CNN
 	1    3100 6075
 	1    0    0    -1  
 $EndComp
-Text Notes 2250 4150 0    60   ~ 0
+Text Notes 2275 4650 0    60   ~ 0
 Protection Circuit
 $Comp
 L power:+5V #PWR0111
@@ -625,14 +625,14 @@ L1_Lx_1V2
 Text Label 2750 1700 0    39   ~ 0
 L1_Lx_3V3
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even G?
+L Connector_Generic:Conn_02x04_Odd_Even G?
 U 1 1 5EAC048F
 P 1600 3675
 AR Path="/5E9C016D/5EAC048F" Ref="G?"  Part="1" 
 AR Path="/5EA61A2E/5EAC048F" Ref="PWR1"  Part="1" 
-F 0 "PWR1" H 1550 3975 50  0000 L CNN
+F 0 "PWR1" H 1550 3375 50  0000 L CNN
 F 1 "Conn_01x03" H 1680 3626 50  0001 L CNN
-F 2 "TH:10142708-06200LF" H 1600 3675 50  0001 C CNN
+F 2 "TH:10142708-08200LF" H 1600 3675 50  0001 C CNN
 F 3 "~" H 1600 3675 50  0001 C CNN
 	1    1600 3675
 	-1   0    0    1   
@@ -660,9 +660,77 @@ F 3 "" H 1800 3775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 3575 1950 3575
-Text Label 1950 3575 2    60   ~ 0
+	1300 3675 1150 3675
+Text Label 1150 3675 0    60   ~ 0
 Vin
+Text Label 2675 4875 0    50   ~ 0
+Q3S
+Text Label 3200 4875 0    50   ~ 0
+Q3D
+Wire Wire Line
+	1300 3375 1300 3475
+$Comp
+L ventilator-PowerSymbols:48V_R #PWR?
+U 1 1 5EBAAA9A
+P 1300 3375
+AR Path="/5E99077D/5EBAAA9A" Ref="#PWR?"  Part="1" 
+AR Path="/5EA61A2E/5EBAAA9A" Ref="#PWR0295"  Part="1" 
+F 0 "#PWR0295" H 1300 3335 30  0001 C CNN
+F 1 "48V_R" H 1300 3500 30  0000 C CNN
+F 2 "" H 1300 3375 60  0000 C CNN
+F 3 "" H 1300 3375 60  0000 C CNN
+	1    1300 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L ventilator-PowerSymbols:24V_R #PWR?
+U 1 1 5EBAAAA0
+P 1800 3375
+AR Path="/5E99077D/5EBAAAA0" Ref="#PWR?"  Part="1" 
+AR Path="/5EA61A2E/5EBAAAA0" Ref="#PWR0296"  Part="1" 
+F 0 "#PWR0296" H 1800 3335 30  0001 C CNN
+F 1 "24V_R" H 1800 3500 30  0000 C CNN
+F 2 "" H 1800 3375 60  0000 C CNN
+F 3 "" H 1800 3375 60  0000 C CNN
+	1    1800 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L ventilator-PowerSymbols:12V_R #PWR?
+U 1 1 5EBAAAA6
+P 1075 3375
+AR Path="/5E99077D/5EBAAAA6" Ref="#PWR?"  Part="1" 
+AR Path="/5EA61A2E/5EBAAAA6" Ref="#PWR0297"  Part="1" 
+F 0 "#PWR0297" H 1075 3335 30  0001 C CNN
+F 1 "12V_R" H 1075 3500 30  0000 C CNN
+F 2 "" H 1075 3375 60  0000 C CNN
+F 3 "" H 1075 3375 60  0000 C CNN
+	1    1075 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L ventilator-PowerSymbols:5V_R #PWR?
+U 1 1 5EBAAAAC
+P 2000 3375
+AR Path="/5E99077D/5EBAAAAC" Ref="#PWR?"  Part="1" 
+AR Path="/5EA61A2E/5EBAAAAC" Ref="#PWR0298"  Part="1" 
+F 0 "#PWR0298" H 2000 3335 30  0001 C CNN
+F 1 "5V_R" H 2000 3500 30  0000 C CNN
+F 2 "" H 2000 3375 60  0000 C CNN
+F 3 "" H 2000 3375 60  0000 C CNN
+	1    2000 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3375 1800 3475
+Wire Wire Line
+	1800 3575 2000 3575
+Wire Wire Line
+	2000 3575 2000 3375
+Wire Wire Line
+	1300 3575 1075 3575
+Wire Wire Line
+	1075 3375 1075 3575
 $Comp
 L power:GND #PWR?
 U 1 1 5EA95F9E
@@ -685,12 +753,21 @@ F 3 "" H 1300 3775 50  0001 C CNN
 	1    1300 3775
 	1    0    0    -1  
 $EndComp
-Text Label 1150 3575 0    60   ~ 0
-Vin
-Text Label 2675 4875 0    50   ~ 0
-Q3S
-Text Label 3200 4875 0    50   ~ 0
-Q3D
 Wire Wire Line
-	1150 3575 1300 3575
+	2075 3675 2075 3800
+Wire Wire Line
+	1800 3675 2075 3675
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5EBAAA8A
+P 2075 3800
+AR Path="/5E99077D/5EBAAA8A" Ref="#PWR?"  Part="1" 
+AR Path="/5EA61A2E/5EBAAA8A" Ref="#PWR0294"  Part="1" 
+F 0 "#PWR0294" H 2075 3600 50  0001 C CNN
+F 1 "GNDPWR" H 2079 3646 39  0000 C CNN
+F 2 "" H 2075 3750 50  0001 C CNN
+F 3 "" H 2075 3750 50  0001 C CNN
+	1    2075 3800
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
