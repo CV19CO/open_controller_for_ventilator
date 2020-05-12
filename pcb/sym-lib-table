@@ -25,4 +25,5 @@
   (lib (name ap7361c)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ap7361c.lib)(options "")(descr ""))
   (lib (name torex)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/torex.lib)(options "")(descr ""))
   (lib (name ABM8G)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/ABM8G.lib)(options "")(descr ""))
+  (lib (name CSS-95B30-SMT)(type Legacy)(uri ${KIPRJMOD}/../kicad-modules/libs/CSS-95B30-SMT.lib)(options "")(descr ""))
 )
