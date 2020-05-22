@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -331,6 +330,15 @@ Wire Wire Line
 	3000 3350 3000 3650
 NoConn ~ 3050 1450
 NoConn ~ 3050 2250
+NoConn ~ 3050 2750
+NoConn ~ 3050 3050
+NoConn ~ 3050 3150
+NoConn ~ 3050 3250
+NoConn ~ 4600 2750
+NoConn ~ 4600 2950
+NoConn ~ 4600 3150
+NoConn ~ 4600 3250
+NoConn ~ 4600 3350
 Wire Bus Line
 	6350 2250 6350 2500
 Wire Bus Line

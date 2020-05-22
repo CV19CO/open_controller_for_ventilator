@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -4385,12 +4384,7 @@ SPI_MOSI
 Text Label 1000 3950 0    50   ~ 0
 SPI_CLK
 Wire Wire Line
-	1575 5600 1550 5600
-Wire Wire Line
 	1500 5600 1500 5500
-Connection ~ 1550 5600
-Wire Wire Line
-	1550 5600 1500 5600
 Connection ~ 1500 5500
 Wire Wire Line
 	1500 5500 1550 5500
@@ -4555,11 +4549,13 @@ Wire Wire Line
 Connection ~ 1125 4575
 Wire Wire Line
 	1325 4525 1325 4575
+Connection ~ 1325 4575
+Wire Wire Line
+	1325 4575 1125 4575
+Wire Wire Line
+	1550 5600 1500 5600
 Wire Bus Line
 	2250 9700 2250 10300
 Wire Bus Line
 	9700 7600 9700 8450
-Connection ~ 1325 4575
-Wire Wire Line
-	1325 4575 1125 4575
 $EndSCHEMATC

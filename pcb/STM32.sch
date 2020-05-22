@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr User 12000 10000
@@ -14,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L media_board:+3.3VP #PWR0121
-U 1 1 516D62A0
-P 7550 7750
-F 0 "#PWR0121" H 7600 7780 20  0001 C CNN
-F 1 "+3.3VP" H 7550 7840 30  0000 C CNN
-F 2 "" H 7550 7750 60  0001 C CNN
-F 3 "" H 7550 7750 60  0001 C CNN
-	1    7550 7750
-	1    0    0    -1  
-$EndComp
 $Comp
 L ventilator-PowerSymbols:3V3_STM #PWR0122
 U 1 1 516D629C
@@ -321,17 +309,6 @@ F 4 " 497-14049-ND " H 4200 3600 50  0001 C CNN "DigiKey"
 	1    0    0    -1  
 $EndComp
 $Comp
-L ventilator-PowerSymbols:3V3_STM #PWR0149
-U 1 1 54556556
-P 900 650
-F 0 "#PWR0149" H 900 750 30  0001 C CNN
-F 1 "3V3_STM" H 900 760 30  0000 C CNN
-F 2 "" H 900 650 60  0001 C CNN
-F 3 "" H 900 650 60  0001 C CNN
-	1    900  650 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Ferrite_Bead LST1
 U 1 1 5455655C
 P 1050 850
@@ -421,17 +398,6 @@ F 1 "GND" H 1300 7630 30  0001 C CNN
 F 2 "" H 1300 7700 60  0001 C CNN
 F 3 "" H 1300 7700 60  0001 C CNN
 	1    1300 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L media_board:3V3 #PWR0154
-U 1 1 54560F39
-P 7400 7750
-F 0 "#PWR0154" H 7400 7850 30  0001 C CNN
-F 1 "3V3" H 7400 7860 30  0000 C CNN
-F 2 "" H 7400 7750 60  0001 C CNN
-F 3 "" H 7400 7750 60  0001 C CNN
-	1    7400 7750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -525,8 +491,6 @@ Wire Wire Line
 	8150 7700 8300 7700
 Wire Wire Line
 	8850 7500 8400 7500
-Wire Wire Line
-	7550 7750 7550 7900
 Connection ~ 4050 6700
 Wire Wire Line
 	4050 6550 4050 6700
@@ -607,8 +571,6 @@ Wire Wire Line
 Wire Wire Line
 	1300 7700 1300 7600
 Wire Wire Line
-	7400 7750 7400 7900
-Wire Wire Line
 	6200 1600 6200 1200
 Wire Wire Line
 	6000 1200 6000 1500
@@ -627,8 +589,6 @@ Wire Wire Line
 	2600 4300 2050 4300
 Wire Wire Line
 	2600 4400 2050 4400
-Wire Wire Line
-	7400 7900 7550 7900
 Wire Wire Line
 	4050 6700 4050 6800
 Wire Wire Line
@@ -1229,12 +1189,6 @@ Text HLabel 5700 3550 2    50   Output ~ 0
 SPI4_NSS_1
 Wire Wire Line
 	5700 3550 5600 3550
-Wire Bus Line
-	1800 6950 1800 7200
-Wire Bus Line
-	5950 2050 5950 2750
-Wire Bus Line
-	8950 1300 8950 2100
 $Comp
 L CSS-95B30-SMT:CSS-95B30-SMT LS1
 U 1 1 5EBB81C9
@@ -1251,4 +1205,53 @@ F 8 "10 mm, 5 V, 92 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer" H
 	1    10475 6100
 	1    0    0    -1  
 $EndComp
+$Comp
+L ventilator-PowerSymbols:3V3_STM #PWR0149
+U 1 1 54556556
+P 900 650
+F 0 "#PWR0149" H 900 750 30  0001 C CNN
+F 1 "3V3_STM" H 900 760 30  0000 C CNN
+F 2 "" H 900 650 60  0001 C CNN
+F 3 "" H 900 650 60  0001 C CNN
+	1    900  650 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5600 2950
+NoConn ~ 5600 3650
+NoConn ~ 5600 3900
+NoConn ~ 5600 4000
+NoConn ~ 5600 4100
+NoConn ~ 5600 4200
+NoConn ~ 5600 4300
+NoConn ~ 5600 4400
+NoConn ~ 5600 4500
+NoConn ~ 5600 4600
+NoConn ~ 5600 4700
+NoConn ~ 5600 4800
+NoConn ~ 5600 4900
+NoConn ~ 5600 5000
+NoConn ~ 5600 5100
+NoConn ~ 5600 5200
+NoConn ~ 5600 5300
+NoConn ~ 5600 5600
+NoConn ~ 5600 5700
+NoConn ~ 5600 5800
+NoConn ~ 2600 4600
+NoConn ~ 2600 5200
+NoConn ~ 2600 5300
+NoConn ~ 2600 5400
+NoConn ~ 2600 5500
+NoConn ~ 2600 5600
+NoConn ~ 2600 5700
+NoConn ~ 2600 5800
+NoConn ~ 2600 5900
+NoConn ~ 2600 6000
+NoConn ~ 2600 3600
+NoConn ~ 2600 4000
+Wire Bus Line
+	1800 6950 1800 7200
+Wire Bus Line
+	5950 2050 5950 2750
+Wire Bus Line
+	8950 1300 8950 2100
 $EndSCHEMATC

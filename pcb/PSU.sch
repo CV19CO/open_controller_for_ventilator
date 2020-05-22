@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:keep_breathing_ctrl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -498,10 +497,6 @@ F 4 " 893-1218-6-ND " H 2900 2125 50  0001 C CNN "DigiKey"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 1975 3650 1975
-Wire Wire Line
-	3450 2225 3650 1975
-Wire Wire Line
 	2750 1725 2750 1700
 Wire Wire Line
 	2750 1700 3050 1700
@@ -566,9 +561,6 @@ F 3 "" H 4150 2125 60  0000 C CNN
 	1    4150 2125
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 1975 3800 1975
-Connection ~ 3650 1975
 Connection ~ 3800 1975
 Wire Wire Line
 	4150 2275 4150 2375
@@ -770,4 +762,13 @@ F 3 "" H 2075 3750 50  0001 C CNN
 	1    2075 3800
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	3450 1975 3625 1975
+Wire Wire Line
+	3450 2225 3625 2225
+Wire Wire Line
+	3625 2225 3625 1975
+Connection ~ 3625 1975
+Wire Wire Line
+	3625 1975 3800 1975
 $EndSCHEMATC
