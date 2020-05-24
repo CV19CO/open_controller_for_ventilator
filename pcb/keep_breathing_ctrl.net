@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/jaiber/proyectos/respirador/repositorio/open_controller_for_ventilator/pcb/keep_breathing_ctrl.sch)
-    (date "Sat 23 May 2020 12:50:17 PM -05")
+    (date "Sat 23 May 2020 02:20:58 PM -05")
     (tool "Eeschema 5.1.5-52549c5~86~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1589,8 +1589,10 @@
       (tstamp 5EBB81C9))
     (comp (ref D10)
       (value 1N4148)
-      (footprint Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal)
+      (footprint Diode_SMD:D_SOD-123)
       (datasheet http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf)
+      (fields
+        (field (name DigiKey) 1655-1360-1-ND))
       (libsource (lib Diode) (part 1N4148) (description "100V 0.15A standard switching diode, DO-35"))
       (sheetpath (names /STM32F4/) (tstamps /5E989259/))
       (tstamp 5ECD7ACA))
