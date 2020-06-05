@@ -222,30 +222,30 @@ F 3 "~" H 4575 5200 50  0001 C CNN
 	1    4575 5200
 	0    1    1    0   
 $EndComp
-Text Label 6950 1650 0    50   ~ 0
-R0
+Text Label 6900 1650 0    50   ~ 0
+R14
 Wire Wire Line
-	6950 1650 7050 1650
-Text Label 6950 3000 0    50   ~ 0
-R1
+	6900 1650 7050 1650
+Text Label 6875 3000 0    50   ~ 0
+R13
 Wire Wire Line
-	6950 3000 7050 3000
-Text Label 2150 1600 0    50   ~ 0
-R2
+	6875 3000 7050 3000
+Text Label 2100 1600 0    50   ~ 0
+R12
 Wire Wire Line
-	2150 1600 2250 1600
+	2100 1600 2250 1600
 Wire Wire Line
-	4325 3425 4425 3425
-Text Label 4325 3425 0    50   ~ 0
-R5
+	4300 3425 4425 3425
+Text Label 4300 3425 0    50   ~ 0
+R9
 Wire Wire Line
-	2150 3375 2250 3375
-Text Label 2150 3375 0    50   ~ 0
-R4
+	2100 3375 2250 3375
+Text Label 2100 3375 0    50   ~ 0
+R10
 Wire Wire Line
-	4325 1600 4425 1600
-Text Label 4325 1600 0    50   ~ 0
-R3
+	4275 1600 4425 1600
+Text Label 4275 1600 0    50   ~ 0
+R11
 NoConn ~ 9750 3000
 NoConn ~ 9750 1650
 $Comp
@@ -351,38 +351,6 @@ F 3 "" H 7650 3200 50  0001 C CNN
 	1    7650 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1100 850  1400 850 
-Text Label 1400 850  2    50   ~ 0
-R0
-Wire Wire Line
-	1100 950  1400 950 
-Text Label 1400 950  2    50   ~ 0
-R1
-Wire Wire Line
-	1100 1050 1400 1050
-Text Label 1400 1050 2    50   ~ 0
-R2
-Wire Wire Line
-	1100 1150 1400 1150
-Text Label 1400 1150 2    50   ~ 0
-R3
-Wire Wire Line
-	1100 1250 1400 1250
-Text Label 1400 1250 2    50   ~ 0
-R4
-Wire Wire Line
-	1100 1350 1400 1350
-Text Label 1400 1350 2    50   ~ 0
-R5
-Wire Wire Line
-	1100 1450 1400 1450
-Text Label 1400 1450 2    50   ~ 0
-R6
-Wire Wire Line
-	1100 1550 1400 1550
-Text Label 1400 1550 2    50   ~ 0
-R7
 Entry Wire Line
 	1000 850  1100 950 
 Entry Wire Line
@@ -401,8 +369,8 @@ Entry Wire Line
 	1000 1350 1100 1450
 Wire Bus Line
 	900  700  1000 700 
-Text HLabel 900  700  0    50   Input ~ 0
-R[0..7]
+Text HLabel 900  700  0    50   BiDi ~ 0
+R[16..7]
 $Comp
 L BarrelConnector:Conn_01x02_Female RL2
 U 1 1 5EB7C9DF
@@ -482,13 +450,13 @@ Wire Wire Line
 Wire Wire Line
 	10150 1050 10775 1050
 Connection ~ 10150 1050
-Text Label 2150 5100 0    50   ~ 0
-R6
+Text Label 2100 5100 0    50   ~ 0
+R8
 Wire Wire Line
-	2150 5100 2250 5100
+	2100 5100 2250 5100
 Wire Wire Line
-	4325 5200 4425 5200
-Text Label 4325 5200 0    50   ~ 0
+	4300 5200 4425 5200
+Text Label 4300 5200 0    50   ~ 0
 R7
 $Comp
 L BarrelConnector:Conn_01x02_Female RL3
@@ -1308,9 +1276,9 @@ Wire Wire Line
 	10175 5100 10175 5050
 Connection ~ 10175 5050
 Wire Wire Line
-	6975 4300 7075 4300
+	6925 4300 7075 4300
 Wire Wire Line
-	6975 5650 7075 5650
+	6925 5650 7075 5650
 NoConn ~ 9775 5650
 NoConn ~ 9775 4300
 $Comp
@@ -1550,6 +1518,54 @@ F 4 "255-6003-1-ND" H 7975 4750 50  0001 C CNN "Digikey"
 	1    7975 4750
 	1    0    0    -1  
 $EndComp
+Entry Wire Line
+	1000 1550 1100 1650
+Entry Wire Line
+	1000 1650 1100 1750
+Wire Wire Line
+	1100 850  1375 850 
+Wire Wire Line
+	1100 950  1375 950 
+Wire Wire Line
+	1100 1050 1375 1050
+Wire Wire Line
+	1100 1150 1375 1150
+Wire Wire Line
+	1100 1250 1375 1250
+Wire Wire Line
+	1100 1350 1375 1350
+Wire Wire Line
+	1100 1450 1375 1450
+Wire Wire Line
+	1100 1550 1375 1550
+Wire Wire Line
+	1100 1650 1375 1650
+Wire Wire Line
+	1100 1750 1375 1750
+Text Label 1375 850  2    50   ~ 0
+R7
+Text Label 1375 950  2    50   ~ 0
+R8
+Text Label 1375 1050 2    50   ~ 0
+R9
+Text Label 1375 1150 2    50   ~ 0
+R10
+Text Label 1375 1250 2    50   ~ 0
+R11
+Text Label 1375 1350 2    50   ~ 0
+R12
+Text Label 1375 1450 2    50   ~ 0
+R13
+Text Label 1375 1550 2    50   ~ 0
+R14
+Text Label 1375 1650 2    50   ~ 0
+R15
+Text Label 1375 1750 2    50   ~ 0
+R16
+Text Label 6925 4300 0    50   ~ 0
+R15
+Text Label 6925 5650 0    50   ~ 0
+R16
 Wire Bus Line
-	1000 700  1000 1450
+	1000 700  1000 1650
 $EndSCHEMATC
