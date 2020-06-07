@@ -1071,7 +1071,6 @@ NoConn ~ 5600 5200
 NoConn ~ 5600 5300
 NoConn ~ 5600 5600
 NoConn ~ 5600 5700
-NoConn ~ 2600 5200
 NoConn ~ 2600 5300
 NoConn ~ 2600 5400
 NoConn ~ 2600 5500
@@ -1207,8 +1206,8 @@ F 3 "" H 10850 6025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 5800 6150 5800
-Text Label 6150 5800 2    50   ~ 0
+	2600 5200 2050 5200
+Text Label 2050 5200 0    50   ~ 0
 LED
 Entry Wire Line
 	6525 2150 6625 2250
@@ -1422,6 +1421,10 @@ PC8
 Wire Wire Line
 	10325 3850 10325 3950
 Connection ~ 10325 3950
+Text HLabel 5700 5800 2    50   Input ~ 0
+SEN_RST
+Wire Wire Line
+	5700 5800 5600 5800
 Wire Bus Line
 	1800 6950 1800 7200
 Wire Bus Line
