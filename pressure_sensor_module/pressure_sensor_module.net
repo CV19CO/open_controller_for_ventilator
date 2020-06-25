@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/jaiber/proyectos/respirador/repositorio/open_controller_for_ventilator/pressure_sensor_module/pressure_sensor_module.sch)
-    (date "Wed 24 Jun 2020 11:06:53 PM -05")
+    (date "Thu 25 Jun 2020 12:31:34 AM -05")
     (tool "Eeschema 5.1.5-52549c5~86~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,14 +17,14 @@
   (components
     (comp (ref J1)
       (value Conn_02x04_Odd_Even)
-      (footprint Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical)
+      (footprint Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD)
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_02x04_Odd_Even) (description "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5EF3F442))
     (comp (ref J2)
       (value Conn_02x07_Odd_Even)
-      (footprint Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical)
+      (footprint Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical_SMD)
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_02x07_Odd_Even) (description "Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
