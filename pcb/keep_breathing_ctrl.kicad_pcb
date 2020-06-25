@@ -4775,6 +4775,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model /home/jaiber/proyectos/respirador/repositorio/open_controller_for_ventilator/pressure_sensor_module/pressure_sensor_module.step
+      (offset (xyz -34.5 -113 11))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
   )
 
   (module Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical_SMD (layer F.Cu) (tedit 5A19A42A) (tstamp 5EA1568A)
