@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Pressure sensor module"
+Date "2020-06-24"
+Rev "JaiberC"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J?
+U 1 1 5EF3F442
+P 4950 1825
+F 0 "J?" H 4975 2025 50  0000 L CNN
+F 1 "Conn_02x04_Odd_Even" V 5045 2005 50  0001 L CNN
+F 2 "" H 4950 1825 50  0001 C CNN
+F 3 "~" H 4950 1825 50  0001 C CNN
+	1    4950 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J?
+U 1 1 5EF420CD
+P 2350 1875
+F 0 "J?" H 2400 2300 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 2400 2301 50  0001 C CNN
+F 2 "" H 2350 1875 50  0001 C CNN
+F 3 "~" H 2350 1875 50  0001 C CNN
+	1    2350 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF42DC4
+P 4750 2175
+F 0 "#PWR?" H 4750 1925 50  0001 C CNN
+F 1 "GND" H 4755 2002 50  0000 C CNN
+F 2 "" H 4750 2175 50  0001 C CNN
+F 3 "" H 4750 2175 50  0001 C CNN
+	1    4750 2175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF7B615
+P 5250 2175
+F 0 "#PWR?" H 5250 1925 50  0001 C CNN
+F 1 "GND" H 5255 2002 50  0000 C CNN
+F 2 "" H 5250 2175 50  0001 C CNN
+F 3 "" H 5250 2175 50  0001 C CNN
+	1    5250 2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1725 4750 1825
+Wire Wire Line
+	4750 1825 4750 1925
+Connection ~ 4750 1825
+Wire Wire Line
+	4750 1925 4750 2025
+Connection ~ 4750 1925
+Wire Wire Line
+	4750 2025 4750 2175
+Connection ~ 4750 2025
+Wire Wire Line
+	5250 2175 5250 2025
+Wire Wire Line
+	5250 2025 5250 1925
+Connection ~ 5250 2025
+Wire Wire Line
+	5250 1925 5250 1825
+Connection ~ 5250 1925
+Wire Wire Line
+	5250 1825 5250 1725
+Connection ~ 5250 1825
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EF7D25A
+P 2075 1475
+F 0 "#PWR?" H 2075 1325 50  0001 C CNN
+F 1 "+3V3" H 2090 1648 50  0000 C CNN
+F 2 "" H 2075 1475 50  0001 C CNN
+F 3 "" H 2075 1475 50  0001 C CNN
+	1    2075 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EF7DBDC
+P 2725 1475
+F 0 "#PWR?" H 2725 1325 50  0001 C CNN
+F 1 "+5V" H 2740 1648 50  0000 C CNN
+F 2 "" H 2725 1475 50  0001 C CNN
+F 3 "" H 2725 1475 50  0001 C CNN
+	1    2725 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2075 1475 2075 1575
+Wire Wire Line
+	2075 1575 2150 1575
+Wire Wire Line
+	2150 1675 2075 1675
+Wire Wire Line
+	2075 1675 2075 1575
+Connection ~ 2075 1575
+Wire Wire Line
+	2650 1575 2725 1575
+Wire Wire Line
+	2725 1575 2725 1475
+Wire Wire Line
+	2650 1675 2725 1675
+Wire Wire Line
+	2725 1675 2725 1575
+Connection ~ 2725 1575
+$Comp
+L power:GND #PWR?
+U 1 1 5EF7EBAB
+P 2075 2300
+F 0 "#PWR?" H 2075 2050 50  0001 C CNN
+F 1 "GND" H 2080 2127 50  0000 C CNN
+F 2 "" H 2075 2300 50  0001 C CNN
+F 3 "" H 2075 2300 50  0001 C CNN
+	1    2075 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF7F0CC
+P 2725 2300
+F 0 "#PWR?" H 2725 2050 50  0001 C CNN
+F 1 "GND" H 2730 2127 50  0000 C CNN
+F 2 "" H 2725 2300 50  0001 C CNN
+F 3 "" H 2725 2300 50  0001 C CNN
+	1    2725 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2175 2725 2175
+Wire Wire Line
+	2725 2175 2725 2300
+Wire Wire Line
+	2075 2300 2075 2175
+Wire Wire Line
+	2075 2175 2150 2175
+Wire Wire Line
+	2150 2075 2075 2075
+Wire Wire Line
+	2075 2075 2075 2175
+Connection ~ 2075 2175
+Wire Wire Line
+	2650 1775 3000 1775
+Wire Wire Line
+	2650 1875 3000 1875
+Wire Wire Line
+	2650 1975 3000 1975
+Wire Wire Line
+	2650 2075 3000 2075
+Wire Wire Line
+	2150 1775 1825 1775
+Wire Wire Line
+	2150 1875 1825 1875
+Wire Wire Line
+	2150 1975 1825 1975
+Text Label 3000 1775 2    50   ~ 0
+SPI_CS
+Text Label 3000 1875 2    50   ~ 0
+SPI_CLK
+Text Label 3000 1975 2    50   ~ 0
+SPI_MISO
+Text Label 3000 2075 2    50   ~ 0
+SPI_MOSI
+Text Label 1825 1775 0    50   ~ 0
+I2C_CLK
+Text Label 1825 1875 0    50   ~ 0
+I2C_SDA
+Text Label 1825 1975 0    50   ~ 0
+Analog
+$EndSCHEMATC
