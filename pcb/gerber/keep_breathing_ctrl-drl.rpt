@@ -1,5 +1,5 @@
 Drill report for /home/jaiber/proyectos/respirador/repositorio/open_controller_for_ventilator/pcb/keep_breathing_ctrl.kicad_pcb
-Created on Sat 23 May 2020 02:02:34 PM -05
+Created on Sun 05 Jul 2020 11:24:06 AM -05
 
 Copper Layer Stackup:
     =============================================================
@@ -12,16 +12,16 @@ Copper Layer Stackup:
 Drill file 'keep_breathing_ctrl-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.30mm  0.012"  (146 holes)
-    T2  0.40mm  0.016"  (307 holes)
-    T3  0.50mm  0.020"  (79 holes)
+    T1  0.30mm  0.012"  (218 holes)
+    T2  0.40mm  0.016"  (310 holes)
+    T3  0.50mm  0.020"  (80 holes)
     T4  0.80mm  0.031"  (11 holes)
-    T5  1.00mm  0.039"  (62 holes)
+    T5  1.00mm  0.039"  (78 holes)
     T6  1.20mm  0.047"  (16 holes)
-    T7  1.40mm  0.055"  (12 holes)
+    T7  1.40mm  0.055"  (16 holes)
     T8  1.80mm  0.071"  (8 holes)
 
-    Total plated holes count 641
+    Total plated holes count 737
 
 
 Drill file 'keep_breathing_ctrl-NPTH.drl' contains
