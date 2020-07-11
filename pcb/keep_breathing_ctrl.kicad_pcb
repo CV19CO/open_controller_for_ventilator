@@ -2283,7 +2283,7 @@
     (pad 40 smd rect (at 24.13 -2.85) (size 1.02 2.1) (layers B.Cu B.Paste B.Mask)
       (net 192 "Net-(P1-Pad40)"))
     (pad "" np_thru_hole circle (at 22.86 0) (size 1.2 1.2) (drill 1.2) (layers *.Cu *.Mask))
-    (model ${KIPRJMOD}/../kicad-modules/shapes3d/raspberryPi3BSimplified_STEP.STEP
+    (model ${KIPRJMOD}/../kicad-modules/shapes3d/raspberryPi3BSimplified_STEP.STEP__
       (offset (xyz 10 25 14))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -180))
@@ -2292,6 +2292,16 @@
       (offset (xyz 10 24.5 9))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 0 0))
+    )
+    (model "${KIPRJMOD}/../kicad-modules/shapes3d/Raspberry Pi 4 Model B.STEP"
+      (offset (xyz 10 24.5 9))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 0))
+    )
+    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x20_P2.54mm_Vertical_SMD.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
     )
   )
 
