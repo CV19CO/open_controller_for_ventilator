@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/jaiber/proyectos/respirador/repositorio/open_controller_for_ventilator/ABPDJJT001PDSA3_sensor/ABPDJJT001PDSA3_sensor_module.sch</source>
+    <date>Sat 11 Jul 2020 06:22:14 PM -05</date>
+    <tool>Eeschema 5.1.5-52549c5~86~ubuntu16.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Pressure sensor module</title>
+        <company/>
+        <rev>JaiberC</rev>
+        <date>2020-06-24</date>
+        <source>ABPDJJT001PDSA3_sensor_module.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>Conn_02x04_Odd_Even</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">609-6367-ND</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EF3F442</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_02x07_Odd_Even</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical_SMD</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">609-6365-ND</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x07_Odd_Even" description="Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EF420CD</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DigiKey">1276-1258-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EF4B509</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>ABPDJJ001PDSA3</value>
+      <footprint>TH_project:DIP_JJ</footprint>
+      <libsource lib="Sensor_Pressure" part="ABPDJJ001PDSA3" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F06B6F0</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_02x04_Odd_Even">
+      <description>Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x04_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x07_Odd_Even">
+      <description>Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x07_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor_Pressure" part="ABPDJJ001PDSA3">
+      <aliases>
+        <alias>MPXAZ6115A</alias>
+        <alias>MPXH6115A</alias>
+        <alias>MPXHZ6115A</alias>
+      </aliases>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ABPDJJ001PDSA3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="Vcc" type="power_in"/>
+        <pin num="3" name="SS" type="power_in"/>
+        <pin num="4" name="NC" type="NotConnected"/>
+        <pin num="5" name="MISO" type="BiDi"/>
+        <pin num="6" name="SCLK" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Sensor_Pressure">
+      <uri>/home/jaiber/proyectos/respirador/repositorio/open_controller_for_ventilator/ABPDJJT001PDSA3_sensor/../kicad-modules/libs/Sensor_Pressure.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/SPI_MOSI">
+      <node ref="J2" pin="12"/>
+    </net>
+    <net code="2" name="/SPI_MISO">
+      <node ref="U1" pin="5"/>
+      <node ref="J2" pin="10"/>
+    </net>
+    <net code="3" name="/SPI_CLK">
+      <node ref="J2" pin="8"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="4" name="/SPI_CS">
+      <node ref="J2" pin="6"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="5" name="/Analog">
+      <node ref="J2" pin="9"/>
+    </net>
+    <net code="6" name="/I2C_SDA">
+      <node ref="J2" pin="7"/>
+    </net>
+    <net code="7" name="/I2C_CLK">
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="8" name="GND">
+      <node ref="J2" pin="11"/>
+      <node ref="J1" pin="8"/>
+      <node ref="J1" pin="7"/>
+      <node ref="J1" pin="6"/>
+      <node ref="J1" pin="5"/>
+      <node ref="J1" pin="4"/>
+      <node ref="J1" pin="3"/>
+      <node ref="J1" pin="2"/>
+      <node ref="J2" pin="14"/>
+      <node ref="J1" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="J2" pin="13"/>
+    </net>
+    <net code="9" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="10" name="+3V3">
+      <node ref="J2" pin="3"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="11" name="+5V">
+      <node ref="J2" pin="4"/>
+      <node ref="J2" pin="2"/>
+    </net>
+  </nets>
+</export>

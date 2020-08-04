@@ -865,6 +865,7 @@ F 0 "J1" H 10075 4850 50  0000 C CNN
 F 1 "Conn_02x04_Odd_Even" H 10075 5076 50  0001 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Horizontal" H 10025 4650 50  0001 C CNN
 F 3 "~" H 10025 4650 50  0001 C CNN
+F 4 "609-6367-ND‎" H 10025 4650 50  0001 C CNN "DigiKey"
 	1    10025 4650
 	1    0    0    -1  
 $EndComp
@@ -1066,11 +1067,8 @@ F 0 "LS1" H 9629 5946 50  0000 L CNN
 F 1 "CSS-95B30-SMT" H 9629 5855 50  0000 L CNN
 F 2 "SMD:CUI_CSS-95B30-SMT" H 9525 5900 50  0001 L BNN
 F 3 "CSS-95B30-SMT" H 9525 5900 50  0001 L BNN
-F 4 "None" H 9525 5900 50  0001 L BNN "Field4"
-F 5 "CUI" H 9525 5900 50  0001 L BNN "Field5"
-F 6 "None" H 9525 5900 50  0001 L BNN "Field6"
-F 7 "Unavailable" H 9525 5900 50  0001 L BNN "Field7"
-F 8 "10 mm, 5 V, 92 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer" H 9525 5900 50  0001 L BNN "Field8"
+F 4 "102-2196-1-ND" H 9525 5900 50  0001 C CNN "DigiKey"
+F 5 "10 mm, 5 V, 92 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer" H 9525 5900 50  0001 L BNN "Field8"
 	1    9525 5900
 	1    0    0    -1  
 $EndComp

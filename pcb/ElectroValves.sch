@@ -1225,7 +1225,7 @@ F 0 "U11" H 9350 600 60  0000 L CNN
 F 1 "AQH3223AX" H 8150 600 60  0000 L CNN
 F 2 "SMD:AQH3223A" H 8850 990 60  0001 C CNN
 F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/2787" H 7950 750 60  0001 C CNN
-F 4 "255-6003-1-ND" H 7950 750 50  0001 C CNN "Digikey"
+F 4 "255-6003-1-ND" H 7950 750 50  0001 C CNN "DigiKey"
 	1    7950 750 
 	1    0    0    -1  
 $EndComp
@@ -1549,7 +1549,7 @@ F 0 "U19" H 9375 3250 60  0000 L CNN
 F 1 "AQH3223AX" H 8175 3250 60  0000 L CNN
 F 2 "SMD:AQH3223A" H 8875 3640 60  0001 C CNN
 F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/2787" H 7975 3400 60  0001 C CNN
-F 4 "255-6003-1-ND" H 7975 3400 50  0001 C CNN "Digikey"
+F 4 "255-6003-1-ND" H 7975 3400 50  0001 C CNN "DigiKey"
 	1    7975 3400
 	1    0    0    -1  
 $EndComp
@@ -1561,7 +1561,7 @@ F 0 "U20" H 9375 4600 60  0000 L CNN
 F 1 "AQH3223AX" H 8175 4600 60  0000 L CNN
 F 2 "SMD:AQH3223A" H 8875 4990 60  0001 C CNN
 F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/2787" H 7975 4750 60  0001 C CNN
-F 4 "255-6003-1-ND" H 7975 4750 50  0001 C CNN "Digikey"
+F 4 "255-6003-1-ND" H 7975 4750 50  0001 C CNN "DigiKey"
 	1    7975 4750
 	1    0    0    -1  
 $EndComp

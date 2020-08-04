@@ -21,6 +21,7 @@ F 0 "J1" H 4975 2025 50  0000 L CNN
 F 1 "Conn_02x04_Odd_Even" V 5045 2005 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD" H 4950 1825 50  0001 C CNN
 F 3 "~" H 4950 1825 50  0001 C CNN
+F 4 "609-6367-ND" H 4950 1825 50  0001 C CNN "DigiKey"
 	1    4950 1825
 	1    0    0    -1  
 $EndComp
@@ -32,6 +33,7 @@ F 0 "J2" H 2400 2300 50  0000 C CNN
 F 1 "Conn_02x07_Odd_Even" H 2400 2301 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical_SMD" H 2350 1875 50  0001 C CNN
 F 3 "~" H 2350 1875 50  0001 C CNN
+F 4 "609-6365-ND" H 2350 1875 50  0001 C CNN "DigiKey"
 	1    2350 1875
 	1    0    0    -1  
 $EndComp
@@ -201,6 +203,7 @@ F 0 "C1" H 1740 3296 50  0000 L CNN
 F 1 "0.1u" H 1740 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1663 3100 50  0001 C CNN
 F 3 "~" H 1625 3250 50  0001 C CNN
+F 4 "1276-1258-1-ND" H 1625 3250 50  0001 C CNN "DigiKey"
 	1    1625 3250
 	1    0    0    -1  
 $EndComp
