@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name TH_project)(type KiCad)(uri ${KIPRJMOD}/../kicad-modules/modules/TH.pretty/)(options "")(descr ""))
+)
