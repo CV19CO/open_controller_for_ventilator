@@ -1,4 +1,4 @@
-14528369494693486
+14532954378031573
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (http://www.bulgin.com/media/bulgin/data/Battery_holders.pdf)
@@ -60234,160 +60234,6 @@ rotary encoder
 0
 5
 4
-SMD
-2SC3325-Y
-
-
-0
-3
-3
-SMD
-8LGA
-
-
-0
-8
-8
-SMD
-ABM8G
-
-
-0
-4
-4
-SMD
-ABS06-107
-
-
-0
-2
-2
-SMD
-AQH3223A
-
-
-0
-7
-7
-SMD
-CL-2025-02
-
-
-0
-10
-9
-SMD
-CUI_CSS-95B30-SMT
-
-
-0
-4
-4
-SMD
-DFN5B
-
-
-0
-6
-5
-SMD
-DO-214AA
-
-
-0
-2
-2
-SMD
-ESP32
-
-
-0
-49
-49
-SMD
-ESP32-WROOM
-
-
-0
-39
-39
-SMD
-ESP3212
-
-
-0
-31
-30
-SMD
-HLGA-6L
-
-
-0
-6
-6
-SMD
-HVSON8
-
-
-0
-9
-9
-SMD
-PTC
-
-
-0
-2
-2
-SMD
-SMD_CONN_2x20
-
-
-0
-40
-40
-SMD
-SOT-223
-module CMS SOT223 4 pins
-CMS SOT
-0
-4
-4
-SMD
-SOT23_Transistor
-SOT23, Standard, Transistor,
-SOT23, Standard, Transistor,
-0
-3
-3
-SMD
-TLP240D_TP1
-
-
-0
-4
-4
-SMD
-TOREX_XCL214B123DR
-
-
-0
-10
-9
-SMD
-XDFN4
-
-
-0
-5
-5
-SMD
-powerSTEP01
-
-
-0
-102
-102
 Sensor_Audio
 ST_HLGA-6_3.76x4.72mm_P1.65mm
 http://www.st.com/content/ccc/resource/technical/document/datasheet/group3/27/62/48/98/44/54/4d/36/DM00303211/files/DM00303211.pdf/jcr:content/translations/en.DM00303211.pdf
@@ -61515,69 +61361,6 @@ Logo WEEE
 0
 0
 0
-TH
-10142708-06200LF
-
-
-0
-6
-6
-TH
-10142708-08200LF
-
-
-0
-8
-8
-TH
-BARREL_JACK
-DC Barrel Jack
-Power Jack
-0
-3
-3
-TH
-CUI_CEP-1116
-
-
-0
-2
-2
-TH
-DIP_AN
-
-
-0
-6
-6
-TH
-DIP_JJ
-
-
-0
-6
-6
-TH
-MPX5100
-
-
-0
-8
-6
-TH
-MPX5100_V
-
-
-0
-6
-6
-TH
-RPI_MATRIX_40
-
-
-0
-40
-40
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf
@@ -66359,3 +66142,248 @@ varistor SIOV
 0
 2
 2
+modules
+10118194-0001LF
+http://portal.fciconnect.com/Comergent//fci/drawing/10118194.pdf
+
+0
+9
+6
+modules
+ABM8G-16.000MHZ-B4Y-T
+
+
+0
+4
+4
+modules
+ADC128D818CIMT&slash_NOPB
+
+
+0
+16
+16
+modules
+ADS7953SBDBT
+
+
+0
+38
+38
+modules
+ASFLMB-24.000MHZ-LC-T
+
+
+0
+4
+4
+modules
+BARREL_JACK
+DC Barrel Jack
+Power Jack
+0
+3
+3
+modules
+BAT-HLD-001
+
+
+0
+3
+3
+modules
+C_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
+2
+modules
+C_0805_HandSoldering
+Capacitor SMD 0805, hand soldering
+capacitor 0805
+0
+2
+2
+modules
+C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
+2
+modules
+D_SOD-123
+SOD-123
+SOD-123
+0
+2
+2
+modules
+FSM1LPTR
+
+
+0
+5
+5
+modules
+LED_0805_HandSoldering
+Resistor SMD 0805, hand soldering
+resistor 0805
+0
+2
+2
+modules
+LIS3DHTR
+
+
+0
+16
+16
+modules
+LQFP-144_20x20mm_Pitch0.5mm
+144-Lead Plastic Low Profile Quad Flatpack (PL) - 20x20x1.40 mm Body [LQFP], 2.00 mm Footprint (see Microchip Packaging Specification 00000049BS.pdf)
+QFP 0.5
+0
+144
+144
+modules
+L_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+inductor handsolder
+0
+2
+2
+modules
+MountingHole_2.7mm_M2.5_ISO14580_Pad
+Mounting Hole 2.7mm, M2.5, ISO14580
+mounting hole 2.7mm m2.5 iso14580
+0
+1
+1
+modules
+NX3215SA
+
+
+0
+2
+2
+modules
+ONION-OMEGA
+FOOTPRINT FOR ONION OMEGA
+FOOTPRINT FOR ONION OMEGA
+0
+32
+32
+modules
+PinHeader_2x07_P2.54mm_Vertical
+Through hole straight pin header, 2x07, 2.54mm pitch, double rows
+Through hole pin header THT 2x07 2.54mm double row
+0
+14
+14
+modules
+PinHeader_2x08_P2.54mm_Vertical_SMD
+surface-mounted straight pin header, 2x08, 2.54mm pitch, double rows
+Surface mounted pin header SMD 2x08 2.54mm double row
+0
+16
+16
+modules
+PinHeader_2x09_P2.54mm_Vertical
+Through hole straight pin header, 2x09, 2.54mm pitch, double rows
+Through hole pin header THT 2x09 2.54mm double row
+0
+18
+18
+modules
+PinHeader_2x09_P2.54mm_Vertical_SMD
+surface-mounted straight pin header, 2x09, 2.54mm pitch, double rows
+Surface mounted pin header SMD 2x09 2.54mm double row
+0
+18
+18
+modules
+PinHeader_2x14_P2.54mm_Vertical
+Through hole straight pin header, 2x14, 2.54mm pitch, double rows
+Through hole pin header THT 2x14 2.54mm double row
+0
+28
+28
+modules
+PinHeader_2x15_P2.54mm_Vertical_SMD
+surface-mounted straight pin header, 2x15, 2.54mm pitch, double rows
+Surface mounted pin header SMD 2x15 2.54mm double row
+0
+30
+30
+modules
+PinHeader_2x20_P2.54mm_Vertical_SMD
+surface-mounted straight pin header, 2x20, 2.54mm pitch, double rows
+Surface mounted pin header SMD 2x20 2.54mm double row
+0
+40
+40
+modules
+R_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+resistor handsolder
+0
+2
+2
+modules
+R_0805_HandSoldering
+Resistor SMD 0805, hand soldering
+resistor 0805
+0
+2
+2
+modules
+SOIC-8_3.9x4.9mm_Pitch1.27mm
+8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+8
+8
+modules
+SOT-23
+SOT-23, Standard
+SOT-23
+0
+3
+3
+modules
+SOT-223
+module CMS SOT223 4 pins
+CMS SOT
+0
+4
+4
+modules
+SRF2012-900YA
+
+
+0
+4
+4
+modules
+STLM75M2F
+
+
+0
+8
+8
+modules
+TQFP-144_20x20mm_Pitch0.5mm
+P/PG-TQFP-144-2, -3, -7 (see MAXIM 21-0087.PDF and 90-0144.PDF)
+QFP 0.5
+0
+144
+144
+modules
+USB_A
+USB A connector
+USB USB_A
+0
+6
+5

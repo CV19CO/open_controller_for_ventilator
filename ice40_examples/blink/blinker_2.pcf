@@ -1,0 +1,3 @@
+set_io data[0] 7
+set_io data[1] 8
+set_io clk 128
