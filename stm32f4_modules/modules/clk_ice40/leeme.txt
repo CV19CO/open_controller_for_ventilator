@@ -1,0 +1,3 @@
+20200407
+En esta versión se modificó la forma de enviar los datos 
+colocando una única cadena con la información de los 16 canales

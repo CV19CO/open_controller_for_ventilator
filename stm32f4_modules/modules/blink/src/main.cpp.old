@@ -1,0 +1,275 @@
+/**
+  ******************************************************************************
+  * @file    IO_Toggle/main.c 
+  * @author  MCD Application Team
+  * @version V1.0.0
+  * @date    19-September-2011
+  * @brief   Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+  * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+  * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
+  * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+  * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
+  * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+  *
+  * <h2><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h2>
+  ******************************************************************************  
+  */ 
+
+/* Includes ------------------------------------------------------------------*/
+#include <new>
+#include <cstddef>
+
+//#include "stm32f4_discovery.h"
+#include "stm32f4xx_gpio.h"
+#include "stm32f4xx_rcc.h"
+#include "TimeDelay.h"
+
+
+//#include "defines.h"
+#include "stm32f4xx.h"
+#include "tm_stm32f4_rtc.h"
+//#include "tm_stm32f4_usart.h"
+//#include "tm_stm32f4_disco.h"
+//#include "tm_stm32f4_delay.h"
+
+
+#include "stm32f4xx.h"
+#include "stm32f4xx_rcc.h"
+#include "stm32f4xx_gpio.h"
+#include "stm32f4xx_usart.h"
+
+#include <stdio.h>
+
+
+
+GPIO_InitTypeDef  GPIO_InitStructure; //estructura para configurar los i/0
+
+void Delay(__IO uint32_t nCount);
+
+
+char buf[50], buf2[50]; //buffer para el rtc
+TM_RTC_Time_t datatime; //variables para el rtc
+ 
+
+void blinker (int led_number, int times){
+int i;
+  if (led_number == 0)
+  {
+    for (i=0; i<times; i++)
+    {
+    GPIO_SetBits(GPIOA, GPIO_Pin_0);
+    Delay(500000);
+    GPIO_ResetBits(GPIOA, GPIO_Pin_0);
+    Delay(500000);
+    }
+  }
+  else
+  {
+    for (i=0; i<times; i++)
+    {
+    GPIO_SetBits(GPIOA, GPIO_Pin_1);
+    Delay(500000);
+    GPIO_ResetBits(GPIOA, GPIO_Pin_1);
+    Delay(500000);
+    }
+  }
+
+}
+
+
+void USART_Config(void){
+	    // Enable clock for GPIOA
+	    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+	    // Enable clock for USART1
+	    RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
+	    // Connect PA9 to USART1_Tx
+	    GPIO_PinAFConfig(GPIOA, GPIO_PinSource9, GPIO_AF_USART1);
+	    // Connect PA10 to USART1_Rx
+	    GPIO_PinAFConfig(GPIOA, GPIO_PinSource10, GPIO_AF_USART1);
+	    // Initialization of GPIOA
+	    GPIO_InitTypeDef GPIO_InitStruct;
+	    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_9 | GPIO_Pin_10;
+	    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;
+	    GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
+	    GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
+	    GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
+	    GPIO_Init(GPIOA, &GPIO_InitStruct);
+	    // Initialization of USART1
+	    USART_InitTypeDef USART_InitStruct;
+	    USART_InitStruct.USART_BaudRate = 115200;
+	    USART_InitStruct.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+	    USART_InitStruct.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+	    USART_InitStruct.USART_Parity = USART_Parity_No;
+	    USART_InitStruct.USART_StopBits = USART_StopBits_1;
+	    USART_InitStruct.USART_WordLength = USART_WordLength_8b;
+	    USART_Init(USART1, &USART_InitStruct);
+	    // Enable USART1
+	    USART_Cmd(USART1, ENABLE);
+	}
+
+void USART_PutChar(char c)
+{
+    // Wait until transmit data register is empty
+    while (!USART_GetFlagStatus(USART1, USART_FLAG_TXE));
+    // Send a char using USART1
+    USART_SendData(USART1, c);
+}
+
+void USART_PutString(char *s)
+{
+    // Send a string
+    while (*s)
+    {
+        USART_PutChar(*s++);
+    }
+}
+
+uint16_t USART_GetChar()
+{
+    // Wait until data is received
+    while (!USART_GetFlagStatus(USART1, USART_FLAG_RXNE));
+    // Read received char
+    return USART_ReceiveData(USART1);
+}
+
+
+int main(void)
+{
+  /*!< At this stage the microcontroller clock setting is already configured, 
+       this is done through SystemInit() function which is called from startup
+       file (startup_stm32f4xx.s) before to branch to application main.
+       To reconfigure the default setting of SystemInit() function, refer to
+        system_stm32f4xx.c file
+     */
+
+  /* Create Counter Objects */
+  TimeDelay td1 = TimeDelay(); /* OOP: Automatic object instantiation (using stack) */
+  TimeDelay *td2 = NULL;
+  try { /* OOP: Exception handling */
+	  td2 = new TimeDelay();
+  } catch(int e) {
+	  while(true);
+  }
+
+
+
+USART_Config();
+sprintf(buf, "Se inicializa el usart hello :)\n");
+USART_PutString(buf);
+
+  /* GPIOA Periph clock enable */
+  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+  
+  GPIO_PinAFConfig(GPIOA, GPIO_PinSource9, GPIO_AF_USART1);
+  GPIO_PinAFConfig(GPIOA, GPIO_PinSource10, GPIO_AF_USART1);
+  /* Configure PA0, PA1 in output pushpull mode */
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
+  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+  GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+
+  blinker(0,5);//encender el led 0 5 veces
+
+	    // Send "Hello, World!" to PC
+	   // USART_PutString("Hello, World!\n");
+
+//  TM_USART_Init(USART1, TM_USART_PinsPack_1, 115200);// se inicializa el USART1
+//  TM_USART_Puts(USART1, buf);
+//  TM_USART_Init(USART1, TM_USART_PinsPack_1, 115200);
+//  TM_USART_Puts(USART1, "Hello world\r\n");
+
+
+//se inicializa el RTC con el reloj interno 32768Hz, no es muy preciso
+//    if (!TM_RTC_Init(TM_RTC_ClockSource_Internal)) {
+    if (!TM_RTC_Init(TM_RTC_ClockSource_Internal)) {
+        //RTC inicializado
+        datatime.hours = 0;
+        datatime.minutes = 59;
+        datatime.seconds = 55;
+        datatime.year = 19;
+        datatime.month = 8;
+        datatime.date = 14;
+        datatime.day = 3;
+        //Set new time
+        TM_RTC_SetDateTime(&datatime, TM_RTC_Format_BIN);
+blinker(1,5);//encender el led 1 5 veces
+    }
+
+    TM_RTC_Interrupts(TM_RTC_Int_1s);//habilitar interrupción cada segundo
+  blinker(0,5);
+
+  while (1)
+  {
+   // Delay(td1.get());
+    //GPIO_ResetBits(GPIOA, GPIO_Pin_0|GPIO_Pin_1);
+    //Delay(td2->get());
+  }
+}
+
+
+
+//Función de interrupción usada para enviar la hora por usart1
+void TM_RTC_RequestHandler() {
+    //Get time
+    TM_RTC_GetDateTime(&datatime, TM_RTC_Format_BIN);
+    
+    //Format time
+    sprintf(buf, "%02d.%02d.%04d %02d:%02d:%02d  Unix: %u\n",
+                datatime.date,
+                datatime.month,
+                datatime.year + 2000,
+                datatime.hours,
+                datatime.minutes,
+                datatime.seconds,
+                datatime.unix
+    );
+    //Send to USART
+    //TM_USART_Puts(USART1, buf);
+    GPIO_SetBits(GPIOA, GPIO_Pin_0);
+    GPIO_SetBits(GPIOA, GPIO_Pin_1);
+}
+
+
+
+
+/**
+  * @brief  Delay Function.
+  * @param  nCount:specifies the Delay time length.
+  * @retval None
+  */
+void Delay(__IO uint32_t nCount)
+{
+  while(nCount--)
+  {
+  }
+}
+
+#ifdef  USE_FULL_ASSERT
+
+/**
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
+void assert_failed(uint8_t* file, uint32_t line)
+{ 
+  /* User can add his own implementation to report the file name and line number,
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+
+  /* Infinite loop */
+  while (1)
+  {
+  }
+}
+#endif
+
+/******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
