@@ -1,0 +1,942 @@
+EESchema Schematic File Version 4
+LIBS:keep_breathing_ctrl-cache
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 10 18
+Title "UPduino"
+Date ""
+Rev "3.0 v0.1"
+Comp "tinyVision.ai Inc."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L UPduino_v3.0:ICE40UP5K-SG48ITR-FPGA_Lattice U14
+U 1 1 5DD1F79B
+P 4300 5000
+F 0 "U14" H 4000 3800 50  0000 L CNN
+F 1 "ICE40UP5K-SG48ITR" H 4000 3650 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 4300 3650 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 3900 6000 50  0001 C CNN
+	1    4300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:ICE40UP5K-SG48ITR-FPGA_Lattice U14
+U 3 1 5DD25432
+P 8800 4600
+F 0 "U14" H 8500 3950 50  0000 L CNN
+F 1 "ICE40UP5K-SG48ITR" H 8500 3850 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 8800 3250 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 8400 5600 50  0001 C CNN
+	3    8800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:ICE40UP5K-SG48ITR-FPGA_Lattice U14
+U 4 1 5DD28AF8
+P 4500 7450
+F 0 "U14" V 4867 7450 50  0000 C CNN
+F 1 "ICE40UP5K-SG48ITR" V 4776 7450 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 4500 6100 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 4100 8450 50  0001 C CNN
+	4    4500 7450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L UPduino_v3.0:power_GND #PWR0104
+U 1 1 5DD309CB
+P 4950 7500
+F 0 "#PWR0104" H 4950 7250 50  0001 C CNN
+F 1 "GND" H 4955 7327 50  0000 C CNN
+F 2 "" H 4950 7500 50  0001 C CNN
+F 3 "" H 4950 7500 50  0001 C CNN
+	1    4950 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:power_+3.3V #PWR0105
+U 1 1 5DD36510
+P 6150 3750
+F 0 "#PWR0105" H 6150 3600 50  0001 C CNN
+F 1 "+3.3V" H 6165 3923 50  0000 C CNN
+F 2 "" H 6150 3750 50  0001 C CNN
+F 3 "" H 6150 3750 50  0001 C CNN
+	1    6150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 7450 4950 7450
+Wire Wire Line
+	4950 7450 4950 7500
+Wire Wire Line
+	4300 3800 4300 3900
+Wire Wire Line
+	3900 5800 3250 5800
+Wire Wire Line
+	3900 5900 3250 5900
+Wire Wire Line
+	3900 6000 3250 6000
+Wire Wire Line
+	3900 5500 3250 5500
+Wire Wire Line
+	3900 5600 3250 5600
+Wire Wire Line
+	3900 5700 3250 5700
+Wire Wire Line
+	3900 5200 3250 5200
+Wire Wire Line
+	3900 5300 3250 5300
+Wire Wire Line
+	3900 5400 3250 5400
+Wire Wire Line
+	3900 4900 3250 4900
+Wire Wire Line
+	3900 5000 3250 5000
+Wire Wire Line
+	3900 5100 3250 5100
+Wire Wire Line
+	3900 4600 3250 4600
+Wire Wire Line
+	3900 4700 3250 4700
+Wire Wire Line
+	3900 4800 3250 4800
+Wire Wire Line
+	3900 4400 3250 4400
+Wire Wire Line
+	3900 4500 3250 4500
+Wire Wire Line
+	5650 5700 5000 5700
+Wire Wire Line
+	5650 5800 5000 5800
+Wire Wire Line
+	5650 5900 5000 5900
+Wire Wire Line
+	5650 5400 5000 5400
+Wire Wire Line
+	5650 5500 5000 5500
+Wire Wire Line
+	5650 5600 5000 5600
+Wire Wire Line
+	5650 5100 5000 5100
+Wire Wire Line
+	5650 5200 5000 5200
+Wire Wire Line
+	5650 5300 5000 5300
+Wire Wire Line
+	5650 4800 5000 4800
+Wire Wire Line
+	5650 4900 5000 4900
+Wire Wire Line
+	5650 5000 5000 5000
+Wire Wire Line
+	5650 4600 5000 4600
+Wire Wire Line
+	5650 4700 5000 4700
+Wire Wire Line
+	8400 4400 7750 4400
+Wire Wire Line
+	8400 4500 7750 4500
+Wire Wire Line
+	8400 4600 7750 4600
+Wire Wire Line
+	8400 4700 7750 4700
+Wire Wire Line
+	8400 4800 7750 4800
+Wire Wire Line
+	8400 4900 7750 4900
+Wire Wire Line
+	8400 5000 7750 5000
+Wire Wire Line
+	8400 5100 7750 5100
+$Comp
+L UPduino_v3.0:Device_C C43
+U 1 1 5DD4BB29
+P 4700 3950
+F 0 "C43" H 4815 3996 50  0000 L CNN
+F 1 "0.1u" H 4815 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4738 3800 50  0001 C CNN
+F 3 "~" H 4700 3950 50  0001 C CNN
+F 4 "C1005X5R0J104K050BA" H 4700 3950 50  0001 C CNN "MPN"
+	1    4700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_C C48
+U 1 1 5DD4C978
+P 6700 3900
+F 0 "C48" H 6815 3946 50  0000 L CNN
+F 1 "0.1u" H 6815 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6738 3750 50  0001 C CNN
+F 3 "~" H 6700 3900 50  0001 C CNN
+	1    6700 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_C C52
+U 1 1 5DD4DA90
+P 9300 3950
+F 0 "C52" H 9415 3996 50  0000 L CNN
+F 1 "0.1u" H 9415 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9338 3800 50  0001 C CNN
+F 3 "~" H 9300 3950 50  0001 C CNN
+	1    9300 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:power_GND #PWR0160
+U 1 1 5DD4E250
+P 9300 4100
+F 0 "#PWR0160" H 9300 3850 50  0001 C CNN
+F 1 "GND" H 9305 3927 50  0000 C CNN
+F 2 "" H 9300 4100 50  0001 C CNN
+F 3 "" H 9300 4100 50  0001 C CNN
+	1    9300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:power_GND #PWR0161
+U 1 1 5DD4E97F
+P 4850 4100
+F 0 "#PWR0161" H 4850 3850 50  0001 C CNN
+F 1 "GND" H 4855 3927 50  0000 C CNN
+F 2 "" H 4850 4100 50  0001 C CNN
+F 3 "" H 4850 4100 50  0001 C CNN
+	1    4850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:power_GND #PWR0162
+U 1 1 5DD4EDA0
+P 6700 4050
+F 0 "#PWR0162" H 6700 3800 50  0001 C CNN
+F 1 "GND" H 6705 3877 50  0000 C CNN
+F 2 "" H 6700 4050 50  0001 C CNN
+F 3 "" H 6700 4050 50  0001 C CNN
+	1    6700 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 6150 3750
+Wire Wire Line
+	8800 3800 8800 3900
+Wire Wire Line
+	8800 3800 9300 3800
+Text Label 3650 7350 0    50   ~ 0
+VCC_PLL
+Wire Wire Line
+	3650 7350 4100 7350
+Wire Wire Line
+	5000 4300 5450 4300
+Text Label 6850 4300 0    50   ~ 0
+CDONE
+Text Label 5000 4300 0    50   ~ 0
+CRESET_N
+$Comp
+L UPduino_v3.0:W25Q32JVSS-Memory_Flash U15
+U 1 1 5DF49E9E
+P 9900 7650
+F 0 "U15" H 10050 8150 50  0000 C CNN
+F 1 "W25Q32JVSSIM" H 10250 8050 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 9900 7650 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 9900 7650 50  0001 C CNN
+	1    9900 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:power_GND #PWR0163
+U 1 1 5DF4ADA4
+P 9900 8100
+F 0 "#PWR0163" H 9900 7850 50  0001 C CNN
+F 1 "GND" H 9905 7927 50  0000 C CNN
+F 2 "" H 9900 8100 50  0001 C CNN
+F 3 "" H 9900 8100 50  0001 C CNN
+	1    9900 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:power_+3.3V #PWR0164
+U 1 1 5DF4B33E
+P 9900 7150
+F 0 "#PWR0164" H 9900 7000 50  0001 C CNN
+F 1 "+3.3V" H 9915 7323 50  0000 C CNN
+F 2 "" H 9900 7150 50  0001 C CNN
+F 3 "" H 9900 7150 50  0001 C CNN
+	1    9900 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 7150 9900 7250
+Wire Wire Line
+	9900 8050 9900 8100
+$Comp
+L UPduino_v3.0:Device_C C51
+U 1 1 5DF6EAF1
+P 8450 7300
+F 0 "C51" H 8565 7346 50  0000 L CNN
+F 1 "0.1u" H 8565 7255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8488 7150 50  0001 C CNN
+F 3 "~" H 8450 7300 50  0001 C CNN
+	1    8450 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:power_GND #PWR0169
+U 1 1 5DF6EAF7
+P 8450 7450
+F 0 "#PWR0169" H 8450 7200 50  0001 C CNN
+F 1 "GND" H 8455 7277 50  0000 C CNN
+F 2 "" H 8450 7450 50  0001 C CNN
+F 3 "" H 8450 7450 50  0001 C CNN
+	1    8450 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 7450 10900 7450
+Wire Wire Line
+	10400 7550 10900 7550
+Wire Wire Line
+	8900 7750 9300 7750
+Wire Wire Line
+	8900 7550 9400 7550
+Text Label 8950 7550 0    50   ~ 0
+FT_SSn
+Text Label 8900 7750 0    50   ~ 0
+FT_SCK
+$Comp
+L UPduino_v3.0:Device_C C47
+U 1 1 5DFA3726
+P 6450 7400
+F 0 "C47" H 6565 7446 50  0000 L CNN
+F 1 "0.1u" H 6565 7355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6488 7250 50  0001 C CNN
+F 3 "~" H 6450 7400 50  0001 C CNN
+	1    6450 7400
+	1    0    0    -1  
+$EndComp
+Text Label 7100 7250 0    50   ~ 0
+VCC_PLL
+$Comp
+L UPduino_v3.0:power_+1V2 #PWR0170
+U 1 1 5E01E8B5
+P 5750 7250
+F 0 "#PWR0170" H 5750 7100 50  0001 C CNN
+F 1 "+1V2" H 5765 7423 50  0000 C CNN
+F 2 "" H 5750 7250 50  0001 C CNN
+F 3 "" H 5750 7250 50  0001 C CNN
+	1    5750 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_R R30
+U 1 1 5E01F661
+P 6100 7250
+F 0 "R30" V 5893 7250 50  0000 C CNN
+F 1 "100" V 5984 7250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 7250 50  0001 C CNN
+F 3 "~" H 6100 7250 50  0001 C CNN
+	1    6100 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L UPduino_v3.0:power_GND #PWR0172
+U 1 1 5E020045
+P 6450 7550
+F 0 "#PWR0172" H 6450 7300 50  0001 C CNN
+F 1 "GND" H 6455 7377 50  0000 C CNN
+F 2 "" H 6450 7550 50  0001 C CNN
+F 3 "" H 6450 7550 50  0001 C CNN
+	1    6450 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_C C49
+U 1 1 5E02060F
+P 6900 7400
+F 0 "C49" H 7015 7446 50  0000 L CNN
+F 1 "4.7u" H 7015 7355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6938 7250 50  0001 C CNN
+F 3 "~" H 6900 7400 50  0001 C CNN
+	1    6900 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:power_GND #PWR0174
+U 1 1 5E020AEF
+P 6900 7550
+F 0 "#PWR0174" H 6900 7300 50  0001 C CNN
+F 1 "GND" H 6905 7377 50  0000 C CNN
+F 2 "" H 6900 7550 50  0001 C CNN
+F 3 "" H 6900 7550 50  0001 C CNN
+	1    6900 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 7250 5950 7250
+$Comp
+L UPduino_v3.0:power_+3.3V #PWR0175
+U 1 1 5E0351A1
+P 4600 8150
+F 0 "#PWR0175" H 4600 8000 50  0001 C CNN
+F 1 "+3.3V" H 4615 8323 50  0000 C CNN
+F 2 "" H 4600 8150 50  0001 C CNN
+F 3 "" H 4600 8150 50  0001 C CNN
+	1    4600 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_C C44
+U 1 1 5E03594A
+P 4700 8300
+F 0 "C44" H 4815 8346 50  0000 L CNN
+F 1 "0.1u" H 4815 8255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4738 8150 50  0001 C CNN
+F 3 "~" H 4700 8300 50  0001 C CNN
+	1    4700 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:power_GND #PWR0176
+U 1 1 5E0363D3
+P 4700 8450
+F 0 "#PWR0176" H 4700 8200 50  0001 C CNN
+F 1 "GND" H 4705 8277 50  0000 C CNN
+F 2 "" H 4700 8450 50  0001 C CNN
+F 3 "" H 4700 8450 50  0001 C CNN
+	1    4700 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_C C42
+U 1 1 5E0548A3
+P 4000 8300
+F 0 "C42" H 4115 8346 50  0000 L CNN
+F 1 "0.1u" H 4115 8255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4038 8150 50  0001 C CNN
+F 3 "~" H 4000 8300 50  0001 C CNN
+	1    4000 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:power_GND #PWR0177
+U 1 1 5E0548A9
+P 4000 8450
+F 0 "#PWR0177" H 4000 8200 50  0001 C CNN
+F 1 "GND" H 4005 8277 50  0000 C CNN
+F 2 "" H 4000 8450 50  0001 C CNN
+F 3 "" H 4000 8450 50  0001 C CNN
+	1    4000 8450
+	1    0    0    -1  
+$EndComp
+Text Label 5000 5900 0    50   ~ 0
+FT_SSn
+Text Label 5000 5800 0    50   ~ 0
+FT_SCK
+Text Label 5000 5700 0    50   ~ 0
+FPGA_SI
+Text Label 5000 5600 0    50   ~ 0
+FPGA_SO
+Text Label 3250 5800 0    50   ~ 0
+LED_R
+Text Label 3250 5900 0    50   ~ 0
+LED_G
+Text Label 3250 6000 0    50   ~ 0
+LED_B
+$Comp
+L UPduino_v3.0:Device_R R29
+U 1 1 5E0FA1FF
+P 5450 4000
+F 0 "R29" H 5380 3954 50  0000 R CNN
+F 1 "10K" H 5380 4045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5380 4000 50  0001 C CNN
+F 3 "~" H 5450 4000 50  0001 C CNN
+	1    5450 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 4150 5450 4300
+Connection ~ 5450 4300
+Wire Wire Line
+	5450 4300 5650 4300
+Wire Wire Line
+	5450 3850 5450 3750
+Wire Wire Line
+	5450 3750 6150 3750
+Text Label 10450 7550 0    50   ~ 0
+FLASH_MISO
+Text Label 12100 7750 0    50   ~ 0
+IOB_18A
+Text Label 12100 7850 0    50   ~ 0
+IOB_25B_G3
+Text Label 10450 7450 0    50   ~ 0
+FLASH_MOSI
+$Comp
+L UPduino_v3.0:Device_R R37
+U 1 1 5E113B47
+P 11150 7250
+F 0 "R37" H 11080 7204 50  0000 R CNN
+F 1 "10K" H 11080 7295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11080 7250 50  0001 C CNN
+F 3 "~" H 11150 7250 50  0001 C CNN
+	1    11150 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L UPduino_v3.0:Device_R R38
+U 1 1 5E113D99
+P 11450 7250
+F 0 "R38" H 11380 7204 50  0000 R CNN
+F 1 "10K" H 11380 7295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11380 7250 50  0001 C CNN
+F 3 "~" H 11450 7250 50  0001 C CNN
+	1    11450 7250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11450 7850 11450 7400
+Wire Wire Line
+	10400 7850 11450 7850
+$Comp
+L UPduino_v3.0:Device_R R34
+U 1 1 5E138F70
+P 9300 7300
+F 0 "R34" H 9230 7254 50  0000 R CNN
+F 1 "10K" H 9230 7345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9230 7300 50  0001 C CNN
+F 3 "~" H 9300 7300 50  0001 C CNN
+	1    9300 7300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9300 7450 9300 7750
+Connection ~ 9300 7750
+Wire Wire Line
+	9300 7750 9400 7750
+Wire Wire Line
+	11150 7750 11150 7400
+Wire Wire Line
+	10400 7750 11150 7750
+$Comp
+L UPduino_v3.0:Device_R R32
+U 1 1 5E15B185
+P 8900 7300
+F 0 "R32" H 8830 7254 50  0000 R CNN
+F 1 "10K" H 8830 7345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 7300 50  0001 C CNN
+F 3 "~" H 8900 7300 50  0001 C CNN
+	1    8900 7300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 7450 8900 7550
+$Comp
+L UPduino_v3.0:power_+3.3V #PWR0178
+U 1 1 5E1A1852
+P 11300 7100
+F 0 "#PWR0178" H 11300 6950 50  0001 C CNN
+F 1 "+3.3V" H 11315 7273 50  0000 C CNN
+F 2 "" H 11300 7100 50  0001 C CNN
+F 3 "" H 11300 7100 50  0001 C CNN
+	1    11300 7100
+	1    0    0    -1  
+$EndComp
+Text Label 3250 4400 0    50   ~ 0
+IOT_36B
+Text Label 3250 4500 0    50   ~ 0
+IOT_37A
+Text Label 3250 4600 0    50   ~ 0
+IOT_38B
+Text Label 3250 4700 0    50   ~ 0
+IOT_39A
+Text Label 3250 4800 0    50   ~ 0
+IOT_41A
+Text Label 3250 4900 0    50   ~ 0
+IOT_42B
+Text Label 3250 5000 0    50   ~ 0
+IOT_43A
+Text Label 3250 5100 0    50   ~ 0
+IOT_44B
+Text Label 3250 5200 0    50   ~ 0
+IOT_45A_G1
+Text Label 3250 5300 0    50   ~ 0
+IOT_46B_G0
+Text Label 3250 5400 0    50   ~ 0
+IOT_48B
+Text Label 3250 5500 0    50   ~ 0
+IOT_49A
+Text Label 3250 5600 0    50   ~ 0
+IOT_50B
+Text Label 3250 5700 0    50   ~ 0
+IOT_51A
+Text Label 5000 4600 0    50   ~ 0
+IOB_13B
+Text Label 5000 4700 0    50   ~ 0
+IOB_16A
+Text Label 5000 4800 0    50   ~ 0
+IOB_18A
+Text Label 5000 4900 0    50   ~ 0
+IOB_20A
+Text Label 5000 5000 0    50   ~ 0
+IOB_22A
+Text Label 5000 5100 0    50   ~ 0
+IOB_23B
+Text Label 5000 5200 0    50   ~ 0
+IOB_24A
+Text Label 5000 5300 0    50   ~ 0
+IOB_25B_G3
+Text Label 5000 5400 0    50   ~ 0
+IOB_29B
+Text Label 5000 5500 0    50   ~ 0
+IOB_31B
+Text Label 7750 4400 0    50   ~ 0
+IOB_0A
+Text Label 7750 4500 0    50   ~ 0
+IOB_2A
+Text Label 7750 4600 0    50   ~ 0
+IOB_3B_G6
+Text Label 7750 4700 0    50   ~ 0
+IOB_4A
+Text Label 7750 4800 0    50   ~ 0
+IOB_5B
+Text Label 7750 4900 0    50   ~ 0
+IOB_6A
+Text Label 7750 5000 0    50   ~ 0
+IOB_8A
+Text Label 7750 5100 0    50   ~ 0
+IOB_9B
+Text Notes 5700 3450 0    100  ~ 20
+FPGA Banks
+$Comp
+L UPduino_v3.0:Device_R R40
+U 1 1 5E89E36B
+P 11750 7750
+F 0 "R40" V 11957 7750 50  0000 C CNN
+F 1 "JUMPER" V 11866 7750 50  0000 C CNN
+F 2 "vs:SolderJumper-2_0603_Open_TrianglePad1.0x1.5mm" V 11680 7750 50  0001 C CNN
+F 3 "~" H 11750 7750 50  0001 C CNN
+	1    11750 7750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L UPduino_v3.0:Device_R R41
+U 1 1 5E89EBFA
+P 11750 7850
+F 0 "R41" V 11550 7850 50  0000 C CNN
+F 1 "JUMPER" V 11650 7850 50  0000 C CNN
+F 2 "vs:SolderJumper-2_0603_Open_TrianglePad1.0x1.5mm" V 11680 7850 50  0001 C CNN
+F 3 "~" H 11750 7850 50  0001 C CNN
+	1    11750 7850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11150 7750 11600 7750
+Connection ~ 11150 7750
+Wire Wire Line
+	11450 7850 11600 7850
+Connection ~ 11450 7850
+Wire Wire Line
+	11900 7850 12100 7850
+Wire Wire Line
+	11900 7750 12100 7750
+Text Notes 3850 3900 0    50   ~ 10
+Bank 0
+Text Notes 5750 3900 0    50   ~ 10
+Bank 1
+Text Notes 8400 3900 0    50   ~ 10
+Bank 2
+Wire Wire Line
+	6150 3750 6150 3900
+Wire Wire Line
+	6650 4300 6850 4300
+Wire Wire Line
+	3650 7450 4100 7450
+Text Label 3650 7450 0    50   ~ 0
++1.2V_CORE
+Text Label 3900 8150 0    50   ~ 0
++1.2V_CORE
+$Comp
+L UPduino_v3.0:Diode_1N4148W D4
+U 1 1 5DDBFCE1
+P 5050 8150
+F 0 "D4" H 5050 8367 50  0000 C CNN
+F 1 "1N4148WT-7" H 5050 8276 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5050 7975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 5050 8150 50  0001 C CNN
+	1    5050 8150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_C C46
+U 1 1 5DDC01B3
+P 5300 8300
+F 0 "C46" H 5415 8346 50  0000 L CNN
+F 1 "4.7u" H 5415 8255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5338 8150 50  0001 C CNN
+F 3 "~" H 5300 8300 50  0001 C CNN
+	1    5300 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:power_GND #PWR0179
+U 1 1 5DDC01BA
+P 5300 8450
+F 0 "#PWR0179" H 5300 8200 50  0001 C CNN
+F 1 "GND" H 5305 8277 50  0000 C CNN
+F 2 "" H 5300 8450 50  0001 C CNN
+F 3 "" H 5300 8450 50  0001 C CNN
+	1    5300 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_R R2
+U 1 1 5DE282FB
+P 3700 8150
+F 0 "R2" V 3493 8150 50  0000 C CNN
+F 1 "JUMPER" V 3584 8150 50  0000 C CNN
+F 2 "vs:ShortedJumper-2_P1.3mm_Bridged_Pad1.0x1.0mm" V 3630 8150 50  0001 C CNN
+F 3 "~" H 3700 8150 50  0001 C CNN
+	1    3700 8150
+	0    1    1    0   
+$EndComp
+$Comp
+L UPduino_v3.0:power_+1V2 #PWR0180
+U 1 1 5DE283FB
+P 3450 8150
+F 0 "#PWR0180" H 3450 8000 50  0001 C CNN
+F 1 "+1V2" H 3465 8323 50  0000 C CNN
+F 2 "" H 3450 8150 50  0001 C CNN
+F 3 "" H 3450 8150 50  0001 C CNN
+	1    3450 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 8150 3550 8150
+Wire Wire Line
+	3850 8150 4000 8150
+Wire Wire Line
+	4300 3700 4300 3800
+Connection ~ 4300 3800
+Wire Wire Line
+	4850 3700 4850 3800
+$Comp
+L UPduino_v3.0:power_+3.3V #PWR0181
+U 1 1 5EBE879B
+P 4300 3400
+F 0 "#PWR0181" H 4300 3250 50  0001 C CNN
+F 1 "+3.3V" H 4315 3573 50  0000 C CNN
+F 2 "" H 4300 3400 50  0001 C CNN
+F 3 "" H 4300 3400 50  0001 C CNN
+	1    4300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_R R31
+U 1 1 5EBE8A92
+P 8800 3550
+F 0 "R31" H 8950 3650 50  0000 C CNN
+F 1 "JUMPER" H 9000 3550 50  0000 C CNN
+F 2 "vs:ShortedJumper-2_P1.3mm_Bridged_Pad1.0x1.0mm" V 8730 3550 50  0001 C CNN
+F 3 "~" H 8800 3550 50  0001 C CNN
+	1    8800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_R R33
+U 1 1 5EBE8A99
+P 9300 3550
+F 0 "R33" H 9450 3650 50  0000 C CNN
+F 1 "JUMPER" H 9500 3550 50  0000 C CNN
+F 2 "vs:SolderJumper-2_0603_Open_TrianglePad1.0x1.5mm" V 9230 3550 50  0001 C CNN
+F 3 "~" H 9300 3550 50  0001 C CNN
+	1    9300 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3700 8800 3800
+Wire Wire Line
+	9300 3700 9300 3800
+$Comp
+L UPduino_v3.0:power_+3.3V #PWR0182
+U 1 1 5EBE8AA2
+P 8800 3400
+F 0 "#PWR0182" H 8800 3250 50  0001 C CNN
+F 1 "+3.3V" H 8815 3573 50  0000 C CNN
+F 2 "" H 8800 3400 50  0001 C CNN
+F 3 "" H 8800 3400 50  0001 C CNN
+	1    8800 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 9300 3800
+Text Notes 6350 3700 0    50   ~ 0
+Bank 1 is 3.3V IO!
+Text Notes 11400 8200 0    50   ~ 0
+Install 0 Ohms for qSPI
+Wire Wire Line
+	3800 7550 4100 7550
+$Comp
+L UPduino_v3.0:power_+2V5 #PWR0183
+U 1 1 5DD33F6B
+P 3800 7550
+F 0 "#PWR0183" H 3800 7400 50  0001 C CNN
+F 1 "+2V5" V 3815 7678 50  0000 L CNN
+F 2 "" H 3800 7550 50  0001 C CNN
+F 3 "" H 3800 7550 50  0001 C CNN
+	1    3800 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L UPduino_v3.0:power_+2V5 #PWR0184
+U 1 1 5E049442
+P 5400 8150
+F 0 "#PWR0184" H 5400 8000 50  0001 C CNN
+F 1 "+2V5" H 5415 8323 50  0000 C CNN
+F 2 "" H 5400 8150 50  0001 C CNN
+F 3 "" H 5400 8150 50  0001 C CNN
+	1    5400 8150
+	1    0    0    -1  
+$EndComp
+Text Notes 3400 8400 0    50   ~ 0
+Core current \nmeasurement
+$Comp
+L UPduino_v3.0:Device_R R28
+U 1 1 5EB96AC4
+P 4850 3550
+F 0 "R28" H 5000 3650 50  0000 C CNN
+F 1 "JUMPER" H 5050 3550 50  0000 C CNN
+F 2 "vs:SolderJumper-2_0603_Open_TrianglePad1.0x1.5mm" V 4780 3550 50  0001 C CNN
+F 3 "~" H 4850 3550 50  0001 C CNN
+	1    4850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_R R5
+U 1 1 5DF82856
+P 4300 3550
+F 0 "R5" H 4450 3650 50  0000 C CNN
+F 1 "JUMPER" H 4500 3550 50  0000 C CNN
+F 2 "vs:ShortedJumper-2_P1.3mm_Bridged_Pad1.0x1.0mm" V 4230 3550 50  0001 C CNN
+F 3 "~" H 4300 3550 50  0001 C CNN
+	1    4300 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 8800 3800
+Wire Wire Line
+	4850 3400 4850 3350
+Wire Wire Line
+	4850 3350 5100 3350
+Wire Wire Line
+	9300 3400 9300 3350
+Wire Wire Line
+	9300 3350 9600 3350
+Text Label 4850 3350 0    50   ~ 0
+VIO_BANK_0_2
+Text Label 9350 3350 0    50   ~ 0
+VIO_BANK_0_2
+$Comp
+L UPduino_v3.0:ICE40UP5K-SG48ITR-FPGA_Lattice U14
+U 2 1 5E18C89B
+P 6150 5000
+F 0 "U14" H 6150 3925 50  0000 C CNN
+F 1 "ICE40UP5K-SG48ITR" H 6150 3834 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 6150 3650 50  0001 C CNN
+F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 5750 6000 50  0001 C CNN
+	2    6150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_C C50
+U 1 1 5DED1A10
+P 7100 3900
+F 0 "C50" H 7215 3946 50  0000 L CNN
+F 1 "4.7u" H 7215 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7138 3750 50  0001 C CNN
+F 3 "~" H 7100 3900 50  0001 C CNN
+	1    7100 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_C C45
+U 1 1 5DED1D6F
+P 5100 3950
+F 0 "C45" H 5215 3996 50  0000 L CNN
+F 1 "4.7u" H 5215 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5138 3800 50  0001 C CNN
+F 3 "~" H 5100 3950 50  0001 C CNN
+	1    5100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L UPduino_v3.0:Device_C C53
+U 1 1 5DED269D
+P 9700 3950
+F 0 "C53" H 9815 3996 50  0000 L CNN
+F 1 "4.7u" H 9815 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9738 3800 50  0001 C CNN
+F 3 "~" H 9700 3950 50  0001 C CNN
+	1    9700 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4100 9700 4100
+Wire Wire Line
+	9700 3800 9300 3800
+Wire Wire Line
+	4850 3800 5100 3800
+Connection ~ 4850 3800
+Wire Wire Line
+	6700 4050 7100 4050
+Wire Wire Line
+	6150 3750 6700 3750
+Wire Wire Line
+	6250 7250 6450 7250
+Wire Wire Line
+	4600 8150 4700 8150
+Wire Wire Line
+	5200 8150 5300 8150
+Wire Wire Line
+	11150 7100 11300 7100
+Wire Wire Line
+	8450 7150 8900 7150
+Wire Wire Line
+	4300 3800 4700 3800
+Wire Wire Line
+	4700 4100 4850 4100
+Text Notes 9700 6775 0    100  ~ 20
+qSPI/DTR Flash
+Connection ~ 4700 3800
+Wire Wire Line
+	4700 3800 4850 3800
+Connection ~ 4700 8150
+Wire Wire Line
+	4700 8150 4900 8150
+Connection ~ 4850 4100
+Wire Wire Line
+	4850 4100 5100 4100
+Connection ~ 5300 8150
+Wire Wire Line
+	5300 8150 5400 8150
+Connection ~ 6450 7250
+Wire Wire Line
+	6450 7250 6900 7250
+Connection ~ 6700 3750
+Wire Wire Line
+	6700 3750 7100 3750
+Connection ~ 6700 4050
+Connection ~ 6900 7250
+Wire Wire Line
+	6900 7250 7100 7250
+Connection ~ 8900 7150
+Wire Wire Line
+	8900 7150 9300 7150
+Connection ~ 9300 4100
+Connection ~ 9300 7150
+Wire Wire Line
+	9300 7150 9900 7150
+Connection ~ 9900 7150
+Connection ~ 11300 7100
+Wire Wire Line
+	11300 7100 11450 7100
+$EndSCHEMATC

@@ -1,0 +1,353 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L conn_raspberry_2x40:CONN_RASPBERRY P?
+U 1 1 5E972BBB
+P 4100 2400
+AR Path="/5E972BBB" Ref="P?"  Part="1" 
+AR Path="/5E96F696/5E972BBB" Ref="P1"  Part="1" 
+F 0 "P1" H 3825 3565 50  0000 C CNN
+F 1 "CONN_RASPBERRY" H 3825 3474 50  0000 C CNN
+F 2 "SMD:SMD_CONN_2x20" H 3825 3481 60  0001 C CNN
+F 3 "" H 3300 1450 60  0000 C CNN
+F 4 "S5690-ND" H 4100 2400 50  0001 C CNN "DigiKey"
+	1    4100 2400
+	1    0    0    -1  
+$EndComp
+Text HLabel 4850 1750 2    50   Output ~ 0
+TX_PI
+Wire Wire Line
+	4600 1750 4850 1750
+Text HLabel 4850 1850 2    50   Input ~ 0
+RX_PI
+Wire Wire Line
+	4600 1850 4850 1850
+Wire Wire Line
+	4600 2150 4900 2150
+Wire Wire Line
+	4600 2250 4900 2250
+Text HLabel 2900 1550 0    50   BiDi ~ 0
+SDA_PI
+Text HLabel 2900 1650 0    50   Output ~ 0
+SCL_PI
+Text HLabel 2900 1750 0    50   Input ~ 0
+INT_RTC
+Wire Wire Line
+	3050 1550 2900 1550
+Wire Wire Line
+	2900 1650 3050 1650
+Wire Wire Line
+	3050 1750 2900 1750
+$Comp
+L power:GND #PWR0118
+U 1 1 5E97A377
+P 4700 3650
+F 0 "#PWR0118" H 4700 3400 50  0001 C CNN
+F 1 "GND" H 4705 3477 50  0000 C CNN
+F 2 "" H 4700 3650 50  0001 C CNN
+F 3 "" H 4700 3650 50  0001 C CNN
+	1    4700 3650
+	1    0    0    -1  
+$EndComp
+Text HLabel 2050 4100 0    50   BiDi ~ 0
+SPI_PI[0..5]
+Wire Bus Line
+	2050 4100 2250 4100
+Entry Wire Line
+	2250 4150 2350 4250
+Entry Wire Line
+	2250 4250 2350 4350
+Entry Wire Line
+	2250 4350 2350 4450
+Entry Wire Line
+	2250 4450 2350 4550
+Entry Wire Line
+	2250 4550 2350 4650
+Text Label 2700 4250 2    50   ~ 0
+SPI_PI0
+Text Label 2700 4350 2    50   ~ 0
+SPI_PI1
+Text Label 2700 4450 2    50   ~ 0
+SPI_PI2
+Text Label 2700 4550 2    50   ~ 0
+SPI_PI3
+Text Label 2700 4650 2    50   ~ 0
+SPI_PI4
+Text Label 2600 2350 0    50   ~ 0
+SPI_MOSI
+Text Label 2600 2450 0    50   ~ 0
+SPI_MISO
+Text Label 2600 2550 0    50   ~ 0
+SPI_CLK
+Text Label 5050 2550 2    50   ~ 0
+SPI_CS
+Wire Wire Line
+	2600 2350 3050 2350
+Wire Wire Line
+	2600 2450 3050 2450
+Wire Wire Line
+	2600 2550 3050 2550
+Wire Wire Line
+	5050 2550 4600 2550
+Text Label 3600 4250 2    50   ~ 0
+SPI_MISO
+Text Label 3600 4350 2    50   ~ 0
+SPI_MOSI
+Text Label 3600 4450 2    50   ~ 0
+SPI_CLK
+Text Label 3600 4550 2    50   ~ 0
+SPI_CS
+Text Label 2600 1950 0    50   ~ 0
+RST_ICE
+Wire Wire Line
+	2600 1950 3050 1950
+Text Label 3600 4650 2    50   ~ 0
+RST_ICE
+Wire Wire Line
+	2350 4250 2900 4250
+Wire Wire Line
+	2350 4350 2900 4350
+Wire Wire Line
+	2350 4450 2900 4450
+Wire Wire Line
+	2350 4550 2900 4550
+Wire Wire Line
+	2350 4650 2900 4650
+$Comp
+L Device:R R28
+U 1 1 5E9EA326
+P 3050 4250
+F 0 "R28" V 3000 4050 50  0000 C CNN
+F 1 "100" V 3050 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4250 50  0001 C CNN
+F 3 "~" H 3050 4250 50  0001 C CNN
+F 4 "P100LCT-ND" V 3050 4250 50  0001 C CNN "DigiKey"
+	1    3050 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R37
+U 1 1 5EA15CD3
+P 3050 4350
+F 0 "R37" V 3000 4150 50  0000 C CNN
+F 1 "100" V 3050 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4350 50  0001 C CNN
+F 3 "~" H 3050 4350 50  0001 C CNN
+F 4 "P100LCT-ND" V 3050 4350 50  0001 C CNN "DigiKey"
+	1    3050 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R38
+U 1 1 5EA17179
+P 3050 4450
+F 0 "R38" V 3000 4250 50  0000 C CNN
+F 1 "100" V 3050 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4450 50  0001 C CNN
+F 3 "~" H 3050 4450 50  0001 C CNN
+F 4 "P100LCT-ND" V 3050 4450 50  0001 C CNN "DigiKey"
+	1    3050 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 5EA17183
+P 3050 4550
+F 0 "R40" V 3000 4350 50  0000 C CNN
+F 1 "100" V 3050 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4550 50  0001 C CNN
+F 3 "~" H 3050 4550 50  0001 C CNN
+F 4 "P100LCT-ND" V 3050 4550 50  0001 C CNN "DigiKey"
+	1    3050 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R41
+U 1 1 5EA17F2D
+P 3050 4650
+F 0 "R41" V 3000 4450 50  0000 C CNN
+F 1 "100" V 3050 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4650 50  0001 C CNN
+F 3 "~" H 3050 4650 50  0001 C CNN
+F 4 "P100LCT-ND" V 3050 4650 50  0001 C CNN "DigiKey"
+	1    3050 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 4250 3200 4250
+Wire Wire Line
+	3600 4350 3200 4350
+Wire Wire Line
+	3600 4450 3200 4450
+Wire Wire Line
+	3600 4550 3200 4550
+Wire Wire Line
+	3600 4650 3200 4650
+Text HLabel 4900 2650 2    50   Output ~ 0
+JTMS
+Text HLabel 4900 2450 2    50   Output ~ 0
+JTCK
+Text HLabel 4900 2250 2    50   Input ~ 0
+JTDI
+Text HLabel 4900 2150 2    50   Output ~ 0
+JTDO
+Wire Wire Line
+	4900 2450 4600 2450
+Wire Wire Line
+	4900 2650 4600 2650
+Wire Wire Line
+	4900 1950 4600 1950
+Text HLabel 4900 1950 2    50   Output ~ 0
+JNRST
+Text Label 5850 2500 0    47   ~ 0
+BOOT0
+Text Label 5850 2600 0    47   ~ 0
+BOOT1
+Wire Bus Line
+	6350 2250 6450 2250
+Text HLabel 6450 2250 2    50   Output ~ 0
+BOOT[0..1]
+Entry Wire Line
+	6250 2500 6350 2400
+Entry Wire Line
+	6250 2600 6350 2500
+Wire Wire Line
+	5850 2500 6250 2500
+Wire Wire Line
+	5850 2600 6250 2600
+Text Label 2650 2050 0    47   ~ 0
+BOOT0
+Text Label 2650 2150 0    47   ~ 0
+BOOT1
+Wire Wire Line
+	2650 2050 3050 2050
+Wire Wire Line
+	2650 2150 3050 2150
+$Comp
+L power:+5V #PWR0130
+U 1 1 5ECDCFFC
+P 4800 1350
+F 0 "#PWR0130" H 4800 1200 50  0001 C CNN
+F 1 "+5V" H 4815 1523 50  0000 C CNN
+F 2 "" H 4800 1350 50  0001 C CNN
+F 3 "" H 4800 1350 50  0001 C CNN
+	1    4800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1350 4800 1450
+Wire Wire Line
+	4800 1550 4600 1550
+Wire Wire Line
+	4600 1450 4800 1450
+Connection ~ 4800 1450
+Wire Wire Line
+	4800 1450 4800 1550
+Wire Wire Line
+	4600 1650 4700 1650
+Wire Wire Line
+	4700 1650 4700 2050
+Wire Wire Line
+	4600 3050 4700 3050
+Connection ~ 4700 3050
+Wire Wire Line
+	4700 3050 4700 3650
+Wire Wire Line
+	4600 2850 4700 2850
+Connection ~ 4700 2850
+Wire Wire Line
+	4700 2850 4700 3050
+Wire Wire Line
+	4600 2350 4700 2350
+Connection ~ 4700 2350
+Wire Wire Line
+	4700 2350 4700 2850
+Wire Wire Line
+	4600 2050 4700 2050
+Connection ~ 4700 2050
+Wire Wire Line
+	4700 2050 4700 2350
+$Comp
+L power:GND #PWR0151
+U 1 1 5ECF1E11
+P 3000 3650
+F 0 "#PWR0151" H 3000 3400 50  0001 C CNN
+F 1 "GND" H 3005 3477 50  0000 C CNN
+F 2 "" H 3000 3650 50  0001 C CNN
+F 3 "" H 3000 3650 50  0001 C CNN
+	1    3000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1850 3000 1850
+Wire Wire Line
+	3000 1850 3000 2650
+Wire Wire Line
+	3050 2650 3000 2650
+Connection ~ 3000 2650
+Wire Wire Line
+	3000 2650 3000 3350
+Wire Wire Line
+	2750 2850 3050 2850
+Text HLabel 2750 2850 0    50   Output ~ 0
+MCU_NRST
+Entry Wire Line
+	2250 4650 2350 4750
+Text Label 2700 4750 2    50   ~ 0
+SPI_PI5
+Text Label 3600 4750 2    50   ~ 0
+ICE_DONE
+Wire Wire Line
+	2350 4750 2900 4750
+$Comp
+L Device:R R52
+U 1 1 5F0CC2C5
+P 3050 4750
+F 0 "R52" V 3000 4550 50  0000 C CNN
+F 1 "100" V 3050 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4750 50  0001 C CNN
+F 3 "~" H 3050 4750 50  0001 C CNN
+F 4 "P100LCT-ND" V 3050 4750 50  0001 C CNN "DigiKey"
+	1    3050 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 4750 3200 4750
+Text Label 2600 2950 0    50   ~ 0
+ICE_DONE
+Wire Wire Line
+	2600 2950 3050 2950
+Wire Wire Line
+	3050 3350 3000 3350
+Connection ~ 3000 3350
+Wire Wire Line
+	3000 3350 3000 3650
+NoConn ~ 3050 1450
+NoConn ~ 3050 2250
+NoConn ~ 3050 2750
+NoConn ~ 3050 3050
+NoConn ~ 3050 3150
+NoConn ~ 3050 3250
+NoConn ~ 4600 2750
+NoConn ~ 4600 2950
+NoConn ~ 4600 3150
+NoConn ~ 4600 3250
+NoConn ~ 4600 3350
+Wire Bus Line
+	6350 2250 6350 2500
+Wire Bus Line
+	2250 4100 2250 4650
+$EndSCHEMATC
