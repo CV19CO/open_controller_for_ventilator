@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /home/jaiber/proyectos/respirador/repositorio/open_controller_for_ventilator/ABPDANT015PGAA5_sensor/ABPDANT015PGAA5_sensor_module.sch)
-    (date "Thu 09 Jul 2020 11:10:09 PM -05")
-    (tool "Eeschema 5.1.5-52549c5~86~ubuntu16.04.1")
+    (source /home/jaiber/proyectos/respirador/repos/open_controller_for_ventilator/ABPDANT015PGAA5_sensor/ABPDANT015PGAA5_sensor_module.sch)
+    (date "jue 04 nov 2021 19:22:14")
+    (tool "Eeschema 5.1.10-88a1d61d58~90~ubuntu20.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title "Pressure sensor module")
@@ -19,6 +19,8 @@
       (value Conn_02x04_Odd_Even)
       (footprint Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD)
       (datasheet ~)
+      (fields
+        (field (name DigiKey) 609-6367-ND))
       (libsource (lib Connector_Generic) (part Conn_02x04_Odd_Even) (description "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5EF3F442))
@@ -26,6 +28,8 @@
       (value Conn_02x07_Odd_Even)
       (footprint Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical_SMD)
       (datasheet ~)
+      (fields
+        (field (name DigiKey) 609-6365-ND))
       (libsource (lib Connector_Generic) (part Conn_02x07_Odd_Even) (description "Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5EF420CD))
@@ -51,6 +55,8 @@
       (value 0.1u)
       (footprint Capacitor_SMD:C_0603_1608Metric)
       (datasheet ~)
+      (fields
+        (field (name DigiKey) 732-7939-1-ND))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5EF4B509))
@@ -58,6 +64,8 @@
       (value 1n)
       (footprint Capacitor_SMD:C_0603_1608Metric)
       (datasheet ~)
+      (fields
+        (field (name DigiKey) 311-4053-1-ND))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5EF4E99C))
@@ -80,6 +88,8 @@
       (value 0.1u)
       (footprint Capacitor_SMD:C_0603_1608Metric)
       (datasheet ~)
+      (fields
+        (field (name DigiKey) 732-7939-1-ND))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5F080BFC)))
@@ -105,6 +115,7 @@
         (alias TLC272)
         (alias TLC277)
         (alias MCP602)
+        (alias OPA1678)
         (alias OPA2134)
         (alias OPA2340)
         (alias OPA2376xxD)
@@ -136,12 +147,17 @@
         (alias NJM5532)
         (alias ADA4807-2ARM)
         (alias OPA2691)
-        (alias LT6233)
+        (alias LT6234)
         (alias OPA2356xxD)
         (alias OPA2356xxDGK)
         (alias OPA1612AxD)
         (alias MC33172)
-        (alias OPA1602))
+        (alias OPA1602)
+        (alias TLV2372)
+        (alias LT6237)
+        (alias OPA2277)
+        (alias MCP6022)
+        (alias MCP6V67EMS))
       (description "Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8")
       (docs http://www.ti.com/lit/ds/symlink/lm358.pdf)
       (footprints
@@ -253,7 +269,7 @@
     (library (logical Device)
       (uri /usr/share/kicad/library/Device.lib))
     (library (logical Sensor_Pressure)
-      (uri /home/jaiber/proyectos/respirador/repositorio/open_controller_for_ventilator/ABPDANT015PGAA5_sensor/../kicad-modules/libs/Sensor_Pressure.lib)))
+      (uri /home/jaiber/proyectos/respirador/repos/open_controller_for_ventilator/ABPDANT015PGAA5_sensor/../kicad-modules/libs/Sensor_Pressure.lib)))
   (nets
     (net (code 1) (name GND)
       (node (ref J1) (pin 5))

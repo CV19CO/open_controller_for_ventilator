@@ -1,4 +1,4 @@
-update=Thu 09 Jul 2020 10:19:29 PM -05
+update=jue 21 oct 2021 20:33:32
 last_client=kicad
 [schematic_editor]
 version=1
@@ -13,7 +13,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=ABPDANT060MGAA5_sensor_module.net
+LastNetListRead=ABPDANT015PGAA5_sensor_module.net
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
@@ -46,6 +46,8 @@ ViaDiameter4=1.2
 ViaDrill4=0.8
 ViaDiameter5=2
 ViaDrill5=0.8
+ViaDiameter6=3
+ViaDrill6=1.5
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -72,7 +74,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.2
 SolderMaskMinWidth=0.2
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0

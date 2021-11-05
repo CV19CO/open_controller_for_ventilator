@@ -337,7 +337,7 @@ U 3 1 5EFEB94D
 P 3875 3375
 F 0 "U2" H 3833 3421 50  0000 L CNN
 F 1 "LM358" H 3833 3330 50  0000 L CNN
-F 2 "" H 3875 3375 50  0001 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 3875 3375 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3875 3375 50  0001 C CNN
 	3    3875 3375
 	1    0    0    -1  
