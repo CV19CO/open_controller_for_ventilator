@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.10-88a1d61d58~90~ubuntu20.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.12-84ad8e8a86~92~ubuntu20.04.1)
 
   (general
     (thickness 1.6)
@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.3)
+    (last_trace_width 0.2)
     (user_trace_width 0.2)
     (user_trace_width 0.3)
     (user_trace_width 0.4)
@@ -72,12 +72,11 @@
     (mod_text_width 0.15)
     (pad_size 0.6 1.65)
     (pad_drill 0)
-    (pad_to_mask_clearance 0.2)
-    (solder_mask_min_width 0.2)
+    (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x010fc_ffffffff)
+      (layerselection 0x010fc_fffffff9)
       (usegerberextensions false)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
@@ -148,7 +147,7 @@
     (add_net "Net-(U1-Pad5)")
   )
 
-  (module TH_project:DIP_AN (layer F.Cu) (tedit 5F07DDAE) (tstamp 5F0828B1)
+  (module TH_project:DIP_AN (layer F.Cu) (tedit 61A0398B) (tstamp 5F0828B1)
     (at 112.47 45.03 270)
     (path /5F0827F7)
     (fp_text reference U1 (at 4.92418 5.68332) (layer F.SilkS)
@@ -181,6 +180,11 @@
       (net 16 "Net-(U1-Pad5)"))
     (pad 6 thru_hole circle (at -2.54 5.625 270) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask)
       (net 3 +5V))
+    (model ${KIPRJMOD}/../kicad-modules/shapes3d/abpdant005pgaa5.stp
+      (offset (xyz -40 -27.58 5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5B301BBE) (tstamp 61848314)
@@ -678,7 +682,7 @@
   (segment (start 114.05616 44.323) (end 114.05616 43.49496) (width 0.3) (layer B.Cu) (net 13))
   (segment (start 114.41816 44.685) (end 114.05616 44.323) (width 0.3) (layer B.Cu) (net 13))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 61F09E6F) (hatch edge 0.508)
     (connect_pads (clearance 0.2))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -1045,7 +1049,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 61F09E6C) (hatch edge 0.508)
     (connect_pads (clearance 0.2))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))

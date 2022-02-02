@@ -1,4 +1,4 @@
-update=jue 21 oct 2021 20:33:32
+update=mar 25 ene 2022 20:04:06
 last_client=kicad
 [schematic_editor]
 version=1
@@ -46,8 +46,6 @@ ViaDiameter4=1.2
 ViaDrill4=0.8
 ViaDiameter5=2
 ViaDrill5=0.8
-ViaDiameter6=3
-ViaDrill6=1.5
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -71,8 +69,8 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.2
-SolderMaskMinWidth=0.2
+SolderMaskClearance=0
+SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
