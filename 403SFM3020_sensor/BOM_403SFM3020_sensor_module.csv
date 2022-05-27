@@ -1,9 +1,11 @@
-Reference, Quantity, Value, Footprint, Datasheet, DigiKey
-C1 C3 ,2,"0.1u","Capacitor_SMD:C_0603_1608Metric","~","732-7939-1-ND"
-C2 ,1,"1n","Capacitor_SMD:C_0603_1608Metric","~","311-4053-1-ND"
-J1 ,1,"Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD","~","609-6367-ND"
-J2 ,1,"Conn_02x07_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical_SMD","~","609-6365-ND"
-R1 ,1,"11k3","Resistor_SMD:R_0603_1608Metric","~","A102208CT-ND"
-R2 ,1,"22k","Resistor_SMD:R_0603_1608Metric","~","A103066CT-ND"
-U1 ,1,"ABPDANT060MGAA5","TH_project:DIP_AN",""
-U2 ,1,"LM358","Package_SO:TSSOP-8_4.4x3mm_P0.65mm","http://www.ti.com/lit/ds/symlink/lm2904-n.pdf","296-51268-1-ND"
+Item,Qty,Reference(s),Value,Footprint,DigiKey
+1,2,"C1, C3",0.1u,Capacitor_SMD:C_0603_1608Metric,732-7939-1-ND
+2,1,C2,1n,Capacitor_SMD:C_0603_1608Metric,311-4053-1-ND
+3,1,J1,Conn_02x04_Odd_Even,Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD,609-6367-ND
+4,1,J2,Conn_02x07_Odd_Even,Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical_SMD,609-6365-ND
+5,1,J3,Conn_01x05_Female,SMD_project:MOLEX_5600200430,WM17822CT-ND
+6,1,J3,Conn_01x05_Female,SMD_project:MOLEX_5600200430,WM8688-ND
+7,8,J3,Conn_01x05_Female,SMD_project:MOLEX_5600200430,WM4561CT-ND
+8,1,R1,11k3,Resistor_SMD:R_0603_1608Metric,A102208CT-ND
+9,1,R2,22k,Resistor_SMD:R_0603_1608Metric,A103066CT-ND
+10,1,U2,LM358,Package_SO:TSSOP-8_4.4x3mm_P0.65mm,296-51268-1-ND

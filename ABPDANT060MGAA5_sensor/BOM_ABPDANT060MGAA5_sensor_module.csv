@@ -1,9 +1,32 @@
-Reference, Quantity, Value, Footprint, Datasheet, DigiKey
-C1 C3 ,2,"0.1u","Capacitor_SMD:C_0603_1608Metric","~","732-7939-1-ND"
-C2 ,1,"1n","Capacitor_SMD:C_0603_1608Metric","~","311-4053-1-ND"
-J1 ,1,"Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD","~","609-6367-ND"
-J2 ,1,"Conn_02x07_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical_SMD","~","609-6365-ND"
-R1 ,1,"11k3","Resistor_SMD:R_0603_1608Metric","~","A102208CT-ND"
-R2 ,1,"22k","Resistor_SMD:R_0603_1608Metric","~","A103066CT-ND"
-U1 ,1,"ABPDANT060MGAA5","TH_project:DIP_AN",""
-U2 ,1,"LM358","Package_SO:TSSOP-8_4.4x3mm_P0.65mm","http://www.ti.com/lit/ds/symlink/lm2904-n.pdf","296-51268-1-ND"
+"Source:","/home/jaiber/proyectos/respirador/repos/open_controller_for_ventilator/ABPDANT060MGAA5_sensor/ABPDANT060MGAA5_sensor_module.sch"
+"Date:","jue 26 may 2022 21:40:19"
+"Tool:","Eeschema 5.1.12-84ad8e8a86~92~ubuntu20.04.1"
+"Generator:","/usr/share/kicad/plugins/bom_csv_grouped_by_value.py"
+"Component Count:","9"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","DigiKey"
+"","","C1","0.1u","Device:C","Capacitor_SMD:C_0603_1608Metric","~","732-7939-1-ND"
+"","","C2","1n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","311-4053-1-ND"
+"","","C3","0.1u","Device:C","Capacitor_SMD:C_0603_1608Metric","~","732-7939-1-ND"
+"","","J1","Conn_02x04_Odd_Even","Connector_Generic:Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD","~","609-6367-ND"
+"","","J2","Conn_02x07_Odd_Even","Connector_Generic:Conn_02x07_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical_SMD","~","609-6365-ND"
+"","","R1","11k3","Device:R","Resistor_SMD:R_0603_1608Metric","~","A102208CT-ND"
+"","","R2","22k","Device:R","Resistor_SMD:R_0603_1608Metric","~","A103066CT-ND"
+"","","U1","ABPDANT060MGAA5","Sensor_Pressure:ABPDANT060MGAA5","TH_project:DIP_AN","",""
+"","","U2","LM358","Amplifier_Operational:LM358","Package_SO:TSSOP-8_4.4x3mm_P0.65mm","http://www.ti.com/lit/ds/symlink/lm2904-n.pdf","296-51268-1-ND"
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","DigiKey"
+"1","2","C1, C3","0.1u","Device:C","Capacitor_SMD:C_0603_1608Metric","~","732-7939-1-ND"
+"2","1","C2","1n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","311-4053-1-ND"
+"3","1","J1","Conn_02x04_Odd_Even","Connector_Generic:Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD","~","609-6367-ND"
+"4","1","J2","Conn_02x07_Odd_Even","Connector_Generic:Conn_02x07_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical_SMD","~","609-6365-ND"
+"5","1","R1","11k3","Device:R","Resistor_SMD:R_0603_1608Metric","~","A102208CT-ND"
+"6","1","R2","22k","Device:R","Resistor_SMD:R_0603_1608Metric","~","A103066CT-ND"
+"7","1","U1","ABPDANT060MGAA5","Sensor_Pressure:ABPDANT060MGAA5","TH_project:DIP_AN","",""
+"8","1","U2","LM358","Amplifier_Operational:LM358","Package_SO:TSSOP-8_4.4x3mm_P0.65mm","http://www.ti.com/lit/ds/symlink/lm2904-n.pdf","296-51268-1-ND"
