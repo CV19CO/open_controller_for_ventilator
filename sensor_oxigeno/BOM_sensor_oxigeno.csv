@@ -1,36 +1,10 @@
-"Source:","/home/jaiber/proyectos/respirador/repos/open_controller_for_ventilator/sensor_oxigeno/sensor_oxigeno.sch"
-"Date:","jue 26 may 2022 21:42:56"
-"Tool:","Eeschema 5.1.12-84ad8e8a86~92~ubuntu20.04.1"
-"Generator:","/usr/share/kicad/plugins/bom_csv_grouped_by_value.py"
-"Component Count:","12"
-
-"Individual Components:"
-
-"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
-"","","J1","Conn_01x02_Female","Connector:Conn_01x03_Male","Connector:FanPinHeader_1x03_P2.54mm_Vertical","~"
-"","","J2","Conn_02x07_Odd_Even","Connector_Generic:Conn_02x07_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical","~"
-"","","J3","Conn_02x04_Odd_Even","Connector_Generic:Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","~"
-"","","R1","25.3 k","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
-"","","R2","100","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
-"","","R3","10k","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
-"","","R4","10k","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
-"","","R5","10k","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
-"","","R6","10k","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
-"","","R7","50","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
-"","","U1","LM318N","Amplifier_Operational:LM318N","Package_DIP:DIP-8_W7.62mm","http://www.ti.com/lit/ds/symlink/lm318-n.pdf"
-"","","U2","INA128","Amplifier_Instrumentation:INA128","Package_DIP:DIP-8_W7.62mm","http://www.ti.com/lit/ds/symlink/ina128.pdf"
-
-
-
-"Collated Components:"
-
-"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
-"1","1","J1","Conn_01x02_Female","Connector:Conn_01x03_Male","Connector:FanPinHeader_1x03_P2.54mm_Vertical","~"
-"2","1","J2","Conn_02x07_Odd_Even","Connector_Generic:Conn_02x07_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical","~"
-"3","1","J3","Conn_02x04_Odd_Even","Connector_Generic:Conn_02x04_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","~"
-"4","1","R1","25.3 k","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
-"5","1","R2","100","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
-"6","4","R3, R4, R5, R6","10k","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
-"7","1","R7","50","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
-"8","1","U1","LM318N","Amplifier_Operational:LM318N","Package_DIP:DIP-8_W7.62mm","http://www.ti.com/lit/ds/symlink/lm318-n.pdf"
-"9","1","U2","INA128","Amplifier_Instrumentation:INA128","Package_DIP:DIP-8_W7.62mm","http://www.ti.com/lit/ds/symlink/ina128.pdf"
+Item,Qty,Reference(s),Value,Footprint
+1,1,J1,Conn_01x02_Female,Connector:FanPinHeader_1x03_P2.54mm_Vertical
+2,1,J2,Conn_02x07_Odd_Even,Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical
+3,1,J3,Conn_02x04_Odd_Even,Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical
+4,1,R1,25.3 k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+5,1,R2,100,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+6,4,"R3, R4, R5, R6",10k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+7,1,R7,50,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+8,1,U1,LM318N,Package_DIP:DIP-8_W7.62mm
+9,1,U2,INA128,Package_DIP:DIP-8_W7.62mm

@@ -1,0 +1,190 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 62925017
+P 4275 1975
+F 0 "R1" H 4345 2021 50  0000 L CNN
+F 1 "20k" H 4350 1950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4205 1975 50  0001 C CNN
+F 3 "~" H 4275 1975 50  0001 C CNN
+	1    4275 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6292568C
+P 4275 2275
+F 0 "R2" H 4345 2321 50  0000 L CNN
+F 1 "5.1k" H 4345 2230 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4205 2275 50  0001 C CNN
+F 3 "~" H 4275 2275 50  0001 C CNN
+	1    4275 2275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR03
+U 1 1 62925AE0
+P 4275 2725
+F 0 "#PWR03" H 4275 2525 50  0001 C CNN
+F 1 "GNDPWR" H 4279 2571 50  0000 C CNN
+F 2 "" H 4275 2675 50  0001 C CNN
+F 3 "" H 4275 2675 50  0001 C CNN
+	1    4275 2725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2200 4050 2125
+Wire Wire Line
+	4050 2125 4275 2125
+Connection ~ 4275 2125
+Wire Wire Line
+	3450 2100 3600 2100
+Wire Wire Line
+	3600 2100 3600 1675
+Wire Wire Line
+	3600 1675 4275 1675
+Wire Wire Line
+	4275 1675 4275 1825
+$Comp
+L Transistor_FET:IRF540N Q1
+U 1 1 6292698F
+P 4475 2125
+F 0 "Q1" H 4679 2171 50  0000 L CNN
+F 1 "IRF540N" H 4679 2080 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4725 2050 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 4475 2125 50  0001 L CNN
+	1    4475 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D1
+U 1 1 629281AD
+P 4575 1775
+F 0 "D1" V 4529 1855 50  0000 L CNN
+F 1 "1N4007" V 4620 1855 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4575 1600 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4575 1775 50  0001 C CNN
+	1    4575 1775
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR05
+U 1 1 62929AE7
+P 4575 2325
+F 0 "#PWR05" H 4575 2125 50  0001 C CNN
+F 1 "GNDPWR" H 4579 2171 50  0000 C CNN
+F 2 "" H 4575 2275 50  0001 C CNN
+F 3 "" H 4575 2275 50  0001 C CNN
+	1    4575 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 62924BB4
+P 3250 2100
+F 0 "J1" H 3358 2281 50  0000 C CNN
+F 1 "Conn_01x02_Male" V 3150 2100 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3250 2100 50  0001 C CNN
+F 3 "~" H 3250 2100 50  0001 C CNN
+	1    3250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 62931C73
+P 3400 1100
+F 0 "J2" H 3450 1275 50  0000 C CNN
+F 1 "Conn_01x02_Male" V 3350 1050 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3400 1100 50  0001 C CNN
+F 3 "~" H 3400 1100 50  0001 C CNN
+	1    3400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR02
+U 1 1 629352F6
+P 3600 1200
+F 0 "#PWR02" H 3600 1000 50  0001 C CNN
+F 1 "GNDPWR" H 3604 1046 50  0000 C CNN
+F 2 "" H 3600 1150 50  0001 C CNN
+F 3 "" H 3600 1150 50  0001 C CNN
+	1    3600 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR01
+U 1 1 62938988
+P 3600 1100
+F 0 "#PWR01" H 3600 950 50  0001 C CNN
+F 1 "+24V" H 3615 1273 50  0000 C CNN
+F 2 "" H 3600 1100 50  0001 C CNN
+F 3 "" H 3600 1100 50  0001 C CNN
+	1    3600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR04
+U 1 1 6293A721
+P 4575 1625
+F 0 "#PWR04" H 4575 1475 50  0001 C CNN
+F 1 "+24V" H 4590 1798 50  0000 C CNN
+F 2 "" H 4575 1625 50  0001 C CNN
+F 3 "" H 4575 1625 50  0001 C CNN
+	1    4575 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 6293B359
+P 5500 1625
+F 0 "J3" H 5528 1601 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 5400 1425 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5500 1625 50  0001 C CNN
+F 3 "~" H 5500 1625 50  0001 C CNN
+	1    5500 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4575 1925 5300 1925
+Connection ~ 4575 1925
+Wire Wire Line
+	5300 1725 5300 1925
+$Comp
+L power:+24V #PWR06
+U 1 1 62941472
+P 5300 1625
+F 0 "#PWR06" H 5300 1475 50  0001 C CNN
+F 1 "+24V" H 5315 1798 50  0000 C CNN
+F 2 "" H 5300 1625 50  0001 C CNN
+F 3 "" H 5300 1625 50  0001 C CNN
+	1    5300 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 62955AEE
+P 4275 2575
+F 0 "R3" H 4345 2621 50  0000 L CNN
+F 1 "100" H 4345 2530 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4205 2575 50  0001 C CNN
+F 3 "~" H 4275 2575 50  0001 C CNN
+	1    4275 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2200 4050 2200
+$EndSCHEMATC
